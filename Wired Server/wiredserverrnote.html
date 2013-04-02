@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1187.34">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 18.0px Helvetica; color: #919191}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Helvetica; min-height: 17.0px}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Helvetica; color: #919191}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; color: #0000ee}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; color: #dd2002; min-height: 14.0px}
+    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; color: #919191}
+    p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; color: #919191; min-height: 14.0px}
+    span.s1 {text-decoration: underline}
+  </style>
+</head>
+<body>
+<p class="p1"><b>Wired Server 2.0 Read Me</b></p>
+<p class="p2"><br></p>
+<p class="p3"><b>Contact</b></p>
+<p class="p2"><br></p>
+<p class="p4">Rafaël Warnault</p>
+<p class="p5"><span class="s1"><a href="mailto:rw@read-write.fr">dev@read-write.fr</a></span></p>
+<p class="p5"><span class="s1"><a href="http://www.read-write.fr/wired">http://www.read-write.fr/wired</a></span></p>
+<p class="p6"><br></p>
+<p class="p2"><br></p>
+<p class="p3"><b>Version History</b></p>
+<p class="p7"><br></p>
+<p class="p8"><b>2.0b (77)</b></p>
+<p class="p9"><br></p>
+<p class="p4">- Add background threads for Import/Export settings function to support large file operations [OSX]</p>
+<p class="p4">- Fix Import/Export settings from the Wired Server interface [OSX]</p>
+<p class="p4">- Fix build number formatting in Server Infos</p>
+<p class="p4">- Fix broken database snapshots</p>
+<p class="p7"><br></p>
+<p class="p7"><br></p>
+<p class="p8"><b>2.0b (76)</b></p>
+<p class="p9"><br></p>
+<p class="p4">- Fix the launched issue when Wired Server daemon always auto-star at system boot (maybe you will have to manually remove the "fr.read-write.WiredServer" entry in /var/db/launchd.db/com.apple.launchd.peruser.XXX/overrides.plist file, where XXX is you user id (generally 501) to re-synchronize launchd services) [OSX]</p>
+<p class="p4">- Fix server crash on Files search with "_" and "%" characters. These characters are no longer escaped and they will be ignored.</p>
+<p class="p7"><br></p>
+<p class="p7"><br></p>
+<p class="p8"><b>2.0b (75)</b></p>
+<p class="p9"><br></p>
+<p class="p4">- Fix the server port which cannot be changed from the GUI [OSX]</p>
+<p class="p4">- Fix the 32/64bits server compilation script, again, for Mountain Lion [OSX]</p>
+<p class="p4">- Enhance the auto-update script [OSX]</p>
+<p class="p7"><br></p>
+<p class="p7"><br></p>
+<p class="p8"><b>2.0b (72)</b></p>
+<p class="p9"><br></p>
+<p class="p4">- Fix undesired server restart at Wired Server app launch [OSX]</p>
+<p class="p7"><br></p>
+<p class="p7"><br></p>
+<p class="p8"><b>2.0b (71)</b></p>
+<p class="p9"><br></p>
+<p class="p4">- Fix the thread subject for event wired.event.board.got_thread</p>
+<p class="p4">- Fix the Launch Wired Automatically issue [OSX]</p>
+<p class="p4">- Fix the Intel 32bits compilation issue (Core 1 Duo processor) [OSX]</p>
+<p class="p7"><br></p>
+<p class="p7"><br></p>
+<p class="p8"><b>2.0b (70)</b></p>
+<p class="p9"><br></p>
+<p class="p4">- Add Re-index button into the GUI [OSX]</p>
+<p class="p4">- Add controls for Snapshots settings into the GUI [OSX]</p>
+<p class="p4">- Add controls for Events settings into the GUI [OSX]</p>
+<p class="p4">- Add an 'snapshots' setting to enable/disable snapshots in wired.conf</p>
+<p class="p4">- Add an 'events time' setting to limit event storage in wired.conf</p>
+<p class="p4">- Fix automatically reindex server files following 'index time' setting</p>
+<p class="p4">- Fix lack of index update when the files root path of the server changes</p>
+<p class="p4">- Fix an issue when importing Zanka boards permissions</p>
+<p class="p4">- Add full support for 32/64 bits architectures [OSX]</p>
+<p class="p7"><br></p>
+<p class="p7"><br></p>
+<p class="p8"><b>2.0b (68)</b></p>
+<p class="p9"><br></p>
+<p class="p4">- Rewritten as a stand-alone application rather than a Preference Pane [OSX]</p>
+<p class="p4">- Add a minimal Status Menu helper installed as a Login Item [OSX]</p>
+<p class="p4">- Fix wiredctl and Wired root path issue in Wired compilation</p>
+<p class="p4">- Fix Files reload form the GUI: server restart needed is not more needed [OSX]</p>
+<p class="p4">- Fix corrupted password (double SHA1) in Create New Admin User feature [OSX]</p>
+<p class="p4">- Fix a (hidden-)crash when server is stopped while clients are running transfers</p>
+<p class="p4">- Wired Server is now built using Xcode 4.3 [OSX]</p>
+<p class="p7"><br></p>
+<p class="p8"><b>2.0b (54)</b></p>
+<p class="p4">- Add a database snapshot system (see snapshot time in wired.conf)</p>
+<p class="p4">- Fix board rename for an infinite loop case</p>
+<p class="p7"><br></p>
+<p class="p8"><b>2.0b (53)</b></p>
+<p class="p4">- Fix board move and rename where threads was not properly updated</p>
+<p class="p7"><br></p>
+<p class="p8"><b>2.0b (51)</b></p>
+<p class="p4">- Fix board move where sub-boards was not properly updated</p>
+<p class="p4">- Fix board rename where sub-boards was not properly updated</p>
+<p class="p4">- Fix ban list issue when an unlimited banned IP tries to connect</p>
+<p class="p7"><br></p>
+<p class="p8"><b>2.0b (49)</b></p>
+<p class="p4">- Fix board and threads moving issues<span class="Apple-converted-space"> </span></p>
+<p class="p7"><br></p>
+<p class="p8"><b>2.0b (48)</b></p>
+<p class="p4">- Add board permission management</p>
+<p class="p4">- Fix the auto-update release logs</p>
+<p class="p4">- Fix topic date which resets to 1970 when server restart</p>
+<p class="p9"><br></p>
+<p class="p9"><br></p>
+<p class="p8"><b>1.3.3</b></p>
+<p class="p4">- Increase performance for counting number of files inside a directory</p>
+<p class="p4">- Fix a crash if starting with no arguments at all</p>
+<p class="p4">- Fix problem with deleting directories</p>
+<p class="p4">- Fix parsing of IPv6 addresses in config</p>
+<p class="p4">- Fix a crash related to logging</p>
+<p class="p4">- Fix a crash on Linux related to users going idle</p>
+<p class="p4">- Respect the "zeroconf" setting in config</p>
+<p class="p4">- Correctly figure out count and size of files</p>
+<p class="p4">- Read and write Finder comments (Mac OS X)</p>
+<p class="p7"><br></p>
+<p class="p8"><b>1.3.2</b></p>
+<p class="p4">- Mac OS X 10.5 support</p>
+<p class="p4">- Fix a problem with displaying the log file in the preference pane the very first time the server is launched</p>
+<p class="p4">- Fix a problem with posting longer news posts</p>
+<p class="p4">- Fix many problems with the transfer queue system that resulted in erroneous "Queue Limit Exceeded" errors</p>
+<p class="p4">- Fix some localization bugs</p>
+<p class="p7"><br></p>
+<p class="p8"><b>1.3.1</b></p>
+<p class="p4">- Add Japanese, French and German localizations</p>
+<p class="p4">- Fix problem with main thread hanging after registering with a tracker sometimes</p>
+<p class="p4">- Fix issue where, for some types of crashes, wired.pid was not removed at exit</p>
+<p class="p4">- Fix "directory too deep" messages when indexing a lot of aliases</p>
+<p class="p4">- Optimize indexed searches</p>
+<p class="p7"><br></p>
+<p class="p8"><b>1.3</b></p>
+<p class="p4">- Make binary universal</p>
+<p class="p4">- Support for IPv6</p>
+<p class="p4">- Add an account editor</p>
+<p class="p4">- Add option to set launch at boot</p>
+<p class="p4">- Can configure and register with multiple trackers</p>
+<p class="p4">- File operations (listing, searching, indexing) are multiple times faster</p>
+<p class="p4">- Transfer limits take effect immediately on running transfers</p>
+<p class="p4">- Improve documentation</p>
+<p class="p9"><br></p>
+<p class="p8"><b>1.2.5</b></p>
+<p class="p4">- Allow the setting of folder type and comments on Mac aliases pointing to folders</p>
+<p class="p4">- Add a version field to the Mac OS X panel</p>
+<p class="p4">- Properly rename the symlinks and not the files or folders they point to</p>
+<p class="p9"><br></p>
+<p class="p8"><b>1.2.4</b></p>
+<p class="p4">- Never index drop box contents for searches</p>
+<p class="p4">- Add additional log messages about index/search failures</p>
+<p class="p4">- Fix a crash on Linux when loading the banner</p>
+<p class="p4">- Fix a crash when starting with a config file without user/group settings</p>
+<p class="p4">- When editing a group, all users belonging to that group would have its group membership cleared, this is now fixed</p>
+<p class="p4">- The tracker registration would sometimes hang while waiting for a response, resulting in failure to mark idle clients, this has now been threaded</p>
+<p class="p4">- Fix a problem with the server silently refusing to start after a crash</p>
+<p class="p9"><br></p>
+<p class="p8"><b>1.2.3</b></p>
+<p class="p4">- Fix a few problems with queueing multiple files, and queueing files in tight succession (i.e. folder transfers)</p>
+<p class="p4">- Fix a problem with logging in (also fixes "(null)" renames in client chat)</p>
+<p class="p9"><br></p>
+<p class="p8"><b>1.2.2</b></p>
+<p class="p4">- When creating a new folder, set it to the same type as the folder it was created in</p>
+<p class="p4">- Increase the byte size limit of the banner</p>
+<p class="p4">- Fix the select button under log files in the panel</p>
+<p class="p4">- Fix another issue with groups</p>
+<p class="p9"><br></p>
+<p class="p8"><b>1.2.1</b></p>
+<p class="p4">- Fix a bug involving the certificate generation in the System Preferences panel</p>
+<p class="p4">- Fix two bugs that prevent accounts belonging to groups to function properly</p>
+<p class="p9"><br></p>
+<p class="p8"><b>1.2</b></p>
+<p class="p4">- Use updated protocol, version 1.1 (remains compatible with 1.0 clients)</p>
+<p class="p4">- Remove Hotline support</p>
+<p class="p4">- Support for custom client icons</p>
+<p class="p4">- Support for custom client status messages</p>
+<p class="p4">- Support for dynamically set uploads and drop box folders</p>
+<p class="p4">- Support for file comments</p>
+<p class="p4">- Support for chat topics</p>
+<p class="p4">- Date fields in file listings</p>
+<p class="p4">- Performance improvements in the transfers system</p>
+<p class="p4">- Option to create an index of all files and use the index for client file searches, dramatically decreasing search times on large servers</p>
+<p class="p4">- Add more missing settings to the Mac OS X panel, including an option generate server certificates</p>
+<p class="p4">- Add a setting to limit the number of news posts saved</p>
+<p class="p4">- Reduce number of settings that require a restart</p>
+<p class="p4">- Fix a potential race condition crash</p>
+<p class="p4">- Fix an issue with corrupted status files</p>
+<p class="p4">- Fix a bug in file searches when descending into Mac aliases pointing to folders</p>
+<p class="p9"><br></p>
+<p class="p8"><b>1.1</b></p>
+<p class="p4">- Add support for tracker</p>
+<p class="p4">- Add support for recognizing Finder invisibles and skipping them</p>
+<p class="p4">- Generate OpenSSL certificates by default, and only revert to anonymous ciphers if no certificate could be used</p>
+<p class="p4">- Changing the files directory no longer requires a server restart</p>
+<p class="p4">- Add option to allow log messages go to a separate file instead of the default syslog</p>
+<p class="p4">- Allow ports below 1024 to be used for communication</p>
+<p class="p4">- Add options to ignore dot files, Mac OS invisibles or any pattern matching a regular expression in file listings</p>
+<p class="p4">- Fix a bug where sending very large messages would result in a protocol error</p>
+<p class="p4">- Fix a bug in deep listings of aliases</p>
+<p class="p4">- Fix a bug with file sizes on some Linux distributions, often resulting in failure of trying to download files</p>
+<p class="p4">- Fix Mac OS X panel to make speed limits really appear as KB/s and not bytes/s</p>
+<p class="p4">- Fix a bug where a user could join a private chat multiple times</p>
+<p class="p4">- Fix a crash in the clearing of empty private chats</p>
+<p class="p4">- Fix a bug with resuming partially downloaded files past 2 GB</p>
+<p class="p9"><br></p>
+<p class="p8"><b>1.0.2</b></p>
+<p class="p4">- Add support for aliases</p>
+<p class="p4">- Fix another Hotline related crash</p>
+<p class="p4">- Fix a bug in Hotline chat</p>
+<p class="p9"><br></p>
+<p class="p8"><b>1.0.1</b></p>
+<p class="p4">- Fix a Hotline related crash</p>
+<p class="p9"><br></p>
+<p class="p8"><b>1.0</b></p>
+<p class="p4">- Initial release</p>
+<p class="p7"><br></p>
+<p class="p7"><br></p>
+<p class="p3"><b>Contributors</b></p>
+<p class="p2"><br></p>
+<p class="p4">- Daniel Ericsson, sdz@lounging.com</p>
+<p class="p4">- Devin Teske, devinteske@hotmail.com</p>
+<p class="p7"><br></p>
+<p class="p7"><br></p>
+<p class="p3"><b>License</b></p>
+<p class="p7"><br></p>
+<p class="p4">Copyright © 2003-2009 Axel Andersson</p>
+<p class="p4">Copyright © 2011-2012 Rafaël Warnault</p>
+<p class="p4">All rights reserved.</p>
+<p class="p7"><br></p>
+<p class="p4">Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
+<p class="p7"><br></p>
+<p class="p4">1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</p>
+<p class="p4">2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</p>
+<p class="p7"><br></p>
+<p class="p4">THIS SOFTWARE IS PROVIDED BY THE PROJECT AND CONTRIBUTORS ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.<span class="Apple-converted-space">  </span>IN NO EVENT SHALL THE PROJECT OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+</body>
+</html>

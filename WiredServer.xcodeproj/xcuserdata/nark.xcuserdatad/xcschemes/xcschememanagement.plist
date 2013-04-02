@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Distribute.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>19</integer>
+		</dict>
+		<key>Wired Server Helper.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>Wired Server.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>wired.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>18</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>4C233C881521022800245506</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4C8C79A2159B7E7C00F6B145</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4C8C79A6159B7FEE00F6B145</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4C8C79AA159B813D00F6B145</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4C8CB7F8159A6C53008C7EB9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4C8D3353151E2D8D001A6BF7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4CA5983F15A20E90000C4DAD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4CCEEFA8154C991D004AE045</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

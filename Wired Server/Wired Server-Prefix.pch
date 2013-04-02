@@ -1,0 +1,21 @@
+//
+// Prefix header for all source files of the 'Wired Server' target in the 'Wired Server' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+    #import <Quartz/Quartz.h>
+    #import <WebKit/WebKit.h>
+    #import <Sparkle/Sparkle.h>
+    #import <WiredFoundation/WiredFoundation.h>
+    #import <WiredAppKit/WiredAppKit.h>
+#endif
+
+#define NSLS				NSLocalizedString
+#define NSSWF				NSString stringWithFormat
+#define WPBundleIdentifier	@"fr.read-write.WiredServer"
+
+#define WPLS(string, comment) \
+[NSBundle bundleWithIdentifier:WPBundleIdentifier] \
+? NSLocalizedStringFromTableInBundle((string), NULL, [NSBundle bundleWithIdentifier:WPBundleIdentifier], (comment)) \
+: (string)

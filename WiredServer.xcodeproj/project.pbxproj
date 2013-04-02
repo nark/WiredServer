@@ -1,0 +1,1237 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		4CA5983F15A20E90000C4DAD /* wired */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4CA5984015A20E90000C4DAD /* Build configuration list for PBXAggregateTarget "wired" */;
+			buildPhases = (
+				4CA5984315A20E95000C4DAD /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = wired;
+			productName = wired;
+		};
+		4CCEEFA8154C991D004AE045 /* Distribute */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4CCEEFB6154C991D004AE045 /* Build configuration list for PBXAggregateTarget "Distribute" */;
+			buildPhases = (
+				4CCEEFB8154C994D004AE045 /* ShellScript */,
+			);
+			dependencies = (
+				4CDD88AF15F76CA500283005 /* PBXTargetDependency */,
+			);
+			name = Distribute;
+			productName = Distribute;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		4C233C8B1521022800245506 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8D3358151E2D8D001A6BF7 /* Cocoa.framework */; };
+		4C233C911521022800245506 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C233C8F1521022800245506 /* InfoPlist.strings */; };
+		4C233C931521022800245506 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C233C921521022800245506 /* main.m */; };
+		4C233C971521022800245506 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4C233C951521022800245506 /* Credits.rtf */; };
+		4C233C9A1521022800245506 /* WHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C233C991521022800245506 /* WHAppDelegate.m */; };
+		4C233C9D1521022900245506 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C233C9B1521022900245506 /* MainMenu.xib */; };
+		4C233CA2152103FE00245506 /* WiredServerMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C233CA1152103FE00245506 /* WiredServerMenu.png */; };
+		4C233CA51521063A00245506 /* WHStatusController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C233CA41521063A00245506 /* WHStatusController.m */; };
+		4C233CAF1521122200245506 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8D33EE151E9943001A6BF7 /* WebKit.framework */; };
+		4C233CB0152112C700245506 /* WPWiredManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D3482151F58D7001A6BF7 /* WPWiredManager.m */; };
+		4C233CB1152112D700245506 /* WPSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D3480151F58D7001A6BF7 /* WPSettings.m */; };
+		4C233CB2152112E500245506 /* WPError.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D3478151F58D7001A6BF7 /* WPError.m */; };
+		4C233CBC15211FA700245506 /* Wired Server Helper.app in Resources */ = {isa = PBXBuildFile; fileRef = 4C233C891521022800245506 /* Wired Server Helper.app */; };
+		4C233CBF1521251300245506 /* WiredServerMenuOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C233CBD152124B600245506 /* WiredServerMenuOff.png */; };
+		4C233CC21521329E00245506 /* WiredServer.icns in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D33DB151E96E4001A6BF7 /* WiredServer.icns */; };
+		4C233CFD15228BB800245506 /* wiredserverrnote.html in Resources */ = {isa = PBXBuildFile; fileRef = 4C233CFC15228BB800245506 /* wiredserverrnote.html */; };
+		4C49A22D152F72B60003B17D /* Sparkle.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8D3412151E9A9B001A6BF7 /* Sparkle.framework */; };
+		4C49A22E152F780C0003B17D /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8D3412151E9A9B001A6BF7 /* Sparkle.framework */; };
+		4C4A2959151F880C0084E041 /* Console.icns in Resources */ = {isa = PBXBuildFile; fileRef = 4C4A2958151F880C0084E041 /* Console.icns */; };
+		4C4A2969151F894F0084E041 /* GrayDrop.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 4C4A2966151F894F0084E041 /* GrayDrop.tiff */; };
+		4C4A296A151F894F0084E041 /* GreenDrop.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 4C4A2967151F894F0084E041 /* GreenDrop.tiff */; };
+		4C4A296B151F894F0084E041 /* RedDrop.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 4C4A2968151F894F0084E041 /* RedDrop.tiff */; };
+		4C5EDCC7154366750031D44E /* man in Resources */ = {isa = PBXBuildFile; fileRef = 4C5EDCC6154366740031D44E /* man */; };
+		4C8D3359151E2D8D001A6BF7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8D3358151E2D8D001A6BF7 /* Cocoa.framework */; };
+		4C8D3363151E2D8D001A6BF7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D3361151E2D8D001A6BF7 /* InfoPlist.strings */; };
+		4C8D3365151E2D8D001A6BF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D3364151E2D8D001A6BF7 /* main.m */; };
+		4C8D3369151E2D8D001A6BF7 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D3367151E2D8D001A6BF7 /* Credits.rtf */; };
+		4C8D336C151E2D8D001A6BF7 /* WSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D336B151E2D8D001A6BF7 /* WSAppDelegate.m */; };
+		4C8D336F151E2D8D001A6BF7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D336D151E2D8D001A6BF7 /* MainMenu.xib */; };
+		4C8D33DC151E96E4001A6BF7 /* WiredServer.icns in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D33DB151E96E4001A6BF7 /* WiredServer.icns */; };
+		4C8D33ED151E991D001A6BF7 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8D33EC151E991D001A6BF7 /* Quartz.framework */; };
+		4C8D33EF151E9943001A6BF7 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8D33EE151E9943001A6BF7 /* WebKit.framework */; };
+		4C8D3416151E9AC0001A6BF7 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8D3415151E9AC0001A6BF7 /* libsqlite3.dylib */; };
+		4C8D341B151E9B0B001A6BF7 /* install.sh in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D3417151E9B0B001A6BF7 /* install.sh */; };
+		4C8D341C151E9B0B001A6BF7 /* SUPublicDSAKeyFile.pem in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D3418151E9B0B001A6BF7 /* SUPublicDSAKeyFile.pem */; };
+		4C8D341D151E9B0B001A6BF7 /* uninstall.sh in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D3419151E9B0B001A6BF7 /* uninstall.sh */; };
+		4C8D341E151E9B0B001A6BF7 /* update.sh in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D341A151E9B0B001A6BF7 /* update.sh */; };
+		4C8D3420151E9B1B001A6BF7 /* Wired in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D341F151E9B1B001A6BF7 /* Wired */; };
+		4C8D3483151F58D7001A6BF7 /* WPAccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D3472151F58D7001A6BF7 /* WPAccountManager.m */; };
+		4C8D3484151F58D7001A6BF7 /* WPConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D3474151F58D7001A6BF7 /* WPConfigManager.m */; };
+		4C8D3485151F58D7001A6BF7 /* WPDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D3476151F58D7001A6BF7 /* WPDatabaseManager.m */; };
+		4C8D3486151F58D7001A6BF7 /* WPError.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D3478151F58D7001A6BF7 /* WPError.m */; };
+		4C8D3487151F58D7001A6BF7 /* WPExportManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D347A151F58D7001A6BF7 /* WPExportManager.m */; };
+		4C8D3488151F58D7001A6BF7 /* WPLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D347C151F58D7001A6BF7 /* WPLogManager.m */; };
+		4C8D3489151F58D7001A6BF7 /* WPPortChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D347E151F58D7001A6BF7 /* WPPortChecker.m */; };
+		4C8D348A151F58D7001A6BF7 /* WPSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D3480151F58D7001A6BF7 /* WPSettings.m */; };
+		4C8D348B151F58D7001A6BF7 /* WPWiredManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D3482151F58D7001A6BF7 /* WPWiredManager.m */; };
+		4C8D34B7151F81C3001A6BF7 /* WSSettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D34B6151F81C3001A6BF7 /* WSSettingsController.m */; };
+		4C8D34D9151F82F8001A6BF7 /* Settings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D34D8151F82F8001A6BF7 /* Settings.xib */; };
+		4C8D34E0151F84E3001A6BF7 /* Updates.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D34DF151F84E3001A6BF7 /* Updates.tiff */; };
+		4CD34ED91571ACED0054E305 /* Files.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CD34ED81571ACED0054E305 /* Files.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4C233CBA15211F9C00245506 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C8D334B151E2D8C001A6BF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C233C881521022800245506;
+			remoteInfo = "Wired Server Helper";
+		};
+		4CDD88AE15F76CA500283005 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C8D334B151E2D8C001A6BF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C8D3353151E2D8D001A6BF7;
+			remoteInfo = "Wired Server";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4C233CAC152111CF00245506 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C8D33E8151E98AC001A6BF7 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4C49A22D152F72B60003B17D /* Sparkle.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4C233C891521022800245506 /* Wired Server Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wired Server Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C233C8E1521022800245506 /* Wired Server Helper-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Wired Server Helper-Info.plist"; sourceTree = "<group>"; };
+		4C233C901521022800245506 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4C233C921521022800245506 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4C233C941521022800245506 /* Wired Server Helper-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Wired Server Helper-Prefix.pch"; sourceTree = "<group>"; };
+		4C233C961521022800245506 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		4C233C981521022800245506 /* WHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHAppDelegate.h; sourceTree = "<group>"; };
+		4C233C991521022800245506 /* WHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHAppDelegate.m; sourceTree = "<group>"; };
+		4C233C9C1521022900245506 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		4C233CA1152103FE00245506 /* WiredServerMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WiredServerMenu.png; sourceTree = "<group>"; };
+		4C233CA31521063A00245506 /* WHStatusController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHStatusController.h; sourceTree = "<group>"; };
+		4C233CA41521063A00245506 /* WHStatusController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHStatusController.m; sourceTree = "<group>"; };
+		4C233CBD152124B600245506 /* WiredServerMenuOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WiredServerMenuOff.png; sourceTree = "<group>"; };
+		4C233CFC15228BB800245506 /* wiredserverrnote.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = wiredserverrnote.html; sourceTree = "<group>"; };
+		4C4A2958151F880C0084E041 /* Console.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Console.icns; sourceTree = "<group>"; };
+		4C4A2966151F894F0084E041 /* GrayDrop.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = GrayDrop.tiff; sourceTree = "<group>"; };
+		4C4A2967151F894F0084E041 /* GreenDrop.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = GreenDrop.tiff; sourceTree = "<group>"; };
+		4C4A2968151F894F0084E041 /* RedDrop.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = RedDrop.tiff; sourceTree = "<group>"; };
+		4C5EDCC6154366740031D44E /* man */ = {isa = PBXFileReference; lastKnownFileType = folder; name = man; path = ../../wired/man; sourceTree = "<group>"; };
+		4C8CB801159A6D37008C7EB9 /* wired.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = wired.sh; sourceTree = "<group>"; };
+		4C8D3354151E2D8D001A6BF7 /* Wired Server.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wired Server.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C8D3358151E2D8D001A6BF7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		4C8D335B151E2D8D001A6BF7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		4C8D335C151E2D8D001A6BF7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		4C8D335D151E2D8D001A6BF7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4C8D3360151E2D8D001A6BF7 /* WiredServer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WiredServer-Info.plist"; sourceTree = "<group>"; };
+		4C8D3362151E2D8D001A6BF7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4C8D3364151E2D8D001A6BF7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4C8D3366151E2D8D001A6BF7 /* Wired Server-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Wired Server-Prefix.pch"; sourceTree = "<group>"; };
+		4C8D3368151E2D8D001A6BF7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		4C8D336A151E2D8D001A6BF7 /* WSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSAppDelegate.h; sourceTree = "<group>"; };
+		4C8D336B151E2D8D001A6BF7 /* WSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSAppDelegate.m; sourceTree = "<group>"; };
+		4C8D336E151E2D8D001A6BF7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		4C8D33DB151E96E4001A6BF7 /* WiredServer.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = WiredServer.icns; sourceTree = "<group>"; };
+		4C8D33EC151E991D001A6BF7 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Quartz.framework; sourceTree = DEVELOPER_DIR; };
+		4C8D33EE151E9943001A6BF7 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = SDKs/MacOSX10.6.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
+		4C8D3412151E9A9B001A6BF7 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = ../Sparkle/Sparkle.framework; sourceTree = "<group>"; };
+		4C8D3415151E9AC0001A6BF7 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = SDKs/MacOSX10.6.sdk/usr/lib/libsqlite3.dylib; sourceTree = DEVELOPER_DIR; };
+		4C8D3417151E9B0B001A6BF7 /* install.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = install.sh; sourceTree = "<group>"; };
+		4C8D3418151E9B0B001A6BF7 /* SUPublicDSAKeyFile.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SUPublicDSAKeyFile.pem; sourceTree = "<group>"; };
+		4C8D3419151E9B0B001A6BF7 /* uninstall.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = uninstall.sh; sourceTree = "<group>"; };
+		4C8D341A151E9B0B001A6BF7 /* update.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = update.sh; sourceTree = "<group>"; };
+		4C8D341F151E9B1B001A6BF7 /* Wired */ = {isa = PBXFileReference; lastKnownFileType = text; path = Wired; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C8D3471151F58D7001A6BF7 /* WPAccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPAccountManager.h; sourceTree = "<group>"; };
+		4C8D3472151F58D7001A6BF7 /* WPAccountManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPAccountManager.m; sourceTree = "<group>"; };
+		4C8D3473151F58D7001A6BF7 /* WPConfigManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPConfigManager.h; sourceTree = "<group>"; };
+		4C8D3474151F58D7001A6BF7 /* WPConfigManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPConfigManager.m; sourceTree = "<group>"; };
+		4C8D3475151F58D7001A6BF7 /* WPDatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPDatabaseManager.h; sourceTree = "<group>"; };
+		4C8D3476151F58D7001A6BF7 /* WPDatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPDatabaseManager.m; sourceTree = "<group>"; };
+		4C8D3477151F58D7001A6BF7 /* WPError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPError.h; sourceTree = "<group>"; };
+		4C8D3478151F58D7001A6BF7 /* WPError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPError.m; sourceTree = "<group>"; };
+		4C8D3479151F58D7001A6BF7 /* WPExportManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPExportManager.h; sourceTree = "<group>"; };
+		4C8D347A151F58D7001A6BF7 /* WPExportManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPExportManager.m; sourceTree = "<group>"; };
+		4C8D347B151F58D7001A6BF7 /* WPLogManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPLogManager.h; sourceTree = "<group>"; };
+		4C8D347C151F58D7001A6BF7 /* WPLogManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPLogManager.m; sourceTree = "<group>"; };
+		4C8D347D151F58D7001A6BF7 /* WPPortChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPPortChecker.h; sourceTree = "<group>"; };
+		4C8D347E151F58D7001A6BF7 /* WPPortChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPPortChecker.m; sourceTree = "<group>"; };
+		4C8D347F151F58D7001A6BF7 /* WPSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPSettings.h; sourceTree = "<group>"; };
+		4C8D3480151F58D7001A6BF7 /* WPSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPSettings.m; sourceTree = "<group>"; };
+		4C8D3481151F58D7001A6BF7 /* WPWiredManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPWiredManager.h; sourceTree = "<group>"; };
+		4C8D3482151F58D7001A6BF7 /* WPWiredManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPWiredManager.m; sourceTree = "<group>"; wrapsLines = 1; };
+		4C8D34B5151F81C2001A6BF7 /* WSSettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSSettingsController.h; sourceTree = "<group>"; };
+		4C8D34B6151F81C3001A6BF7 /* WSSettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSSettingsController.m; sourceTree = "<group>"; };
+		4C8D34D8151F82F8001A6BF7 /* Settings.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Settings.xib; sourceTree = "<group>"; };
+		4C8D34DF151F84E3001A6BF7 /* Updates.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Updates.tiff; sourceTree = "<group>"; };
+		4CA5986015A2449F000C4DAD /* accounts.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = accounts.c; path = ../../wired/wired/accounts.c; sourceTree = "<group>"; };
+		4CA5986115A2449F000C4DAD /* accounts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = accounts.h; path = ../../wired/wired/accounts.h; sourceTree = "<group>"; };
+		4CA5986215A2449F000C4DAD /* banlist.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = banlist.c; path = ../../wired/wired/banlist.c; sourceTree = "<group>"; };
+		4CA5986315A2449F000C4DAD /* banlist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = banlist.h; path = ../../wired/wired/banlist.h; sourceTree = "<group>"; };
+		4CA5986415A2449F000C4DAD /* boards.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = boards.c; path = ../../wired/wired/boards.c; sourceTree = "<group>"; };
+		4CA5986515A2449F000C4DAD /* boards.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = boards.h; path = ../../wired/wired/boards.h; sourceTree = "<group>"; };
+		4CA5986615A2449F000C4DAD /* chats.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = chats.c; path = ../../wired/wired/chats.c; sourceTree = "<group>"; };
+		4CA5986715A2449F000C4DAD /* chats.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = chats.h; path = ../../wired/wired/chats.h; sourceTree = "<group>"; };
+		4CA5986815A2449F000C4DAD /* events.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = events.c; path = ../../wired/wired/events.c; sourceTree = "<group>"; };
+		4CA5986915A2449F000C4DAD /* events.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = events.h; path = ../../wired/wired/events.h; sourceTree = "<group>"; };
+		4CA5986A15A2449F000C4DAD /* files.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = files.c; path = ../../wired/wired/files.c; sourceTree = "<group>"; };
+		4CA5986B15A2449F000C4DAD /* files.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = files.h; path = ../../wired/wired/files.h; sourceTree = "<group>"; };
+		4CA5986C15A2449F000C4DAD /* index.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = index.c; path = ../../wired/wired/index.c; sourceTree = "<group>"; };
+		4CA5986D15A2449F000C4DAD /* index.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = index.h; path = ../../wired/wired/index.h; sourceTree = "<group>"; };
+		4CA5986E15A2449F000C4DAD /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = main.c; path = ../../wired/wired/main.c; sourceTree = "<group>"; };
+		4CA5986F15A2449F000C4DAD /* main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = main.h; path = ../../wired/wired/main.h; sourceTree = "<group>"; };
+		4CA5987015A2449F000C4DAD /* messages.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = messages.c; path = ../../wired/wired/messages.c; sourceTree = "<group>"; };
+		4CA5987115A2449F000C4DAD /* messages.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = messages.h; path = ../../wired/wired/messages.h; sourceTree = "<group>"; };
+		4CA5987215A2449F000C4DAD /* portmap.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = portmap.c; path = ../../wired/wired/portmap.c; sourceTree = "<group>"; };
+		4CA5987315A2449F000C4DAD /* portmap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = portmap.h; path = ../../wired/wired/portmap.h; sourceTree = "<group>"; };
+		4CA5987415A2449F000C4DAD /* server.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = server.c; path = ../../wired/wired/server.c; sourceTree = "<group>"; };
+		4CA5987515A2449F000C4DAD /* server.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = server.h; path = ../../wired/wired/server.h; sourceTree = "<group>"; };
+		4CA5987615A2449F000C4DAD /* servers.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = servers.c; path = ../../wired/wired/servers.c; sourceTree = "<group>"; };
+		4CA5987715A2449F000C4DAD /* servers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = servers.h; path = ../../wired/wired/servers.h; sourceTree = "<group>"; };
+		4CA5987815A2449F000C4DAD /* settings.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = settings.c; path = ../../wired/wired/settings.c; sourceTree = "<group>"; };
+		4CA5987915A2449F000C4DAD /* settings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = settings.h; path = ../../wired/wired/settings.h; sourceTree = "<group>"; };
+		4CA5987A15A2449F000C4DAD /* trackers.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = trackers.c; path = ../../wired/wired/trackers.c; sourceTree = "<group>"; };
+		4CA5987B15A2449F000C4DAD /* trackers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = trackers.h; path = ../../wired/wired/trackers.h; sourceTree = "<group>"; };
+		4CA5987C15A2449F000C4DAD /* transfers.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = transfers.c; path = ../../wired/wired/transfers.c; sourceTree = "<group>"; };
+		4CA5987D15A2449F000C4DAD /* transfers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = transfers.h; path = ../../wired/wired/transfers.h; sourceTree = "<group>"; };
+		4CA5987E15A2449F000C4DAD /* users.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = users.c; path = ../../wired/wired/users.c; sourceTree = "<group>"; };
+		4CA5987F15A2449F000C4DAD /* users.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = users.h; path = ../../wired/wired/users.h; sourceTree = "<group>"; };
+		4CA5988015A2449F000C4DAD /* wired.conf.in */ = {isa = PBXFileReference; lastKnownFileType = text; name = wired.conf.in; path = ../../wired/wired/wired.conf.in; sourceTree = "<group>"; };
+		4CA5988115A2449F000C4DAD /* wiredctl.in */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = wiredctl.in; path = ../../wired/wired/wiredctl.in; sourceTree = "<group>"; };
+		4CA5988515A244D1000C4DAD /* wi-assert.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-assert.c"; sourceTree = "<group>"; };
+		4CA5988615A244D1000C4DAD /* wi-assert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-assert.h"; sourceTree = "<group>"; };
+		4CA5988715A244D1000C4DAD /* wi-base.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-base.c"; sourceTree = "<group>"; };
+		4CA5988815A244D1000C4DAD /* wi-base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-base.h"; sourceTree = "<group>"; };
+		4CA5988915A244D1000C4DAD /* wi-byteorder.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-byteorder.c"; sourceTree = "<group>"; };
+		4CA5988A15A244D1000C4DAD /* wi-byteorder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-byteorder.h"; sourceTree = "<group>"; };
+		4CA5988B15A244D1000C4DAD /* wi-macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-macros.h"; sourceTree = "<group>"; };
+		4CA5988C15A244D1000C4DAD /* wi-private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-private.h"; sourceTree = "<group>"; };
+		4CA5988D15A244D1000C4DAD /* wi-runtime.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-runtime.c"; sourceTree = "<group>"; };
+		4CA5988E15A244D1000C4DAD /* wi-runtime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-runtime.h"; sourceTree = "<group>"; };
+		4CA5988F15A244D1000C4DAD /* wi-version.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-version.c"; sourceTree = "<group>"; };
+		4CA5989015A244D1000C4DAD /* wi-version.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-version.h"; sourceTree = "<group>"; };
+		4CA5989215A244D1000C4DAD /* wi-array.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-array.c"; sourceTree = "<group>"; };
+		4CA5989315A244D1000C4DAD /* wi-array.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-array.h"; sourceTree = "<group>"; };
+		4CA5989415A244D1000C4DAD /* wi-dictionary.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-dictionary.c"; sourceTree = "<group>"; };
+		4CA5989515A244D1000C4DAD /* wi-dictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-dictionary.h"; sourceTree = "<group>"; };
+		4CA5989615A244D1000C4DAD /* wi-enumerator.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-enumerator.c"; sourceTree = "<group>"; };
+		4CA5989715A244D1000C4DAD /* wi-enumerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-enumerator.h"; sourceTree = "<group>"; };
+		4CA5989815A244D1000C4DAD /* wi-set.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-set.c"; sourceTree = "<group>"; };
+		4CA5989915A244D1000C4DAD /* wi-set.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-set.h"; sourceTree = "<group>"; };
+		4CA5989B15A244D1000C4DAD /* wi-cipher.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-cipher.c"; sourceTree = "<group>"; };
+		4CA5989C15A244D1000C4DAD /* wi-cipher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-cipher.h"; sourceTree = "<group>"; };
+		4CA5989D15A244D1000C4DAD /* wi-digest.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-digest.c"; sourceTree = "<group>"; };
+		4CA5989E15A244D1000C4DAD /* wi-digest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-digest.h"; sourceTree = "<group>"; };
+		4CA5989F15A244D1000C4DAD /* wi-rsa.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-rsa.c"; sourceTree = "<group>"; };
+		4CA598A015A244D1000C4DAD /* wi-rsa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-rsa.h"; sourceTree = "<group>"; };
+		4CA598A115A244D1000C4DAD /* wi-x509.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-x509.c"; sourceTree = "<group>"; };
+		4CA598A215A244D1000C4DAD /* wi-x509.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-x509.h"; sourceTree = "<group>"; };
+		4CA598A415A244D1000C4DAD /* wi-data.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-data.c"; sourceTree = "<group>"; };
+		4CA598A515A244D1000C4DAD /* wi-data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-data.h"; sourceTree = "<group>"; };
+		4CA598A615A244D1000C4DAD /* wi-date.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-date.c"; sourceTree = "<group>"; };
+		4CA598A715A244D1000C4DAD /* wi-date.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-date.h"; sourceTree = "<group>"; };
+		4CA598A815A244D1000C4DAD /* wi-null.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-null.c"; sourceTree = "<group>"; };
+		4CA598A915A244D1000C4DAD /* wi-null.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-null.h"; sourceTree = "<group>"; };
+		4CA598AA15A244D1000C4DAD /* wi-number.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-number.c"; sourceTree = "<group>"; };
+		4CA598AB15A244D1000C4DAD /* wi-number.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-number.h"; sourceTree = "<group>"; };
+		4CA598AC15A244D1000C4DAD /* wi-plist.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-plist.c"; sourceTree = "<group>"; };
+		4CA598AD15A244D1000C4DAD /* wi-plist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-plist.h"; sourceTree = "<group>"; };
+		4CA598AE15A244D1000C4DAD /* wi-string.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-string.c"; sourceTree = "<group>"; };
+		4CA598AF15A244D1000C4DAD /* wi-string.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-string.h"; sourceTree = "<group>"; };
+		4CA598B015A244D1000C4DAD /* wi-url.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-url.c"; sourceTree = "<group>"; };
+		4CA598B115A244D1000C4DAD /* wi-url.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-url.h"; sourceTree = "<group>"; };
+		4CA598B215A244D1000C4DAD /* wi-uuid.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-uuid.c"; sourceTree = "<group>"; };
+		4CA598B315A244D1000C4DAD /* wi-uuid.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-uuid.h"; sourceTree = "<group>"; };
+		4CA598B515A244D1000C4DAD /* wi-file.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-file.c"; sourceTree = "<group>"; };
+		4CA598B615A244D1000C4DAD /* wi-file.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-file.h"; sourceTree = "<group>"; };
+		4CA598B715A244D1000C4DAD /* wi-fs.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-fs.c"; sourceTree = "<group>"; };
+		4CA598B815A244D1000C4DAD /* wi-fs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-fs.h"; sourceTree = "<group>"; };
+		4CA598B915A244D1000C4DAD /* wi-fsenumerator.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-fsenumerator.c"; sourceTree = "<group>"; };
+		4CA598BA15A244D1000C4DAD /* wi-fsenumerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-fsenumerator.h"; sourceTree = "<group>"; };
+		4CA598BB15A244D1000C4DAD /* wi-fsevents.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-fsevents.c"; sourceTree = "<group>"; };
+		4CA598BC15A244D1000C4DAD /* wi-fsevents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-fsevents.h"; sourceTree = "<group>"; };
+		4CA598BD15A244D1000C4DAD /* wi-fts.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-fts.c"; sourceTree = "<group>"; };
+		4CA598BE15A244D1000C4DAD /* wi-fts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-fts.h"; sourceTree = "<group>"; };
+		4CA598C015A244D1000C4DAD /* wi-config.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-config.c"; sourceTree = "<group>"; };
+		4CA598C115A244D1000C4DAD /* wi-config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-config.h"; sourceTree = "<group>"; };
+		4CA598C215A244D1000C4DAD /* wi-error.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-error.c"; sourceTree = "<group>"; };
+		4CA598C315A244D1000C4DAD /* wi-error.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-error.h"; sourceTree = "<group>"; };
+		4CA598C415A244D1000C4DAD /* wi-pool.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-pool.c"; sourceTree = "<group>"; };
+		4CA598C515A244D1000C4DAD /* wi-pool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-pool.h"; sourceTree = "<group>"; };
+		4CA598C615A244D1000C4DAD /* wi-random.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-random.c"; sourceTree = "<group>"; };
+		4CA598C715A244D1000C4DAD /* wi-random.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-random.h"; sourceTree = "<group>"; };
+		4CA598C815A244D1000C4DAD /* wi-regexp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-regexp.c"; sourceTree = "<group>"; };
+		4CA598C915A244D1000C4DAD /* wi-regexp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-regexp.h"; sourceTree = "<group>"; };
+		4CA598CA15A244D1000C4DAD /* wi-settings.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-settings.c"; sourceTree = "<group>"; };
+		4CA598CB15A244D1000C4DAD /* wi-settings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-settings.h"; sourceTree = "<group>"; };
+		4CA598CC15A244D1000C4DAD /* wi-test.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-test.c"; sourceTree = "<group>"; };
+		4CA598CD15A244D1000C4DAD /* wi-test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-test.h"; sourceTree = "<group>"; };
+		4CA598CF15A244D1000C4DAD /* wi-address.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-address.c"; sourceTree = "<group>"; };
+		4CA598D015A244D1000C4DAD /* wi-address.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-address.h"; sourceTree = "<group>"; };
+		4CA598D115A244D1000C4DAD /* wi-host.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-host.c"; sourceTree = "<group>"; };
+		4CA598D215A244D1000C4DAD /* wi-host.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-host.h"; sourceTree = "<group>"; };
+		4CA598D315A244D1000C4DAD /* wi-ip.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-ip.c"; sourceTree = "<group>"; };
+		4CA598D415A244D1000C4DAD /* wi-ip.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-ip.h"; sourceTree = "<group>"; };
+		4CA598D515A244D1000C4DAD /* wi-socket.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-socket.c"; sourceTree = "<group>"; };
+		4CA598D615A244D1000C4DAD /* wi-socket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-socket.h"; sourceTree = "<group>"; };
+		4CA598D715A244D1000C4DAD /* wi-speed-calculator.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-speed-calculator.c"; sourceTree = "<group>"; };
+		4CA598D815A244D1000C4DAD /* wi-speed-calculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-speed-calculator.h"; sourceTree = "<group>"; };
+		4CA598D915A244D1000C4DAD /* wi-wired.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-wired.c"; sourceTree = "<group>"; };
+		4CA598DA15A244D1000C4DAD /* wi-wired.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-wired.h"; sourceTree = "<group>"; };
+		4CA598DC15A244D1000C4DAD /* wi-p7-message.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-p7-message.c"; sourceTree = "<group>"; };
+		4CA598DD15A244D1000C4DAD /* wi-p7-message.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-p7-message.h"; sourceTree = "<group>"; };
+		4CA598DE15A244D1000C4DAD /* wi-p7-private.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-p7-private.c"; sourceTree = "<group>"; };
+		4CA598DF15A244D1000C4DAD /* wi-p7-private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-p7-private.h"; sourceTree = "<group>"; };
+		4CA598E015A244D1000C4DAD /* wi-p7-socket.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-p7-socket.c"; sourceTree = "<group>"; };
+		4CA598E115A244D1000C4DAD /* wi-p7-socket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-p7-socket.h"; sourceTree = "<group>"; };
+		4CA598E215A244D1000C4DAD /* wi-p7-spec.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-p7-spec.c"; sourceTree = "<group>"; };
+		4CA598E315A244D1000C4DAD /* wi-p7-spec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-p7-spec.h"; sourceTree = "<group>"; };
+		4CA598E515A244D1000C4DAD /* wi-compat.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-compat.c"; sourceTree = "<group>"; };
+		4CA598E615A244D1000C4DAD /* wi-compat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-compat.h"; sourceTree = "<group>"; };
+		4CA598E715A244D1000C4DAD /* wi-log.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-log.c"; sourceTree = "<group>"; };
+		4CA598E815A244D1000C4DAD /* wi-log.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-log.h"; sourceTree = "<group>"; };
+		4CA598E915A244D1000C4DAD /* wi-process.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-process.c"; sourceTree = "<group>"; };
+		4CA598EA15A244D1000C4DAD /* wi-process.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-process.h"; sourceTree = "<group>"; };
+		4CA598EB15A244D1000C4DAD /* wi-system.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-system.c"; sourceTree = "<group>"; };
+		4CA598EC15A244D1000C4DAD /* wi-system.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-system.h"; sourceTree = "<group>"; };
+		4CA598ED15A244D1000C4DAD /* wi-task.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-task.c"; sourceTree = "<group>"; };
+		4CA598EE15A244D1000C4DAD /* wi-task.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-task.h"; sourceTree = "<group>"; };
+		4CA598EF15A244D1000C4DAD /* wi-terminal.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-terminal.c"; sourceTree = "<group>"; };
+		4CA598F015A244D1000C4DAD /* wi-terminal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-terminal.h"; sourceTree = "<group>"; };
+		4CA598F215A244D1000C4DAD /* wi-libxml2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-libxml2.c"; sourceTree = "<group>"; };
+		4CA598F315A244D1000C4DAD /* wi-libxml2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-libxml2.h"; sourceTree = "<group>"; };
+		4CA598F415A244D1000C4DAD /* wi-sqlite3.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-sqlite3.c"; sourceTree = "<group>"; };
+		4CA598F515A244D1000C4DAD /* wi-sqlite3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-sqlite3.h"; sourceTree = "<group>"; };
+		4CA598F715A244D1000C4DAD /* wi-lock.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-lock.c"; sourceTree = "<group>"; };
+		4CA598F815A244D1000C4DAD /* wi-lock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-lock.h"; sourceTree = "<group>"; };
+		4CA598F915A244D1000C4DAD /* wi-thread.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-thread.c"; sourceTree = "<group>"; };
+		4CA598FA15A244D1000C4DAD /* wi-thread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-thread.h"; sourceTree = "<group>"; };
+		4CA598FB15A244D1000C4DAD /* wi-timer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-timer.c"; sourceTree = "<group>"; };
+		4CA598FC15A244D1000C4DAD /* wi-timer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-timer.h"; sourceTree = "<group>"; };
+		4CA598FD15A244D1000C4DAD /* wired.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wired.h; sourceTree = "<group>"; };
+		4CD34ED81571ACED0054E305 /* Files.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Files.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C233C861521022800245506 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C233CAF1521122200245506 /* WebKit.framework in Frameworks */,
+				4C233C8B1521022800245506 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C8D3351151E2D8D001A6BF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C8D3416151E9AC0001A6BF7 /* libsqlite3.dylib in Frameworks */,
+				4C8D33EF151E9943001A6BF7 /* WebKit.framework in Frameworks */,
+				4C8D33ED151E991D001A6BF7 /* Quartz.framework in Frameworks */,
+				4C8D3359151E2D8D001A6BF7 /* Cocoa.framework in Frameworks */,
+				4C49A22E152F780C0003B17D /* Sparkle.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C233C8C1521022800245506 /* Wired Server Helper */ = {
+			isa = PBXGroup;
+			children = (
+				4C233C981521022800245506 /* WHAppDelegate.h */,
+				4C233C991521022800245506 /* WHAppDelegate.m */,
+				4C233CA31521063A00245506 /* WHStatusController.h */,
+				4C233CA41521063A00245506 /* WHStatusController.m */,
+				4C233C9B1521022900245506 /* MainMenu.xib */,
+				4C233C8D1521022800245506 /* Supporting Files */,
+			);
+			path = "Wired Server Helper";
+			sourceTree = "<group>";
+		};
+		4C233C8D1521022800245506 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C233CA1152103FE00245506 /* WiredServerMenu.png */,
+				4C233CBD152124B600245506 /* WiredServerMenuOff.png */,
+				4C233C8E1521022800245506 /* Wired Server Helper-Info.plist */,
+				4C233C8F1521022800245506 /* InfoPlist.strings */,
+				4C233C921521022800245506 /* main.m */,
+				4C233C941521022800245506 /* Wired Server Helper-Prefix.pch */,
+				4C233C951521022800245506 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4C8D3349151E2D8C001A6BF7 = {
+			isa = PBXGroup;
+			children = (
+				4C8D335E151E2D8D001A6BF7 /* Wired Server */,
+				4C233C8C1521022800245506 /* Wired Server Helper */,
+				4CA5985F15A24460000C4DAD /* wired */,
+				4CA5988315A244D1000C4DAD /* libwired */,
+				4C8D3375151E2D93001A6BF7 /* Subprojects */,
+				4C8D3357151E2D8D001A6BF7 /* Frameworks */,
+				4C8D3355151E2D8D001A6BF7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4C8D3355151E2D8D001A6BF7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C8D3354151E2D8D001A6BF7 /* Wired Server.app */,
+				4C233C891521022800245506 /* Wired Server Helper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C8D3357151E2D8D001A6BF7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C8D3415151E9AC0001A6BF7 /* libsqlite3.dylib */,
+				4C8D3412151E9A9B001A6BF7 /* Sparkle.framework */,
+				4C8D33EE151E9943001A6BF7 /* WebKit.framework */,
+				4C8D33EC151E991D001A6BF7 /* Quartz.framework */,
+				4C8D3358151E2D8D001A6BF7 /* Cocoa.framework */,
+				4C8D335A151E2D8D001A6BF7 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C8D335A151E2D8D001A6BF7 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C8D335B151E2D8D001A6BF7 /* AppKit.framework */,
+				4C8D335C151E2D8D001A6BF7 /* CoreData.framework */,
+				4C8D335D151E2D8D001A6BF7 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		4C8D335E151E2D8D001A6BF7 /* Wired Server */ = {
+			isa = PBXGroup;
+			children = (
+				4C8D33F1151E99FB001A6BF7 /* Classes */,
+				4C8D33F2151E9A02001A6BF7 /* Nibs */,
+				4C8D3422151E9B47001A6BF7 /* Resources */,
+				4C8D335F151E2D8D001A6BF7 /* Supporting Files */,
+			);
+			path = "Wired Server";
+			sourceTree = "<group>";
+		};
+		4C8D335F151E2D8D001A6BF7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C5EDCC6154366740031D44E /* man */,
+				4C8D33F0151E99E6001A6BF7 /* Pictures */,
+				4C8D3421151E9B32001A6BF7 /* Scripts */,
+				4C8D341F151E9B1B001A6BF7 /* Wired */,
+				4C8D3418151E9B0B001A6BF7 /* SUPublicDSAKeyFile.pem */,
+				4C8D3361151E2D8D001A6BF7 /* InfoPlist.strings */,
+				4C8D3360151E2D8D001A6BF7 /* WiredServer-Info.plist */,
+				4C8D3367151E2D8D001A6BF7 /* Credits.rtf */,
+				4C233CFC15228BB800245506 /* wiredserverrnote.html */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4C8D3375151E2D93001A6BF7 /* Subprojects */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Subprojects;
+			sourceTree = "<group>";
+		};
+		4C8D33F0151E99E6001A6BF7 /* Pictures */ = {
+			isa = PBXGroup;
+			children = (
+				4CD34ED81571ACED0054E305 /* Files.png */,
+				4C4A2966151F894F0084E041 /* GrayDrop.tiff */,
+				4C4A2967151F894F0084E041 /* GreenDrop.tiff */,
+				4C4A2968151F894F0084E041 /* RedDrop.tiff */,
+				4C4A2958151F880C0084E041 /* Console.icns */,
+				4C8D34DF151F84E3001A6BF7 /* Updates.tiff */,
+				4C8D33DB151E96E4001A6BF7 /* WiredServer.icns */,
+			);
+			name = Pictures;
+			sourceTree = "<group>";
+		};
+		4C8D33F1151E99FB001A6BF7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4C8D336A151E2D8D001A6BF7 /* WSAppDelegate.h */,
+				4C8D336B151E2D8D001A6BF7 /* WSAppDelegate.m */,
+				4C8D34B5151F81C2001A6BF7 /* WSSettingsController.h */,
+				4C8D34B6151F81C3001A6BF7 /* WSSettingsController.m */,
+				4C8D3471151F58D7001A6BF7 /* WPAccountManager.h */,
+				4C8D3472151F58D7001A6BF7 /* WPAccountManager.m */,
+				4C8D3473151F58D7001A6BF7 /* WPConfigManager.h */,
+				4C8D3474151F58D7001A6BF7 /* WPConfigManager.m */,
+				4C8D3475151F58D7001A6BF7 /* WPDatabaseManager.h */,
+				4C8D3476151F58D7001A6BF7 /* WPDatabaseManager.m */,
+				4C8D3479151F58D7001A6BF7 /* WPExportManager.h */,
+				4C8D347A151F58D7001A6BF7 /* WPExportManager.m */,
+				4C8D347B151F58D7001A6BF7 /* WPLogManager.h */,
+				4C8D347C151F58D7001A6BF7 /* WPLogManager.m */,
+				4C8D347D151F58D7001A6BF7 /* WPPortChecker.h */,
+				4C8D347E151F58D7001A6BF7 /* WPPortChecker.m */,
+				4C8D347F151F58D7001A6BF7 /* WPSettings.h */,
+				4C8D3480151F58D7001A6BF7 /* WPSettings.m */,
+				4C8D3481151F58D7001A6BF7 /* WPWiredManager.h */,
+				4C8D3482151F58D7001A6BF7 /* WPWiredManager.m */,
+				4C8D3477151F58D7001A6BF7 /* WPError.h */,
+				4C8D3478151F58D7001A6BF7 /* WPError.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		4C8D33F2151E9A02001A6BF7 /* Nibs */ = {
+			isa = PBXGroup;
+			children = (
+				4C8D336D151E2D8D001A6BF7 /* MainMenu.xib */,
+				4C8D34D8151F82F8001A6BF7 /* Settings.xib */,
+			);
+			name = Nibs;
+			sourceTree = "<group>";
+		};
+		4C8D3421151E9B32001A6BF7 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				4C8CB801159A6D37008C7EB9 /* wired.sh */,
+				4C8D3417151E9B0B001A6BF7 /* install.sh */,
+				4C8D3419151E9B0B001A6BF7 /* uninstall.sh */,
+				4C8D341A151E9B0B001A6BF7 /* update.sh */,
+			);
+			name = Scripts;
+			sourceTree = "<group>";
+		};
+		4C8D3422151E9B47001A6BF7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4C8D3364151E2D8D001A6BF7 /* main.m */,
+				4C8D3366151E2D8D001A6BF7 /* Wired Server-Prefix.pch */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4CA5985F15A24460000C4DAD /* wired */ = {
+			isa = PBXGroup;
+			children = (
+				4CA5986015A2449F000C4DAD /* accounts.c */,
+				4CA5986115A2449F000C4DAD /* accounts.h */,
+				4CA5986215A2449F000C4DAD /* banlist.c */,
+				4CA5986315A2449F000C4DAD /* banlist.h */,
+				4CA5986415A2449F000C4DAD /* boards.c */,
+				4CA5986515A2449F000C4DAD /* boards.h */,
+				4CA5986615A2449F000C4DAD /* chats.c */,
+				4CA5986715A2449F000C4DAD /* chats.h */,
+				4CA5986815A2449F000C4DAD /* events.c */,
+				4CA5986915A2449F000C4DAD /* events.h */,
+				4CA5986A15A2449F000C4DAD /* files.c */,
+				4CA5986B15A2449F000C4DAD /* files.h */,
+				4CA5986C15A2449F000C4DAD /* index.c */,
+				4CA5986D15A2449F000C4DAD /* index.h */,
+				4CA5986E15A2449F000C4DAD /* main.c */,
+				4CA5986F15A2449F000C4DAD /* main.h */,
+				4CA5987015A2449F000C4DAD /* messages.c */,
+				4CA5987115A2449F000C4DAD /* messages.h */,
+				4CA5987215A2449F000C4DAD /* portmap.c */,
+				4CA5987315A2449F000C4DAD /* portmap.h */,
+				4CA5987415A2449F000C4DAD /* server.c */,
+				4CA5987515A2449F000C4DAD /* server.h */,
+				4CA5987615A2449F000C4DAD /* servers.c */,
+				4CA5987715A2449F000C4DAD /* servers.h */,
+				4CA5987815A2449F000C4DAD /* settings.c */,
+				4CA5987915A2449F000C4DAD /* settings.h */,
+				4CA5987A15A2449F000C4DAD /* trackers.c */,
+				4CA5987B15A2449F000C4DAD /* trackers.h */,
+				4CA5987C15A2449F000C4DAD /* transfers.c */,
+				4CA5987D15A2449F000C4DAD /* transfers.h */,
+				4CA5987E15A2449F000C4DAD /* users.c */,
+				4CA5987F15A2449F000C4DAD /* users.h */,
+				4CA5988015A2449F000C4DAD /* wired.conf.in */,
+				4CA5988115A2449F000C4DAD /* wiredctl.in */,
+			);
+			name = wired;
+			path = "Wired Server Helper";
+			sourceTree = "<group>";
+		};
+		4CA5988315A244D1000C4DAD /* libwired */ = {
+			isa = PBXGroup;
+			children = (
+				4CA5988415A244D1000C4DAD /* base */,
+				4CA5989115A244D1000C4DAD /* collections */,
+				4CA5989A15A244D1000C4DAD /* crypto */,
+				4CA598A315A244D1000C4DAD /* data */,
+				4CA598B415A244D1000C4DAD /* file */,
+				4CA598BF15A244D1000C4DAD /* misc */,
+				4CA598CE15A244D1000C4DAD /* net */,
+				4CA598DB15A244D1000C4DAD /* p7 */,
+				4CA598E415A244D1000C4DAD /* system */,
+				4CA598F115A244D1000C4DAD /* thirdparty */,
+				4CA598F615A244D1000C4DAD /* thread */,
+				4CA598FD15A244D1000C4DAD /* wired.h */,
+			);
+			name = libwired;
+			path = ../libwired/libwired;
+			sourceTree = "<group>";
+		};
+		4CA5988415A244D1000C4DAD /* base */ = {
+			isa = PBXGroup;
+			children = (
+				4CA5988515A244D1000C4DAD /* wi-assert.c */,
+				4CA5988615A244D1000C4DAD /* wi-assert.h */,
+				4CA5988715A244D1000C4DAD /* wi-base.c */,
+				4CA5988815A244D1000C4DAD /* wi-base.h */,
+				4CA5988915A244D1000C4DAD /* wi-byteorder.c */,
+				4CA5988A15A244D1000C4DAD /* wi-byteorder.h */,
+				4CA5988B15A244D1000C4DAD /* wi-macros.h */,
+				4CA5988C15A244D1000C4DAD /* wi-private.h */,
+				4CA5988D15A244D1000C4DAD /* wi-runtime.c */,
+				4CA5988E15A244D1000C4DAD /* wi-runtime.h */,
+				4CA5988F15A244D1000C4DAD /* wi-version.c */,
+				4CA5989015A244D1000C4DAD /* wi-version.h */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		4CA5989115A244D1000C4DAD /* collections */ = {
+			isa = PBXGroup;
+			children = (
+				4CA5989215A244D1000C4DAD /* wi-array.c */,
+				4CA5989315A244D1000C4DAD /* wi-array.h */,
+				4CA5989415A244D1000C4DAD /* wi-dictionary.c */,
+				4CA5989515A244D1000C4DAD /* wi-dictionary.h */,
+				4CA5989615A244D1000C4DAD /* wi-enumerator.c */,
+				4CA5989715A244D1000C4DAD /* wi-enumerator.h */,
+				4CA5989815A244D1000C4DAD /* wi-set.c */,
+				4CA5989915A244D1000C4DAD /* wi-set.h */,
+			);
+			path = collections;
+			sourceTree = "<group>";
+		};
+		4CA5989A15A244D1000C4DAD /* crypto */ = {
+			isa = PBXGroup;
+			children = (
+				4CA5989B15A244D1000C4DAD /* wi-cipher.c */,
+				4CA5989C15A244D1000C4DAD /* wi-cipher.h */,
+				4CA5989D15A244D1000C4DAD /* wi-digest.c */,
+				4CA5989E15A244D1000C4DAD /* wi-digest.h */,
+				4CA5989F15A244D1000C4DAD /* wi-rsa.c */,
+				4CA598A015A244D1000C4DAD /* wi-rsa.h */,
+				4CA598A115A244D1000C4DAD /* wi-x509.c */,
+				4CA598A215A244D1000C4DAD /* wi-x509.h */,
+			);
+			path = crypto;
+			sourceTree = "<group>";
+		};
+		4CA598A315A244D1000C4DAD /* data */ = {
+			isa = PBXGroup;
+			children = (
+				4CA598A415A244D1000C4DAD /* wi-data.c */,
+				4CA598A515A244D1000C4DAD /* wi-data.h */,
+				4CA598A615A244D1000C4DAD /* wi-date.c */,
+				4CA598A715A244D1000C4DAD /* wi-date.h */,
+				4CA598A815A244D1000C4DAD /* wi-null.c */,
+				4CA598A915A244D1000C4DAD /* wi-null.h */,
+				4CA598AA15A244D1000C4DAD /* wi-number.c */,
+				4CA598AB15A244D1000C4DAD /* wi-number.h */,
+				4CA598AC15A244D1000C4DAD /* wi-plist.c */,
+				4CA598AD15A244D1000C4DAD /* wi-plist.h */,
+				4CA598AE15A244D1000C4DAD /* wi-string.c */,
+				4CA598AF15A244D1000C4DAD /* wi-string.h */,
+				4CA598B015A244D1000C4DAD /* wi-url.c */,
+				4CA598B115A244D1000C4DAD /* wi-url.h */,
+				4CA598B215A244D1000C4DAD /* wi-uuid.c */,
+				4CA598B315A244D1000C4DAD /* wi-uuid.h */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		4CA598B415A244D1000C4DAD /* file */ = {
+			isa = PBXGroup;
+			children = (
+				4CA598B515A244D1000C4DAD /* wi-file.c */,
+				4CA598B615A244D1000C4DAD /* wi-file.h */,
+				4CA598B715A244D1000C4DAD /* wi-fs.c */,
+				4CA598B815A244D1000C4DAD /* wi-fs.h */,
+				4CA598B915A244D1000C4DAD /* wi-fsenumerator.c */,
+				4CA598BA15A244D1000C4DAD /* wi-fsenumerator.h */,
+				4CA598BB15A244D1000C4DAD /* wi-fsevents.c */,
+				4CA598BC15A244D1000C4DAD /* wi-fsevents.h */,
+				4CA598BD15A244D1000C4DAD /* wi-fts.c */,
+				4CA598BE15A244D1000C4DAD /* wi-fts.h */,
+			);
+			path = file;
+			sourceTree = "<group>";
+		};
+		4CA598BF15A244D1000C4DAD /* misc */ = {
+			isa = PBXGroup;
+			children = (
+				4CA598C015A244D1000C4DAD /* wi-config.c */,
+				4CA598C115A244D1000C4DAD /* wi-config.h */,
+				4CA598C215A244D1000C4DAD /* wi-error.c */,
+				4CA598C315A244D1000C4DAD /* wi-error.h */,
+				4CA598C415A244D1000C4DAD /* wi-pool.c */,
+				4CA598C515A244D1000C4DAD /* wi-pool.h */,
+				4CA598C615A244D1000C4DAD /* wi-random.c */,
+				4CA598C715A244D1000C4DAD /* wi-random.h */,
+				4CA598C815A244D1000C4DAD /* wi-regexp.c */,
+				4CA598C915A244D1000C4DAD /* wi-regexp.h */,
+				4CA598CA15A244D1000C4DAD /* wi-settings.c */,
+				4CA598CB15A244D1000C4DAD /* wi-settings.h */,
+				4CA598CC15A244D1000C4DAD /* wi-test.c */,
+				4CA598CD15A244D1000C4DAD /* wi-test.h */,
+			);
+			path = misc;
+			sourceTree = "<group>";
+		};
+		4CA598CE15A244D1000C4DAD /* net */ = {
+			isa = PBXGroup;
+			children = (
+				4CA598CF15A244D1000C4DAD /* wi-address.c */,
+				4CA598D015A244D1000C4DAD /* wi-address.h */,
+				4CA598D115A244D1000C4DAD /* wi-host.c */,
+				4CA598D215A244D1000C4DAD /* wi-host.h */,
+				4CA598D315A244D1000C4DAD /* wi-ip.c */,
+				4CA598D415A244D1000C4DAD /* wi-ip.h */,
+				4CA598D515A244D1000C4DAD /* wi-socket.c */,
+				4CA598D615A244D1000C4DAD /* wi-socket.h */,
+				4CA598D715A244D1000C4DAD /* wi-speed-calculator.c */,
+				4CA598D815A244D1000C4DAD /* wi-speed-calculator.h */,
+				4CA598D915A244D1000C4DAD /* wi-wired.c */,
+				4CA598DA15A244D1000C4DAD /* wi-wired.h */,
+			);
+			path = net;
+			sourceTree = "<group>";
+		};
+		4CA598DB15A244D1000C4DAD /* p7 */ = {
+			isa = PBXGroup;
+			children = (
+				4CA598DC15A244D1000C4DAD /* wi-p7-message.c */,
+				4CA598DD15A244D1000C4DAD /* wi-p7-message.h */,
+				4CA598DE15A244D1000C4DAD /* wi-p7-private.c */,
+				4CA598DF15A244D1000C4DAD /* wi-p7-private.h */,
+				4CA598E015A244D1000C4DAD /* wi-p7-socket.c */,
+				4CA598E115A244D1000C4DAD /* wi-p7-socket.h */,
+				4CA598E215A244D1000C4DAD /* wi-p7-spec.c */,
+				4CA598E315A244D1000C4DAD /* wi-p7-spec.h */,
+			);
+			path = p7;
+			sourceTree = "<group>";
+		};
+		4CA598E415A244D1000C4DAD /* system */ = {
+			isa = PBXGroup;
+			children = (
+				4CA598E515A244D1000C4DAD /* wi-compat.c */,
+				4CA598E615A244D1000C4DAD /* wi-compat.h */,
+				4CA598E715A244D1000C4DAD /* wi-log.c */,
+				4CA598E815A244D1000C4DAD /* wi-log.h */,
+				4CA598E915A244D1000C4DAD /* wi-process.c */,
+				4CA598EA15A244D1000C4DAD /* wi-process.h */,
+				4CA598EB15A244D1000C4DAD /* wi-system.c */,
+				4CA598EC15A244D1000C4DAD /* wi-system.h */,
+				4CA598ED15A244D1000C4DAD /* wi-task.c */,
+				4CA598EE15A244D1000C4DAD /* wi-task.h */,
+				4CA598EF15A244D1000C4DAD /* wi-terminal.c */,
+				4CA598F015A244D1000C4DAD /* wi-terminal.h */,
+			);
+			path = system;
+			sourceTree = "<group>";
+		};
+		4CA598F115A244D1000C4DAD /* thirdparty */ = {
+			isa = PBXGroup;
+			children = (
+				4CA598F215A244D1000C4DAD /* wi-libxml2.c */,
+				4CA598F315A244D1000C4DAD /* wi-libxml2.h */,
+				4CA598F415A244D1000C4DAD /* wi-sqlite3.c */,
+				4CA598F515A244D1000C4DAD /* wi-sqlite3.h */,
+			);
+			path = thirdparty;
+			sourceTree = "<group>";
+		};
+		4CA598F615A244D1000C4DAD /* thread */ = {
+			isa = PBXGroup;
+			children = (
+				4CA598F715A244D1000C4DAD /* wi-lock.c */,
+				4CA598F815A244D1000C4DAD /* wi-lock.h */,
+				4CA598F915A244D1000C4DAD /* wi-thread.c */,
+				4CA598FA15A244D1000C4DAD /* wi-thread.h */,
+				4CA598FB15A244D1000C4DAD /* wi-timer.c */,
+				4CA598FC15A244D1000C4DAD /* wi-timer.h */,
+			);
+			path = thread;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C233C881521022800245506 /* Wired Server Helper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C233C9E1521022900245506 /* Build configuration list for PBXNativeTarget "Wired Server Helper" */;
+			buildPhases = (
+				4C233C851521022800245506 /* Sources */,
+				4C233C861521022800245506 /* Frameworks */,
+				4C233C871521022800245506 /* Resources */,
+				4C233CAC152111CF00245506 /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Wired Server Helper";
+			productName = "Wired Server Helper";
+			productReference = 4C233C891521022800245506 /* Wired Server Helper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4C8D3353151E2D8D001A6BF7 /* Wired Server */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C8D3372151E2D8D001A6BF7 /* Build configuration list for PBXNativeTarget "Wired Server" */;
+			buildPhases = (
+				4C8D3350151E2D8D001A6BF7 /* Sources */,
+				4C8D3351151E2D8D001A6BF7 /* Frameworks */,
+				4C8D3352151E2D8D001A6BF7 /* Resources */,
+				4C8D33E8151E98AC001A6BF7 /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C233CBB15211F9C00245506 /* PBXTargetDependency */,
+			);
+			name = "Wired Server";
+			productName = "Wired Server";
+			productReference = 4C8D3354151E2D8D001A6BF7 /* Wired Server.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C8D334B151E2D8C001A6BF7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = OPALE;
+			};
+			buildConfigurationList = 4C8D334E151E2D8C001A6BF7 /* Build configuration list for PBXProject "WiredServer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4C8D3349151E2D8C001A6BF7;
+			productRefGroup = 4C8D3355151E2D8D001A6BF7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C8D3353151E2D8D001A6BF7 /* Wired Server */,
+				4C233C881521022800245506 /* Wired Server Helper */,
+				4CCEEFA8154C991D004AE045 /* Distribute */,
+				4CA5983F15A20E90000C4DAD /* wired */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C233C871521022800245506 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C233C911521022800245506 /* InfoPlist.strings in Resources */,
+				4C233C971521022800245506 /* Credits.rtf in Resources */,
+				4C233C9D1521022900245506 /* MainMenu.xib in Resources */,
+				4C233CA2152103FE00245506 /* WiredServerMenu.png in Resources */,
+				4C233CBF1521251300245506 /* WiredServerMenuOff.png in Resources */,
+				4C233CC21521329E00245506 /* WiredServer.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C8D3352151E2D8D001A6BF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C8D3363151E2D8D001A6BF7 /* InfoPlist.strings in Resources */,
+				4C8D3369151E2D8D001A6BF7 /* Credits.rtf in Resources */,
+				4C8D336F151E2D8D001A6BF7 /* MainMenu.xib in Resources */,
+				4C8D33DC151E96E4001A6BF7 /* WiredServer.icns in Resources */,
+				4C8D341B151E9B0B001A6BF7 /* install.sh in Resources */,
+				4C8D341C151E9B0B001A6BF7 /* SUPublicDSAKeyFile.pem in Resources */,
+				4C8D341D151E9B0B001A6BF7 /* uninstall.sh in Resources */,
+				4C8D341E151E9B0B001A6BF7 /* update.sh in Resources */,
+				4C8D3420151E9B1B001A6BF7 /* Wired in Resources */,
+				4C8D34D9151F82F8001A6BF7 /* Settings.xib in Resources */,
+				4C8D34E0151F84E3001A6BF7 /* Updates.tiff in Resources */,
+				4C4A2959151F880C0084E041 /* Console.icns in Resources */,
+				4C4A2969151F894F0084E041 /* GrayDrop.tiff in Resources */,
+				4C4A296A151F894F0084E041 /* GreenDrop.tiff in Resources */,
+				4C4A296B151F894F0084E041 /* RedDrop.tiff in Resources */,
+				4C233CBC15211FA700245506 /* Wired Server Helper.app in Resources */,
+				4C233CFD15228BB800245506 /* wiredserverrnote.html in Resources */,
+				4C5EDCC7154366750031D44E /* man in Resources */,
+				4CD34ED91571ACED0054E305 /* Files.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4CA5984315A20E95000C4DAD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# build wired\ncd \"Wired Server\"\n./wired.sh || exit 1\n\n";
+		};
+		4CCEEFB8154C994D004AE045 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "sh \"$SRCROOT/../../wired_server_distribute.sh\" || exit 1";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C233C851521022800245506 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C233C931521022800245506 /* main.m in Sources */,
+				4C233C9A1521022800245506 /* WHAppDelegate.m in Sources */,
+				4C233CA51521063A00245506 /* WHStatusController.m in Sources */,
+				4C233CB0152112C700245506 /* WPWiredManager.m in Sources */,
+				4C233CB1152112D700245506 /* WPSettings.m in Sources */,
+				4C233CB2152112E500245506 /* WPError.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C8D3350151E2D8D001A6BF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C8D3365151E2D8D001A6BF7 /* main.m in Sources */,
+				4C8D336C151E2D8D001A6BF7 /* WSAppDelegate.m in Sources */,
+				4C8D3483151F58D7001A6BF7 /* WPAccountManager.m in Sources */,
+				4C8D3484151F58D7001A6BF7 /* WPConfigManager.m in Sources */,
+				4C8D3485151F58D7001A6BF7 /* WPDatabaseManager.m in Sources */,
+				4C8D3486151F58D7001A6BF7 /* WPError.m in Sources */,
+				4C8D3487151F58D7001A6BF7 /* WPExportManager.m in Sources */,
+				4C8D3488151F58D7001A6BF7 /* WPLogManager.m in Sources */,
+				4C8D3489151F58D7001A6BF7 /* WPPortChecker.m in Sources */,
+				4C8D348A151F58D7001A6BF7 /* WPSettings.m in Sources */,
+				4C8D348B151F58D7001A6BF7 /* WPWiredManager.m in Sources */,
+				4C8D34B7151F81C3001A6BF7 /* WSSettingsController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4C233CBB15211F9C00245506 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C233C881521022800245506 /* Wired Server Helper */;
+			targetProxy = 4C233CBA15211F9C00245506 /* PBXContainerItemProxy */;
+		};
+		4CDD88AF15F76CA500283005 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C8D3353151E2D8D001A6BF7 /* Wired Server */;
+			targetProxy = 4CDD88AE15F76CA500283005 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4C233C8F1521022800245506 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C233C901521022800245506 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4C233C951521022800245506 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C233C961521022800245506 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		4C233C9B1521022900245506 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C233C9C1521022900245506 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		4C8D3361151E2D8D001A6BF7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C8D3362151E2D8D001A6BF7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4C8D3367151E2D8D001A6BF7 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C8D3368151E2D8D001A6BF7 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		4C8D336D151E2D8D001A6BF7 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C8D336E151E2D8D001A6BF7 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4C233C9F1521022900245506 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Wired Server Helper/Wired Server Helper-Prefix.pch";
+				INFOPLIST_FILE = "Wired Server Helper/Wired Server Helper-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4C233CA01521022900245506 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Wired Server Helper/Wired Server Helper-Prefix.pch";
+				INFOPLIST_FILE = "Wired Server Helper/Wired Server Helper-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4C8D3370151E2D8D001A6BF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = macosx10.7;
+			};
+			name = Debug;
+		};
+		4C8D3371151E2D8D001A6BF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = macosx10.7;
+			};
+			name = Release;
+		};
+		4C8D3373151E2D8D001A6BF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../Sparkle\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Wired Server/Wired Server-Prefix.pch";
+				INFOPLIST_FILE = "Wired Server/WiredServer-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4C8D3374151E2D8D001A6BF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../Sparkle\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Wired Server/Wired Server-Prefix.pch";
+				INFOPLIST_FILE = "Wired Server/WiredServer-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4CA5984115A20E90000C4DAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "x86_64 i386";
+			};
+			name = Debug;
+		};
+		4CA5984215A20E90000C4DAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "x86_64 i386";
+			};
+			name = Release;
+		};
+		4CCEEFA9154C991D004AE045 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = Distribute;
+			};
+			name = Debug;
+		};
+		4CCEEFAA154C991D004AE045 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = Distribute;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C233C9E1521022900245506 /* Build configuration list for PBXNativeTarget "Wired Server Helper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C233C9F1521022900245506 /* Debug */,
+				4C233CA01521022900245506 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C8D334E151E2D8C001A6BF7 /* Build configuration list for PBXProject "WiredServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C8D3370151E2D8D001A6BF7 /* Debug */,
+				4C8D3371151E2D8D001A6BF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C8D3372151E2D8D001A6BF7 /* Build configuration list for PBXNativeTarget "Wired Server" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C8D3373151E2D8D001A6BF7 /* Debug */,
+				4C8D3374151E2D8D001A6BF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CA5984015A20E90000C4DAD /* Build configuration list for PBXAggregateTarget "wired" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CA5984115A20E90000C4DAD /* Debug */,
+				4CA5984215A20E90000C4DAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CCEEFB6154C991D004AE045 /* Build configuration list for PBXAggregateTarget "Distribute" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CCEEFA9154C991D004AE045 /* Debug */,
+				4CCEEFAA154C991D004AE045 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C8D334B151E2D8C001A6BF7 /* Project object */;
+}
