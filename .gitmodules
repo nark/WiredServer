@@ -1,0 +1,3 @@
+[submodule "WiredFrameworks"]
+	path = WiredFrameworks
+	url = https://github.com/nark/WiredFrameworks.git

@@ -29,8 +29,8 @@ for i in $ARCHS; do
 		# compiler default settings 
 		HOST="$i-apple-darwin$(uname -r)"
 		ARCH_CC="$PLATFORM_DEVELOPER_BIN_DIR/llvm-gcc-4.2 -arch $i"
-		ARCH_CFLAGS="$CFLAGS" 
-		ARCH_CPPFLAGS="$CPPFLAGS -arch $i"
+		ARCH_CFLAGS="$CFLAGS " 
+		ARCH_CPPFLAGS="$CPPFLAGS -arch $i "
 
 		# architecture specific settings (useless, historical)
 		if [ "$i" = "i386" ]; then
@@ -42,8 +42,8 @@ for i in $ARCHS; do
 			MACOSX_DEPLOYMENT_TARGET=10.6
 		fi
 		
-		# OSX compiler settings
-		ARCH_CPPFLAGS="$ARCH_CPPFLAGS -isysroot $SDKROOT -mmacosx-version-min=$MACOSX_DEPLOYMENT_TARGET"
+		# OSX compiler setting
+		ARCH_CPPFLAGS="$ARCH_CPPFLAGS -isysroot $SDKROOT -mmacosx-version-min=$MACOSX_DEPLOYMENT_TARGET -lsqlite3 -L$SDKROOT/usr/lib"
 			
 		# configure wired stand-alone, without libwired 
 		cd "$SRCROOT/../wired"

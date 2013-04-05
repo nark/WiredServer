@@ -49,6 +49,7 @@
 		4C233CBF1521251300245506 /* WiredServerMenuOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C233CBD152124B600245506 /* WiredServerMenuOff.png */; };
 		4C233CC21521329E00245506 /* WiredServer.icns in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D33DB151E96E4001A6BF7 /* WiredServer.icns */; };
 		4C233CFD15228BB800245506 /* wiredserverrnote.html in Resources */ = {isa = PBXBuildFile; fileRef = 4C233CFC15228BB800245506 /* wiredserverrnote.html */; };
+		4C483CEF170B66CC0088F1E5 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C483CEE170B66CC0088F1E5 /* libsqlite3.dylib */; };
 		4C49A22D152F72B60003B17D /* Sparkle.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8D3412151E9A9B001A6BF7 /* Sparkle.framework */; };
 		4C49A22E152F780C0003B17D /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8D3412151E9A9B001A6BF7 /* Sparkle.framework */; };
 		4C4A2959151F880C0084E041 /* Console.icns in Resources */ = {isa = PBXBuildFile; fileRef = 4C4A2958151F880C0084E041 /* Console.icns */; };
@@ -56,6 +57,16 @@
 		4C4A296A151F894F0084E041 /* GreenDrop.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 4C4A2967151F894F0084E041 /* GreenDrop.tiff */; };
 		4C4A296B151F894F0084E041 /* RedDrop.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 4C4A2968151F894F0084E041 /* RedDrop.tiff */; };
 		4C5EDCC7154366750031D44E /* man in Resources */ = {isa = PBXBuildFile; fileRef = 4C5EDCC6154366740031D44E /* man */; };
+		4C789007170B35DE004CE617 /* wired.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FF2170B35BF004CE617 /* wired.a */; };
+		4C789010170B3998004CE617 /* WiredFoundation.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFA170B35BF004CE617 /* WiredFoundation.framework */; };
+		4C789011170B3998004CE617 /* WiredAppKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFE170B35BF004CE617 /* WiredAppKit.framework */; };
+		4C789013170B39CE004CE617 /* WiredFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFA170B35BF004CE617 /* WiredFoundation.framework */; };
+		4C789014170B39CE004CE617 /* WiredAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFE170B35BF004CE617 /* WiredAppKit.framework */; };
+		4C789019170B3E3C004CE617 /* wired.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FF2170B35BF004CE617 /* wired.a */; };
+		4C78901A170B3E3C004CE617 /* WiredAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFE170B35BF004CE617 /* WiredAppKit.framework */; };
+		4C78901B170B3E3C004CE617 /* WiredFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFA170B35BF004CE617 /* WiredFoundation.framework */; };
+		4C78901E170B3E47004CE617 /* WiredFoundation.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFA170B35BF004CE617 /* WiredFoundation.framework */; };
+		4C78901F170B3E47004CE617 /* WiredAppKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFE170B35BF004CE617 /* WiredAppKit.framework */; };
 		4C8D3359151E2D8D001A6BF7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8D3358151E2D8D001A6BF7 /* Cocoa.framework */; };
 		4C8D3363151E2D8D001A6BF7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D3361151E2D8D001A6BF7 /* InfoPlist.strings */; };
 		4C8D3365151E2D8D001A6BF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D3364151E2D8D001A6BF7 /* main.m */; };
@@ -65,7 +76,6 @@
 		4C8D33DC151E96E4001A6BF7 /* WiredServer.icns in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D33DB151E96E4001A6BF7 /* WiredServer.icns */; };
 		4C8D33ED151E991D001A6BF7 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8D33EC151E991D001A6BF7 /* Quartz.framework */; };
 		4C8D33EF151E9943001A6BF7 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8D33EE151E9943001A6BF7 /* WebKit.framework */; };
-		4C8D3416151E9AC0001A6BF7 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8D3415151E9AC0001A6BF7 /* libsqlite3.dylib */; };
 		4C8D341B151E9B0B001A6BF7 /* install.sh in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D3417151E9B0B001A6BF7 /* install.sh */; };
 		4C8D341C151E9B0B001A6BF7 /* SUPublicDSAKeyFile.pem in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D3418151E9B0B001A6BF7 /* SUPublicDSAKeyFile.pem */; };
 		4C8D341D151E9B0B001A6BF7 /* uninstall.sh in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D3419151E9B0B001A6BF7 /* uninstall.sh */; };
@@ -94,6 +104,125 @@
 			remoteGlobalIDString = 4C233C881521022800245506;
 			remoteInfo = "Wired Server Helper";
 		};
+		4C788FED170B35BF004CE617 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C788FDF170B35BE004CE617 /* WiredFrameworks.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CBDABFC147AF52E00D0C51A;
+			remoteInfo = "libwired-ios";
+		};
+		4C788FEF170B35BF004CE617 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C788FDF170B35BE004CE617 /* WiredFrameworks.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CBDADA4147AFC4A00D0C51A;
+			remoteInfo = "libwired-simulator";
+		};
+		4C788FF1170B35BF004CE617 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C788FDF170B35BE004CE617 /* WiredFrameworks.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CBDAD14147AF94F00D0C51A;
+			remoteInfo = "libwired-osx";
+		};
+		4C788FF3170B35BF004CE617 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C788FDF170B35BE004CE617 /* WiredFrameworks.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4C667EC0147B018600AAA5C7;
+			remoteInfo = StaticWiredFoundation;
+		};
+		4C788FF5170B35BF004CE617 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C788FDF170B35BE004CE617 /* WiredFrameworks.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4C667F4E147B02A000AAA5C7;
+			remoteInfo = StaticWiredNetworking;
+		};
+		4C788FF7170B35BF004CE617 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C788FDF170B35BE004CE617 /* WiredFrameworks.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4C61FC4F1487166A008EE92C;
+			remoteInfo = StaticWiredUIKit;
+		};
+		4C788FF9170B35BF004CE617 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C788FDF170B35BE004CE617 /* WiredFrameworks.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4C417209147DC2B300DC0A9A;
+			remoteInfo = WiredFoundation;
+		};
+		4C788FFB170B35BF004CE617 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C788FDF170B35BE004CE617 /* WiredFrameworks.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4C41725C147DC40900DC0A9A;
+			remoteInfo = WiredNetworking;
+		};
+		4C788FFD170B35BF004CE617 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C788FDF170B35BE004CE617 /* WiredFrameworks.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4C417302147EDF1000DC0A9A;
+			remoteInfo = WiredAppKit;
+		};
+		4C788FFF170B35BF004CE617 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C788FDF170B35BE004CE617 /* WiredFrameworks.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CFDCBD01569533C00DA17A6;
+			remoteInfo = "ChatHistory-default";
+		};
+		4C789001170B35D6004CE617 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C788FDF170B35BE004CE617 /* WiredFrameworks.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C417208147DC2B300DC0A9A;
+			remoteInfo = WiredFoundation;
+		};
+		4C789003170B35D6004CE617 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C788FDF170B35BE004CE617 /* WiredFrameworks.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C417301147EDF1000DC0A9A;
+			remoteInfo = WiredAppKit;
+		};
+		4C789005170B35D9004CE617 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C788FDF170B35BE004CE617 /* WiredFrameworks.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4CBDAD13147AF94F00D0C51A;
+			remoteInfo = "libwired-osx";
+		};
+		4C789015170B3E35004CE617 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C788FDF170B35BE004CE617 /* WiredFrameworks.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C417208147DC2B300DC0A9A;
+			remoteInfo = WiredFoundation;
+		};
+		4C789017170B3E35004CE617 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C788FDF170B35BE004CE617 /* WiredFrameworks.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C417301147EDF1000DC0A9A;
+			remoteInfo = WiredAppKit;
+		};
+		4C78901C170B3E3F004CE617 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C788FDF170B35BE004CE617 /* WiredFrameworks.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4CBDAD13147AF94F00D0C51A;
+			remoteInfo = "libwired-osx";
+		};
+		4C789020170B3EA3004CE617 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C8D334B151E2D8C001A6BF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4CA5983F15A20E90000C4DAD;
+			remoteInfo = wired;
+		};
 		4CDD88AE15F76CA500283005 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4C8D334B151E2D8C001A6BF7 /* Project object */;
@@ -110,6 +239,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				4C78901E170B3E47004CE617 /* WiredFoundation.framework in Copy Frameworks */,
+				4C78901F170B3E47004CE617 /* WiredAppKit.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -121,6 +252,8 @@
 			dstSubfolderSpec = 10;
 			files = (
 				4C49A22D152F72B60003B17D /* Sparkle.framework in Copy Frameworks */,
+				4C789010170B3998004CE617 /* WiredFoundation.framework in Copy Frameworks */,
+				4C789011170B3998004CE617 /* WiredAppKit.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,11 +275,13 @@
 		4C233CA41521063A00245506 /* WHStatusController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHStatusController.m; sourceTree = "<group>"; };
 		4C233CBD152124B600245506 /* WiredServerMenuOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WiredServerMenuOff.png; sourceTree = "<group>"; };
 		4C233CFC15228BB800245506 /* wiredserverrnote.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = wiredserverrnote.html; sourceTree = "<group>"; };
+		4C483CEE170B66CC0088F1E5 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		4C4A2958151F880C0084E041 /* Console.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Console.icns; sourceTree = "<group>"; };
 		4C4A2966151F894F0084E041 /* GrayDrop.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = GrayDrop.tiff; sourceTree = "<group>"; };
 		4C4A2967151F894F0084E041 /* GreenDrop.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = GreenDrop.tiff; sourceTree = "<group>"; };
 		4C4A2968151F894F0084E041 /* RedDrop.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = RedDrop.tiff; sourceTree = "<group>"; };
 		4C5EDCC6154366740031D44E /* man */ = {isa = PBXFileReference; lastKnownFileType = folder; name = man; path = ../../wired/man; sourceTree = "<group>"; };
+		4C788FDF170B35BE004CE617 /* WiredFrameworks.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WiredFrameworks.xcodeproj; path = WiredFrameworks/WiredFrameworks.xcodeproj; sourceTree = "<group>"; };
 		4C8CB801159A6D37008C7EB9 /* wired.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = wired.sh; sourceTree = "<group>"; };
 		4C8D3354151E2D8D001A6BF7 /* Wired Server.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wired Server.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C8D3358151E2D8D001A6BF7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -165,7 +300,6 @@
 		4C8D33EC151E991D001A6BF7 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Quartz.framework; sourceTree = DEVELOPER_DIR; };
 		4C8D33EE151E9943001A6BF7 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = SDKs/MacOSX10.6.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
 		4C8D3412151E9A9B001A6BF7 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = ../Sparkle/Sparkle.framework; sourceTree = "<group>"; };
-		4C8D3415151E9AC0001A6BF7 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = SDKs/MacOSX10.6.sdk/usr/lib/libsqlite3.dylib; sourceTree = DEVELOPER_DIR; };
 		4C8D3417151E9B0B001A6BF7 /* install.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = install.sh; sourceTree = "<group>"; };
 		4C8D3418151E9B0B001A6BF7 /* SUPublicDSAKeyFile.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SUPublicDSAKeyFile.pem; sourceTree = "<group>"; };
 		4C8D3419151E9B0B001A6BF7 /* uninstall.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = uninstall.sh; sourceTree = "<group>"; };
@@ -346,6 +480,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C789019170B3E3C004CE617 /* wired.a in Frameworks */,
+				4C78901A170B3E3C004CE617 /* WiredAppKit.framework in Frameworks */,
+				4C78901B170B3E3C004CE617 /* WiredFoundation.framework in Frameworks */,
 				4C233CAF1521122200245506 /* WebKit.framework in Frameworks */,
 				4C233C8B1521022800245506 /* Cocoa.framework in Frameworks */,
 			);
@@ -355,11 +492,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C8D3416151E9AC0001A6BF7 /* libsqlite3.dylib in Frameworks */,
+				4C789013170B39CE004CE617 /* WiredFoundation.framework in Frameworks */,
+				4C789014170B39CE004CE617 /* WiredAppKit.framework in Frameworks */,
+				4C789007170B35DE004CE617 /* wired.a in Frameworks */,
 				4C8D33EF151E9943001A6BF7 /* WebKit.framework in Frameworks */,
 				4C8D33ED151E991D001A6BF7 /* Quartz.framework in Frameworks */,
 				4C8D3359151E2D8D001A6BF7 /* Cocoa.framework in Frameworks */,
 				4C49A22E152F780C0003B17D /* Sparkle.framework in Frameworks */,
+				4C483CEF170B66CC0088F1E5 /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +533,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		4C788FE0170B35BE004CE617 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C788FEE170B35BF004CE617 /* wired.a */,
+				4C788FF0170B35BF004CE617 /* wired.a */,
+				4C788FF2170B35BF004CE617 /* wired.a */,
+				4C788FF4170B35BF004CE617 /* WiredFoundation.a */,
+				4C788FF6170B35BF004CE617 /* WiredNetworking.a */,
+				4C788FF8170B35BF004CE617 /* WiredUIKit.a */,
+				4C788FFA170B35BF004CE617 /* WiredFoundation.framework */,
+				4C788FFC170B35BF004CE617 /* WiredNetworking.framework */,
+				4C788FFE170B35BF004CE617 /* WiredAppKit.framework */,
+				4C789000170B35BF004CE617 /* ChatHistory-default.WiredHistory */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		4C8D3349151E2D8C001A6BF7 = {
 			isa = PBXGroup;
 			children = (
@@ -418,7 +575,7 @@
 		4C8D3357151E2D8D001A6BF7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4C8D3415151E9AC0001A6BF7 /* libsqlite3.dylib */,
+				4C483CEE170B66CC0088F1E5 /* libsqlite3.dylib */,
 				4C8D3412151E9A9B001A6BF7 /* Sparkle.framework */,
 				4C8D33EE151E9943001A6BF7 /* WebKit.framework */,
 				4C8D33EC151E991D001A6BF7 /* Quartz.framework */,
@@ -468,6 +625,7 @@
 		4C8D3375151E2D93001A6BF7 /* Subprojects */ = {
 			isa = PBXGroup;
 			children = (
+				4C788FDF170B35BE004CE617 /* WiredFrameworks.xcodeproj */,
 			);
 			name = Subprojects;
 			sourceTree = "<group>";
@@ -808,6 +966,9 @@
 			buildRules = (
 			);
 			dependencies = (
+				4C78901D170B3E3F004CE617 /* PBXTargetDependency */,
+				4C789016170B3E35004CE617 /* PBXTargetDependency */,
+				4C789018170B3E35004CE617 /* PBXTargetDependency */,
 			);
 			name = "Wired Server Helper";
 			productName = "Wired Server Helper";
@@ -826,6 +987,10 @@
 			buildRules = (
 			);
 			dependencies = (
+				4C789021170B3EA3004CE617 /* PBXTargetDependency */,
+				4C789006170B35D9004CE617 /* PBXTargetDependency */,
+				4C789002170B35D6004CE617 /* PBXTargetDependency */,
+				4C789004170B35D6004CE617 /* PBXTargetDependency */,
 				4C233CBB15211F9C00245506 /* PBXTargetDependency */,
 			);
 			name = "Wired Server";
@@ -852,6 +1017,12 @@
 			mainGroup = 4C8D3349151E2D8C001A6BF7;
 			productRefGroup = 4C8D3355151E2D8D001A6BF7 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4C788FE0170B35BE004CE617 /* Products */;
+					ProjectRef = 4C788FDF170B35BE004CE617 /* WiredFrameworks.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4C8D3353151E2D8D001A6BF7 /* Wired Server */,
@@ -861,6 +1032,79 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		4C788FEE170B35BF004CE617 /* wired.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = wired.a;
+			remoteRef = 4C788FED170B35BF004CE617 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4C788FF0170B35BF004CE617 /* wired.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = wired.a;
+			remoteRef = 4C788FEF170B35BF004CE617 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4C788FF2170B35BF004CE617 /* wired.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = wired.a;
+			remoteRef = 4C788FF1170B35BF004CE617 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4C788FF4170B35BF004CE617 /* WiredFoundation.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = WiredFoundation.a;
+			remoteRef = 4C788FF3170B35BF004CE617 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4C788FF6170B35BF004CE617 /* WiredNetworking.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = WiredNetworking.a;
+			remoteRef = 4C788FF5170B35BF004CE617 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4C788FF8170B35BF004CE617 /* WiredUIKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = WiredUIKit.a;
+			remoteRef = 4C788FF7170B35BF004CE617 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4C788FFA170B35BF004CE617 /* WiredFoundation.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = WiredFoundation.framework;
+			remoteRef = 4C788FF9170B35BF004CE617 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4C788FFC170B35BF004CE617 /* WiredNetworking.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = WiredNetworking.framework;
+			remoteRef = 4C788FFB170B35BF004CE617 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4C788FFE170B35BF004CE617 /* WiredAppKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = WiredAppKit.framework;
+			remoteRef = 4C788FFD170B35BF004CE617 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4C789000170B35BF004CE617 /* ChatHistory-default.WiredHistory */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "ChatHistory-default.WiredHistory";
+			remoteRef = 4C788FFF170B35BF004CE617 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		4C233C871521022800245506 /* Resources */ = {
@@ -973,6 +1217,41 @@
 			isa = PBXTargetDependency;
 			target = 4C233C881521022800245506 /* Wired Server Helper */;
 			targetProxy = 4C233CBA15211F9C00245506 /* PBXContainerItemProxy */;
+		};
+		4C789002170B35D6004CE617 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WiredFoundation;
+			targetProxy = 4C789001170B35D6004CE617 /* PBXContainerItemProxy */;
+		};
+		4C789004170B35D6004CE617 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WiredAppKit;
+			targetProxy = 4C789003170B35D6004CE617 /* PBXContainerItemProxy */;
+		};
+		4C789006170B35D9004CE617 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libwired-osx";
+			targetProxy = 4C789005170B35D9004CE617 /* PBXContainerItemProxy */;
+		};
+		4C789016170B3E35004CE617 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WiredFoundation;
+			targetProxy = 4C789015170B3E35004CE617 /* PBXContainerItemProxy */;
+		};
+		4C789018170B3E35004CE617 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WiredAppKit;
+			targetProxy = 4C789017170B3E35004CE617 /* PBXContainerItemProxy */;
+		};
+		4C78901D170B3E3F004CE617 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libwired-osx";
+			targetProxy = 4C78901C170B3E3F004CE617 /* PBXContainerItemProxy */;
+		};
+		4C789021170B3EA3004CE617 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4CA5983F15A20E90000C4DAD /* wired */;
+			targetProxy = 4C789020170B3EA3004CE617 /* PBXContainerItemProxy */;
 		};
 		4CDD88AF15F76CA500283005 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1119,9 +1398,13 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Wired Server/Wired Server-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)\"",
+					"\"$(BUILT_PRODUCTS_DIR)\"",
+				);
 				INFOPLIST_FILE = "Wired Server/WiredServer-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1139,9 +1422,13 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Wired Server/Wired Server-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)\"",
+					"\"$(BUILT_PRODUCTS_DIR)\"",
+				);
 				INFOPLIST_FILE = "Wired Server/WiredServer-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1150,8 +1437,13 @@
 		4CA5984115A20E90000C4DAD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = "\"/usr/include\"";
+				LIBRARY_SEARCH_PATHS = "\"/usr/lib\"";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-lsqlite3",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALID_ARCHS = "x86_64 i386";
 			};
@@ -1160,8 +1452,13 @@
 		4CA5984215A20E90000C4DAD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = "\"/usr/include\"";
+				LIBRARY_SEARCH_PATHS = "\"/usr/lib\"";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-lsqlite3",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALID_ARCHS = "x86_64 i386";
 			};
@@ -1193,7 +1490,7 @@
 				4C233CA01521022900245506 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		4C8D334E151E2D8C001A6BF7 /* Build configuration list for PBXProject "WiredServer" */ = {
 			isa = XCConfigurationList;
@@ -1202,7 +1499,7 @@
 				4C8D3371151E2D8D001A6BF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		4C8D3372151E2D8D001A6BF7 /* Build configuration list for PBXNativeTarget "Wired Server" */ = {
 			isa = XCConfigurationList;
@@ -1211,7 +1508,7 @@
 				4C8D3374151E2D8D001A6BF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		4CA5984015A20E90000C4DAD /* Build configuration list for PBXAggregateTarget "wired" */ = {
 			isa = XCConfigurationList;
@@ -1220,7 +1517,7 @@
 				4CA5984215A20E90000C4DAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		4CCEEFB6154C991D004AE045 /* Build configuration list for PBXAggregateTarget "Distribute" */ = {
 			isa = XCConfigurationList;
@@ -1229,7 +1526,7 @@
 				4CCEEFAA154C991D004AE045 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

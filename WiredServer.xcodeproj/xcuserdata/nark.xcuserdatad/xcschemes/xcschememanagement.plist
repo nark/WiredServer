@@ -7,7 +7,7 @@
 		<key>Distribute.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>19</integer>
+			<integer>14</integer>
 		</dict>
 		<key>Wired Server Helper.xcscheme</key>
 		<dict>
@@ -22,7 +22,7 @@
 		<key>wired.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>18</integer>
+			<integer>13</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
