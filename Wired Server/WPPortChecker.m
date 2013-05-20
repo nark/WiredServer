@@ -73,7 +73,7 @@
 	
 	[_data setLength:0];
 	
-	request		= [NSURLRequest requestWithURL:[NSURL URLWithString:[NSSWF:@"http://zankasoftware.com/wired//port.pl?port=%u", port]]];
+	request		= [NSURLRequest requestWithURL:[NSURL URLWithString:[NSSWF:@"http://wired.read-write.fr/scripts/port.php?port=%u", port]]];
 	connection	= [NSURLConnection connectionWithRequest:request delegate:self];
 }
 

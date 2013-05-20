@@ -192,7 +192,7 @@
     // check packaged and installed version to update wired if needed
 	if(![[WPSettings settings] boolForKey:WPUninstalled]) {
 		if(![[_wiredManager installedVersion] isEqualToString:[_wiredManager packagedVersion]]) {
-			if([self _update]) {
+			if([_wiredManager isInstalled] && [self _update]) {
 				if([_wiredManager isRunning]) {
 					if(![_wiredManager restartWithError:&error])
 						[[error alert] beginSheetModalForWindow:[_startButton window]];
@@ -251,7 +251,7 @@
 	_logRows = [[NSMutableArray alloc] init];
 	
 	_logAttributes = [[NSDictionary alloc] initWithObjectsAndKeys:
-                      [NSFont fontWithName:@"Monaco" size:9.0],
+                      [NSFont fontWithName:@"Monaco" size:9.0f],
                       NSFontAttributeName,
                       NULL];
 	
@@ -734,7 +734,11 @@
             [_activityTextField setStringValue:@"Export Settings..."];
             
             NSBlockOperation *operation = [NSBlockOperation blockOperationWithBlock:^{
-                [self performSelector:@selector(_exportToFile:) withObject:[[savePanel URL] path] afterDelay:0.1];
+                NSLog(@"exportSettings : %@", [[savePanel URL] path]);
+                
+                //[self performSelector:@selector(_exportToFile:) withObject:[[savePanel URL] path] afterDelay:0.1];
+                
+                [self _exportToFile:[[savePanel URL] path]];
                 [NSThread sleepForTimeInterval:1.0];
                 [self.window performSelectorOnMainThread:@selector(endSheet:) withObject:_activityWindow];
                 
@@ -784,7 +788,7 @@
                 [_activityTextField setStringValue:@"Import Settings..."];
                 
                 NSBlockOperation *operation = [NSBlockOperation blockOperationWithBlock:^{
-                    [self performSelector:@selector(_importFromFile:) withObject:[[openPanel URL] path] afterDelay:0.1];
+                    [self _importFromFile:[[openPanel URL] path]];
                     [NSThread sleepForTimeInterval:1.0];
                     [self.window performSelectorOnMainThread:@selector(endSheet:) withObject:_activityWindow];
                     
@@ -1269,6 +1273,8 @@
 
 - (void)_exportToFile:(NSString *)file {
 	WPError		*error;
+    
+    NSLog(@"_exportToFile : %@", file);
 	
 	if(![_exportManager exportToFile:file error:&error])
 		[[error alert] beginSheetModalForWindow:[_exportSettingsButton window]];
