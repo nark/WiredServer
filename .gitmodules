@@ -1,3 +1,6 @@
 [submodule "WiredFrameworks"]
 	path = WiredFrameworks
 	url = https://github.com/nark/WiredFrameworks.git
+[submodule "Sparkle"]
+	path = Sparkle
+	url = https://github.com/andymatuschak/Sparkle.git

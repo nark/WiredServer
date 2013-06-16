@@ -188,6 +188,7 @@
     [super windowDidLoad];
     
     WPError		*error;
+    NSURL       *url;
 	   
     // check packaged and installed version to update wired if needed
 	if(![[WPSettings settings] boolForKey:WPUninstalled]) {
@@ -200,6 +201,14 @@
 			}
 		}
 	}
+    
+    url = [[NSBundle mainBundle] URLForResource:@"Wired Server Helper" withExtension:@"app"];
+    
+    if([WIStatusMenuManager willStartAtLogin:url]) {
+        if(![WIStatusMenuManager isHelperRunning:url]) {
+            [WIStatusMenuManager startHelper:url];
+        }
+    }
     
     // update components
 	[self _updateInstallationStatus];
@@ -236,7 +245,7 @@
     [_updater setAutomaticallyChecksForUpdates:[[WPSettings settings] boolForKey:@"SUEnableAutomaticChecks"]];
     [_updater setAutomaticallyDownloadsUpdates:[[WPSettings settings] boolForKey:@"SUAllowsAutomaticUpdates"]];
 	[_updater setSendsSystemProfile:YES];
-    [_updater setFeedURL:[NSURL URLWithString:@"http://www.read-write.fr/wired/xml/wiredservercast.xml"]];
+    [_updater setFeedURL:[NSURL URLWithString:@"http://wired.read-write.fr/xml/wiredservercast.xml"]];
     
 	_greenDropImage	= [[NSImage alloc] initWithContentsOfFile:[[self bundle] pathForResource:@"GreenDrop" ofType:@"tiff"]];
 	_redDropImage	= [[NSImage alloc] initWithContentsOfFile:[[self bundle] pathForResource:@"RedDrop" ofType:@"tiff"]];
@@ -882,6 +891,12 @@
 #pragma mark -
 
 - (void)updaterWillRelaunchApplication:(SUUpdater *)updater {
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Wired Server Helper" withExtension:@"app"];
+    
+    if([WIStatusMenuManager willStartAtLogin:url]) {
+        [WIStatusMenuManager stopHelper:url];
+    }
+    
     [[WPSettings settings] setBool:YES forKey:WPUpdated];
     [[WPSettings settings] synchronize];
 }
