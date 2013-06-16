@@ -66,7 +66,11 @@
 }
 
 - (IBAction)showHelp:(id)sender {
-	[[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://www.read-write.fr/wired/wiki/wiredserver/wiredserver_osx"]];
+	[[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://wired.read-write.fr/wiki/wiredserver/wiredserver_osx"]];
+}
+
+- (IBAction)support:(id)sender {
+	[[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"https://github.com/nark/WiredServer/issues"]];
 }
 
 @end

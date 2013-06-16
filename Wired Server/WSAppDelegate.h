@@ -20,5 +20,6 @@
 - (IBAction)importSettings:(id)sender;
 - (IBAction)releaseNotes:(id)sender;
 - (IBAction)showHelp:(id)sender;
+- (IBAction)support:(id)sender;
 
 @end
