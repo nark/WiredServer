@@ -1,0 +1,95 @@
+/* Server status */
+"A previous version of Wired Server is running since %@" = "A previous version of Wired Server is running since %@";
+
+/* Account status */
+"Account with name “admin” has a password set" = "Account with name “admin” has a password set";
+
+/* Account status */
+"Account with name “admin” has no password set" = "Account with name “admin” has no password set";
+
+/* Uninstall dialog description */
+"All your settings, accounts and other server data will be lost." = "All your settings, accounts and other server data will be lost.";
+
+/* Uninstall dialog title */
+"Are you sure you want to uninstall Wired Server?" = "Are you sure you want to uninstall Wired Server?";
+
+/* Uninstall dialog button title */
+"Cancel" = "Cancel";
+
+/* Port status */
+"Checking port status…" = "Checking port status…";
+
+/* Install button title */
+"Install" = "Install";
+
+/* WPPreferencePaneInstallFailed title */
+"Install Failed" = "Install Failed";
+
+/* Account status */
+"No account with name “admin” found" = "No account with name “admin” found";
+
+/* Port status */
+"Port %u is closed" = "Port %u is closed";
+
+/* Port status */
+"Port %u is filtered" = "Port %u is filtered";
+
+/* Port status */
+"Port %u is open" = "Port %u is open";
+
+/* Port status */
+"Port check failed" = "Port check failed";
+
+/* Files dialog button title */
+"Select" = "Select";
+
+/* Files dialog title */
+"Select Files" = "Select Files";
+
+/* Start button */
+"Start" = "Start";
+
+/* WPPreferencePaneStartFailed title */
+"Start Failed" = "Start Failed";
+
+/* Stop button */
+"Stop" = "Stop";
+
+/* WPPreferencePaneStopFailed title */
+"Stop Failed" = "Stop Failed";
+
+/* Uninstall dialog button title */
+"Uninstall" = "Uninstall";
+
+/* WPPreferencePaneUninstallFailed title */
+"Uninstall Failed" = "Uninstall Failed";
+
+/* Uninstall button title */
+"Uninstall…" = "Uninstall…";
+
+/* Installed version notice */
+"Wired is not installed" = "Wired is not installed";
+
+/* WPPreferencePaneInstallFailed description (output) */
+"Wired Server could not be installed:\n\n%@." = "Wired Server could not be installed:\n\n%@.";
+
+/* WPPreferencePaneStartFailed description (output) */
+"Wired Server could not be started:\n\n%@." = "Wired Server could not be started:\n\n%@.";
+
+/* WPPreferencePaneStopFailed description (output) */
+"Wired Server could not be stopped:\n\n%@." = "Wired Server could not be stopped:\n\n%@.";
+
+/* WPPreferencePaneUninstallFailed description (output) */
+"Wired Server could not be uninstalled:\n\n%@." = "Wired Server could not be uninstalled:\n\n%@.";
+
+/* Server status
+ Port status */
+"Wired Server is not running" = "Wired Server is not running";
+
+/* Server status */
+"Wired Server is running since %@" = "Wired Server is running since %@";
+
+/* Server status
+ Port status */
+"Wired Server not found" = "Wired Server not found";
+

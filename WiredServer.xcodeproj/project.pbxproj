@@ -33,6 +33,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		4C016F981778F6E200D6D2B3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C016F9A1778F6E200D6D2B3 /* Localizable.strings */; };
 		4C233C8B1521022800245506 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8D3358151E2D8D001A6BF7 /* Cocoa.framework */; };
 		4C233C911521022800245506 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C233C8F1521022800245506 /* InfoPlist.strings */; };
 		4C233C931521022800245506 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C233C921521022800245506 /* main.m */; };
@@ -55,8 +56,6 @@
 		4C4A296A151F894F0084E041 /* GreenDrop.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 4C4A2967151F894F0084E041 /* GreenDrop.tiff */; };
 		4C4A296B151F894F0084E041 /* RedDrop.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 4C4A2968151F894F0084E041 /* RedDrop.tiff */; };
 		4C5EDCC7154366750031D44E /* man in Resources */ = {isa = PBXBuildFile; fileRef = 4C5EDCC6154366740031D44E /* man */; };
-		4C6D6E84176E5CFC0043677E /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C6D6E79176E5CEC0043677E /* Sparkle.framework */; };
-		4C6D6E85176E5D080043677E /* Sparkle.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4C6D6E79176E5CEC0043677E /* Sparkle.framework */; };
 		4C789007170B35DE004CE617 /* wired.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FF2170B35BF004CE617 /* wired.a */; };
 		4C789010170B3998004CE617 /* WiredFoundation.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFA170B35BF004CE617 /* WiredFoundation.framework */; };
 		4C789011170B3998004CE617 /* WiredAppKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFE170B35BF004CE617 /* WiredAppKit.framework */; };
@@ -91,9 +90,10 @@
 		4C8D348A151F58D7001A6BF7 /* WPSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D3480151F58D7001A6BF7 /* WPSettings.m */; };
 		4C8D348B151F58D7001A6BF7 /* WPWiredManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D3482151F58D7001A6BF7 /* WPWiredManager.m */; };
 		4C8D34B7151F81C3001A6BF7 /* WSSettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D34B6151F81C3001A6BF7 /* WSSettingsController.m */; };
-		4C8D34D9151F82F8001A6BF7 /* Settings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D34D8151F82F8001A6BF7 /* Settings.xib */; };
 		4C8D34E0151F84E3001A6BF7 /* Updates.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D34DF151F84E3001A6BF7 /* Updates.tiff */; };
+		4CB57B171779007D006ECB87 /* Settings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CB57B151779007D006ECB87 /* Settings.xib */; };
 		4CD34ED91571ACED0054E305 /* Files.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CD34ED81571ACED0054E305 /* Files.png */; };
+		C07882097EDA655FC3C331CE /* Pods_Wired_Server.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A25C532989B8AB2A074ED1A /* Pods_Wired_Server.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,47 +104,12 @@
 			remoteGlobalIDString = 4C233C881521022800245506;
 			remoteInfo = "Wired Server Helper";
 		};
-		4C6D6E78176E5CEC0043677E /* PBXContainerItemProxy */ = {
+		4C45D02A200161F100B8E13E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 4C6D6E70176E5CEB0043677E /* Sparkle.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
-			remoteInfo = Sparkle;
-		};
-		4C6D6E7A176E5CEC0043677E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4C6D6E70176E5CEB0043677E /* Sparkle.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 61B5F90209C4CEE200B25A18;
-			remoteInfo = "Sparkle Test App";
-		};
-		4C6D6E7C176E5CEC0043677E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4C6D6E70176E5CEB0043677E /* Sparkle.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 612279D90DB5470200AB99EA;
-			remoteInfo = "Sparkle Unit Tests";
-		};
-		4C6D6E7E176E5CEC0043677E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4C6D6E70176E5CEB0043677E /* Sparkle.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 5D06E8D00FD68C7C005AE3F6;
-			remoteInfo = BinaryDelta;
-		};
-		4C6D6E80176E5CEC0043677E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4C6D6E70176E5CEB0043677E /* Sparkle.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 55C14BB7136EEF1500649790;
-			remoteInfo = finish_installation;
-		};
-		4C6D6E82176E5CF80043677E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4C6D6E70176E5CEB0043677E /* Sparkle.xcodeproj */;
+			containerPortal = 4C8D334B151E2D8C001A6BF7 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
-			remoteInfo = Sparkle;
+			remoteGlobalIDString = 4CA5983F15A20E90000C4DAD;
+			remoteInfo = wired;
 		};
 		4C788FED170B35BF004CE617 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -258,6 +223,27 @@
 			remoteGlobalIDString = 4CBDAD13147AF94F00D0C51A;
 			remoteInfo = "libwired-osx";
 		};
+		4CBA3E131FEAAC6C00ED7448 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C788FDF170B35BE004CE617 /* WiredFrameworks.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CFCEBDA181EA57400D5FF71;
+			remoteInfo = StaticWiredKit;
+		};
+		4CBA3E151FEAAC6C00ED7448 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C788FDF170B35BE004CE617 /* WiredFrameworks.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4C04AABC181EA9B800D00B75;
+			remoteInfo = StaticWiredData;
+		};
+		4CBA3E171FEAAC6C00ED7448 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C788FDF170B35BE004CE617 /* WiredFrameworks.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4C04AAC9181EA9B800D00B75;
+			remoteInfo = WiredDataTests;
+		};
 		4CDD88AE15F76CA500283005 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4C8D334B151E2D8C001A6BF7 /* Project object */;
@@ -286,7 +272,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4C6D6E85176E5D080043677E /* Sparkle.framework in Copy Frameworks */,
 				4C789010170B3998004CE617 /* WiredFoundation.framework in Copy Frameworks */,
 				4C789011170B3998004CE617 /* WiredAppKit.framework in Copy Frameworks */,
 			);
@@ -296,6 +281,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		213E3FA9DB26AA3CD9458127 /* Pods-Wired Server.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wired Server.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wired Server/Pods-Wired Server.debug.xcconfig"; sourceTree = "<group>"; };
+		4A25C532989B8AB2A074ED1A /* Pods_Wired_Server.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wired_Server.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C016F7D1778E97C00D6D2B3 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fr; path = fr.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		4C016F7E1778E97D00D6D2B3 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4C016F7F1778E97D00D6D2B3 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = fr; path = fr.lproj/Credits.rtf; sourceTree = "<group>"; };
+		4C016F991778F6E200D6D2B3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4C016F9B1778F6E700D6D2B3 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4C233C891521022800245506 /* Wired Server Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wired Server Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C233C8E1521022800245506 /* Wired Server Helper-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Wired Server Helper-Info.plist"; sourceTree = "<group>"; };
 		4C233C901521022800245506 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -315,8 +307,8 @@
 		4C4A2966151F894F0084E041 /* GrayDrop.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = GrayDrop.tiff; sourceTree = "<group>"; };
 		4C4A2967151F894F0084E041 /* GreenDrop.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = GreenDrop.tiff; sourceTree = "<group>"; };
 		4C4A2968151F894F0084E041 /* RedDrop.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = RedDrop.tiff; sourceTree = "<group>"; };
+		4C4FDE69177900CA00FADB95 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fr; path = fr.lproj/Settings.xib; sourceTree = "<group>"; };
 		4C5EDCC6154366740031D44E /* man */ = {isa = PBXFileReference; lastKnownFileType = folder; name = man; path = ../../wired/man; sourceTree = "<group>"; };
-		4C6D6E70176E5CEB0043677E /* Sparkle.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Sparkle.xcodeproj; path = Sparkle/Sparkle.xcodeproj; sourceTree = "<group>"; };
 		4C788FDF170B35BE004CE617 /* WiredFrameworks.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WiredFrameworks.xcodeproj; path = WiredFrameworks/WiredFrameworks.xcodeproj; sourceTree = "<group>"; };
 		4C8CB801159A6D37008C7EB9 /* wired.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = wired.sh; sourceTree = "<group>"; };
 		4C8D3354151E2D8D001A6BF7 /* Wired Server.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wired Server.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -360,7 +352,6 @@
 		4C8D3482151F58D7001A6BF7 /* WPWiredManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPWiredManager.m; sourceTree = "<group>"; wrapsLines = 1; };
 		4C8D34B5151F81C2001A6BF7 /* WSSettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSSettingsController.h; sourceTree = "<group>"; };
 		4C8D34B6151F81C3001A6BF7 /* WSSettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSSettingsController.m; sourceTree = "<group>"; };
-		4C8D34D8151F82F8001A6BF7 /* Settings.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Settings.xib; sourceTree = "<group>"; };
 		4C8D34DF151F84E3001A6BF7 /* Updates.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Updates.tiff; sourceTree = "<group>"; };
 		4CA5986015A2449F000C4DAD /* accounts.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = accounts.c; path = ../../wired/wired/accounts.c; sourceTree = "<group>"; };
 		4CA5986115A2449F000C4DAD /* accounts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = accounts.h; path = ../../wired/wired/accounts.h; sourceTree = "<group>"; };
@@ -507,7 +498,9 @@
 		4CA598FB15A244D1000C4DAD /* wi-timer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-timer.c"; sourceTree = "<group>"; };
 		4CA598FC15A244D1000C4DAD /* wi-timer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-timer.h"; sourceTree = "<group>"; };
 		4CA598FD15A244D1000C4DAD /* wired.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wired.h; sourceTree = "<group>"; };
+		4CB57B161779007D006ECB87 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Settings.xib; sourceTree = "<group>"; };
 		4CD34ED81571ACED0054E305 /* Files.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Files.png; sourceTree = "<group>"; };
+		C14FB5106D175984980AF252 /* Pods-Wired Server.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wired Server.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wired Server/Pods-Wired Server.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -527,7 +520,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C6D6E84176E5CFC0043677E /* Sparkle.framework in Frameworks */,
 				4C789013170B39CE004CE617 /* WiredFoundation.framework in Frameworks */,
 				4C789014170B39CE004CE617 /* WiredAppKit.framework in Frameworks */,
 				4C789007170B35DE004CE617 /* wired.a in Frameworks */,
@@ -535,6 +527,7 @@
 				4C8D33ED151E991D001A6BF7 /* Quartz.framework in Frameworks */,
 				4C8D3359151E2D8D001A6BF7 /* Cocoa.framework in Frameworks */,
 				4C483CEF170B66CC0088F1E5 /* libsqlite3.dylib in Frameworks */,
+				C07882097EDA655FC3C331CE /* Pods_Wired_Server.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,18 +561,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		4C6D6E71176E5CEB0043677E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				4C6D6E79176E5CEC0043677E /* Sparkle.framework */,
-				4C6D6E7B176E5CEC0043677E /* Sparkle Test App.app */,
-				4C6D6E7D176E5CEC0043677E /* Sparkle Unit Tests.octest */,
-				4C6D6E7F176E5CEC0043677E /* BinaryDelta */,
-				4C6D6E81176E5CEC0043677E /* finish_installation.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		4C788FE0170B35BE004CE617 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -589,10 +570,13 @@
 				4C788FF4170B35BF004CE617 /* WiredFoundation.a */,
 				4C788FF6170B35BF004CE617 /* WiredNetworking.a */,
 				4C788FF8170B35BF004CE617 /* WiredUIKit.a */,
+				4CBA3E141FEAAC6C00ED7448 /* WiredKit.a */,
+				4CBA3E161FEAAC6C00ED7448 /* WiredData.a */,
 				4C788FFA170B35BF004CE617 /* WiredFoundation.framework */,
 				4C788FFC170B35BF004CE617 /* WiredNetworking.framework */,
 				4C788FFE170B35BF004CE617 /* WiredAppKit.framework */,
 				4C789000170B35BF004CE617 /* ChatHistory-default.WiredHistory */,
+				4CBA3E181FEAAC6C00ED7448 /* WiredDataTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -607,6 +591,7 @@
 				4C8D3375151E2D93001A6BF7 /* Subprojects */,
 				4C8D3357151E2D8D001A6BF7 /* Frameworks */,
 				4C8D3355151E2D8D001A6BF7 /* Products */,
+				B92F40A4FC9B7E0149533E55 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -627,6 +612,7 @@
 				4C8D33EC151E991D001A6BF7 /* Quartz.framework */,
 				4C8D3358151E2D8D001A6BF7 /* Cocoa.framework */,
 				4C8D335A151E2D8D001A6BF7 /* Other Frameworks */,
+				4A25C532989B8AB2A074ED1A /* Pods_Wired_Server.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -664,6 +650,7 @@
 				4C8D3360151E2D8D001A6BF7 /* WiredServer-Info.plist */,
 				4C8D3367151E2D8D001A6BF7 /* Credits.rtf */,
 				4C233CFC15228BB800245506 /* wiredserverrnote.html */,
+				4C016F9A1778F6E200D6D2B3 /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -671,7 +658,6 @@
 		4C8D3375151E2D93001A6BF7 /* Subprojects */ = {
 			isa = PBXGroup;
 			children = (
-				4C6D6E70176E5CEB0043677E /* Sparkle.xcodeproj */,
 				4C788FDF170B35BE004CE617 /* WiredFrameworks.xcodeproj */,
 			);
 			name = Subprojects;
@@ -724,7 +710,7 @@
 			isa = PBXGroup;
 			children = (
 				4C8D336D151E2D8D001A6BF7 /* MainMenu.xib */,
-				4C8D34D8151F82F8001A6BF7 /* Settings.xib */,
+				4CB57B151779007D006ECB87 /* Settings.xib */,
 			);
 			name = Nibs;
 			sourceTree = "<group>";
@@ -998,6 +984,15 @@
 			path = thread;
 			sourceTree = "<group>";
 		};
+		B92F40A4FC9B7E0149533E55 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				213E3FA9DB26AA3CD9458127 /* Pods-Wired Server.debug.xcconfig */,
+				C14FB5106D175984980AF252 /* Pods-Wired Server.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1026,15 +1021,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C8D3372151E2D8D001A6BF7 /* Build configuration list for PBXNativeTarget "Wired Server" */;
 			buildPhases = (
+				FB8048F603FEDA2170E915AC /* [CP] Check Pods Manifest.lock */,
 				4C8D3350151E2D8D001A6BF7 /* Sources */,
 				4C8D3351151E2D8D001A6BF7 /* Frameworks */,
 				4C8D3352151E2D8D001A6BF7 /* Resources */,
 				4C8D33E8151E98AC001A6BF7 /* Copy Frameworks */,
+				F26808116EE98B9DF1E7389D /* [CP] Embed Pods Frameworks */,
+				982E57A10605FB51C8987CF2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4C6D6E83176E5CF80043677E /* PBXTargetDependency */,
+				4C45D02B200161F100B8E13E /* PBXTargetDependency */,
 				4C789006170B35D9004CE617 /* PBXTargetDependency */,
 				4C789002170B35D6004CE617 /* PBXTargetDependency */,
 				4C789004170B35D6004CE617 /* PBXTargetDependency */,
@@ -1060,15 +1058,12 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				fr,
 			);
 			mainGroup = 4C8D3349151E2D8C001A6BF7;
 			productRefGroup = 4C8D3355151E2D8D001A6BF7 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
-				{
-					ProductGroup = 4C6D6E71176E5CEB0043677E /* Products */;
-					ProjectRef = 4C6D6E70176E5CEB0043677E /* Sparkle.xcodeproj */;
-				},
 				{
 					ProductGroup = 4C788FE0170B35BE004CE617 /* Products */;
 					ProjectRef = 4C788FDF170B35BE004CE617 /* WiredFrameworks.xcodeproj */;
@@ -1085,41 +1080,6 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		4C6D6E79176E5CEC0043677E /* Sparkle.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Sparkle.framework;
-			remoteRef = 4C6D6E78176E5CEC0043677E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4C6D6E7B176E5CEC0043677E /* Sparkle Test App.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = "Sparkle Test App.app";
-			remoteRef = 4C6D6E7A176E5CEC0043677E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4C6D6E7D176E5CEC0043677E /* Sparkle Unit Tests.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Sparkle Unit Tests.octest";
-			remoteRef = 4C6D6E7C176E5CEC0043677E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4C6D6E7F176E5CEC0043677E /* BinaryDelta */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = BinaryDelta;
-			remoteRef = 4C6D6E7E176E5CEC0043677E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4C6D6E81176E5CEC0043677E /* finish_installation.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = finish_installation.app;
-			remoteRef = 4C6D6E80176E5CEC0043677E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		4C788FEE170B35BF004CE617 /* wired.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1190,6 +1150,27 @@
 			remoteRef = 4C788FFF170B35BF004CE617 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		4CBA3E141FEAAC6C00ED7448 /* WiredKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = WiredKit.a;
+			remoteRef = 4CBA3E131FEAAC6C00ED7448 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4CBA3E161FEAAC6C00ED7448 /* WiredData.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = WiredData.a;
+			remoteRef = 4CBA3E151FEAAC6C00ED7448 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4CBA3E181FEAAC6C00ED7448 /* WiredDataTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = WiredDataTests.xctest;
+			remoteRef = 4CBA3E171FEAAC6C00ED7448 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -1219,7 +1200,6 @@
 				4C8D341D151E9B0B001A6BF7 /* uninstall.sh in Resources */,
 				4C8D341E151E9B0B001A6BF7 /* update.sh in Resources */,
 				4C8D3420151E9B1B001A6BF7 /* Wired in Resources */,
-				4C8D34D9151F82F8001A6BF7 /* Settings.xib in Resources */,
 				4C8D34E0151F84E3001A6BF7 /* Updates.tiff in Resources */,
 				4C4A2959151F880C0084E041 /* Console.icns in Resources */,
 				4C4A2969151F894F0084E041 /* GrayDrop.tiff in Resources */,
@@ -1229,6 +1209,8 @@
 				4C233CFD15228BB800245506 /* wiredserverrnote.html in Resources */,
 				4C5EDCC7154366750031D44E /* man in Resources */,
 				4CD34ED91571ACED0054E305 /* Files.png in Resources */,
+				4C016F981778F6E200D6D2B3 /* Localizable.strings in Resources */,
+				4CB57B171779007D006ECB87 /* Settings.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1260,6 +1242,51 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
 			shellScript = "sh \"$SRCROOT/../../wired_server_distribute.sh\" || exit 1";
+		};
+		982E57A10605FB51C8987CF2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wired Server/Pods-Wired Server-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F26808116EE98B9DF1E7389D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wired Server/Pods-Wired Server-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB8048F603FEDA2170E915AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1304,10 +1331,10 @@
 			target = 4C233C881521022800245506 /* Wired Server Helper */;
 			targetProxy = 4C233CBA15211F9C00245506 /* PBXContainerItemProxy */;
 		};
-		4C6D6E83176E5CF80043677E /* PBXTargetDependency */ = {
+		4C45D02B200161F100B8E13E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Sparkle;
-			targetProxy = 4C6D6E82176E5CF80043677E /* PBXContainerItemProxy */;
+			target = 4CA5983F15A20E90000C4DAD /* wired */;
+			targetProxy = 4C45D02A200161F100B8E13E /* PBXContainerItemProxy */;
 		};
 		4C789002170B35D6004CE617 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1347,6 +1374,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		4C016F9A1778F6E200D6D2B3 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C016F991778F6E200D6D2B3 /* en */,
+				4C016F9B1778F6E700D6D2B3 /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		4C233C8F1521022800245506 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1375,6 +1411,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				4C8D3362151E2D8D001A6BF7 /* en */,
+				4C016F7E1778E97D00D6D2B3 /* fr */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1383,6 +1420,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				4C8D3368151E2D8D001A6BF7 /* en */,
+				4C016F7F1778E97D00D6D2B3 /* fr */,
 			);
 			name = Credits.rtf;
 			sourceTree = "<group>";
@@ -1391,8 +1429,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				4C8D336E151E2D8D001A6BF7 /* en */,
+				4C016F7D1778E97C00D6D2B3 /* fr */,
 			);
 			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		4CB57B151779007D006ECB87 /* Settings.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CB57B161779007D006ECB87 /* en */,
+				4C4FDE69177900CA00FADB95 /* fr */,
+			);
+			name = Settings.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1401,13 +1449,15 @@
 		4C233C9F1521022900245506 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Wired Server Helper/Wired Server Helper-Prefix.pch";
+				GCC_VERSION = "";
 				INFOPLIST_FILE = "Wired Server Helper/Wired Server Helper-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1415,13 +1465,15 @@
 		4C233CA01521022900245506 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Wired Server Helper/Wired Server Helper-Prefix.pch";
+				GCC_VERSION = "";
 				INFOPLIST_FILE = "Wired Server Helper/Wired Server Helper-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -1474,8 +1526,10 @@
 		};
 		4C8D3373151E2D8D001A6BF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 213E3FA9DB26AA3CD9458127 /* Pods-Wired Server.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
 				CODE_SIGN_IDENTITY = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1484,22 +1538,33 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Wired Server/Wired Server-Prefix.pch";
+				GCC_VERSION = "";
 				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
 					"\"$(SRCROOT)\"",
 					"\"$(BUILT_PRODUCTS_DIR)\"",
+					/usr/include,
 				);
 				INFOPLIST_FILE = "Wired Server/WiredServer-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		4C8D3374151E2D8D001A6BF7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C14FB5106D175984980AF252 /* Pods-Wired Server.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
 				CODE_SIGN_IDENTITY = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1508,14 +1573,23 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Wired Server/Wired Server-Prefix.pch";
+				GCC_VERSION = "";
 				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
 					"\"$(SRCROOT)\"",
 					"\"$(BUILT_PRODUCTS_DIR)\"",
+					/usr/include,
 				);
 				INFOPLIST_FILE = "Wired Server/WiredServer-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -1523,42 +1597,76 @@
 		4CA5984115A20E90000C4DAD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = "\"/usr/include\"";
-				LIBRARY_SEARCH_PATHS = "\"/usr/lib\"";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/include,
+					/usr/local/opt/openssl/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/lib,
+					/usr/local/opt/openssl/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = "-lsqlite3";
+				OTHER_LDFLAGS = (
+					"-lsqlite3",
+					"-lz",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				VALID_ARCHS = "x86_64 i386";
+				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
 			};
 			name = Debug;
 		};
 		4CA5984215A20E90000C4DAD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = "\"/usr/include\"";
-				LIBRARY_SEARCH_PATHS = "\"/usr/lib\"";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/include,
+					/usr/local/opt/openssl/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/lib,
+					/usr/local/opt/openssl/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = "-lsqlite3";
+				OTHER_LDFLAGS = (
+					"-lsqlite3",
+					"-lz",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				VALID_ARCHS = "x86_64 i386";
+				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
 			};
 			name = Release;
 		};
 		4CCEEFA9154C991D004AE045 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = Distribute;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
 		4CCEEFAA154C991D004AE045 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = Distribute;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};

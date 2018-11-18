@@ -28,15 +28,6 @@
 
 @class WPError;
 
-@interface WPConfigManager : WIObject {
-	NSString					*_configPath;
-	
-	WIDateFormatter				*_dateFormatter;
-}
-
-- (id)initWithConfigPath:(NSString *)configPath;
-
-- (BOOL)setString:(NSString *)string forConfigWithName:(NSString *)name andWriteWithError:(WPError **)error;
-- (NSString *)stringForConfigWithName:(NSString *)name;
+@interface WPConfigManager : WIConfigManager
 
 @end

@@ -1,0 +1,95 @@
+/* Server status */
+"A previous version of Wired Server is running since %@" = "Une version précédente de Wired fonctionne depuis %@";
+
+/* Account status */
+"Account with name “admin” has a password set" = "Compte nommé “admin” avec un mot de passe définit";
+
+/* Account status */
+"Account with name “admin” has no password set" = "Compte nommé “admin” avec aucun mot de passe définit";
+
+/* Uninstall dialog description */
+"All your settings, accounts and other server data will be lost." = "Tous les réglages, les comptes et les données du serveur seront perdus.";
+
+/* Uninstall dialog title */
+"Are you sure you want to uninstall Wired Server?" = "Êtes-vous sure de vouloir désinstaller Wired Server ?";
+
+/* Uninstall dialog button title */
+"Cancel" = "Annuler";
+
+/* Port status */
+"Checking port status…" = "Vérification du port…";
+
+/* Install button title */
+"Install" = "Installer";
+
+/* WPPreferencePaneInstallFailed title */
+"Install Failed" = "L'installation a échoué";
+
+/* Account status */
+"No account with name “admin” found" = "Aucun compte nommé “admin” trouvé";
+
+/* Port status */
+"Port %u is closed" = "Le port %u est fermé";
+
+/* Port status */
+"Port %u is filtered" = "Le port %u est filtré";
+
+/* Port status */
+"Port %u is open" = "Le port %u est ouvert";
+
+/* Port status */
+"Port check failed" = "La vérification du port a échoué";
+
+/* Files dialog button title */
+"Select" = "Sélectionner";
+
+/* Files dialog title */
+"Select Files" = "Sélectionner un répertoire";
+
+/* Start button */
+"Start" = "Démarrer";
+
+/* WPPreferencePaneStartFailed title */
+"Start Failed" = "Le démarrage a échoué";
+
+/* Stop button */
+"Stop" = "Arrêter";
+
+/* WPPreferencePaneStopFailed title */
+"Stop Failed" = "L'arrêt a échoué";
+
+/* Uninstall dialog button title */
+"Uninstall" = "Désinstaller";
+
+/* WPPreferencePaneUninstallFailed title */
+"Uninstall Failed" = "La désinstallation a échoué";
+
+/* Uninstall button title */
+"Uninstall…" = "Désinstallation…";
+
+/* Installed version notice */
+"Wired is not installed" = "Wired n'est pas installé";
+
+/* WPPreferencePaneInstallFailed description (output) */
+"Wired Server could not be installed:\n\n%@." = "Wired Server ne peut pas être installé:\n\n%@.";
+
+/* WPPreferencePaneStartFailed description (output) */
+"Wired Server could not be started:\n\n%@." = "Wired Server ne peut pas être démarrer:\n\n%@.";
+
+/* WPPreferencePaneStopFailed description (output) */
+"Wired Server could not be stopped:\n\n%@." = "Wired Server ne peut pas être arrêté:\n\n%@.";
+
+/* WPPreferencePaneUninstallFailed description (output) */
+"Wired Server could not be uninstalled:\n\n%@." = "Wired Server ne peut pas être désinstallé:\n\n%@.";
+
+/* Server status
+ Port status */
+"Wired Server is not running" = "Wired Server n'est pas démarré";
+
+/* Server status */
+"Wired Server is running since %@" = "Wired Server est démarré depuis %@";
+
+/* Server status
+ Port status */
+"Wired Server not found" = "Wired Server est introuvable";
+

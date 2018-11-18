@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+CFBundleName = "Wired Server";
+CFBundleShortVersionString = "2.0.1";
+CFBundleGetInfoString = "Wired Server 2.0, Copyright 2011-2012, Read-Write Software.";
+NSHumanReadableCopyright = "Copyright 2011-2012, Read-Write Software.";
