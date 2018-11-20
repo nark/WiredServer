@@ -7,117 +7,333 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1BB16168B188D7C8F2687E9B5ADAEC8C /* Pods-Wired Server-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 726A7EC19B608C752C445C44DD3B3D5D /* Pods-Wired Server-dummy.m */; };
-		219488A5D3582D9B2D9A8077A97CF18A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
-		D73572053F127165EE8C0AC3A1522E8C /* Pods-Wired Server-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 31BD0F7A05F4243E7F868E1975BD242B /* Pods-Wired Server-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B27B3A59ACD9B389596A6664F51F98F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF428FC7C7A6555B2B02D8E238C8D8F2 /* Cocoa.framework */; };
+		1025850EE15CBE9EF10DB9365892D9C6 /* Pods-libwired-osx-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA3014AC9D3635CA3717C9C0641DEFA /* Pods-libwired-osx-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1984603B2C6C6136408985C2CDBB44D1 /* Pods-WiredNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 469DD6564A9ED17D3C558618FEF2E8EE /* Pods-WiredNetworking-dummy.m */; };
+		1BB16168B188D7C8F2687E9B5ADAEC8C /* Pods-Wired Server-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A72C589F36288B5F46CF2BDB5892F82F /* Pods-Wired Server-dummy.m */; };
+		4EFF5BF32DEE4D59B28D5537288E8070 /* Pods-WiredNetworking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 005D06CB7DD8A2733B064989CE2406EF /* Pods-WiredNetworking-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		632F24F94AF0C6399E0199DAE993601D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF428FC7C7A6555B2B02D8E238C8D8F2 /* Cocoa.framework */; };
+		BD77A6F12B2311007193A3B79CFB6E3F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF428FC7C7A6555B2B02D8E238C8D8F2 /* Cocoa.framework */; };
+		CF9F460D8DD049E981153402449E794C /* Pods-libwired-osx-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D3309BD2AD2060323861DA2D545CF8 /* Pods-libwired-osx-dummy.m */; };
+		D73572053F127165EE8C0AC3A1522E8C /* Pods-Wired Server-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D70B90927B5D297F52B14B36CAF31DCC /* Pods-Wired Server-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		041DDBBEB5C807CBCAD98A5E09478103 /* Pods_Wired_Server.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Wired_Server.framework; path = "Pods-Wired Server.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		08F0E3ABE0F7FFF0B060E49C18859B20 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
-		098E6864A7B900C354092929510F6742 /* SUExport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUExport.h; path = Sparkle.framework/Versions/A/Headers/SUExport.h; sourceTree = "<group>"; };
-		146EB1FFD3039CBBC121466BC10E749F /* SUVersionComparisonProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUVersionComparisonProtocol.h; path = Sparkle.framework/Versions/A/Headers/SUVersionComparisonProtocol.h; sourceTree = "<group>"; };
-		2033230FAD35052145A40B24650B08B2 /* Pods-Wired Server-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Wired Server-acknowledgements.plist"; sourceTree = "<group>"; };
-		206FC0298653B913F6DE0E15DF72023A /* SUAppcastItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUAppcastItem.h; path = Sparkle.framework/Versions/A/Headers/SUAppcastItem.h; sourceTree = "<group>"; };
-		270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
-		2A68FB6161EB6D13E0025D572C32A5C8 /* SUVersionDisplayProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUVersionDisplayProtocol.h; path = Sparkle.framework/Versions/A/Headers/SUVersionDisplayProtocol.h; sourceTree = "<group>"; };
-		31BD0F7A05F4243E7F868E1975BD242B /* Pods-Wired Server-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Wired Server-umbrella.h"; sourceTree = "<group>"; };
-		5D29214BA7CFF07952DC5866D382D850 /* Pods-Wired Server.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Wired Server.debug.xcconfig"; sourceTree = "<group>"; };
-		67B2F5C29BC4BC5B9B31C718DE321A5C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		726A7EC19B608C752C445C44DD3B3D5D /* Pods-Wired Server-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Wired Server-dummy.m"; sourceTree = "<group>"; };
-		90E75E9DC7A922B4F94EA6E11741D6A8 /* SUErrors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUErrors.h; path = Sparkle.framework/Versions/A/Headers/SUErrors.h; sourceTree = "<group>"; };
+		005D06CB7DD8A2733B064989CE2406EF /* Pods-WiredNetworking-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WiredNetworking-umbrella.h"; sourceTree = "<group>"; };
+		007F5B4CC38DFE15796B8E5B04EA57E8 /* rand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rand.h; path = "include-macos/openssl/rand.h"; sourceTree = "<group>"; };
+		00C4DEFC5BE2BD39D1C8E308A20EFBD3 /* Pods_Wired_Server.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Wired_Server.framework; path = "Pods-Wired Server.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0541D4020A38D816593D04BDA9C016FF /* opensslv.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opensslv.h; path = "include-macos/openssl/opensslv.h"; sourceTree = "<group>"; };
+		0A01FE86564A612EAEE804D15485A824 /* ui.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ui.h; path = "include-macos/openssl/ui.h"; sourceTree = "<group>"; };
+		0A4179BC3101F7CBE78CE4FA7A2FAAE4 /* Pods-WiredNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WiredNetworking.modulemap"; sourceTree = "<group>"; };
+		0CA8D8020C49179260563E469A91C747 /* pem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pem.h; path = "include-macos/openssl/pem.h"; sourceTree = "<group>"; };
+		0EA995AE6B0D5B4E19CFC3AAFBEA457B /* ripemd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ripemd.h; path = "include-macos/openssl/ripemd.h"; sourceTree = "<group>"; };
+		15361D639D311758F5EF21E305F482BE /* stack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = stack.h; path = "include-macos/openssl/stack.h"; sourceTree = "<group>"; };
+		25E9830435D6DFFFE31C6F4E2638AC1C /* buffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = buffer.h; path = "include-macos/openssl/buffer.h"; sourceTree = "<group>"; };
+		26A4B525711DB81F9624A64793075B10 /* engine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = engine.h; path = "include-macos/openssl/engine.h"; sourceTree = "<group>"; };
+		281B22A1F5AAF961FBA438F82EE83B21 /* asn1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = asn1.h; path = "include-macos/openssl/asn1.h"; sourceTree = "<group>"; };
+		294857A81F77224AC8DA3D2534BEE038 /* SUUpdater.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUUpdater.h; path = Sparkle.framework/Versions/A/Headers/SUUpdater.h; sourceTree = "<group>"; };
+		29B0FD0B98C25AD7C3249C9EE45601F7 /* x509_vfy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = x509_vfy.h; path = "include-macos/openssl/x509_vfy.h"; sourceTree = "<group>"; };
+		29D4FB4D92AC375ADEA6D3BBFA42A614 /* cms.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cms.h; path = "include-macos/openssl/cms.h"; sourceTree = "<group>"; };
+		2BA35F4111FE79889A376DEBA1EFB65F /* Pods-WiredNetworking-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WiredNetworking-acknowledgements.plist"; sourceTree = "<group>"; };
+		2C4AC19B42AA21ADBDA257F13C8398D5 /* ui_compat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ui_compat.h; path = "include-macos/openssl/ui_compat.h"; sourceTree = "<group>"; };
+		2DDDDEAFC037BDE71F3EBB859B012E40 /* libcrypto.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libcrypto.a; path = "lib-macos/libcrypto.a"; sourceTree = "<group>"; };
+		2E732B560A9DDEB18B249F83B19B3628 /* Pods-WiredNetworking-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WiredNetworking-resources.sh"; sourceTree = "<group>"; };
+		380993F650004A00FF0232864CDE1D16 /* camellia.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = camellia.h; path = "include-macos/openssl/camellia.h"; sourceTree = "<group>"; };
+		3AFF9434757F8EF56AB96659FB62CF17 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BAD577B77714A66767A5760C6F67F1A /* SUVersionComparisonProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUVersionComparisonProtocol.h; path = Sparkle.framework/Versions/A/Headers/SUVersionComparisonProtocol.h; sourceTree = "<group>"; };
+		3E3D0E6EFD115FB9CB61F6DD3F36D91F /* x509.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = x509.h; path = "include-macos/openssl/x509.h"; sourceTree = "<group>"; };
+		44BA1D087E8FB7C3B803D12E12AD8B18 /* cast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cast.h; path = "include-macos/openssl/cast.h"; sourceTree = "<group>"; };
+		469DD6564A9ED17D3C558618FEF2E8EE /* Pods-WiredNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WiredNetworking-dummy.m"; sourceTree = "<group>"; };
+		48A6B07409CE24CDF380031CD9BE4650 /* aes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aes.h; path = "include-macos/openssl/aes.h"; sourceTree = "<group>"; };
+		48E8CB32D4A8F15F1FDEAF47AFD6C4DA /* objects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = objects.h; path = "include-macos/openssl/objects.h"; sourceTree = "<group>"; };
+		4C996C60A88EB71D0793EB9D02C18751 /* evp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = evp.h; path = "include-macos/openssl/evp.h"; sourceTree = "<group>"; };
+		5580483032DCD898815672BD262B4CAA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		571F6EBFEA28047BC02BBD9E5B0E2B9E /* dso.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dso.h; path = "include-macos/openssl/dso.h"; sourceTree = "<group>"; };
+		596E622640C744B68AF4E49C79AD1D76 /* ssl2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl2.h; path = "include-macos/openssl/ssl2.h"; sourceTree = "<group>"; };
+		59FD7CAB528CB87052CFA66E04245CFA /* dsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dsa.h; path = "include-macos/openssl/dsa.h"; sourceTree = "<group>"; };
+		5E100A8FD57038DA0733C2E4B508D6A4 /* Pods-libwired-osx-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-libwired-osx-acknowledgements.markdown"; sourceTree = "<group>"; };
+		606F5832D46546E009A274F6BA3AAA53 /* Pods_WiredNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WiredNetworking.framework; path = "Pods-WiredNetworking.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		616A0692F3B025D166CC2DFB79C18252 /* conf_api.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = conf_api.h; path = "include-macos/openssl/conf_api.h"; sourceTree = "<group>"; };
+		617AFAAB7C97CC0A117B0266B175C04E /* tls1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tls1.h; path = "include-macos/openssl/tls1.h"; sourceTree = "<group>"; };
+		62D0F2B3F190BF8C789D350CE96AF3BF /* obj_mac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = obj_mac.h; path = "include-macos/openssl/obj_mac.h"; sourceTree = "<group>"; };
+		659114B30C95A2C685B9068CBD2AD2DE /* rc4.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rc4.h; path = "include-macos/openssl/rc4.h"; sourceTree = "<group>"; };
+		65C26250966B1565ED5D6433AEE522B2 /* SUUpdaterDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUUpdaterDelegate.h; path = Sparkle.framework/Versions/A/Headers/SUUpdaterDelegate.h; sourceTree = "<group>"; };
+		6A05D03E8C806B014304DB06554E7451 /* srp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = srp.h; path = "include-macos/openssl/srp.h"; sourceTree = "<group>"; };
+		6C28B92199A0AF13DD611EC7814FB72A /* asn1_mac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = asn1_mac.h; path = "include-macos/openssl/asn1_mac.h"; sourceTree = "<group>"; };
+		6C6AA410C27D03ABC3CD38C0BA1E0BDE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CC3AE7A083658411D9FDD45450D00F0 /* dh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dh.h; path = "include-macos/openssl/dh.h"; sourceTree = "<group>"; };
+		6E5A5027A7375C9A6A75D639B4F53382 /* SUAppcast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUAppcast.h; path = Sparkle.framework/Versions/A/Headers/SUAppcast.h; sourceTree = "<group>"; };
+		7035A912CA0DF240C588CF8F708D8CBE /* Pods-Wired Server.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Wired Server.modulemap"; sourceTree = "<group>"; };
+		751F9C1BCBB8C8F5230561735699610F /* Pods-libwired-osx-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-libwired-osx-acknowledgements.plist"; sourceTree = "<group>"; };
+		75387CB047100650C0839E57D469B0A4 /* crypto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto.h; path = "include-macos/openssl/crypto.h"; sourceTree = "<group>"; };
+		76B509548DC529F22D2B1DF3258C77D8 /* ssl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl.h; path = "include-macos/openssl/ssl.h"; sourceTree = "<group>"; };
+		7756EB60AADABB5B1FAE0F75B61A8145 /* ebcdic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ebcdic.h; path = "include-macos/openssl/ebcdic.h"; sourceTree = "<group>"; };
+		779877C8B1B4C6F5B506C41D4E670651 /* opensslconf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opensslconf.h; path = "include-macos/openssl/opensslconf.h"; sourceTree = "<group>"; };
+		7BF2448F9E16A364BB9E78B4A7A42159 /* des.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = des.h; path = "include-macos/openssl/des.h"; sourceTree = "<group>"; };
+		81B5E754A02C514B581F4DCC87F20913 /* modes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = modes.h; path = "include-macos/openssl/modes.h"; sourceTree = "<group>"; };
+		83113C860485AD783E83A1B9399C0A8A /* Pods-libwired-osx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-libwired-osx.debug.xcconfig"; sourceTree = "<group>"; };
+		83B35A2090A10C7B7DDA64BFA647AC68 /* Pods-libwired-osx-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-libwired-osx-resources.sh"; sourceTree = "<group>"; };
+		8797E39E5BC0AB9FBC837BA32CA44B52 /* whrlpool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = whrlpool.h; path = "include-macos/openssl/whrlpool.h"; sourceTree = "<group>"; };
+		88D5FD3E71202FD853AC15FDAC990D11 /* hmac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hmac.h; path = "include-macos/openssl/hmac.h"; sourceTree = "<group>"; };
+		89D3309BD2AD2060323861DA2D545CF8 /* Pods-libwired-osx-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-libwired-osx-dummy.m"; sourceTree = "<group>"; };
+		8C36A82E41002FAA5D355B2FB05444A6 /* rc2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rc2.h; path = "include-macos/openssl/rc2.h"; sourceTree = "<group>"; };
+		8DC5856CADEEF1D640AF2E8E376E793A /* idea.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = idea.h; path = "include-macos/openssl/idea.h"; sourceTree = "<group>"; };
+		8EAE5CA32560A98EA43690B3FCE47E17 /* pkcs12.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pkcs12.h; path = "include-macos/openssl/pkcs12.h"; sourceTree = "<group>"; };
+		926C47A3E39802D271C2F27E7C773C78 /* pem2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pem2.h; path = "include-macos/openssl/pem2.h"; sourceTree = "<group>"; };
+		93576952188729AF8A5F3D8731EBBAE6 /* ssl3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl3.h; path = "include-macos/openssl/ssl3.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9E7FC52527BF3C03EBEB4B051F353963 /* Pods-Wired Server-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Wired Server-resources.sh"; sourceTree = "<group>"; };
-		BE06FF81E8B47CAE2929E9997A0FDD00 /* SUUpdaterDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUUpdaterDelegate.h; path = Sparkle.framework/Versions/A/Headers/SUUpdaterDelegate.h; sourceTree = "<group>"; };
-		C15492D960DC007CF68CE0A2EE73F7C9 /* Pods-Wired Server-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Wired Server-frameworks.sh"; sourceTree = "<group>"; };
-		C2C9D1B34A27BA4F6CC2A7CE29DF23D1 /* SUUpdater.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUUpdater.h; path = Sparkle.framework/Versions/A/Headers/SUUpdater.h; sourceTree = "<group>"; };
-		C729713F905A3EC2111148BCF95A9E12 /* Pods-Wired Server-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Wired Server-acknowledgements.markdown"; sourceTree = "<group>"; };
-		CFC2150FE91499A0C52A00AED7BC2471 /* Sparkle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Sparkle.h; path = Sparkle.framework/Versions/A/Headers/Sparkle.h; sourceTree = "<group>"; };
-		E1396D16DD928DD5568D9FAB77D4E4AA /* Pods-Wired Server.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Wired Server.modulemap"; sourceTree = "<group>"; };
-		E2F2EE2C2854E73BE486577F31935044 /* Pods-Wired Server.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Wired Server.release.xcconfig"; sourceTree = "<group>"; };
-		EDCF64026B6B952731DC763935DBB677 /* SUAppcast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUAppcast.h; path = Sparkle.framework/Versions/A/Headers/SUAppcast.h; sourceTree = "<group>"; };
-		F8ACA9546912BB31E3554E432CC1AA43 /* SUStandardVersionComparator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUStandardVersionComparator.h; path = Sparkle.framework/Versions/A/Headers/SUStandardVersionComparator.h; sourceTree = "<group>"; };
+		97E87B19E183E2A0319CFA7DB1D994BB /* mdc2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mdc2.h; path = "include-macos/openssl/mdc2.h"; sourceTree = "<group>"; };
+		982439A47EDE6F9C683935AFF28E9198 /* ossl_typ.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ossl_typ.h; path = "include-macos/openssl/ossl_typ.h"; sourceTree = "<group>"; };
+		A0C12020B00BA413372ABA4924574E09 /* cmac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cmac.h; path = "include-macos/openssl/cmac.h"; sourceTree = "<group>"; };
+		A21276514564E0A465F57A1B7EF56D80 /* safestack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = safestack.h; path = "include-macos/openssl/safestack.h"; sourceTree = "<group>"; };
+		A6D79984C25E511DA133851110B1A62B /* des_old.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = des_old.h; path = "include-macos/openssl/des_old.h"; sourceTree = "<group>"; };
+		A72C589F36288B5F46CF2BDB5892F82F /* Pods-Wired Server-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Wired Server-dummy.m"; sourceTree = "<group>"; };
+		A8D73A88D81422A2A096F2E18B071511 /* SUAppcastItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUAppcastItem.h; path = Sparkle.framework/Versions/A/Headers/SUAppcastItem.h; sourceTree = "<group>"; };
+		ABB8106FED2A00985B5F55B3FB8C2A21 /* SUVersionDisplayProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUVersionDisplayProtocol.h; path = Sparkle.framework/Versions/A/Headers/SUVersionDisplayProtocol.h; sourceTree = "<group>"; };
+		AC1B28EF96F0FC9554A00B9D9BC9E666 /* txt_db.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = txt_db.h; path = "include-macos/openssl/txt_db.h"; sourceTree = "<group>"; };
+		AC5D9FCEFEF7C3CE903A83E55BAFB4AF /* srtp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = srtp.h; path = "include-macos/openssl/srtp.h"; sourceTree = "<group>"; };
+		ADBEFB44FF427177B0D2FE798CB21DC7 /* dtls1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dtls1.h; path = "include-macos/openssl/dtls1.h"; sourceTree = "<group>"; };
+		AEFC433EAF7A9B7A292BF964EDBF2085 /* Pods-Wired Server.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Wired Server.release.xcconfig"; sourceTree = "<group>"; };
+		B8677CF57CD45D1EA72032D0E4CE6DFA /* md4.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = md4.h; path = "include-macos/openssl/md4.h"; sourceTree = "<group>"; };
+		B9FBD8B6EEB0E4C9A8EF7201A7866992 /* Pods-libwired-osx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-libwired-osx.release.xcconfig"; sourceTree = "<group>"; };
+		BC82EA3BCCF8A807830C86FEBD47B8BE /* Pods-Wired Server-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Wired Server-resources.sh"; sourceTree = "<group>"; };
+		BD9EB41BA7DA9046E15AD7E30A076D02 /* conf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = conf.h; path = "include-macos/openssl/conf.h"; sourceTree = "<group>"; };
+		BE0C185499B22E250455BB429B580C39 /* Pods-WiredNetworking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WiredNetworking.release.xcconfig"; sourceTree = "<group>"; };
+		BE9887BAD6FC184A7E958A4747B41660 /* comp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = comp.h; path = "include-macos/openssl/comp.h"; sourceTree = "<group>"; };
+		BEA3014AC9D3635CA3717C9C0641DEFA /* Pods-libwired-osx-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-libwired-osx-umbrella.h"; sourceTree = "<group>"; };
+		CB672463DC3C1791AE9DEC443AB7DAC9 /* kssl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = kssl.h; path = "include-macos/openssl/kssl.h"; sourceTree = "<group>"; };
+		CCBAD317471C3476253174CAB09C4F4A /* md5.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = md5.h; path = "include-macos/openssl/md5.h"; sourceTree = "<group>"; };
+		CDDE198E069A471685BFA6CEB661725E /* Pods-Wired Server-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Wired Server-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CF94295E7AF71A591F9BDD0CFD50D526 /* err.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = err.h; path = "include-macos/openssl/err.h"; sourceTree = "<group>"; };
+		CFA21EB0128633FAEE33A6812CAB8A0C /* bn.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bn.h; path = "include-macos/openssl/bn.h"; sourceTree = "<group>"; };
+		CFFE22E8A22709548BE5BEEA2FE89237 /* Pods_libwired_osx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_libwired_osx.framework; path = "Pods-libwired-osx.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D11C1A31F92D6B22472B54876FCF79BF /* x509v3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = x509v3.h; path = "include-macos/openssl/x509v3.h"; sourceTree = "<group>"; };
+		D17E925EFB1EF7A3DF40D4C482C83CF8 /* ec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ec.h; path = "include-macos/openssl/ec.h"; sourceTree = "<group>"; };
+		D240ED942EE15B7428820CB2AC850FFE /* rsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rsa.h; path = "include-macos/openssl/rsa.h"; sourceTree = "<group>"; };
+		D2415265786EDB016332B69EF2062C6D /* ocsp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ocsp.h; path = "include-macos/openssl/ocsp.h"; sourceTree = "<group>"; };
+		D4B558696E458D2A05E243CED29DABFF /* libssl.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libssl.a; path = "lib-macos/libssl.a"; sourceTree = "<group>"; };
+		D5164FD80AC6B3E2FFB8A4C51D14FDA9 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		D5246E13B6AC58EA97112FB83BC499B7 /* pqueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pqueue.h; path = "include-macos/openssl/pqueue.h"; sourceTree = "<group>"; };
+		D6245A91D0FDE0657FB45BFFC3A0AD40 /* SUStandardVersionComparator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUStandardVersionComparator.h; path = Sparkle.framework/Versions/A/Headers/SUStandardVersionComparator.h; sourceTree = "<group>"; };
+		D70B90927B5D297F52B14B36CAF31DCC /* Pods-Wired Server-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Wired Server-umbrella.h"; sourceTree = "<group>"; };
+		D82547B55371CC74E5675540FBDA0FAA /* ts.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ts.h; path = "include-macos/openssl/ts.h"; sourceTree = "<group>"; };
+		D87084A6EBF6CCE73841162431BD766C /* bio.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bio.h; path = "include-macos/openssl/bio.h"; sourceTree = "<group>"; };
+		D87C67828CAD6CE3BE8FC1D2F572719C /* asn1t.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = asn1t.h; path = "include-macos/openssl/asn1t.h"; sourceTree = "<group>"; };
+		DAC3A6DA82A9F483B1AAB01C78769C70 /* SUErrors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUErrors.h; path = Sparkle.framework/Versions/A/Headers/SUErrors.h; sourceTree = "<group>"; };
+		DB40E8D19A962442614E6D53E54075AA /* krb5_asn.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = krb5_asn.h; path = "include-macos/openssl/krb5_asn.h"; sourceTree = "<group>"; };
+		DCB1F69B0B2A10B783A602CBA8B4499A /* Pods-libwired-osx.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-libwired-osx.modulemap"; sourceTree = "<group>"; };
+		DF3D7489504D4AAC0F9A0103828779B9 /* sha.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sha.h; path = "include-macos/openssl/sha.h"; sourceTree = "<group>"; };
+		DF428FC7C7A6555B2B02D8E238C8D8F2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		DFD7D2C8EF4A166A19B2FCE683C6DF21 /* symhacks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = symhacks.h; path = "include-macos/openssl/symhacks.h"; sourceTree = "<group>"; };
+		E0A5EF1555E9B589596DD32E7989A743 /* Pods-WiredNetworking-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WiredNetworking-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E2518CC2D5245D010496B8F8109B4E71 /* Pods-WiredNetworking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WiredNetworking.debug.xcconfig"; sourceTree = "<group>"; };
+		E6AF3B28BC5039019F582DDC2FB57C0C /* blowfish.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = blowfish.h; path = "include-macos/openssl/blowfish.h"; sourceTree = "<group>"; };
+		E8DD5F65ED4C6486B1E17DE1A77F5B58 /* Sparkle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Sparkle.h; path = Sparkle.framework/Versions/A/Headers/Sparkle.h; sourceTree = "<group>"; };
+		E8F896937A864BDC86312402B0550509 /* lhash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = lhash.h; path = "include-macos/openssl/lhash.h"; sourceTree = "<group>"; };
+		EA5E23116B1B422BD1C5E363E0085DEA /* Pods-Wired Server.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Wired Server.debug.xcconfig"; sourceTree = "<group>"; };
+		EA6892EDC8F2C2E1ACA9F0D851092C0D /* Pods-Wired Server-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Wired Server-frameworks.sh"; sourceTree = "<group>"; };
+		EA76B3B380482DAD70CA6A11895B8403 /* seed.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = seed.h; path = "include-macos/openssl/seed.h"; sourceTree = "<group>"; };
+		F31ED6F8CA21DB3BBAE9570B1059EBA3 /* ssl23.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl23.h; path = "include-macos/openssl/ssl23.h"; sourceTree = "<group>"; };
+		F4A4BAB54692769C8A3D01A5D1A05E02 /* e_os2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = e_os2.h; path = "include-macos/openssl/e_os2.h"; sourceTree = "<group>"; };
+		F56AFA7C3EA99486D7D7BC7FCBAAC8C2 /* Pods-Wired Server-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Wired Server-acknowledgements.plist"; sourceTree = "<group>"; };
+		F893ECD77905D0313BA74928528EF2C2 /* SUExport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SUExport.h; path = Sparkle.framework/Versions/A/Headers/SUExport.h; sourceTree = "<group>"; };
+		F9138059B78A4B30988FA28E69E427E0 /* pkcs7.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pkcs7.h; path = "include-macos/openssl/pkcs7.h"; sourceTree = "<group>"; };
+		F92E180D82518F16D630076CDBEFD4A6 /* ecdsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ecdsa.h; path = "include-macos/openssl/ecdsa.h"; sourceTree = "<group>"; };
+		FD2B0B170BEFD6B75932209C180EAF28 /* ecdh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ecdh.h; path = "include-macos/openssl/ecdh.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B4880907ED6DFB326B3B2F69C6559FC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD77A6F12B2311007193A3B79CFB6E3F /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB29F0B485C52CB73B4E6BAB407D9E1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				632F24F94AF0C6399E0199DAE993601D /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D1E5F27201835E4536706C40DDA31CF5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				219488A5D3582D9B2D9A8077A97CF18A /* Cocoa.framework in Frameworks */,
+				0B27B3A59ACD9B389596A6664F51F98F /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		04C068A18C5413F804A2959126093416 /* OS X */ = {
+		057CF069353022466361088A49FDB32F /* OpenSSL-Universal */ = {
 			isa = PBXGroup;
 			children = (
-				270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */,
+				48A6B07409CE24CDF380031CD9BE4650 /* aes.h */,
+				281B22A1F5AAF961FBA438F82EE83B21 /* asn1.h */,
+				6C28B92199A0AF13DD611EC7814FB72A /* asn1_mac.h */,
+				D87C67828CAD6CE3BE8FC1D2F572719C /* asn1t.h */,
+				D87084A6EBF6CCE73841162431BD766C /* bio.h */,
+				E6AF3B28BC5039019F582DDC2FB57C0C /* blowfish.h */,
+				CFA21EB0128633FAEE33A6812CAB8A0C /* bn.h */,
+				25E9830435D6DFFFE31C6F4E2638AC1C /* buffer.h */,
+				380993F650004A00FF0232864CDE1D16 /* camellia.h */,
+				44BA1D087E8FB7C3B803D12E12AD8B18 /* cast.h */,
+				A0C12020B00BA413372ABA4924574E09 /* cmac.h */,
+				29D4FB4D92AC375ADEA6D3BBFA42A614 /* cms.h */,
+				BE9887BAD6FC184A7E958A4747B41660 /* comp.h */,
+				BD9EB41BA7DA9046E15AD7E30A076D02 /* conf.h */,
+				616A0692F3B025D166CC2DFB79C18252 /* conf_api.h */,
+				75387CB047100650C0839E57D469B0A4 /* crypto.h */,
+				7BF2448F9E16A364BB9E78B4A7A42159 /* des.h */,
+				A6D79984C25E511DA133851110B1A62B /* des_old.h */,
+				6CC3AE7A083658411D9FDD45450D00F0 /* dh.h */,
+				59FD7CAB528CB87052CFA66E04245CFA /* dsa.h */,
+				571F6EBFEA28047BC02BBD9E5B0E2B9E /* dso.h */,
+				ADBEFB44FF427177B0D2FE798CB21DC7 /* dtls1.h */,
+				F4A4BAB54692769C8A3D01A5D1A05E02 /* e_os2.h */,
+				7756EB60AADABB5B1FAE0F75B61A8145 /* ebcdic.h */,
+				D17E925EFB1EF7A3DF40D4C482C83CF8 /* ec.h */,
+				FD2B0B170BEFD6B75932209C180EAF28 /* ecdh.h */,
+				F92E180D82518F16D630076CDBEFD4A6 /* ecdsa.h */,
+				26A4B525711DB81F9624A64793075B10 /* engine.h */,
+				CF94295E7AF71A591F9BDD0CFD50D526 /* err.h */,
+				4C996C60A88EB71D0793EB9D02C18751 /* evp.h */,
+				88D5FD3E71202FD853AC15FDAC990D11 /* hmac.h */,
+				8DC5856CADEEF1D640AF2E8E376E793A /* idea.h */,
+				DB40E8D19A962442614E6D53E54075AA /* krb5_asn.h */,
+				CB672463DC3C1791AE9DEC443AB7DAC9 /* kssl.h */,
+				E8F896937A864BDC86312402B0550509 /* lhash.h */,
+				B8677CF57CD45D1EA72032D0E4CE6DFA /* md4.h */,
+				CCBAD317471C3476253174CAB09C4F4A /* md5.h */,
+				97E87B19E183E2A0319CFA7DB1D994BB /* mdc2.h */,
+				81B5E754A02C514B581F4DCC87F20913 /* modes.h */,
+				62D0F2B3F190BF8C789D350CE96AF3BF /* obj_mac.h */,
+				48E8CB32D4A8F15F1FDEAF47AFD6C4DA /* objects.h */,
+				D2415265786EDB016332B69EF2062C6D /* ocsp.h */,
+				779877C8B1B4C6F5B506C41D4E670651 /* opensslconf.h */,
+				0541D4020A38D816593D04BDA9C016FF /* opensslv.h */,
+				982439A47EDE6F9C683935AFF28E9198 /* ossl_typ.h */,
+				0CA8D8020C49179260563E469A91C747 /* pem.h */,
+				926C47A3E39802D271C2F27E7C773C78 /* pem2.h */,
+				8EAE5CA32560A98EA43690B3FCE47E17 /* pkcs12.h */,
+				F9138059B78A4B30988FA28E69E427E0 /* pkcs7.h */,
+				D5246E13B6AC58EA97112FB83BC499B7 /* pqueue.h */,
+				007F5B4CC38DFE15796B8E5B04EA57E8 /* rand.h */,
+				8C36A82E41002FAA5D355B2FB05444A6 /* rc2.h */,
+				659114B30C95A2C685B9068CBD2AD2DE /* rc4.h */,
+				0EA995AE6B0D5B4E19CFC3AAFBEA457B /* ripemd.h */,
+				D240ED942EE15B7428820CB2AC850FFE /* rsa.h */,
+				A21276514564E0A465F57A1B7EF56D80 /* safestack.h */,
+				EA76B3B380482DAD70CA6A11895B8403 /* seed.h */,
+				DF3D7489504D4AAC0F9A0103828779B9 /* sha.h */,
+				6A05D03E8C806B014304DB06554E7451 /* srp.h */,
+				AC5D9FCEFEF7C3CE903A83E55BAFB4AF /* srtp.h */,
+				76B509548DC529F22D2B1DF3258C77D8 /* ssl.h */,
+				596E622640C744B68AF4E49C79AD1D76 /* ssl2.h */,
+				F31ED6F8CA21DB3BBAE9570B1059EBA3 /* ssl23.h */,
+				93576952188729AF8A5F3D8731EBBAE6 /* ssl3.h */,
+				15361D639D311758F5EF21E305F482BE /* stack.h */,
+				DFD7D2C8EF4A166A19B2FCE683C6DF21 /* symhacks.h */,
+				617AFAAB7C97CC0A117B0266B175C04E /* tls1.h */,
+				D82547B55371CC74E5675540FBDA0FAA /* ts.h */,
+				AC1B28EF96F0FC9554A00B9D9BC9E666 /* txt_db.h */,
+				0A01FE86564A612EAEE804D15485A824 /* ui.h */,
+				2C4AC19B42AA21ADBDA257F13C8398D5 /* ui_compat.h */,
+				8797E39E5BC0AB9FBC837BA32CA44B52 /* whrlpool.h */,
+				3E3D0E6EFD115FB9CB61F6DD3F36D91F /* x509.h */,
+				29B0FD0B98C25AD7C3249C9EE45601F7 /* x509_vfy.h */,
+				D11C1A31F92D6B22472B54876FCF79BF /* x509v3.h */,
+				68FAC431AD72F210541D45C52B77C239 /* Frameworks */,
 			);
-			name = "OS X";
+			name = "OpenSSL-Universal";
+			path = "OpenSSL-Universal";
 			sourceTree = "<group>";
 		};
 		39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				04C068A18C5413F804A2959126093416 /* OS X */,
+				FA7AC8429882A95AA0810A9DCDED54FF /* OS X */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3BF085DA75D6378DAD4E2852F9FACCA1 /* Targets Support Files */ = {
+		4766B4FF8E2BFAE1A5C777F91E2ED8FB /* Sparkle */ = {
 			isa = PBXGroup;
 			children = (
-				479168F54464E085537BA27474805D84 /* Pods-Wired Server */,
+				E8DD5F65ED4C6486B1E17DE1A77F5B58 /* Sparkle.h */,
+				6E5A5027A7375C9A6A75D639B4F53382 /* SUAppcast.h */,
+				A8D73A88D81422A2A096F2E18B071511 /* SUAppcastItem.h */,
+				DAC3A6DA82A9F483B1AAB01C78769C70 /* SUErrors.h */,
+				F893ECD77905D0313BA74928528EF2C2 /* SUExport.h */,
+				D6245A91D0FDE0657FB45BFFC3A0AD40 /* SUStandardVersionComparator.h */,
+				294857A81F77224AC8DA3D2534BEE038 /* SUUpdater.h */,
+				65C26250966B1565ED5D6433AEE522B2 /* SUUpdaterDelegate.h */,
+				3BAD577B77714A66767A5760C6F67F1A /* SUVersionComparisonProtocol.h */,
+				ABB8106FED2A00985B5F55B3FB8C2A21 /* SUVersionDisplayProtocol.h */,
+				595DD31BAEDF80A450CC54A1D0EE1C8A /* Frameworks */,
 			);
-			name = "Targets Support Files";
+			name = Sparkle;
+			path = Sparkle;
 			sourceTree = "<group>";
 		};
-		479168F54464E085537BA27474805D84 /* Pods-Wired Server */ = {
+		4DB538698B81AD7C04FC6CE123F65E5B /* Pods-Wired Server */ = {
 			isa = PBXGroup;
 			children = (
-				67B2F5C29BC4BC5B9B31C718DE321A5C /* Info.plist */,
-				E1396D16DD928DD5568D9FAB77D4E4AA /* Pods-Wired Server.modulemap */,
-				C729713F905A3EC2111148BCF95A9E12 /* Pods-Wired Server-acknowledgements.markdown */,
-				2033230FAD35052145A40B24650B08B2 /* Pods-Wired Server-acknowledgements.plist */,
-				726A7EC19B608C752C445C44DD3B3D5D /* Pods-Wired Server-dummy.m */,
-				C15492D960DC007CF68CE0A2EE73F7C9 /* Pods-Wired Server-frameworks.sh */,
-				9E7FC52527BF3C03EBEB4B051F353963 /* Pods-Wired Server-resources.sh */,
-				31BD0F7A05F4243E7F868E1975BD242B /* Pods-Wired Server-umbrella.h */,
-				5D29214BA7CFF07952DC5866D382D850 /* Pods-Wired Server.debug.xcconfig */,
-				E2F2EE2C2854E73BE486577F31935044 /* Pods-Wired Server.release.xcconfig */,
+				5580483032DCD898815672BD262B4CAA /* Info.plist */,
+				7035A912CA0DF240C588CF8F708D8CBE /* Pods-Wired Server.modulemap */,
+				CDDE198E069A471685BFA6CEB661725E /* Pods-Wired Server-acknowledgements.markdown */,
+				F56AFA7C3EA99486D7D7BC7FCBAAC8C2 /* Pods-Wired Server-acknowledgements.plist */,
+				A72C589F36288B5F46CF2BDB5892F82F /* Pods-Wired Server-dummy.m */,
+				EA6892EDC8F2C2E1ACA9F0D851092C0D /* Pods-Wired Server-frameworks.sh */,
+				BC82EA3BCCF8A807830C86FEBD47B8BE /* Pods-Wired Server-resources.sh */,
+				D70B90927B5D297F52B14B36CAF31DCC /* Pods-Wired Server-umbrella.h */,
+				EA5E23116B1B422BD1C5E363E0085DEA /* Pods-Wired Server.debug.xcconfig */,
+				AEFC433EAF7A9B7A292BF964EDBF2085 /* Pods-Wired Server.release.xcconfig */,
 			);
 			name = "Pods-Wired Server";
 			path = "Target Support Files/Pods-Wired Server";
 			sourceTree = "<group>";
 		};
-		6C4A8D6723EA64B63D81821C58551253 /* Pods */ = {
+		4F32D915DB81A350B9B9A87003F2A774 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7DA37F5FD06B7D9792753E9152A8621A /* Sparkle */,
+				CFFE22E8A22709548BE5BEEA2FE89237 /* Pods_libwired_osx.framework */,
+				00C4DEFC5BE2BD39D1C8E308A20EFBD3 /* Pods_Wired_Server.framework */,
+				606F5832D46546E009A274F6BA3AAA53 /* Pods_WiredNetworking.framework */,
 			);
-			name = Pods;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		7DA37F5FD06B7D9792753E9152A8621A /* Sparkle */ = {
+		595DD31BAEDF80A450CC54A1D0EE1C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CFC2150FE91499A0C52A00AED7BC2471 /* Sparkle.h */,
-				EDCF64026B6B952731DC763935DBB677 /* SUAppcast.h */,
-				206FC0298653B913F6DE0E15DF72023A /* SUAppcastItem.h */,
-				90E75E9DC7A922B4F94EA6E11741D6A8 /* SUErrors.h */,
-				098E6864A7B900C354092929510F6742 /* SUExport.h */,
-				F8ACA9546912BB31E3554E432CC1AA43 /* SUStandardVersionComparator.h */,
-				C2C9D1B34A27BA4F6CC2A7CE29DF23D1 /* SUUpdater.h */,
-				BE06FF81E8B47CAE2929E9997A0FDD00 /* SUUpdaterDelegate.h */,
-				146EB1FFD3039CBBC121466BC10E749F /* SUVersionComparisonProtocol.h */,
-				2A68FB6161EB6D13E0025D572C32A5C8 /* SUVersionDisplayProtocol.h */,
-				B51F172CB8B6401B0613A2D3DBE6BB0B /* Frameworks */,
+				D5164FD80AC6B3E2FFB8A4C51D14FDA9 /* Sparkle.framework */,
 			);
-			name = Sparkle;
-			path = Sparkle;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5D8C643C544878843CE3DA15E66F2D68 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA214E0623A66DF00A88C0C87EFA0A28 /* Pods-libwired-osx */,
+				4DB538698B81AD7C04FC6CE123F65E5B /* Pods-Wired Server */,
+				A8BD9BD5D10BA340C6849EBD579B8A56 /* Pods-WiredNetworking */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		68FAC431AD72F210541D45C52B77C239 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2DDDDEAFC037BDE71F3EBB859B012E40 /* libcrypto.a */,
+				D4B558696E458D2A05E243CED29DABFF /* libssl.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -125,36 +341,87 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */,
-				6C4A8D6723EA64B63D81821C58551253 /* Pods */,
-				D073BDC55321ADA3D68381B2B9D70817 /* Products */,
-				3BF085DA75D6378DAD4E2852F9FACCA1 /* Targets Support Files */,
+				DD4FDDF433C09564C1C75D631D670FA0 /* Pods */,
+				4F32D915DB81A350B9B9A87003F2A774 /* Products */,
+				5D8C643C544878843CE3DA15E66F2D68 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		B51F172CB8B6401B0613A2D3DBE6BB0B /* Frameworks */ = {
+		A8BD9BD5D10BA340C6849EBD579B8A56 /* Pods-WiredNetworking */ = {
 			isa = PBXGroup;
 			children = (
-				08F0E3ABE0F7FFF0B060E49C18859B20 /* Sparkle.framework */,
+				3AFF9434757F8EF56AB96659FB62CF17 /* Info.plist */,
+				0A4179BC3101F7CBE78CE4FA7A2FAAE4 /* Pods-WiredNetworking.modulemap */,
+				E0A5EF1555E9B589596DD32E7989A743 /* Pods-WiredNetworking-acknowledgements.markdown */,
+				2BA35F4111FE79889A376DEBA1EFB65F /* Pods-WiredNetworking-acknowledgements.plist */,
+				469DD6564A9ED17D3C558618FEF2E8EE /* Pods-WiredNetworking-dummy.m */,
+				2E732B560A9DDEB18B249F83B19B3628 /* Pods-WiredNetworking-resources.sh */,
+				005D06CB7DD8A2733B064989CE2406EF /* Pods-WiredNetworking-umbrella.h */,
+				E2518CC2D5245D010496B8F8109B4E71 /* Pods-WiredNetworking.debug.xcconfig */,
+				BE0C185499B22E250455BB429B580C39 /* Pods-WiredNetworking.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = "Pods-WiredNetworking";
+			path = "Target Support Files/Pods-WiredNetworking";
 			sourceTree = "<group>";
 		};
-		D073BDC55321ADA3D68381B2B9D70817 /* Products */ = {
+		DA214E0623A66DF00A88C0C87EFA0A28 /* Pods-libwired-osx */ = {
 			isa = PBXGroup;
 			children = (
-				041DDBBEB5C807CBCAD98A5E09478103 /* Pods_Wired_Server.framework */,
+				6C6AA410C27D03ABC3CD38C0BA1E0BDE /* Info.plist */,
+				DCB1F69B0B2A10B783A602CBA8B4499A /* Pods-libwired-osx.modulemap */,
+				5E100A8FD57038DA0733C2E4B508D6A4 /* Pods-libwired-osx-acknowledgements.markdown */,
+				751F9C1BCBB8C8F5230561735699610F /* Pods-libwired-osx-acknowledgements.plist */,
+				89D3309BD2AD2060323861DA2D545CF8 /* Pods-libwired-osx-dummy.m */,
+				83B35A2090A10C7B7DDA64BFA647AC68 /* Pods-libwired-osx-resources.sh */,
+				BEA3014AC9D3635CA3717C9C0641DEFA /* Pods-libwired-osx-umbrella.h */,
+				83113C860485AD783E83A1B9399C0A8A /* Pods-libwired-osx.debug.xcconfig */,
+				B9FBD8B6EEB0E4C9A8EF7201A7866992 /* Pods-libwired-osx.release.xcconfig */,
 			);
-			name = Products;
+			name = "Pods-libwired-osx";
+			path = "Target Support Files/Pods-libwired-osx";
+			sourceTree = "<group>";
+		};
+		DD4FDDF433C09564C1C75D631D670FA0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				057CF069353022466361088A49FDB32F /* OpenSSL-Universal */,
+				4766B4FF8E2BFAE1A5C777F91E2ED8FB /* Sparkle */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FA7AC8429882A95AA0810A9DCDED54FF /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				DF428FC7C7A6555B2B02D8E238C8D8F2 /* Cocoa.framework */,
+			);
+			name = "OS X";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		1210F9864BC51558AAFC8B108CB4DF30 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1025850EE15CBE9EF10DB9365892D9C6 /* Pods-libwired-osx-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A5044A6BE6CC1D03126D8E4668670854 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D73572053F127165EE8C0AC3A1522E8C /* Pods-Wired Server-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A56FED90F77FE4B59CDF2BF4DDCFCF3B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EFF5BF32DEE4D59B28D5537288E8070 /* Pods-WiredNetworking-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,7 +442,41 @@
 			);
 			name = "Pods-Wired Server";
 			productName = "Pods-Wired Server";
-			productReference = 041DDBBEB5C807CBCAD98A5E09478103 /* Pods_Wired_Server.framework */;
+			productReference = 00C4DEFC5BE2BD39D1C8E308A20EFBD3 /* Pods_Wired_Server.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8CF2D1AF3468A8B4785C162769D7F96C /* Pods-libwired-osx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1483DE4CD4B784E410FEF6A594FD50E /* Build configuration list for PBXNativeTarget "Pods-libwired-osx" */;
+			buildPhases = (
+				62C190EB78E0568E211801DAE3F3BF39 /* Sources */,
+				B4880907ED6DFB326B3B2F69C6559FC4 /* Frameworks */,
+				1210F9864BC51558AAFC8B108CB4DF30 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-libwired-osx";
+			productName = "Pods-libwired-osx";
+			productReference = CFFE22E8A22709548BE5BEEA2FE89237 /* Pods_libwired_osx.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BB09F891010C6E11BBB0EAB63B34F821 /* Pods-WiredNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA692D25E0B84540FF4539945AF6D8DA /* Build configuration list for PBXNativeTarget "Pods-WiredNetworking" */;
+			buildPhases = (
+				67ACFFF07C634CBC95620420A9396186 /* Sources */,
+				CB29F0B485C52CB73B4E6BAB407D9E1A /* Frameworks */,
+				A56FED90F77FE4B59CDF2BF4DDCFCF3B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-WiredNetworking";
+			productName = "Pods-WiredNetworking";
+			productReference = 606F5832D46546E009A274F6BA3AAA53 /* Pods_WiredNetworking.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -184,8 +485,8 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -195,16 +496,34 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = D073BDC55321ADA3D68381B2B9D70817 /* Products */;
+			productRefGroup = 4F32D915DB81A350B9B9A87003F2A774 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				8CF2D1AF3468A8B4785C162769D7F96C /* Pods-libwired-osx */,
 				72A3155231FE9EA0E903C13A96EAF743 /* Pods-Wired Server */,
+				BB09F891010C6E11BBB0EAB63B34F821 /* Pods-WiredNetworking */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		62C190EB78E0568E211801DAE3F3BF39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF9F460D8DD049E981153402449E794C /* Pods-libwired-osx-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67ACFFF07C634CBC95620420A9396186 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1984603B2C6C6136408985C2CDBB44D1 /* Pods-WiredNetworking-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FDFD97F089DCDFD505A1D9D690104211 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -216,37 +535,163 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		0088D1E8D4092244C9725266BA6FDF4F /* Release */ = {
+		03C862A159B6E495FAB2966D1973FEEE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E2F2EE2C2854E73BE486577F31935044 /* Pods-Wired Server.release.xcconfig */;
+			baseConfigurationReference = EA5E23116B1B422BD1C5E363E0085DEA /* Pods-Wired Server.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD)";
-				CODE_SIGN_IDENTITY = "-";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_VERSION = A;
-				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-Wired Server/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MODULEMAP_FILE = "Target Support Files/Pods-Wired Server/Pods-Wired Server.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Wired_Server;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		10E850B85F3451D5157989C3751F075F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		48BC0AD48871B2ECB24B437F9E4D3E34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83113C860485AD783E83A1B9399C0A8A /* Pods-libwired-osx.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-libwired-osx/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Pods-libwired-osx/Pods-libwired-osx.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		546CDBEB1D2743DB0717F1333E89FB6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE0C185499B22E250455BB429B580C39 /* Pods-WiredNetworking.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-WiredNetworking/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Pods-WiredNetworking/Pods-WiredNetworking.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -254,133 +699,172 @@
 			};
 			name = Release;
 		};
-		0D888A937A632FABDDE664F6303DAD4B /* Debug */ = {
+		602E55D3088CAE0AC66B6AE1B8B75A2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEFC433EAF7A9B7A292BF964EDBF2085 /* Pods-Wired Server.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-Wired Server/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Pods-Wired Server/Pods-Wired Server.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		78EAC8F8B557AC2B79140F791425266E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2518CC2D5245D010496B8F8109B4E71 /* Pods-WiredNetworking.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-WiredNetworking/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Pods-WiredNetworking/Pods-WiredNetworking.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9B1A927882AE7B2A4BA73E89B6D0244B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9FBD8B6EEB0E4C9A8EF7201A7866992 /* Pods-libwired-osx.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-libwired-osx/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Pods-libwired-osx/Pods-libwired-osx.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D5B651532ED11AFBC5E147B64848AFB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Debug;
-		};
-		16606049C147A8E13C83DA842B4F2DEF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		3974D6D95A4FFFB4CB5C1C033E67BD37 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5D29214BA7CFF07952DC5866D382D850 /* Pods-Wired Server.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_VERSION = A;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Wired Server/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				MODULEMAP_FILE = "Target Support Files/Pods-Wired Server/Pods-Wired Server.modulemap";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Wired_Server;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
@@ -390,8 +874,8 @@
 		069E932C88968BC79AC7832137F7580C /* Build configuration list for PBXNativeTarget "Pods-Wired Server" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3974D6D95A4FFFB4CB5C1C033E67BD37 /* Debug */,
-				0088D1E8D4092244C9725266BA6FDF4F /* Release */,
+				03C862A159B6E495FAB2966D1973FEEE /* Debug */,
+				602E55D3088CAE0AC66B6AE1B8B75A2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -399,8 +883,26 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0D888A937A632FABDDE664F6303DAD4B /* Debug */,
-				16606049C147A8E13C83DA842B4F2DEF /* Release */,
+				D5B651532ED11AFBC5E147B64848AFB4 /* Debug */,
+				10E850B85F3451D5157989C3751F075F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA692D25E0B84540FF4539945AF6D8DA /* Build configuration list for PBXNativeTarget "Pods-WiredNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78EAC8F8B557AC2B79140F791425266E /* Debug */,
+				546CDBEB1D2743DB0717F1333E89FB6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1483DE4CD4B784E410FEF6A594FD50E /* Build configuration list for PBXNativeTarget "Pods-libwired-osx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48BC0AD48871B2ECB24B437F9E4D3E34 /* Debug */,
+				9B1A927882AE7B2A4BA73E89B6D0244B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

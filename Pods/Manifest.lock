@@ -1,12 +1,20 @@
 PODS:
+  - OpenSSL-Universal (1.0.2.13)
   - Sparkle (1.18.1)
 
 DEPENDENCIES:
+  - OpenSSL-Universal
   - Sparkle
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - OpenSSL-Universal
+    - Sparkle
+
 SPEC CHECKSUMS:
+  OpenSSL-Universal: 401888162f11c33ebbd46f782d9229da35c61327
   Sparkle: 06ea33170007c5937ee54da481b4481af98fac79
 
-PODFILE CHECKSUM: 89eb3183a47fa666412668097e4a8ab512e1a28d
+PODFILE CHECKSUM: c204b537689899d0a4c0d511131137cf97f11039
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.5.3

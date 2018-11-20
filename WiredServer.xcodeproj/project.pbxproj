@@ -111,47 +111,12 @@
 			remoteGlobalIDString = 4CA5983F15A20E90000C4DAD;
 			remoteInfo = wired;
 		};
-		4C788FED170B35BF004CE617 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4C788FDF170B35BE004CE617 /* WiredFrameworks.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4CBDABFC147AF52E00D0C51A;
-			remoteInfo = "libwired-ios";
-		};
-		4C788FEF170B35BF004CE617 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4C788FDF170B35BE004CE617 /* WiredFrameworks.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4CBDADA4147AFC4A00D0C51A;
-			remoteInfo = "libwired-simulator";
-		};
 		4C788FF1170B35BF004CE617 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4C788FDF170B35BE004CE617 /* WiredFrameworks.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 4CBDAD14147AF94F00D0C51A;
 			remoteInfo = "libwired-osx";
-		};
-		4C788FF3170B35BF004CE617 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4C788FDF170B35BE004CE617 /* WiredFrameworks.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4C667EC0147B018600AAA5C7;
-			remoteInfo = StaticWiredFoundation;
-		};
-		4C788FF5170B35BF004CE617 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4C788FDF170B35BE004CE617 /* WiredFrameworks.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4C667F4E147B02A000AAA5C7;
-			remoteInfo = StaticWiredNetworking;
-		};
-		4C788FF7170B35BF004CE617 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4C788FDF170B35BE004CE617 /* WiredFrameworks.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4C61FC4F1487166A008EE92C;
-			remoteInfo = StaticWiredUIKit;
 		};
 		4C788FF9170B35BF004CE617 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -195,13 +160,6 @@
 			remoteGlobalIDString = 4C417301147EDF1000DC0A9A;
 			remoteInfo = WiredAppKit;
 		};
-		4C789005170B35D9004CE617 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4C788FDF170B35BE004CE617 /* WiredFrameworks.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 4CBDAD13147AF94F00D0C51A;
-			remoteInfo = "libwired-osx";
-		};
 		4C789015170B3E35004CE617 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4C788FDF170B35BE004CE617 /* WiredFrameworks.xcodeproj */;
@@ -223,26 +181,12 @@
 			remoteGlobalIDString = 4CBDAD13147AF94F00D0C51A;
 			remoteInfo = "libwired-osx";
 		};
-		4CBA3E131FEAAC6C00ED7448 /* PBXContainerItemProxy */ = {
+		4C8865D721A1BE56002A7F8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4C788FDF170B35BE004CE617 /* WiredFrameworks.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4CFCEBDA181EA57400D5FF71;
-			remoteInfo = StaticWiredKit;
-		};
-		4CBA3E151FEAAC6C00ED7448 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4C788FDF170B35BE004CE617 /* WiredFrameworks.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4C04AABC181EA9B800D00B75;
-			remoteInfo = StaticWiredData;
-		};
-		4CBA3E171FEAAC6C00ED7448 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4C788FDF170B35BE004CE617 /* WiredFrameworks.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4C04AAC9181EA9B800D00B75;
-			remoteInfo = WiredDataTests;
+			proxyType = 1;
+			remoteGlobalIDString = 4CBDAD13147AF94F00D0C51A;
+			remoteInfo = "libwired-osx";
 		};
 		4CDD88AE15F76CA500283005 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -564,19 +508,11 @@
 		4C788FE0170B35BE004CE617 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4C788FEE170B35BF004CE617 /* wired.a */,
-				4C788FF0170B35BF004CE617 /* wired.a */,
 				4C788FF2170B35BF004CE617 /* wired.a */,
-				4C788FF4170B35BF004CE617 /* WiredFoundation.a */,
-				4C788FF6170B35BF004CE617 /* WiredNetworking.a */,
-				4C788FF8170B35BF004CE617 /* WiredUIKit.a */,
-				4CBA3E141FEAAC6C00ED7448 /* WiredKit.a */,
-				4CBA3E161FEAAC6C00ED7448 /* WiredData.a */,
 				4C788FFA170B35BF004CE617 /* WiredFoundation.framework */,
 				4C788FFC170B35BF004CE617 /* WiredNetworking.framework */,
 				4C788FFE170B35BF004CE617 /* WiredAppKit.framework */,
 				4C789000170B35BF004CE617 /* ChatHistory-default.WiredHistory */,
-				4CBA3E181FEAAC6C00ED7448 /* WiredDataTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -794,7 +730,7 @@
 				4CA598FD15A244D1000C4DAD /* wired.h */,
 			);
 			name = libwired;
-			path = ../libwired/libwired;
+			path = WiredFrameworks/libwired/libwired;
 			sourceTree = "<group>";
 		};
 		4CA5988415A244D1000C4DAD /* base */ = {
@@ -1027,13 +963,12 @@
 				4C8D3352151E2D8D001A6BF7 /* Resources */,
 				4C8D33E8151E98AC001A6BF7 /* Copy Frameworks */,
 				F26808116EE98B9DF1E7389D /* [CP] Embed Pods Frameworks */,
-				982E57A10605FB51C8987CF2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4C8865D821A1BE56002A7F8A /* PBXTargetDependency */,
 				4C45D02B200161F100B8E13E /* PBXTargetDependency */,
-				4C789006170B35D9004CE617 /* PBXTargetDependency */,
 				4C789002170B35D6004CE617 /* PBXTargetDependency */,
 				4C789004170B35D6004CE617 /* PBXTargetDependency */,
 				4C233CBB15211F9C00245506 /* PBXTargetDependency */,
@@ -1080,46 +1015,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		4C788FEE170B35BF004CE617 /* wired.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = wired.a;
-			remoteRef = 4C788FED170B35BF004CE617 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4C788FF0170B35BF004CE617 /* wired.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = wired.a;
-			remoteRef = 4C788FEF170B35BF004CE617 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		4C788FF2170B35BF004CE617 /* wired.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = wired.a;
 			remoteRef = 4C788FF1170B35BF004CE617 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4C788FF4170B35BF004CE617 /* WiredFoundation.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = WiredFoundation.a;
-			remoteRef = 4C788FF3170B35BF004CE617 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4C788FF6170B35BF004CE617 /* WiredNetworking.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = WiredNetworking.a;
-			remoteRef = 4C788FF5170B35BF004CE617 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4C788FF8170B35BF004CE617 /* WiredUIKit.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = WiredUIKit.a;
-			remoteRef = 4C788FF7170B35BF004CE617 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		4C788FFA170B35BF004CE617 /* WiredFoundation.framework */ = {
@@ -1148,27 +1048,6 @@
 			fileType = wrapper.cfbundle;
 			path = "ChatHistory-default.WiredHistory";
 			remoteRef = 4C788FFF170B35BF004CE617 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4CBA3E141FEAAC6C00ED7448 /* WiredKit.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = WiredKit.a;
-			remoteRef = 4CBA3E131FEAAC6C00ED7448 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4CBA3E161FEAAC6C00ED7448 /* WiredData.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = WiredData.a;
-			remoteRef = 4CBA3E151FEAAC6C00ED7448 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4CBA3E181FEAAC6C00ED7448 /* WiredDataTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = WiredDataTests.xctest;
-			remoteRef = 4CBA3E171FEAAC6C00ED7448 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -1243,30 +1122,20 @@
 			shellPath = /bin/bash;
 			shellScript = "sh \"$SRCROOT/../../wired_server_distribute.sh\" || exit 1";
 		};
-		982E57A10605FB51C8987CF2 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wired Server/Pods-Wired Server-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		F26808116EE98B9DF1E7389D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Wired Server/Pods-Wired Server-frameworks.sh",
+				"${PODS_ROOT}/Sparkle/Sparkle.framework",
+				"${PODS_ROOT}/Sparkle/Sparkle.framework.dSYM",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Sparkle.framework",
+				"${DWARF_DSYM_FOLDER_PATH}/Sparkle.framework.dSYM",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1279,13 +1148,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wired Server-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1346,11 +1218,6 @@
 			name = WiredAppKit;
 			targetProxy = 4C789003170B35D6004CE617 /* PBXContainerItemProxy */;
 		};
-		4C789006170B35D9004CE617 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "libwired-osx";
-			targetProxy = 4C789005170B35D9004CE617 /* PBXContainerItemProxy */;
-		};
 		4C789016170B3E35004CE617 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = WiredFoundation;
@@ -1365,6 +1232,11 @@
 			isa = PBXTargetDependency;
 			name = "libwired-osx";
 			targetProxy = 4C78901C170B3E3F004CE617 /* PBXContainerItemProxy */;
+		};
+		4C8865D821A1BE56002A7F8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libwired-osx";
+			targetProxy = 4C8865D721A1BE56002A7F8A /* PBXContainerItemProxy */;
 		};
 		4CDD88AF15F76CA500283005 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
