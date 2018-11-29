@@ -8,16 +8,22 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>17</integer>
 		</dict>
 		<key>Pods-WiredNetworking.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>18</integer>
 		</dict>
 		<key>Pods-libwired-osx.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>16</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>

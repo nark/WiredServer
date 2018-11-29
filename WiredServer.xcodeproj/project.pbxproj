@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		4CA5983F15A20E90000C4DAD /* wired */ = {
+		4C8A853E21B05BB2001154BC /* wired */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 4CA5984015A20E90000C4DAD /* Build configuration list for PBXAggregateTarget "wired" */;
+			buildConfigurationList = 4C8A854021B05BB2001154BC /* Build configuration list for PBXAggregateTarget "wired" */;
 			buildPhases = (
-				4CA5984315A20E95000C4DAD /* ShellScript */,
+				4C8A853F21B05BB2001154BC /* ShellScript */,
 			);
 			dependencies = (
 			);
@@ -93,7 +93,7 @@
 		4C8D34E0151F84E3001A6BF7 /* Updates.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D34DF151F84E3001A6BF7 /* Updates.tiff */; };
 		4CB57B171779007D006ECB87 /* Settings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CB57B151779007D006ECB87 /* Settings.xib */; };
 		4CD34ED91571ACED0054E305 /* Files.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CD34ED81571ACED0054E305 /* Files.png */; };
-		C07882097EDA655FC3C331CE /* Pods_Wired_Server.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A25C532989B8AB2A074ED1A /* Pods_Wired_Server.framework */; };
+		EF69BE8C8E4E61873CCBD9B3 /* Pods_Wired_Server.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 439805F532DF8A35DB8A1760 /* Pods_Wired_Server.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,13 +103,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 4C233C881521022800245506;
 			remoteInfo = "Wired Server Helper";
-		};
-		4C45D02A200161F100B8E13E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4C8D334B151E2D8C001A6BF7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4CA5983F15A20E90000C4DAD;
-			remoteInfo = wired;
 		};
 		4C788FF1170B35BF004CE617 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -188,6 +181,13 @@
 			remoteGlobalIDString = 4CBDAD13147AF94F00D0C51A;
 			remoteInfo = "libwired-osx";
 		};
+		4C8A854321B05E05001154BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C8D334B151E2D8C001A6BF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C8A853E21B05BB2001154BC;
+			remoteInfo = wired;
+		};
 		4CDD88AE15F76CA500283005 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4C8D334B151E2D8C001A6BF7 /* Project object */;
@@ -225,8 +225,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		213E3FA9DB26AA3CD9458127 /* Pods-Wired Server.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wired Server.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wired Server/Pods-Wired Server.debug.xcconfig"; sourceTree = "<group>"; };
-		4A25C532989B8AB2A074ED1A /* Pods_Wired_Server.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wired_Server.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CF33703957EEC429684DE77 /* Pods-Wired Server.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wired Server.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wired Server/Pods-Wired Server.debug.xcconfig"; sourceTree = "<group>"; };
+		439805F532DF8A35DB8A1760 /* Pods_Wired_Server.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wired_Server.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C016F7D1778E97C00D6D2B3 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fr; path = fr.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		4C016F7E1778E97D00D6D2B3 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4C016F7F1778E97D00D6D2B3 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = fr; path = fr.lproj/Credits.rtf; sourceTree = "<group>"; };
@@ -252,7 +252,7 @@
 		4C4A2967151F894F0084E041 /* GreenDrop.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = GreenDrop.tiff; sourceTree = "<group>"; };
 		4C4A2968151F894F0084E041 /* RedDrop.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = RedDrop.tiff; sourceTree = "<group>"; };
 		4C4FDE69177900CA00FADB95 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fr; path = fr.lproj/Settings.xib; sourceTree = "<group>"; };
-		4C5EDCC6154366740031D44E /* man */ = {isa = PBXFileReference; lastKnownFileType = folder; name = man; path = ../../wired/man; sourceTree = "<group>"; };
+		4C5EDCC6154366740031D44E /* man */ = {isa = PBXFileReference; lastKnownFileType = folder; name = man; path = ../wired/man; sourceTree = "<group>"; };
 		4C788FDF170B35BE004CE617 /* WiredFrameworks.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WiredFrameworks.xcodeproj; path = WiredFrameworks/WiredFrameworks.xcodeproj; sourceTree = "<group>"; };
 		4C8CB801159A6D37008C7EB9 /* wired.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = wired.sh; sourceTree = "<group>"; };
 		4C8D3354151E2D8D001A6BF7 /* Wired Server.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wired Server.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -444,7 +444,7 @@
 		4CA598FD15A244D1000C4DAD /* wired.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wired.h; sourceTree = "<group>"; };
 		4CB57B161779007D006ECB87 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Settings.xib; sourceTree = "<group>"; };
 		4CD34ED81571ACED0054E305 /* Files.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Files.png; sourceTree = "<group>"; };
-		C14FB5106D175984980AF252 /* Pods-Wired Server.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wired Server.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wired Server/Pods-Wired Server.release.xcconfig"; sourceTree = "<group>"; };
+		67FE8C95AEF31B6CAE0816AF /* Pods-Wired Server.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wired Server.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wired Server/Pods-Wired Server.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -471,7 +471,7 @@
 				4C8D33ED151E991D001A6BF7 /* Quartz.framework in Frameworks */,
 				4C8D3359151E2D8D001A6BF7 /* Cocoa.framework in Frameworks */,
 				4C483CEF170B66CC0088F1E5 /* libsqlite3.dylib in Frameworks */,
-				C07882097EDA655FC3C331CE /* Pods_Wired_Server.framework in Frameworks */,
+				EF69BE8C8E4E61873CCBD9B3 /* Pods_Wired_Server.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,7 +527,7 @@
 				4C8D3375151E2D93001A6BF7 /* Subprojects */,
 				4C8D3357151E2D8D001A6BF7 /* Frameworks */,
 				4C8D3355151E2D8D001A6BF7 /* Products */,
-				B92F40A4FC9B7E0149533E55 /* Pods */,
+				56B4423D6D696EDD220CF31D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -548,7 +548,7 @@
 				4C8D33EC151E991D001A6BF7 /* Quartz.framework */,
 				4C8D3358151E2D8D001A6BF7 /* Cocoa.framework */,
 				4C8D335A151E2D8D001A6BF7 /* Other Frameworks */,
-				4A25C532989B8AB2A074ED1A /* Pods_Wired_Server.framework */,
+				439805F532DF8A35DB8A1760 /* Pods_Wired_Server.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -710,7 +710,7 @@
 				4CA5988115A2449F000C4DAD /* wiredctl.in */,
 			);
 			name = wired;
-			path = "Wired Server Helper";
+			path = wired/wired;
 			sourceTree = "<group>";
 		};
 		4CA5988315A244D1000C4DAD /* libwired */ = {
@@ -920,11 +920,11 @@
 			path = thread;
 			sourceTree = "<group>";
 		};
-		B92F40A4FC9B7E0149533E55 /* Pods */ = {
+		56B4423D6D696EDD220CF31D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				213E3FA9DB26AA3CD9458127 /* Pods-Wired Server.debug.xcconfig */,
-				C14FB5106D175984980AF252 /* Pods-Wired Server.release.xcconfig */,
+				1CF33703957EEC429684DE77 /* Pods-Wired Server.debug.xcconfig */,
+				67FE8C95AEF31B6CAE0816AF /* Pods-Wired Server.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -957,18 +957,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C8D3372151E2D8D001A6BF7 /* Build configuration list for PBXNativeTarget "Wired Server" */;
 			buildPhases = (
-				FB8048F603FEDA2170E915AC /* [CP] Check Pods Manifest.lock */,
+				07AE0AE287EC52D28CD192F6 /* [CP] Check Pods Manifest.lock */,
 				4C8D3350151E2D8D001A6BF7 /* Sources */,
 				4C8D3351151E2D8D001A6BF7 /* Frameworks */,
 				4C8D3352151E2D8D001A6BF7 /* Resources */,
 				4C8D33E8151E98AC001A6BF7 /* Copy Frameworks */,
-				F26808116EE98B9DF1E7389D /* [CP] Embed Pods Frameworks */,
+				30BB0EA8173C06128ADA22A4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4C8A854421B05E05001154BC /* PBXTargetDependency */,
 				4C8865D821A1BE56002A7F8A /* PBXTargetDependency */,
-				4C45D02B200161F100B8E13E /* PBXTargetDependency */,
 				4C789002170B35D6004CE617 /* PBXTargetDependency */,
 				4C789004170B35D6004CE617 /* PBXTargetDependency */,
 				4C233CBB15211F9C00245506 /* PBXTargetDependency */,
@@ -986,6 +986,11 @@
 			attributes = {
 				LastUpgradeCheck = 0420;
 				ORGANIZATIONNAME = OPALE;
+				TargetAttributes = {
+					4C8D3353151E2D8D001A6BF7 = {
+						ProvisioningStyle = Manual;
+					};
+				};
 			};
 			buildConfigurationList = 4C8D334E151E2D8C001A6BF7 /* Build configuration list for PBXProject "WiredServer" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1009,7 +1014,7 @@
 				4C8D3353151E2D8D001A6BF7 /* Wired Server */,
 				4C233C881521022800245506 /* Wired Server Helper */,
 				4CCEEFA8154C991D004AE045 /* Distribute */,
-				4CA5983F15A20E90000C4DAD /* wired */,
+				4C8A853E21B05BB2001154BC /* wired */,
 			);
 		};
 /* End PBXProject section */
@@ -1096,33 +1101,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4CA5984315A20E95000C4DAD /* ShellScript */ = {
+		07AE0AE287EC52D28CD192F6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wired Server-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# build wired\ncd \"Wired Server\"\n./wired.sh || exit 1\n\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
-		4CCEEFB8154C994D004AE045 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/bash;
-			shellScript = "sh \"$SRCROOT/../../wired_server_distribute.sh\" || exit 1";
-		};
-		F26808116EE98B9DF1E7389D /* [CP] Embed Pods Frameworks */ = {
+		30BB0EA8173C06128ADA22A4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1142,23 +1139,31 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wired Server/Pods-Wired Server-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FB8048F603FEDA2170E915AC /* [CP] Check Pods Manifest.lock */ = {
+		4C8A853F21B05BB2001154BC /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Wired Server-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "# wired user & group\nWIRED_USER=$(id -un)\nWIRED_GROUP=$(id -gn)\n\ncd wired\nmake clean\n\nenv CPPFLAGS=\"-I/usr/local/opt/openssl/include\" LDFLAGS=\"-L/usr/local/opt/openssl/lib\" ./configure --enable-all --with-fake-prefix=\"/Library\" --with-wireddir=\"Wired\" --with-user=\"$WIRED_USER\" --with-group=\"$WIRED_GROUP\"\nmake\n\nmkdir -p \"$BUILT_PRODUCTS_DIR/Wired\"\ncp -r run/ \"$BUILT_PRODUCTS_DIR/Wired\"\n\n";
+		};
+		4CCEEFB8154C994D004AE045 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "sh \"$SRCROOT/../../wired_server_distribute.sh\" || exit 1";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1203,11 +1208,6 @@
 			target = 4C233C881521022800245506 /* Wired Server Helper */;
 			targetProxy = 4C233CBA15211F9C00245506 /* PBXContainerItemProxy */;
 		};
-		4C45D02B200161F100B8E13E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4CA5983F15A20E90000C4DAD /* wired */;
-			targetProxy = 4C45D02A200161F100B8E13E /* PBXContainerItemProxy */;
-		};
 		4C789002170B35D6004CE617 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = WiredFoundation;
@@ -1237,6 +1237,11 @@
 			isa = PBXTargetDependency;
 			name = "libwired-osx";
 			targetProxy = 4C8865D721A1BE56002A7F8A /* PBXContainerItemProxy */;
+		};
+		4C8A854421B05E05001154BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C8A853E21B05BB2001154BC /* wired */;
+			targetProxy = 4C8A854321B05E05001154BC /* PBXContainerItemProxy */;
 		};
 		4CDD88AF15F76CA500283005 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1350,6 +1355,62 @@
 			};
 			name = Release;
 		};
+		4C8A854121B05BB2001154BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/include,
+					/usr/local/opt/openssl/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/lib,
+					/usr/local/opt/openssl/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-lsqlite3",
+					"-lz",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
+			};
+			name = Debug;
+		};
+		4C8A854221B05BB2001154BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/include,
+					/usr/local/opt/openssl/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/lib,
+					/usr/local/opt/openssl/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-lsqlite3",
+					"-lz",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
+			};
+			name = Release;
+		};
 		4C8D3370151E2D8D001A6BF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1398,11 +1459,12 @@
 		};
 		4C8D3373151E2D8D001A6BF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 213E3FA9DB26AA3CD9458127 /* Pods-Wired Server.debug.xcconfig */;
+			baseConfigurationReference = 1CF33703957EEC429684DE77 /* Pods-Wired Server.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD)";
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -1433,11 +1495,12 @@
 		};
 		4C8D3374151E2D8D001A6BF7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C14FB5106D175984980AF252 /* Pods-Wired Server.release.xcconfig */;
+			baseConfigurationReference = 67FE8C95AEF31B6CAE0816AF /* Pods-Wired Server.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD)";
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -1463,62 +1526,6 @@
 				SDKROOT = macosx;
 				VALID_ARCHS = x86_64;
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		4CA5984115A20E90000C4DAD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
-				ARCHS = "$(ARCHS_STANDARD)";
-				GCC_VERSION = "";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					/usr/include,
-					/usr/local/opt/openssl/include,
-				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					/usr/lib,
-					/usr/local/opt/openssl/lib,
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = (
-					"-lsqlite3",
-					"-lz",
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				VALID_ARCHS = x86_64;
-			};
-			name = Debug;
-		};
-		4CA5984215A20E90000C4DAD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
-				ARCHS = "$(ARCHS_STANDARD)";
-				GCC_VERSION = "";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					/usr/include,
-					/usr/local/opt/openssl/include,
-				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					/usr/lib,
-					/usr/local/opt/openssl/lib,
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = (
-					"-lsqlite3",
-					"-lz",
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				VALID_ARCHS = x86_64;
 			};
 			name = Release;
 		};
@@ -1554,6 +1561,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
+		4C8A854021B05BB2001154BC /* Build configuration list for PBXAggregateTarget "wired" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C8A854121B05BB2001154BC /* Debug */,
+				4C8A854221B05BB2001154BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
 		4C8D334E151E2D8C001A6BF7 /* Build configuration list for PBXProject "WiredServer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1568,15 +1584,6 @@
 			buildConfigurations = (
 				4C8D3373151E2D8D001A6BF7 /* Debug */,
 				4C8D3374151E2D8D001A6BF7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		4CA5984015A20E90000C4DAD /* Build configuration list for PBXAggregateTarget "wired" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4CA5984115A20E90000C4DAD /* Debug */,
-				4CA5984215A20E90000C4DAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

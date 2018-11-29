@@ -43,7 +43,7 @@ mv config.h Makefile "$TARGET_TEMP_DIR/make/"
 
 # configure libwired
 cd "$SRCROOT/../wired/libwired"
-CC="$ARCH_CC" CFLAGS="$ARCH_CFLAGS" CPPFLAGS="$ARCH_CPPFLAGS -I$TARGET_TEMP_DIR/make/libwired" ./configure --host="$HOST" --build="$BUILD" --enable-warnings --enable-pthreads --enable-libxml2 --enable-p7 --enable-sqlite3 --srcdir="$SRCROOT/../wired/libwired" --with-objdir="$OBJECT_FILE_DIR/$i" --with-rundir="$TARGET_TEMP_DIR/run/wired/libwired" || exit 1
+CC="$ARCH_CC" CFLAGS="$ARCH_CFLAGS" CPPFLAGS="$ARCH_CPPFLAGS -I$TARGET_TEMP_DIR/make/libwired" ./configure --host="$HOST" --build="$BUILD" --enable-warnings --enable-pthreads --enable-libxml2 --enable-p7 --enable-sqlite3 --srcdir="$SRCROOT/../wired/libwired" --with-rundir="$TARGET_TEMP_DIR/run/wired/libwired" || exit 1
 
 mv config.h Makefile "$TARGET_TEMP_DIR/make/libwired"
 
