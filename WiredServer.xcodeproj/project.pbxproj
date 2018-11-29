@@ -181,13 +181,6 @@
 			remoteGlobalIDString = 4CBDAD13147AF94F00D0C51A;
 			remoteInfo = "libwired-osx";
 		};
-		4C8A854321B05E05001154BC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4C8D334B151E2D8C001A6BF7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4C8A853E21B05BB2001154BC;
-			remoteInfo = wired;
-		};
 		4CDD88AE15F76CA500283005 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4C8D334B151E2D8C001A6BF7 /* Project object */;
@@ -967,7 +960,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				4C8A854421B05E05001154BC /* PBXTargetDependency */,
 				4C8865D821A1BE56002A7F8A /* PBXTargetDependency */,
 				4C789002170B35D6004CE617 /* PBXTargetDependency */,
 				4C789004170B35D6004CE617 /* PBXTargetDependency */,
@@ -1237,11 +1229,6 @@
 			isa = PBXTargetDependency;
 			name = "libwired-osx";
 			targetProxy = 4C8865D721A1BE56002A7F8A /* PBXContainerItemProxy */;
-		};
-		4C8A854421B05E05001154BC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4C8A853E21B05BB2001154BC /* wired */;
-			targetProxy = 4C8A854321B05E05001154BC /* PBXContainerItemProxy */;
 		};
 		4CDD88AF15F76CA500283005 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

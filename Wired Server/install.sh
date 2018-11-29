@@ -17,11 +17,11 @@ if [ ! -f "$LIBRARY/Wired/etc/wired.conf" ]; then
 fi
 
 install -m 644 "$SOURCE/Wired/etc/wired.conf" "$LIBRARY/Wired/etc/wired.conf.dist" || exit 1
-install -m 755 -d "$LIBRARY/Wired/files/" || exit 1
+cp -r "$SOURCE/Wired/files" "$LIBRARY/Wired/files" || exit 1
 
 install -m 755 "$SOURCE/Wired/wired"			"$LIBRARY/Wired" || exit 1
 install -m 644 "$SOURCE/Wired/wired.xml"		"$LIBRARY/Wired" || exit 1
-install -m 755 "$SOURCE/Wired/wiredctl"		"$LIBRARY/Wired" || exit 1
+install -m 755 "$SOURCE/Wired/wiredctl"		    "$LIBRARY/Wired" || exit 1
 
 #install -m 755 "$SOURCE/man/wired.8"		"/usr/local/man/man8" || exit 1
 #install -m 755 "$SOURCE/man/wired.conf.5"	"/usr/local/man/man5" || exit 1
