@@ -26,7 +26,7 @@ AC_DEFUN([WI_CHECK_SVN_REVISION], [
 	WI_REVISION=$(git describe --always)
 	
 	if test -z "$WI_REVISION"; then
-		WI_REVISION=0
+		WI_REVISION=2.5
 	fi
 
 	AC_DEFINE_UNQUOTED([WI_REVISION], "$WI_REVISION", [Subversion revision])

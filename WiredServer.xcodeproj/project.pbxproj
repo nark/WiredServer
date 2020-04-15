@@ -42,7 +42,6 @@
 		4C233C9D1521022900245506 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C233C9B1521022900245506 /* MainMenu.xib */; };
 		4C233CA2152103FE00245506 /* WiredServerMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C233CA1152103FE00245506 /* WiredServerMenu.png */; };
 		4C233CA51521063A00245506 /* WHStatusController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C233CA41521063A00245506 /* WHStatusController.m */; };
-		4C233CAF1521122200245506 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8D33EE151E9943001A6BF7 /* WebKit.framework */; };
 		4C233CB0152112C700245506 /* WPWiredManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D3482151F58D7001A6BF7 /* WPWiredManager.m */; };
 		4C233CB1152112D700245506 /* WPSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D3480151F58D7001A6BF7 /* WPSettings.m */; };
 		4C233CB2152112E500245506 /* WPError.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D3478151F58D7001A6BF7 /* WPError.m */; };
@@ -50,22 +49,21 @@
 		4C233CBF1521251300245506 /* WiredServerMenuOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C233CBD152124B600245506 /* WiredServerMenuOff.png */; };
 		4C233CC21521329E00245506 /* WiredServer.icns in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D33DB151E96E4001A6BF7 /* WiredServer.icns */; };
 		4C233CFD15228BB800245506 /* wiredserverrnote.html in Resources */ = {isa = PBXBuildFile; fileRef = 4C233CFC15228BB800245506 /* wiredserverrnote.html */; };
-		4C483CEF170B66CC0088F1E5 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C483CEE170B66CC0088F1E5 /* libsqlite3.dylib */; };
 		4C4A2959151F880C0084E041 /* Console.icns in Resources */ = {isa = PBXBuildFile; fileRef = 4C4A2958151F880C0084E041 /* Console.icns */; };
 		4C4A2969151F894F0084E041 /* GrayDrop.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 4C4A2966151F894F0084E041 /* GrayDrop.tiff */; };
 		4C4A296A151F894F0084E041 /* GreenDrop.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 4C4A2967151F894F0084E041 /* GreenDrop.tiff */; };
 		4C4A296B151F894F0084E041 /* RedDrop.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 4C4A2968151F894F0084E041 /* RedDrop.tiff */; };
 		4C5EDCC7154366750031D44E /* man in Resources */ = {isa = PBXBuildFile; fileRef = 4C5EDCC6154366740031D44E /* man */; };
 		4C789007170B35DE004CE617 /* wired.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FF2170B35BF004CE617 /* wired.a */; };
-		4C789010170B3998004CE617 /* WiredFoundation.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFA170B35BF004CE617 /* WiredFoundation.framework */; };
-		4C789011170B3998004CE617 /* WiredAppKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFE170B35BF004CE617 /* WiredAppKit.framework */; };
+		4C789010170B3998004CE617 /* WiredFoundation.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFA170B35BF004CE617 /* WiredFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		4C789011170B3998004CE617 /* WiredAppKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFE170B35BF004CE617 /* WiredAppKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		4C789013170B39CE004CE617 /* WiredFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFA170B35BF004CE617 /* WiredFoundation.framework */; };
 		4C789014170B39CE004CE617 /* WiredAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFE170B35BF004CE617 /* WiredAppKit.framework */; };
 		4C789019170B3E3C004CE617 /* wired.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FF2170B35BF004CE617 /* wired.a */; };
 		4C78901A170B3E3C004CE617 /* WiredAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFE170B35BF004CE617 /* WiredAppKit.framework */; };
 		4C78901B170B3E3C004CE617 /* WiredFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFA170B35BF004CE617 /* WiredFoundation.framework */; };
-		4C78901E170B3E47004CE617 /* WiredFoundation.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFA170B35BF004CE617 /* WiredFoundation.framework */; };
-		4C78901F170B3E47004CE617 /* WiredAppKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFE170B35BF004CE617 /* WiredAppKit.framework */; };
+		4C78901E170B3E47004CE617 /* WiredFoundation.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFA170B35BF004CE617 /* WiredFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		4C78901F170B3E47004CE617 /* WiredAppKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFE170B35BF004CE617 /* WiredAppKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		4C8D3359151E2D8D001A6BF7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8D3358151E2D8D001A6BF7 /* Cocoa.framework */; };
 		4C8D3363151E2D8D001A6BF7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D3361151E2D8D001A6BF7 /* InfoPlist.strings */; };
 		4C8D3365151E2D8D001A6BF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D3364151E2D8D001A6BF7 /* main.m */; };
@@ -73,8 +71,6 @@
 		4C8D336C151E2D8D001A6BF7 /* WSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D336B151E2D8D001A6BF7 /* WSAppDelegate.m */; };
 		4C8D336F151E2D8D001A6BF7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D336D151E2D8D001A6BF7 /* MainMenu.xib */; };
 		4C8D33DC151E96E4001A6BF7 /* WiredServer.icns in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D33DB151E96E4001A6BF7 /* WiredServer.icns */; };
-		4C8D33ED151E991D001A6BF7 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8D33EC151E991D001A6BF7 /* Quartz.framework */; };
-		4C8D33EF151E9943001A6BF7 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8D33EE151E9943001A6BF7 /* WebKit.framework */; };
 		4C8D341B151E9B0B001A6BF7 /* install.sh in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D3417151E9B0B001A6BF7 /* install.sh */; };
 		4C8D341C151E9B0B001A6BF7 /* SUPublicDSAKeyFile.pem in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D3418151E9B0B001A6BF7 /* SUPublicDSAKeyFile.pem */; };
 		4C8D341D151E9B0B001A6BF7 /* uninstall.sh in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D3419151E9B0B001A6BF7 /* uninstall.sh */; };
@@ -93,7 +89,10 @@
 		4C8D34E0151F84E3001A6BF7 /* Updates.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D34DF151F84E3001A6BF7 /* Updates.tiff */; };
 		4CB57B171779007D006ECB87 /* Settings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CB57B151779007D006ECB87 /* Settings.xib */; };
 		4CD34ED91571ACED0054E305 /* Files.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CD34ED81571ACED0054E305 /* Files.png */; };
-		EF69BE8C8E4E61873CCBD9B3 /* Pods_Wired_Server.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 439805F532DF8A35DB8A1760 /* Pods_Wired_Server.framework */; };
+		B133499321B1BA55004AF77F /* libwired in Resources */ = {isa = PBXBuildFile; fileRef = B133499021B1BA55004AF77F /* libwired */; };
+		B133499B21B1BD8D004AF77F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B133499821B1BD8D004AF77F /* WebKit.framework */; };
+		B133499D21B1BD9F004AF77F /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B133499C21B1BD9E004AF77F /* Quartz.framework */; };
+		B133499F21B1BE6B004AF77F /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B133499E21B1BE6B004AF77F /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -181,19 +180,19 @@
 			remoteGlobalIDString = 4CBDAD13147AF94F00D0C51A;
 			remoteInfo = "libwired-osx";
 		};
-		4C8A854A21B08380001154BC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4C8D334B151E2D8C001A6BF7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4C8A853E21B05BB2001154BC;
-			remoteInfo = wired;
-		};
 		4CDD88AE15F76CA500283005 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4C8D334B151E2D8C001A6BF7 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 4C8D3353151E2D8D001A6BF7;
 			remoteInfo = "Wired Server";
+		};
+		4CE5D54A24475841000333FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C8D334B151E2D8C001A6BF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C8A853E21B05BB2001154BC;
+			remoteInfo = wired;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -226,7 +225,6 @@
 
 /* Begin PBXFileReference section */
 		1CF33703957EEC429684DE77 /* Pods-Wired Server.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wired Server.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wired Server/Pods-Wired Server.debug.xcconfig"; sourceTree = "<group>"; };
-		439805F532DF8A35DB8A1760 /* Pods_Wired_Server.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wired_Server.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C016F7D1778E97C00D6D2B3 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fr; path = fr.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		4C016F7E1778E97D00D6D2B3 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4C016F7F1778E97D00D6D2B3 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = fr; path = fr.lproj/Credits.rtf; sourceTree = "<group>"; };
@@ -240,13 +238,11 @@
 		4C233C961521022800245506 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		4C233C981521022800245506 /* WHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHAppDelegate.h; sourceTree = "<group>"; };
 		4C233C991521022800245506 /* WHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHAppDelegate.m; sourceTree = "<group>"; };
-		4C233C9C1521022900245506 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		4C233CA1152103FE00245506 /* WiredServerMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WiredServerMenu.png; sourceTree = "<group>"; };
 		4C233CA31521063A00245506 /* WHStatusController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHStatusController.h; sourceTree = "<group>"; };
 		4C233CA41521063A00245506 /* WHStatusController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHStatusController.m; sourceTree = "<group>"; };
 		4C233CBD152124B600245506 /* WiredServerMenuOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WiredServerMenuOff.png; sourceTree = "<group>"; };
 		4C233CFC15228BB800245506 /* wiredserverrnote.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = wiredserverrnote.html; sourceTree = "<group>"; };
-		4C483CEE170B66CC0088F1E5 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		4C4A2958151F880C0084E041 /* Console.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Console.icns; sourceTree = "<group>"; };
 		4C4A2966151F894F0084E041 /* GrayDrop.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = GrayDrop.tiff; sourceTree = "<group>"; };
 		4C4A2967151F894F0084E041 /* GreenDrop.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = GreenDrop.tiff; sourceTree = "<group>"; };
@@ -267,10 +263,7 @@
 		4C8D3368151E2D8D001A6BF7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		4C8D336A151E2D8D001A6BF7 /* WSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSAppDelegate.h; sourceTree = "<group>"; };
 		4C8D336B151E2D8D001A6BF7 /* WSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSAppDelegate.m; sourceTree = "<group>"; };
-		4C8D336E151E2D8D001A6BF7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		4C8D33DB151E96E4001A6BF7 /* WiredServer.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = WiredServer.icns; sourceTree = "<group>"; };
-		4C8D33EC151E991D001A6BF7 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Quartz.framework; sourceTree = DEVELOPER_DIR; };
-		4C8D33EE151E9943001A6BF7 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = SDKs/MacOSX10.6.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
 		4C8D3417151E9B0B001A6BF7 /* install.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = install.sh; sourceTree = "<group>"; };
 		4C8D3418151E9B0B001A6BF7 /* SUPublicDSAKeyFile.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SUPublicDSAKeyFile.pem; sourceTree = "<group>"; };
 		4C8D3419151E9B0B001A6BF7 /* uninstall.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = uninstall.sh; sourceTree = "<group>"; };
@@ -331,120 +324,15 @@
 		4CA5987F15A2449F000C4DAD /* users.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = users.h; path = ../../wired/wired/users.h; sourceTree = "<group>"; };
 		4CA5988015A2449F000C4DAD /* wired.conf.in */ = {isa = PBXFileReference; lastKnownFileType = text; name = wired.conf.in; path = ../../wired/wired/wired.conf.in; sourceTree = "<group>"; };
 		4CA5988115A2449F000C4DAD /* wiredctl.in */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = wiredctl.in; path = ../../wired/wired/wiredctl.in; sourceTree = "<group>"; };
-		4CA5988515A244D1000C4DAD /* wi-assert.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-assert.c"; sourceTree = "<group>"; };
-		4CA5988615A244D1000C4DAD /* wi-assert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-assert.h"; sourceTree = "<group>"; };
-		4CA5988715A244D1000C4DAD /* wi-base.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-base.c"; sourceTree = "<group>"; };
-		4CA5988815A244D1000C4DAD /* wi-base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-base.h"; sourceTree = "<group>"; };
-		4CA5988915A244D1000C4DAD /* wi-byteorder.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-byteorder.c"; sourceTree = "<group>"; };
-		4CA5988A15A244D1000C4DAD /* wi-byteorder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-byteorder.h"; sourceTree = "<group>"; };
-		4CA5988B15A244D1000C4DAD /* wi-macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-macros.h"; sourceTree = "<group>"; };
-		4CA5988C15A244D1000C4DAD /* wi-private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-private.h"; sourceTree = "<group>"; };
-		4CA5988D15A244D1000C4DAD /* wi-runtime.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-runtime.c"; sourceTree = "<group>"; };
-		4CA5988E15A244D1000C4DAD /* wi-runtime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-runtime.h"; sourceTree = "<group>"; };
-		4CA5988F15A244D1000C4DAD /* wi-version.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-version.c"; sourceTree = "<group>"; };
-		4CA5989015A244D1000C4DAD /* wi-version.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-version.h"; sourceTree = "<group>"; };
-		4CA5989215A244D1000C4DAD /* wi-array.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-array.c"; sourceTree = "<group>"; };
-		4CA5989315A244D1000C4DAD /* wi-array.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-array.h"; sourceTree = "<group>"; };
-		4CA5989415A244D1000C4DAD /* wi-dictionary.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-dictionary.c"; sourceTree = "<group>"; };
-		4CA5989515A244D1000C4DAD /* wi-dictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-dictionary.h"; sourceTree = "<group>"; };
-		4CA5989615A244D1000C4DAD /* wi-enumerator.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-enumerator.c"; sourceTree = "<group>"; };
-		4CA5989715A244D1000C4DAD /* wi-enumerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-enumerator.h"; sourceTree = "<group>"; };
-		4CA5989815A244D1000C4DAD /* wi-set.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-set.c"; sourceTree = "<group>"; };
-		4CA5989915A244D1000C4DAD /* wi-set.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-set.h"; sourceTree = "<group>"; };
-		4CA5989B15A244D1000C4DAD /* wi-cipher.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-cipher.c"; sourceTree = "<group>"; };
-		4CA5989C15A244D1000C4DAD /* wi-cipher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-cipher.h"; sourceTree = "<group>"; };
-		4CA5989D15A244D1000C4DAD /* wi-digest.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-digest.c"; sourceTree = "<group>"; };
-		4CA5989E15A244D1000C4DAD /* wi-digest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-digest.h"; sourceTree = "<group>"; };
-		4CA5989F15A244D1000C4DAD /* wi-rsa.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-rsa.c"; sourceTree = "<group>"; };
-		4CA598A015A244D1000C4DAD /* wi-rsa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-rsa.h"; sourceTree = "<group>"; };
-		4CA598A115A244D1000C4DAD /* wi-x509.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-x509.c"; sourceTree = "<group>"; };
-		4CA598A215A244D1000C4DAD /* wi-x509.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-x509.h"; sourceTree = "<group>"; };
-		4CA598A415A244D1000C4DAD /* wi-data.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-data.c"; sourceTree = "<group>"; };
-		4CA598A515A244D1000C4DAD /* wi-data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-data.h"; sourceTree = "<group>"; };
-		4CA598A615A244D1000C4DAD /* wi-date.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-date.c"; sourceTree = "<group>"; };
-		4CA598A715A244D1000C4DAD /* wi-date.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-date.h"; sourceTree = "<group>"; };
-		4CA598A815A244D1000C4DAD /* wi-null.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-null.c"; sourceTree = "<group>"; };
-		4CA598A915A244D1000C4DAD /* wi-null.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-null.h"; sourceTree = "<group>"; };
-		4CA598AA15A244D1000C4DAD /* wi-number.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-number.c"; sourceTree = "<group>"; };
-		4CA598AB15A244D1000C4DAD /* wi-number.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-number.h"; sourceTree = "<group>"; };
-		4CA598AC15A244D1000C4DAD /* wi-plist.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-plist.c"; sourceTree = "<group>"; };
-		4CA598AD15A244D1000C4DAD /* wi-plist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-plist.h"; sourceTree = "<group>"; };
-		4CA598AE15A244D1000C4DAD /* wi-string.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-string.c"; sourceTree = "<group>"; };
-		4CA598AF15A244D1000C4DAD /* wi-string.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-string.h"; sourceTree = "<group>"; };
-		4CA598B015A244D1000C4DAD /* wi-url.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-url.c"; sourceTree = "<group>"; };
-		4CA598B115A244D1000C4DAD /* wi-url.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-url.h"; sourceTree = "<group>"; };
-		4CA598B215A244D1000C4DAD /* wi-uuid.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-uuid.c"; sourceTree = "<group>"; };
-		4CA598B315A244D1000C4DAD /* wi-uuid.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-uuid.h"; sourceTree = "<group>"; };
-		4CA598B515A244D1000C4DAD /* wi-file.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-file.c"; sourceTree = "<group>"; };
-		4CA598B615A244D1000C4DAD /* wi-file.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-file.h"; sourceTree = "<group>"; };
-		4CA598B715A244D1000C4DAD /* wi-fs.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-fs.c"; sourceTree = "<group>"; };
-		4CA598B815A244D1000C4DAD /* wi-fs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-fs.h"; sourceTree = "<group>"; };
-		4CA598B915A244D1000C4DAD /* wi-fsenumerator.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-fsenumerator.c"; sourceTree = "<group>"; };
-		4CA598BA15A244D1000C4DAD /* wi-fsenumerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-fsenumerator.h"; sourceTree = "<group>"; };
-		4CA598BB15A244D1000C4DAD /* wi-fsevents.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-fsevents.c"; sourceTree = "<group>"; };
-		4CA598BC15A244D1000C4DAD /* wi-fsevents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-fsevents.h"; sourceTree = "<group>"; };
-		4CA598BD15A244D1000C4DAD /* wi-fts.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-fts.c"; sourceTree = "<group>"; };
-		4CA598BE15A244D1000C4DAD /* wi-fts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-fts.h"; sourceTree = "<group>"; };
-		4CA598C015A244D1000C4DAD /* wi-config.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-config.c"; sourceTree = "<group>"; };
-		4CA598C115A244D1000C4DAD /* wi-config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-config.h"; sourceTree = "<group>"; };
-		4CA598C215A244D1000C4DAD /* wi-error.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-error.c"; sourceTree = "<group>"; };
-		4CA598C315A244D1000C4DAD /* wi-error.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-error.h"; sourceTree = "<group>"; };
-		4CA598C415A244D1000C4DAD /* wi-pool.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-pool.c"; sourceTree = "<group>"; };
-		4CA598C515A244D1000C4DAD /* wi-pool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-pool.h"; sourceTree = "<group>"; };
-		4CA598C615A244D1000C4DAD /* wi-random.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-random.c"; sourceTree = "<group>"; };
-		4CA598C715A244D1000C4DAD /* wi-random.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-random.h"; sourceTree = "<group>"; };
-		4CA598C815A244D1000C4DAD /* wi-regexp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-regexp.c"; sourceTree = "<group>"; };
-		4CA598C915A244D1000C4DAD /* wi-regexp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-regexp.h"; sourceTree = "<group>"; };
-		4CA598CA15A244D1000C4DAD /* wi-settings.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-settings.c"; sourceTree = "<group>"; };
-		4CA598CB15A244D1000C4DAD /* wi-settings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-settings.h"; sourceTree = "<group>"; };
-		4CA598CC15A244D1000C4DAD /* wi-test.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-test.c"; sourceTree = "<group>"; };
-		4CA598CD15A244D1000C4DAD /* wi-test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-test.h"; sourceTree = "<group>"; };
-		4CA598CF15A244D1000C4DAD /* wi-address.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-address.c"; sourceTree = "<group>"; };
-		4CA598D015A244D1000C4DAD /* wi-address.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-address.h"; sourceTree = "<group>"; };
-		4CA598D115A244D1000C4DAD /* wi-host.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-host.c"; sourceTree = "<group>"; };
-		4CA598D215A244D1000C4DAD /* wi-host.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-host.h"; sourceTree = "<group>"; };
-		4CA598D315A244D1000C4DAD /* wi-ip.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-ip.c"; sourceTree = "<group>"; };
-		4CA598D415A244D1000C4DAD /* wi-ip.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-ip.h"; sourceTree = "<group>"; };
-		4CA598D515A244D1000C4DAD /* wi-socket.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-socket.c"; sourceTree = "<group>"; };
-		4CA598D615A244D1000C4DAD /* wi-socket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-socket.h"; sourceTree = "<group>"; };
-		4CA598D715A244D1000C4DAD /* wi-speed-calculator.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-speed-calculator.c"; sourceTree = "<group>"; };
-		4CA598D815A244D1000C4DAD /* wi-speed-calculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-speed-calculator.h"; sourceTree = "<group>"; };
-		4CA598D915A244D1000C4DAD /* wi-wired.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-wired.c"; sourceTree = "<group>"; };
-		4CA598DA15A244D1000C4DAD /* wi-wired.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-wired.h"; sourceTree = "<group>"; };
-		4CA598DC15A244D1000C4DAD /* wi-p7-message.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-p7-message.c"; sourceTree = "<group>"; };
-		4CA598DD15A244D1000C4DAD /* wi-p7-message.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-p7-message.h"; sourceTree = "<group>"; };
-		4CA598DE15A244D1000C4DAD /* wi-p7-private.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-p7-private.c"; sourceTree = "<group>"; };
-		4CA598DF15A244D1000C4DAD /* wi-p7-private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-p7-private.h"; sourceTree = "<group>"; };
-		4CA598E015A244D1000C4DAD /* wi-p7-socket.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-p7-socket.c"; sourceTree = "<group>"; };
-		4CA598E115A244D1000C4DAD /* wi-p7-socket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-p7-socket.h"; sourceTree = "<group>"; };
-		4CA598E215A244D1000C4DAD /* wi-p7-spec.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-p7-spec.c"; sourceTree = "<group>"; };
-		4CA598E315A244D1000C4DAD /* wi-p7-spec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-p7-spec.h"; sourceTree = "<group>"; };
-		4CA598E515A244D1000C4DAD /* wi-compat.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-compat.c"; sourceTree = "<group>"; };
-		4CA598E615A244D1000C4DAD /* wi-compat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-compat.h"; sourceTree = "<group>"; };
-		4CA598E715A244D1000C4DAD /* wi-log.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-log.c"; sourceTree = "<group>"; };
-		4CA598E815A244D1000C4DAD /* wi-log.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-log.h"; sourceTree = "<group>"; };
-		4CA598E915A244D1000C4DAD /* wi-process.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-process.c"; sourceTree = "<group>"; };
-		4CA598EA15A244D1000C4DAD /* wi-process.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-process.h"; sourceTree = "<group>"; };
-		4CA598EB15A244D1000C4DAD /* wi-system.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-system.c"; sourceTree = "<group>"; };
-		4CA598EC15A244D1000C4DAD /* wi-system.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-system.h"; sourceTree = "<group>"; };
-		4CA598ED15A244D1000C4DAD /* wi-task.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-task.c"; sourceTree = "<group>"; };
-		4CA598EE15A244D1000C4DAD /* wi-task.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-task.h"; sourceTree = "<group>"; };
-		4CA598EF15A244D1000C4DAD /* wi-terminal.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-terminal.c"; sourceTree = "<group>"; };
-		4CA598F015A244D1000C4DAD /* wi-terminal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-terminal.h"; sourceTree = "<group>"; };
-		4CA598F215A244D1000C4DAD /* wi-libxml2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-libxml2.c"; sourceTree = "<group>"; };
-		4CA598F315A244D1000C4DAD /* wi-libxml2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-libxml2.h"; sourceTree = "<group>"; };
-		4CA598F415A244D1000C4DAD /* wi-sqlite3.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-sqlite3.c"; sourceTree = "<group>"; };
-		4CA598F515A244D1000C4DAD /* wi-sqlite3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-sqlite3.h"; sourceTree = "<group>"; };
-		4CA598F715A244D1000C4DAD /* wi-lock.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-lock.c"; sourceTree = "<group>"; };
-		4CA598F815A244D1000C4DAD /* wi-lock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-lock.h"; sourceTree = "<group>"; };
-		4CA598F915A244D1000C4DAD /* wi-thread.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-thread.c"; sourceTree = "<group>"; };
-		4CA598FA15A244D1000C4DAD /* wi-thread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-thread.h"; sourceTree = "<group>"; };
-		4CA598FB15A244D1000C4DAD /* wi-timer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-timer.c"; sourceTree = "<group>"; };
-		4CA598FC15A244D1000C4DAD /* wi-timer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-timer.h"; sourceTree = "<group>"; };
-		4CA598FD15A244D1000C4DAD /* wired.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wired.h; sourceTree = "<group>"; };
-		4CB57B161779007D006ECB87 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Settings.xib; sourceTree = "<group>"; };
 		4CD34ED81571ACED0054E305 /* Files.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Files.png; sourceTree = "<group>"; };
 		67FE8C95AEF31B6CAE0816AF /* Pods-Wired Server.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wired Server.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wired Server/Pods-Wired Server.release.xcconfig"; sourceTree = "<group>"; };
+		B133499021B1BA55004AF77F /* libwired */ = {isa = PBXFileReference; lastKnownFileType = folder; name = libwired; path = wired/libwired; sourceTree = "<group>"; };
+		B133499421B1BA8F004AF77F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B133499521B1BA8F004AF77F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Settings.xib; sourceTree = "<group>"; };
+		B133499621B1BA8F004AF77F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B133499821B1BD8D004AF77F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
+		B133499C21B1BD9E004AF77F /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/Quartz.framework; sourceTree = DEVELOPER_DIR; };
+		B133499E21B1BE6B004AF77F /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ../../../../usr/lib/libsqlite3.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -455,7 +343,6 @@
 				4C789019170B3E3C004CE617 /* wired.a in Frameworks */,
 				4C78901A170B3E3C004CE617 /* WiredAppKit.framework in Frameworks */,
 				4C78901B170B3E3C004CE617 /* WiredFoundation.framework in Frameworks */,
-				4C233CAF1521122200245506 /* WebKit.framework in Frameworks */,
 				4C233C8B1521022800245506 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -467,11 +354,10 @@
 				4C789013170B39CE004CE617 /* WiredFoundation.framework in Frameworks */,
 				4C789014170B39CE004CE617 /* WiredAppKit.framework in Frameworks */,
 				4C789007170B35DE004CE617 /* wired.a in Frameworks */,
-				4C8D33EF151E9943001A6BF7 /* WebKit.framework in Frameworks */,
-				4C8D33ED151E991D001A6BF7 /* Quartz.framework in Frameworks */,
+				B133499B21B1BD8D004AF77F /* WebKit.framework in Frameworks */,
+				B133499F21B1BE6B004AF77F /* libsqlite3.dylib in Frameworks */,
 				4C8D3359151E2D8D001A6BF7 /* Cocoa.framework in Frameworks */,
-				4C483CEF170B66CC0088F1E5 /* libsqlite3.dylib in Frameworks */,
-				EF69BE8C8E4E61873CCBD9B3 /* Pods_Wired_Server.framework in Frameworks */,
+				B133499D21B1BD9F004AF77F /* Quartz.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,10 +406,10 @@
 		4C8D3349151E2D8C001A6BF7 = {
 			isa = PBXGroup;
 			children = (
+				B133499021B1BA55004AF77F /* libwired */,
 				4C8D335E151E2D8D001A6BF7 /* Wired Server */,
 				4C233C8C1521022800245506 /* Wired Server Helper */,
 				4CA5985F15A24460000C4DAD /* wired */,
-				4CA5988315A244D1000C4DAD /* libwired */,
 				4C8D3375151E2D93001A6BF7 /* Subprojects */,
 				4C8D3357151E2D8D001A6BF7 /* Frameworks */,
 				4C8D3355151E2D8D001A6BF7 /* Products */,
@@ -543,12 +429,11 @@
 		4C8D3357151E2D8D001A6BF7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4C483CEE170B66CC0088F1E5 /* libsqlite3.dylib */,
-				4C8D33EE151E9943001A6BF7 /* WebKit.framework */,
-				4C8D33EC151E991D001A6BF7 /* Quartz.framework */,
+				B133499E21B1BE6B004AF77F /* libsqlite3.dylib */,
+				B133499C21B1BD9E004AF77F /* Quartz.framework */,
+				B133499821B1BD8D004AF77F /* WebKit.framework */,
 				4C8D3358151E2D8D001A6BF7 /* Cocoa.framework */,
 				4C8D335A151E2D8D001A6BF7 /* Other Frameworks */,
-				439805F532DF8A35DB8A1760 /* Pods_Wired_Server.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -713,213 +598,6 @@
 			path = wired/wired;
 			sourceTree = "<group>";
 		};
-		4CA5988315A244D1000C4DAD /* libwired */ = {
-			isa = PBXGroup;
-			children = (
-				4CA5988415A244D1000C4DAD /* base */,
-				4CA5989115A244D1000C4DAD /* collections */,
-				4CA5989A15A244D1000C4DAD /* crypto */,
-				4CA598A315A244D1000C4DAD /* data */,
-				4CA598B415A244D1000C4DAD /* file */,
-				4CA598BF15A244D1000C4DAD /* misc */,
-				4CA598CE15A244D1000C4DAD /* net */,
-				4CA598DB15A244D1000C4DAD /* p7 */,
-				4CA598E415A244D1000C4DAD /* system */,
-				4CA598F115A244D1000C4DAD /* thirdparty */,
-				4CA598F615A244D1000C4DAD /* thread */,
-				4CA598FD15A244D1000C4DAD /* wired.h */,
-			);
-			name = libwired;
-			path = WiredFrameworks/libwired/libwired;
-			sourceTree = "<group>";
-		};
-		4CA5988415A244D1000C4DAD /* base */ = {
-			isa = PBXGroup;
-			children = (
-				4CA5988515A244D1000C4DAD /* wi-assert.c */,
-				4CA5988615A244D1000C4DAD /* wi-assert.h */,
-				4CA5988715A244D1000C4DAD /* wi-base.c */,
-				4CA5988815A244D1000C4DAD /* wi-base.h */,
-				4CA5988915A244D1000C4DAD /* wi-byteorder.c */,
-				4CA5988A15A244D1000C4DAD /* wi-byteorder.h */,
-				4CA5988B15A244D1000C4DAD /* wi-macros.h */,
-				4CA5988C15A244D1000C4DAD /* wi-private.h */,
-				4CA5988D15A244D1000C4DAD /* wi-runtime.c */,
-				4CA5988E15A244D1000C4DAD /* wi-runtime.h */,
-				4CA5988F15A244D1000C4DAD /* wi-version.c */,
-				4CA5989015A244D1000C4DAD /* wi-version.h */,
-			);
-			path = base;
-			sourceTree = "<group>";
-		};
-		4CA5989115A244D1000C4DAD /* collections */ = {
-			isa = PBXGroup;
-			children = (
-				4CA5989215A244D1000C4DAD /* wi-array.c */,
-				4CA5989315A244D1000C4DAD /* wi-array.h */,
-				4CA5989415A244D1000C4DAD /* wi-dictionary.c */,
-				4CA5989515A244D1000C4DAD /* wi-dictionary.h */,
-				4CA5989615A244D1000C4DAD /* wi-enumerator.c */,
-				4CA5989715A244D1000C4DAD /* wi-enumerator.h */,
-				4CA5989815A244D1000C4DAD /* wi-set.c */,
-				4CA5989915A244D1000C4DAD /* wi-set.h */,
-			);
-			path = collections;
-			sourceTree = "<group>";
-		};
-		4CA5989A15A244D1000C4DAD /* crypto */ = {
-			isa = PBXGroup;
-			children = (
-				4CA5989B15A244D1000C4DAD /* wi-cipher.c */,
-				4CA5989C15A244D1000C4DAD /* wi-cipher.h */,
-				4CA5989D15A244D1000C4DAD /* wi-digest.c */,
-				4CA5989E15A244D1000C4DAD /* wi-digest.h */,
-				4CA5989F15A244D1000C4DAD /* wi-rsa.c */,
-				4CA598A015A244D1000C4DAD /* wi-rsa.h */,
-				4CA598A115A244D1000C4DAD /* wi-x509.c */,
-				4CA598A215A244D1000C4DAD /* wi-x509.h */,
-			);
-			path = crypto;
-			sourceTree = "<group>";
-		};
-		4CA598A315A244D1000C4DAD /* data */ = {
-			isa = PBXGroup;
-			children = (
-				4CA598A415A244D1000C4DAD /* wi-data.c */,
-				4CA598A515A244D1000C4DAD /* wi-data.h */,
-				4CA598A615A244D1000C4DAD /* wi-date.c */,
-				4CA598A715A244D1000C4DAD /* wi-date.h */,
-				4CA598A815A244D1000C4DAD /* wi-null.c */,
-				4CA598A915A244D1000C4DAD /* wi-null.h */,
-				4CA598AA15A244D1000C4DAD /* wi-number.c */,
-				4CA598AB15A244D1000C4DAD /* wi-number.h */,
-				4CA598AC15A244D1000C4DAD /* wi-plist.c */,
-				4CA598AD15A244D1000C4DAD /* wi-plist.h */,
-				4CA598AE15A244D1000C4DAD /* wi-string.c */,
-				4CA598AF15A244D1000C4DAD /* wi-string.h */,
-				4CA598B015A244D1000C4DAD /* wi-url.c */,
-				4CA598B115A244D1000C4DAD /* wi-url.h */,
-				4CA598B215A244D1000C4DAD /* wi-uuid.c */,
-				4CA598B315A244D1000C4DAD /* wi-uuid.h */,
-			);
-			path = data;
-			sourceTree = "<group>";
-		};
-		4CA598B415A244D1000C4DAD /* file */ = {
-			isa = PBXGroup;
-			children = (
-				4CA598B515A244D1000C4DAD /* wi-file.c */,
-				4CA598B615A244D1000C4DAD /* wi-file.h */,
-				4CA598B715A244D1000C4DAD /* wi-fs.c */,
-				4CA598B815A244D1000C4DAD /* wi-fs.h */,
-				4CA598B915A244D1000C4DAD /* wi-fsenumerator.c */,
-				4CA598BA15A244D1000C4DAD /* wi-fsenumerator.h */,
-				4CA598BB15A244D1000C4DAD /* wi-fsevents.c */,
-				4CA598BC15A244D1000C4DAD /* wi-fsevents.h */,
-				4CA598BD15A244D1000C4DAD /* wi-fts.c */,
-				4CA598BE15A244D1000C4DAD /* wi-fts.h */,
-			);
-			path = file;
-			sourceTree = "<group>";
-		};
-		4CA598BF15A244D1000C4DAD /* misc */ = {
-			isa = PBXGroup;
-			children = (
-				4CA598C015A244D1000C4DAD /* wi-config.c */,
-				4CA598C115A244D1000C4DAD /* wi-config.h */,
-				4CA598C215A244D1000C4DAD /* wi-error.c */,
-				4CA598C315A244D1000C4DAD /* wi-error.h */,
-				4CA598C415A244D1000C4DAD /* wi-pool.c */,
-				4CA598C515A244D1000C4DAD /* wi-pool.h */,
-				4CA598C615A244D1000C4DAD /* wi-random.c */,
-				4CA598C715A244D1000C4DAD /* wi-random.h */,
-				4CA598C815A244D1000C4DAD /* wi-regexp.c */,
-				4CA598C915A244D1000C4DAD /* wi-regexp.h */,
-				4CA598CA15A244D1000C4DAD /* wi-settings.c */,
-				4CA598CB15A244D1000C4DAD /* wi-settings.h */,
-				4CA598CC15A244D1000C4DAD /* wi-test.c */,
-				4CA598CD15A244D1000C4DAD /* wi-test.h */,
-			);
-			path = misc;
-			sourceTree = "<group>";
-		};
-		4CA598CE15A244D1000C4DAD /* net */ = {
-			isa = PBXGroup;
-			children = (
-				4CA598CF15A244D1000C4DAD /* wi-address.c */,
-				4CA598D015A244D1000C4DAD /* wi-address.h */,
-				4CA598D115A244D1000C4DAD /* wi-host.c */,
-				4CA598D215A244D1000C4DAD /* wi-host.h */,
-				4CA598D315A244D1000C4DAD /* wi-ip.c */,
-				4CA598D415A244D1000C4DAD /* wi-ip.h */,
-				4CA598D515A244D1000C4DAD /* wi-socket.c */,
-				4CA598D615A244D1000C4DAD /* wi-socket.h */,
-				4CA598D715A244D1000C4DAD /* wi-speed-calculator.c */,
-				4CA598D815A244D1000C4DAD /* wi-speed-calculator.h */,
-				4CA598D915A244D1000C4DAD /* wi-wired.c */,
-				4CA598DA15A244D1000C4DAD /* wi-wired.h */,
-			);
-			path = net;
-			sourceTree = "<group>";
-		};
-		4CA598DB15A244D1000C4DAD /* p7 */ = {
-			isa = PBXGroup;
-			children = (
-				4CA598DC15A244D1000C4DAD /* wi-p7-message.c */,
-				4CA598DD15A244D1000C4DAD /* wi-p7-message.h */,
-				4CA598DE15A244D1000C4DAD /* wi-p7-private.c */,
-				4CA598DF15A244D1000C4DAD /* wi-p7-private.h */,
-				4CA598E015A244D1000C4DAD /* wi-p7-socket.c */,
-				4CA598E115A244D1000C4DAD /* wi-p7-socket.h */,
-				4CA598E215A244D1000C4DAD /* wi-p7-spec.c */,
-				4CA598E315A244D1000C4DAD /* wi-p7-spec.h */,
-			);
-			path = p7;
-			sourceTree = "<group>";
-		};
-		4CA598E415A244D1000C4DAD /* system */ = {
-			isa = PBXGroup;
-			children = (
-				4CA598E515A244D1000C4DAD /* wi-compat.c */,
-				4CA598E615A244D1000C4DAD /* wi-compat.h */,
-				4CA598E715A244D1000C4DAD /* wi-log.c */,
-				4CA598E815A244D1000C4DAD /* wi-log.h */,
-				4CA598E915A244D1000C4DAD /* wi-process.c */,
-				4CA598EA15A244D1000C4DAD /* wi-process.h */,
-				4CA598EB15A244D1000C4DAD /* wi-system.c */,
-				4CA598EC15A244D1000C4DAD /* wi-system.h */,
-				4CA598ED15A244D1000C4DAD /* wi-task.c */,
-				4CA598EE15A244D1000C4DAD /* wi-task.h */,
-				4CA598EF15A244D1000C4DAD /* wi-terminal.c */,
-				4CA598F015A244D1000C4DAD /* wi-terminal.h */,
-			);
-			path = system;
-			sourceTree = "<group>";
-		};
-		4CA598F115A244D1000C4DAD /* thirdparty */ = {
-			isa = PBXGroup;
-			children = (
-				4CA598F215A244D1000C4DAD /* wi-libxml2.c */,
-				4CA598F315A244D1000C4DAD /* wi-libxml2.h */,
-				4CA598F415A244D1000C4DAD /* wi-sqlite3.c */,
-				4CA598F515A244D1000C4DAD /* wi-sqlite3.h */,
-			);
-			path = thirdparty;
-			sourceTree = "<group>";
-		};
-		4CA598F615A244D1000C4DAD /* thread */ = {
-			isa = PBXGroup;
-			children = (
-				4CA598F715A244D1000C4DAD /* wi-lock.c */,
-				4CA598F815A244D1000C4DAD /* wi-lock.h */,
-				4CA598F915A244D1000C4DAD /* wi-thread.c */,
-				4CA598FA15A244D1000C4DAD /* wi-thread.h */,
-				4CA598FB15A244D1000C4DAD /* wi-timer.c */,
-				4CA598FC15A244D1000C4DAD /* wi-timer.h */,
-			);
-			path = thread;
-			sourceTree = "<group>";
-		};
 		56B4423D6D696EDD220CF31D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -967,7 +645,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				4C8A854B21B08380001154BC /* PBXTargetDependency */,
+				4CE5D54B24475841000333FB /* PBXTargetDependency */,
 				4C8865D821A1BE56002A7F8A /* PBXTargetDependency */,
 				4C789002170B35D6004CE617 /* PBXTargetDependency */,
 				4C789004170B35D6004CE617 /* PBXTargetDependency */,
@@ -984,7 +662,7 @@
 		4C8D334B151E2D8C001A6BF7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = OPALE;
 				TargetAttributes = {
 					4C8D3353151E2D8D001A6BF7 = {
@@ -994,11 +672,12 @@
 			};
 			buildConfigurationList = 4C8D334E151E2D8C001A6BF7 /* Build configuration list for PBXProject "WiredServer" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				fr,
+				Base,
 			);
 			mainGroup = 4C8D3349151E2D8C001A6BF7;
 			productRefGroup = 4C8D3355151E2D8D001A6BF7 /* Products */;
@@ -1092,6 +771,7 @@
 				4C233CBC15211FA700245506 /* Wired Server Helper.app in Resources */,
 				4C233CFD15228BB800245506 /* wiredserverrnote.html in Resources */,
 				4C5EDCC7154366750031D44E /* man in Resources */,
+				B133499321B1BA55004AF77F /* libwired in Resources */,
 				4CD34ED91571ACED0054E305 /* Files.png in Resources */,
 				4C016F981778F6E200D6D2B3 /* Localizable.strings in Resources */,
 				4CB57B171779007D006ECB87 /* Settings.xib in Resources */,
@@ -1163,7 +843,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "sh \"$SRCROOT/../../wired_server_distribute.sh\" || exit 1";
+			shellScript = "sh \"$SRCROOT/../../wired_server_distribute.sh\" || exit 1\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1238,15 +918,15 @@
 			name = "libwired-osx";
 			targetProxy = 4C8865D721A1BE56002A7F8A /* PBXContainerItemProxy */;
 		};
-		4C8A854B21B08380001154BC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4C8A853E21B05BB2001154BC /* wired */;
-			targetProxy = 4C8A854A21B08380001154BC /* PBXContainerItemProxy */;
-		};
 		4CDD88AF15F76CA500283005 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4C8D3353151E2D8D001A6BF7 /* Wired Server */;
 			targetProxy = 4CDD88AE15F76CA500283005 /* PBXContainerItemProxy */;
+		};
+		4CE5D54B24475841000333FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C8A853E21B05BB2001154BC /* wired */;
+			targetProxy = 4CE5D54A24475841000333FB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1279,7 +959,7 @@
 		4C233C9B1521022900245506 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4C233C9C1521022900245506 /* en */,
+				B133499621B1BA8F004AF77F /* Base */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -1305,8 +985,8 @@
 		4C8D336D151E2D8D001A6BF7 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4C8D336E151E2D8D001A6BF7 /* en */,
 				4C016F7D1778E97C00D6D2B3 /* fr */,
+				B133499421B1BA8F004AF77F /* Base */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -1314,8 +994,8 @@
 		4CB57B151779007D006ECB87 /* Settings.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4CB57B161779007D006ECB87 /* en */,
 				4C4FDE69177900CA00FADB95 /* fr */,
+				B133499521B1BA8F004AF77F /* Base */,
 			);
 			name = Settings.xib;
 			sourceTree = "<group>";
@@ -1326,13 +1006,15 @@
 		4C233C9F1521022900245506 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Wired Server Helper/Wired Server Helper-Prefix.pch";
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "Wired Server Helper/Wired Server Helper-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.read-write.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
@@ -1342,13 +1024,15 @@
 		4C233CA01521022900245506 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Wired Server Helper/Wired Server Helper-Prefix.pch";
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "Wired Server Helper/Wired Server Helper-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.read-write.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
@@ -1359,19 +1043,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				GCC_VERSION = "";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					/usr/include,
-					/usr/local/opt/openssl/include,
+					"\"$(SRCROOT)/Pods/OpenSSL-Universal/include-macos\"",
+					"\"$(SRCROOT)/Pods/Headers/Public/libxml2\"",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/usr/lib,
-					/usr/local/opt/openssl/lib,
+					"\"$(SRCROOT)/Pods/OpenSSL-Universal/lib-macos\"",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-lsqlite3",
@@ -1387,19 +1071,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				GCC_VERSION = "";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					/usr/include,
-					/usr/local/opt/openssl/include,
+					"\"$(SRCROOT)/Pods/OpenSSL-Universal/include-macos\"",
+					"\"$(SRCROOT)/Pods/Headers/Public/libxml2\"",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/usr/lib,
-					/usr/local/opt/openssl/lib,
+					"\"$(SRCROOT)/Pods/OpenSSL-Universal/lib-macos\"",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-lsqlite3",
@@ -1415,25 +1099,50 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				ONLY_ACTIVE_ARCH = NO;
-				SDKROOT = macosx10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -1441,19 +1150,43 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_VERSION = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = NO;
-				SDKROOT = macosx10.7;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -1461,14 +1194,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1CF33703957EEC429684DE77 /* Pods-Wired Server.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
-				ARCHS = "$(ARCHS_STANDARD)";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 12;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
-					"\"$(SRCROOT)/../Sparkle\"",
+					"$(SRCROOT)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Wired Server/Wired Server-Prefix.pch";
@@ -1477,16 +1211,18 @@
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 					"\"$(BUILT_PRODUCTS_DIR)\"",
-					/usr/include,
 				);
 				INFOPLIST_FILE = "Wired Server/WiredServer-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/lib,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MARKETING_VERSION = 2.5;
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.read-write.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				VALID_ARCHS = x86_64;
 				WRAPPER_EXTENSION = app;
@@ -1497,14 +1233,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 67FE8C95AEF31B6CAE0816AF /* Pods-Wired Server.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
-				ARCHS = "$(ARCHS_STANDARD)";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 12;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
-					"\"$(SRCROOT)/../Sparkle\"",
+					"$(SRCROOT)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Wired Server/Wired Server-Prefix.pch";
@@ -1513,16 +1250,18 @@
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 					"\"$(BUILT_PRODUCTS_DIR)\"",
-					/usr/include,
 				);
 				INFOPLIST_FILE = "Wired Server/WiredServer-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/lib,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MARKETING_VERSION = 2.5;
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.read-write.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				VALID_ARCHS = x86_64;
 				WRAPPER_EXTENSION = app;
@@ -1532,8 +1271,10 @@
 		4CCEEFA9154C991D004AE045 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
+				GCC_VERSION = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_NAME = Distribute;
 				SDKROOT = macosx;
 			};
@@ -1542,8 +1283,10 @@
 		4CCEEFAA154C991D004AE045 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
+				GCC_VERSION = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_NAME = Distribute;
 				SDKROOT = macosx;
 			};

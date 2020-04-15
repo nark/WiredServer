@@ -574,8 +574,8 @@ SHELL=${CONFIG_SHELL-/bin/sh}
 # Identity of this package.
 PACKAGE_NAME='wired'
 PACKAGE_TARNAME='wired'
-PACKAGE_VERSION='2.0'
-PACKAGE_STRING='wired 2.0'
+PACKAGE_VERSION='2.5'
+PACKAGE_STRING='wired 2.5'
 PACKAGE_BUGREPORT='dev@read-write.fr'
 
 ac_unique_file="config.h.in"
@@ -1944,7 +1944,7 @@ case $host_os in *\ *) host_os=`echo "$host_os" | sed 's/ /-/g'`;; esac
 	WI_REVISION=$(git describe --always)
 
 	if test -z "$WI_REVISION"; then
-		WI_REVISION=0
+		WI_REVISION=11
 	fi
 
 
@@ -1957,7 +1957,7 @@ _ACEOF
 # These are used in the source code
 
 cat >>confdefs.h <<\_ACEOF
-#define WD_VERSION "2.0"
+#define WD_VERSION "2.5"
 _ACEOF
 
 
@@ -1967,7 +1967,7 @@ _ACEOF
 
 
 # These are used in the Makefile
-WD_VERSION="2.0"
+WD_VERSION="2.5"
 
 
 

@@ -38,13 +38,12 @@ enum WPPruneEventsType {
 	IBOutlet NSTextField					*_versionTextField;
 	IBOutlet NSButton						*_installButton;
 	IBOutlet NSProgressIndicator			*_installProgressIndicator;
+    IBOutlet NSProgressIndicator            *_portCheckProgressIndicator;
 	IBOutlet NSButton						*_revealButton;
 	IBOutlet NSImageView					*_statusImageView;
 	IBOutlet NSTextField					*_statusTextField;
 	IBOutlet NSButton						*_startButton;
 	IBOutlet NSProgressIndicator			*_startProgressIndicator;
-	IBOutlet NSButton						*_launchAutomaticallyButton;
-	IBOutlet NSButton						*_enableStatusMenuyButton;
 	IBOutlet NSTableView					*_logTableView;
 	IBOutlet NSTableColumn					*_logTableColumn;
 	IBOutlet NSButton						*_openLogButton;
@@ -53,9 +52,9 @@ enum WPPruneEventsType {
 	IBOutlet NSTextField					*_filesIndexTimeTextField;
 	IBOutlet NSButton						*_filesIndexButton;
 	IBOutlet NSTextField					*_portTextField;
+    IBOutlet NSTextField                    *_hostTextField;
 	IBOutlet NSImageView					*_portStatusImageView;
 	IBOutlet NSTextField					*_portStatusTextField;
-	IBOutlet NSButton						*_mapPortAutomaticallyButton;
 	IBOutlet NSButton						*_checkPortAgainButton;
 	IBOutlet NSTextField					*_accountStatusTextField;
 	IBOutlet NSImageView					*_accountStatusImageView;
@@ -70,13 +69,11 @@ enum WPPruneEventsType {
 	IBOutlet NSButton						*_importSettingsButton;
 	IBOutlet NSButton						*_automaticallyCheckForUpdate;
 	IBOutlet NSPanel						*_passwordPanel;
-	IBOutlet NSSecureTextField				*_newPasswordTextField;
-	IBOutlet NSSecureTextField				*_verifyPasswordTextField;
 	IBOutlet NSTextField					*_passwordMismatchTextField;
     IBOutlet NSWindow                       *_activityWindow;
     IBOutlet NSProgressIndicator			*_activityProgressIndicator;
     IBOutlet NSTextField					*_activityTextField;
-    
+
 	SUUpdater					*_updater;
 	
 	WPAccountManager			*_accountManager;
@@ -136,9 +133,9 @@ enum WPPruneEventsType {
 @property (assign) IBOutlet NSButton					*filesIndexButton;
 
 @property (assign) IBOutlet NSTextField                 *portTextField;
+@property (assign) IBOutlet NSTextField                 *hostTextField;
 @property (assign) IBOutlet NSImageView                 *portStatusImageView;
 @property (assign) IBOutlet NSTextField                 *portStatusTextField;
-@property (assign) IBOutlet NSButton                    *mapPortAutomaticallyButton;
 @property (assign) IBOutlet NSButton                    *checkPortAgainButton;
 
 @property (assign) IBOutlet NSTextField                 *accountStatusTextField;
@@ -158,7 +155,7 @@ enum WPPruneEventsType {
 @property (assign) IBOutlet NSButton					*automaticallyCheckForUpdate;
 
 @property (assign) IBOutlet NSPanel                     *passwordPanel;
-@property (assign) IBOutlet NSSecureTextField			*newPasswordTextField;
+@property (assign) IBOutlet NSSecureTextField			*newyPasswordTextField;
 @property (assign) IBOutlet NSSecureTextField			*verifyPasswordTextField;
 @property (assign) IBOutlet NSTextField                 *passwordMismatchTextField;
 
@@ -208,9 +205,6 @@ enum WPPruneEventsType {
 - (IBAction)other:(id)sender;
 - (IBAction)index:(id)sender;
 - (IBAction)reveal:(id)sender;
-
-- (IBAction)port:(id)sender;
-- (IBAction)mapPortAutomatically:(id)sender;
 - (IBAction)checkPortAgain:(id)sender;
 
 - (IBAction)pruneEvents:(id)sender;

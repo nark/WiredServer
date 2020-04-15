@@ -26,7 +26,10 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
+#import "WSSettingsController.h"
 #import "WPPortChecker.h"
+#include <arpa/inet.h>
+#include <netdb.h>
 
 @implementation WPPortChecker
 
@@ -65,16 +68,18 @@
 #pragma mark -
 
 - (void)checkStatusForPort:(NSUInteger)port {
-	NSURLRequest		*request;
-	NSURLConnection		*connection;
-	
-	_HTTPStatusCode		= 0;
-	_port				= port;
-	
-	[_data setLength:0];
-	
-	request		= [NSURLRequest requestWithURL:[NSURL URLWithString:[NSSWF:@"http://wired.read-write.fr/scripts/port.php?port=%u", port]]];
-	connection	= [NSURLConnection connectionWithRequest:request delegate:self];
+    NSURLRequest        *request;
+    NSURLConnection        *connection;
+    
+    _HTTPStatusCode        = 0;
+    _port                = port;
+    
+    [_data setLength:0];
+    
+    NSURL *url = [NSURL URLWithString:[NSSWF:@"https://wired.read-write.fr/port_check.php?port=%lu", (unsigned long)port]];
+    
+    request         = [NSURLRequest requestWithURL:url];
+    connection      = [NSURLConnection connectionWithRequest:request delegate:self];
 }
 
 
@@ -82,62 +87,56 @@
 #pragma mark -
 
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
-	if([response isKindOfClass:[NSHTTPURLResponse class]])
-		_HTTPStatusCode = [(NSHTTPURLResponse *) response statusCode];
-	else
-		_HTTPStatusCode = 200;
+    if([response isKindOfClass:[NSHTTPURLResponse class]])
+        _HTTPStatusCode = [(NSHTTPURLResponse *) response statusCode];
+    else
+        _HTTPStatusCode = 200;
 }
 
 
 
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
-	[_data appendData:data];
+    [_data appendData:data];
 }
 
 
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
-	NSString				*string;
-	NSUInteger				index;
-	WPPortCheckerStatus		status = WPPortCheckerFailed;
-	
-	if([[self delegate] respondsToSelector:@selector(portChecker:didReceiveStatus:forPort:)]) {
-		
-		if(_HTTPStatusCode >= 400) {			
-			NSLog(@"*** [%@ %@]: HTTP status code %lu", [self class], NSStringFromSelector(_cmd), _HTTPStatusCode);
-		
-		} else {			
-			
-			string = [[NSString stringWithData:_data encoding:NSUTF8StringEncoding]
-				stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-			
-			if([string length] > 0) {
-				index = [string rangeOfString:@" = "].location;
-				
-				if(index != NSNotFound) {
-					string = [string substringFromIndex:index + 3];
-					
-					if([string isEqualToString:@"open"])
-						status = WPPortCheckerOpen;
-					else if([string isEqualToString:@"closed"])
-						status = WPPortCheckerClosed;
-					else if([string isEqualToString:@"filtered"])
-						status = WPPortCheckerFiltered;
-				}
-			}
-		}
-		
-		[[self delegate] portChecker:self didReceiveStatus:status forPort:_port];
-	}
+    NSString                *string;
+    NSUInteger                index;
+    WPPortCheckerStatus        status = WPPortCheckerFailed;
+        
+    if([[self delegate] respondsToSelector:@selector(portChecker:didReceiveStatus:forPort:)]) {
+        
+        if(_HTTPStatusCode >= 400) {
+            NSLog(@"*** [%@ %@]: HTTP status code %lu", [self class], NSStringFromSelector(_cmd), _HTTPStatusCode);
+        
+        } else {
+            
+            string = [[NSString stringWithData:_data encoding:NSUTF8StringEncoding]
+                stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+                        
+            if([string length] > 0) {
+                if([string isEqualToString:@"open"])
+                    status = WPPortCheckerOpen;
+                else if([string isEqualToString:@"closed"])
+                    status = WPPortCheckerClosed;
+                else if([string isEqualToString:@"filtered"])
+                    status = WPPortCheckerFiltered;
+            }
+        }
+        
+        [[self delegate] portChecker:self didReceiveStatus:status forPort:_port];
+    }
 }
 
 
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
-	NSLog(@"*** [%@ %@]: %@", [self class], NSStringFromSelector(_cmd), [error localizedFailureReason]);
-		
-	if([[self delegate] respondsToSelector:@selector(portChecker:didReceiveStatus:forPort:)])
-		[[self delegate] portChecker:self didReceiveStatus:WPPortCheckerFailed forPort:_port];
+    NSLog(@"*** [%@ %@]: %@", [self class], NSStringFromSelector(_cmd), [error localizedFailureReason]);
+        
+    if([[self delegate] respondsToSelector:@selector(portChecker:didReceiveStatus:forPort:)])
+        [[self delegate] portChecker:self didReceiveStatus:WPPortCheckerFailed forPort:_port];
 }
 
 @end

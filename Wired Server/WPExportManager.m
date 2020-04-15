@@ -125,10 +125,8 @@
 		
 		[dictionary setObject:data forKey:key];
 	}
-	
-	data = [NSPropertyListSerialization dataFromPropertyList:dictionary
-													  format:NSPropertyListBinaryFormat_v1_0
-											errorDescription:NULL];
+
+    data = [NSPropertyListSerialization dataWithPropertyList:dictionary format:NSPropertyListBinaryFormat_v1_0 options:0 error:NULL];
 	
 	if(!data) {
 		*error = [WPError errorWithDomain:WPPreferencePaneErrorDomain code:WPPreferencePaneExportFailed];

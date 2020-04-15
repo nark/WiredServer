@@ -211,7 +211,6 @@ void wi_load(int argc, const char **argv) {
 }
 
 
-
 #pragma mark -
 
 void wi_abort(void) {
@@ -219,11 +218,13 @@ void wi_abort(void) {
 }
 
 
-
 void wi_crash(void) {
-	*((char *) NULL) = 0;
+#if __has_builtin(__builtin_trap)
+    __builtin_trap();
+#else
+    *((char *) NULL) = 0;
+#endif
 }
-
 
 
 #pragma mark -

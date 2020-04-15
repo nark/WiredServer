@@ -1,6 +1,6 @@
 # Makefile.in
 
-abs_top_srcdir	= /Users/nark/wired/WiredServer/wired/libwired
+abs_top_srcdir	= /Users/nark/Development/Me/Cocoa/Wired/wired2.5/WiredServer/wired/libwired
 datarootdir		= ${prefix}/share
 objdir			= ../obj
 rundir			= ../run/libwired
@@ -24,7 +24,7 @@ HEADERS			= $(addprefix $(headerdir)/,$(notdir $(shell find $(abs_top_srcdir)/li
 DEFS			= -DHAVE_CONFIG_H
 CC				= gcc
 CFLAGS			= -g -O2
-CPPFLAGS		= -I/usr/local/opt/openssl/include -I/usr/local/include -DWI_CORESERVICES -DWI_CARBON -DWI_DIGESTS -DWI_CIPHERS -DWI_PTHREADS -I/usr/include/libxml2 -DWI_LIBXML2 -DWI_PLIST -DWI_SQLITE3 -DWI_RSA -DWI_ZLIB -DWI_P7 -DWI_TEST_ROOT=\"$(abs_top_srcdir)/test\"
+CPPFLAGS		= -I/usr/local/opt/openssl/include -I/usr/local/include -DWI_CORESERVICES -DWI_CARBON -DWI_DIGESTS -DWI_CIPHERS -DWI_PTHREADS -DWI_LIBXML2 -DWI_PLIST -DWI_SQLITE3 -DWI_RSA -DWI_ZLIB -DWI_P7 -DWI_TEST_ROOT=\"$(abs_top_srcdir)/test\"
 LDFLAGS			= -L$(rundir)/lib -L/usr/local/opt/openssl/lib -L/usr/local/lib
 LIBS			= -lwired -framework CoreServices -framework Carbon -lxml2 -lsqlite3 -lcrypto -lz
 INCLUDES		= -I$(abs_top_srcdir) -I$(rundir)/include -I$(abs_top_srcdir)/test

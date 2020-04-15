@@ -3,7 +3,7 @@
 			 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 			 xsi:schemaLocation="http://www.read-write.fr/wired/html/p7-specification.xsd"
 			 name="Wired"
-			 version="2.0b55">
+			 version="2.5">
 	<p7:documentation>
 		[h3:Introduction]
 		The Wired protocol is an application-level protocol for real time
@@ -71,7 +71,6 @@
 		...
 
 		[a note on transfers]
-
 	</p7:documentation>
 	
 	<p7:fields>

@@ -92,7 +92,7 @@
     if([statusComponents count] != 13)
         return NO;
         
-    self.uptime                 = [NSDate dateWithTimeIntervalSince1970:[[statusComponents objectAtIndex:0] doubleValue]];
+    self.uptime                 = (NSString*)[NSDate dateWithTimeIntervalSince1970:[[statusComponents objectAtIndex:0] doubleValue]];
     
     self.currentUsers           = [[statusComponents objectAtIndex:1] integerValue];
     self.totalUsers             = [[statusComponents objectAtIndex:2] integerValue];

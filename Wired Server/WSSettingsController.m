@@ -89,9 +89,9 @@
 @synthesize filesIndexTimeTextField		= _filesIndexTimeTextField;
 
 @synthesize portTextField               = _portTextField;
+@synthesize hostTextField               = _hostTextField;
 @synthesize portStatusImageView         = _portStatusImageView;
 @synthesize portStatusTextField         = _portStatusTextField;
-@synthesize mapPortAutomaticallyButton  = _mapPortAutomaticallyButton;
 @synthesize checkPortAgainButton        = _checkPortAgainButton;
 
 @synthesize accountStatusTextField      = _accountStatusTextField;
@@ -109,7 +109,7 @@
 @synthesize importSettingsButton        = _importSettingsButton;
 
 @synthesize passwordPanel               = _passwordPanel;
-@synthesize newPasswordTextField        = _newPasswordTextField;
+@synthesize newyPasswordTextField       = _newPasswordTextField;
 @synthesize verifyPasswordTextField     = _verifyPasswordTextField;
 @synthesize passwordMismatchTextField   = _passwordMismatchTextField;
 @synthesize automaticallyCheckForUpdate = _automaticallyCheckForUpdate;
@@ -205,9 +205,10 @@
     url = [[NSBundle mainBundle] URLForResource:@"Wired Server Helper" withExtension:@"app"];
     
     if([WIStatusMenuManager willStartAtLogin:url]) {
-        if(![WIStatusMenuManager isHelperRunning:url]) {
+        if(![WIStatusMenuManager isHelperRunning]) {
             [WIStatusMenuManager startHelper:url];
         }
+        
     }
     
     // update components
@@ -237,19 +238,23 @@
 	_exportManager	= [[WPExportManager alloc] initWithWiredManager:_wiredManager];
 	_logManager		= [[WPLogManager alloc] initWithLogPath:[_wiredManager pathForFile:@"wired.log"]];
 	
+
 	_portChecker	= [[WPPortChecker alloc] init];
 	[_portChecker setDelegate:self];
-	
 	_updater = [[SUUpdater updaterForBundle:[self bundle]] retain];
-	[_updater setDelegate:self];
+	[_updater setDelegate:(id)self];
     [_updater setAutomaticallyChecksForUpdates:[[WPSettings settings] boolForKey:@"SUEnableAutomaticChecks"]];
     [_updater setAutomaticallyDownloadsUpdates:[[WPSettings settings] boolForKey:@"SUAllowsAutomaticUpdates"]];
 	[_updater setSendsSystemProfile:YES];
     [_updater setFeedURL:[NSURL URLWithString:@"http://wired.read-write.fr/xml/wiredservercast.xml"]];
     
 	_greenDropImage	= [[NSImage alloc] initWithContentsOfFile:[[self bundle] pathForResource:@"GreenDrop" ofType:@"tiff"]];
-	_redDropImage	= [[NSImage alloc] initWithContentsOfFile:[[self bundle] pathForResource:@"RedDrop" ofType:@"tiff"]];
+	
+    _redDropImage	= [[NSImage alloc] initWithContentsOfFile:[[self bundle] pathForResource:@"RedDrop" ofType:@"tiff"]];
 	_grayDropImage	= [[NSImage alloc] initWithContentsOfFile:[[self bundle] pathForResource:@"GrayDrop" ofType:@"tiff"]];
+    
+    [_filesPopUpButton selectItemAtIndex:1];
+    [self loadInfo];
     
 	_dateFormatter = [[WIDateFormatter alloc] init];
 	[_dateFormatter setTimeStyle:NSDateFormatterShortStyle];
@@ -279,13 +284,16 @@
 #pragma mark -
 
 - (void)wiredStatusDidChange:(NSNotification *)notification {
+    
 	[self _updateSettings];
 	[self _updateRunningStatus];
-	
 	if([_wiredManager isRunning]) {
+        if ([[_hostTextField stringValue] length]==0){
+            [self loadInfo];
+        }
+        [_hostTextField setEnabled:NO];
 		_portCheckerStatus = WPPortCheckerUnknown;
-		
-		[_portChecker checkStatusForPort:[_portTextField intValue]];
+        [_portChecker checkStatusForPort:[_portTextField intValue]];
 	}
     
 	[_startButton setEnabled:YES];
@@ -294,7 +302,24 @@
 	[self _updatePortStatus];
 }
 
+- (void)saveInfo {
+    
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    if ([[_hostTextField stringValue] length] ==0) {
+        [_hostTextField setStringValue:@"127.0.0.1"];
+    }
+    [prefs setObject:[_hostTextField stringValue]  forKey:@"Host"];
+    [prefs synchronize];
+}
 
+- (void)loadInfo {
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if ([[defaults objectForKey:@"Host"] length]!=0)
+        [_hostTextField setStringValue:[defaults stringForKey:@"Host"]];
+    else
+        [_hostTextField setStringValue:@"127.0.0.1"];
+}
 
 - (void)logManagerDidReadLines:(NSNotification *)notification {
 	NSEnumerator	*enumerator;
@@ -309,7 +334,7 @@
 		size = [line sizeWithAttributes:_logAttributes];
 		
 		while(size.width > [_logTableColumn width]) {
-			size.width -= [_logTableColumn width];
+			size.width -=  [_logTableColumn width];
 			rows++;
 		}
 		
@@ -321,20 +346,12 @@
 	[_logTableView scrollRowToVisible:[_logLines count] - 1];
 }
 
-
-
 - (void)portChecker:(WPPortChecker *)portChecker didReceiveStatus:(WPPortCheckerStatus)status forPort:(NSUInteger)port {
 	_portCheckerStatus	= status;
 	_portCheckerPort	= port;
 	
 	[self _updatePortStatus];
 }
-
-
-
-
-
-
 
 #pragma mark -
 #pragma mark Toolbar Methods
@@ -370,8 +387,10 @@
 	
 	[NSAnimationContext endGrouping];
 	
+    
 	if(tag == 1 && self.portCheckerStatus == WPPortCheckerUnknown)
 		[self checkPortAgain:self];
+
 }
 
 
@@ -384,28 +403,21 @@
 
 
 - (IBAction)uninstall:(id)sender {
-	NSAlert		*alert;
-	
-	alert = [NSAlert alertWithMessageText:WPLS(@"Are you sure you want to uninstall Wired Server?", @"Uninstall dialog title")
-							defaultButton:WPLS(@"Cancel", @"Uninstall dialog button title")
-						  alternateButton:WPLS(@"Uninstall", @"Uninstall dialog button title")
-							  otherButton:NULL
-				informativeTextWithFormat:WPLS(@"All your settings, accounts and other server data will be lost. Export your settings first to be able to restore your data.", @"Uninstall dialog description")];
-	
-	[alert beginSheetModalForWindow:[_installButton window]
-					  modalDelegate:self
-					 didEndSelector:@selector(uninstallAlertDidEnd:returnCode:contextInfo:)
-						contextInfo:NULL];
+    
+    NSAlert *alert = [[NSAlert alloc] init];
+    [alert setMessageText:WPLS(@"Are you sure you want to uninstall Wired Server?", @"Uninstall dialog title")];
+    [alert setInformativeText:WPLS(@"All your settings, accounts and other server data will be lost. Export your settings first to be able to restore your data.", @"Uninstall dialog description")];
+    [alert addButtonWithTitle:WPLS(@"Cancel", @"Uninstall dialog button title")];
+    [alert addButtonWithTitle:WPLS(@"Uninstall", @"Uninstall dialog button title")];
+    NSInteger returnCode = [alert runModal];
+        if (returnCode == NSAlertFirstButtonReturn) {
+            return;
+        }else
+            [self performSelector:@selector(_uninstall) afterDelay:0.1];
+        
+    
+    
 }
-
-
-
-- (void)uninstallAlertDidEnd:(NSAlert *)alert returnCode:(NSInteger)returnCode contextInfo:(void *)contextInfo {
-	if(returnCode == NSAlertAlternateReturn)
-		[self performSelector:@selector(_uninstall) afterDelay:0.1];
-}
-
-
 
 - (IBAction)releaseNotes:(id)sender {
 	NSString		*path;
@@ -416,8 +428,6 @@
      setReleaseNotesWithHTML:[NSData dataWithContentsOfFile:path]];
 	[[WIReleaseNotesController releaseNotesController] showWindow:self];
 }
-
-
 
 
 #pragma mark -
@@ -462,9 +472,10 @@
 		[_startButton setEnabled:YES];
 		[_startProgressIndicator stopAnimation:self];
 	}
+    
+    [_hostTextField setEnabled:YES];
+    [self saveInfo];
 }
-
-
 
 - (IBAction)launchAutomatically:(id)sender {
 	[_wiredManager setLaunchesAutomatically:[_launchAutomaticallyButton state]];
@@ -473,12 +484,17 @@
 - (IBAction)enableStatusMenuItem:(id)sender {
     NSURL *url = [[NSBundle mainBundle] URLForResource:@"Wired Server Helper" withExtension:@"app"];
     
-    if([WIStatusMenuManager willStartAtLogin:url]) {
-        [WIStatusMenuManager setStartAtLogin:url enabled:NO];
-        [WIStatusMenuManager stopHelper:url];
-    } else {
+    if ([_enableStatusMenuyButton state] == NO) {
+        if([WIStatusMenuManager willStartAtLogin:url]) {
+            [WIStatusMenuManager setStartAtLogin:url enabled:NO];
+            [WIStatusMenuManager stopHelper:url];
+            [WIStatusMenuManager removeFromLoginItems];
+        }
+    }else {
         [WIStatusMenuManager setStartAtLogin:url enabled:YES];
         [WIStatusMenuManager startHelper:url];
+        [_enableStatusMenuyButton setState:YES];
+        
     }
 }
 
@@ -502,51 +518,31 @@
 #pragma mark -
 
 - (IBAction)other:(id)sender {
-	NSOpenPanel		*openPanel;
-	
-	openPanel = [NSOpenPanel openPanel];
-	[openPanel setCanChooseFiles:NO];
-	[openPanel setCanChooseDirectories:YES];
-	[openPanel setCanCreateDirectories:YES];
-	[openPanel setTitle:WPLS(@"Select Files", @"Files dialog title")];
-	[openPanel setPrompt:WPLS(@"Select", @"Files dialog button title")];
-	[openPanel beginSheetForDirectory:[_filesMenuItem representedObject]
-								 file:NULL
-					   modalForWindow:[_filesPopUpButton window]
-						modalDelegate:self
-					   didEndSelector:@selector(otherOpenPanelDidEnd:returnCode:contextInfo:)
-						  contextInfo:NULL];
+    NSOpenPanel *openPanel;
+    openPanel = [NSOpenPanel openPanel];
+    [openPanel setCanChooseFiles:NO];
+    [openPanel setCanChooseDirectories:YES];
+    [openPanel setCanCreateDirectories:YES];
+    [openPanel setTitle:WPLS(@"Select Files", @"Files dialog title")];
+    [openPanel setPrompt:WPLS(@"Select", @"Files dialog button title")];
+    [openPanel beginSheetModalForWindow:[_filesPopUpButton window] completionHandler:^(NSInteger result){
+        if (result == NSModalResponseOK) {
+            WIError  *error = nil;
+            if([_configManager setString:[[openPanel URL]path] forConfigWithName:@"files" andWriteWithError:&error]) {
+                [_wiredManager makeServerReloadConfig];
+                [_wiredManager performSelector:@selector(makeServerIndexFiles) withObject:nil afterDelay:3.0f];
+            } else {
+                [[error alert] beginSheetModalForWindow:[_filesPopUpButton window]];
+            }
+            [self _updateSettings];
+        }
+    }];
 }
-
-
-- (void)otherOpenPanelDidEnd:(NSOpenPanel *)openPanel returnCode:(NSInteger)returnCode contextInfo:(void *)contextInfo {
-	WPError		*error;
-	
-	if(returnCode == NSOKButton) {
-		if([_configManager setString:[openPanel filename] forConfigWithName:@"files" andWriteWithError:&error]) {
-			[_wiredManager makeServerReloadConfig];
-			[_wiredManager performSelector:@selector(makeServerIndexFiles) withObject:nil afterDelay:3.0f];
-		} else {
-			[[error alert] beginSheetModalForWindow:[_filesPopUpButton window]];
-		}
-		
-		[self _updateSettings];
-	}
-	
-	[_filesPopUpButton selectItem:_filesMenuItem];
-}
-
-
-
-
 #pragma mark -
 
 - (IBAction)index:(id)sender {
 	[_wiredManager makeServerIndexFiles];
 }
-
-
-
 
 
 #pragma mark -
@@ -555,56 +551,25 @@
     [[NSWorkspace sharedWorkspace] openFile:[_wiredManager rootPath]];
 }
 
-
 #pragma mark -
 
-- (IBAction)port:(id)sender {
-	WPError		*error;
-	
-	if(![_configManager setString:[_portTextField stringValue] forConfigWithName:@"port" andWriteWithError:&error])
-		[[error alert] beginSheetModalForWindow:[_portTextField window]];
-	
-	[self _updateSettings];
-}
-
-
-
-- (IBAction)mapPortAutomatically:(id)sender {
-	NSInteger	state;
-	WPError		*error;
-	
-	state = [_mapPortAutomaticallyButton state];
-	
-	if(![_configManager setString:state ? @"yes" : @"no" forConfigWithName:@"map port" andWriteWithError:&error])
-		[[error alert] beginSheetModalForWindow:[_portTextField window]];
-	
-	[self _updateSettings];
-}
-
-
-
 - (IBAction)checkPortAgain:(id)sender {
-	if([_wiredManager isRunning]) {
-		_portCheckerStatus = WPPortCheckerUnknown;
-		
-		[_portChecker checkStatusForPort:[_portTextField intValue]];
-	}
-	
-	[self _updatePortStatus];
+    if([_wiredManager isRunning]) {
+        _portCheckerStatus = WPPortCheckerUnknown;
+        
+        [_portChecker checkStatusForPort:[_portTextField intValue]];
+    }
+    
+    [self _updatePortStatus];
 }
-
-
-
-
-
 
 #pragma mark -
 
 - (IBAction)pruneEvents:(id)sender {
-    WPError		*error;
+    WIError		*error = nil;
 	NSString	*string;
     
-	string = [self _stringForPruneEventsType:[_pruneEventsPopUpButton selectedTag]];
+	string = [self _stringForPruneEventsType:(WPPruneEventsType)[_pruneEventsPopUpButton selectedTag]];
 	
 	if(![_configManager setString:string forConfigWithName:@"events time" andWriteWithError:&error]) {
 		[[error alert] beginSheetModalForWindow:[self.snapshotTextField window]];
@@ -616,10 +581,10 @@
 
 
 - (IBAction)snapshotEnable:(id)sender {
-    WPError		*error;
+    WIError		*error = nil;
 	NSString	*string;
     
-	string = ([_snapshotEnableButton state] == NSOKButton) ? @"yes" : @"no";
+    string = ([_snapshotEnableButton state] == NSModalResponseOK) ? @"yes" : @"no";
 	
 	if(![_configManager setString:string forConfigWithName:@"snapshots" andWriteWithError:&error]) {
 		[[error alert] beginSheetModalForWindow:[self.snapshotTextField window]];
@@ -632,66 +597,56 @@
 
 
 
-
-
 #pragma mark -
 
 - (IBAction)setPasswordForAdmin:(id)sender {
 	[_newPasswordTextField setStringValue:@""];
 	[_verifyPasswordTextField setStringValue:@""];
 	[_passwordMismatchTextField setHidden:YES];
-    
 	[_passwordPanel makeFirstResponder:_newPasswordTextField];
     
-	[NSApp beginSheet:_passwordPanel
-	   modalForWindow:[self window]
-		modalDelegate:self
-	   didEndSelector:@selector(setPasswordForAdminPanelDidEnd:returnCode:contextInfo:)
-		  contextInfo:NULL];
+    [NSApp beginSheet:_passwordPanel modalForWindow:[self window] didEndBlock:^(NSModalResponse returnCode){
+        WPError *error;
+        [_passwordPanel close];
+        if(returnCode == NSModalResponseOK) {
+            if(![_accountManager setPassword:[_newPasswordTextField stringValue]
+                      forUserAccountWithName:@"admin"
+                           andWriteWithError:&error]) {
+                [[error alert] beginSheetModalForWindow:[_setPasswordForAdminButton window]];
+            }
+            [self _updateSettings];
+        }
+    }];
+     
 }
-
-
-
-- (void)setPasswordForAdminPanelDidEnd:(NSWindow *)sheet returnCode:(NSInteger)returnCode contextInfo:(void *)contextInfo {
-	WPError		*error;
-	
-	[_passwordPanel close];
-    
-	if(returnCode == NSOKButton) {
-		if(![_accountManager setPassword:[_newPasswordTextField stringValue]
-				  forUserAccountWithName:@"admin"
-					   andWriteWithError:&error]) {
-			[[error alert] beginSheetModalForWindow:[_setPasswordForAdminButton window]];
-		}
-		
-		[self _updateSettings];
-	}
-}
-
 
 
 - (IBAction)createNewAdminUser:(id)sender {
 	[_newPasswordTextField setStringValue:@""];
 	[_verifyPasswordTextField setStringValue:@""];
 	[_passwordMismatchTextField setHidden:YES];
-	
 	[_passwordPanel makeFirstResponder:_newPasswordTextField];
-	
-	[NSApp beginSheet:_passwordPanel
-	   modalForWindow:[_createNewAdminUserButton window]
-		modalDelegate:self
-	   didEndSelector:@selector(createNewAdminUserPanelDidEnd:returnCode:contextInfo:)
-		  contextInfo:NULL];
+    
+    [NSApp beginSheet:_passwordPanel modalForWindow:[_createNewAdminUserButton window] didEndBlock:^(NSModalResponse returnCode){
+        WPError *error;
+        [_passwordPanel close];
+            if(returnCode == NSModalResponseOK) {
+                if(![_accountManager createNewAdminUserAccountWithName:@"admin"
+                                                              password:[_newPasswordTextField stringValue]
+                                                     andWriteWithError:&error]) {
+                    [[error alert] beginSheetModalForWindow:[_setPasswordForAdminButton window]];
+                }
+                [self _updateSettings];
+            }
+    }];
 }
-
 
 
 - (void)createNewAdminUserPanelDidEnd:(NSWindow *)sheet returnCode:(NSInteger)returnCode contextInfo:(void *)contextInfo {
 	WPError		*error;
-	
 	[_passwordPanel close];
     
-	if(returnCode == NSOKButton) {
+    if(returnCode == NSModalResponseOK) {
 		if(![_accountManager createNewAdminUserAccountWithName:@"admin"
 													  password:[_newPasswordTextField stringValue]
 											 andWriteWithError:&error]) {
@@ -736,7 +691,7 @@
 	[savePanel setPrompt:NSLS(@"Export", @"Export panel button title")];
     
     [savePanel beginSheetModalForWindow:[_importSettingsButton window] completionHandler:^(NSInteger result) {
-        if(result == NSOKButton) {
+        if(result == NSModalResponseOK) {
             [self.window beginSheetModalForWindow:_activityWindow];
             
             [_activityProgressIndicator startAnimation:self];
@@ -745,37 +700,28 @@
             NSBlockOperation *operation = [NSBlockOperation blockOperationWithBlock:^{
                 NSLog(@"exportSettings : %@", [[savePanel URL] path]);
                 
-                //[self performSelector:@selector(_exportToFile:) withObject:[[savePanel URL] path] afterDelay:0.1];
-                
                 [self _exportToFile:[[savePanel URL] path]];
                 [NSThread sleepForTimeInterval:1.0];
                 [self.window performSelectorOnMainThread:@selector(endSheet:) withObject:_activityWindow];
-                
             }];
-            
             [_queue addOperation:operation];
         }
     }];
 }
 
 
-
-
 - (IBAction)importSettings:(id)sender {
-    WPError                 *error;
-	NSOpenPanel             *openPanel;
-    NSAlert                 *alert;
-    
-    error = nil;
+    WPError     *error = nil;
+    NSOpenPanel *openPanel;
+    NSAlert * alert = [[[NSAlert alloc] init] autorelease];
     
     if([_wiredManager isRunning]) {
-        alert = [NSAlert alertWithMessageText:@"Wired Server is running"
-                                defaultButton:@"Stop and Import"
-                              alternateButton:@"Cancel"
-                                  otherButton:nil
-                    informativeTextWithFormat:@"Your Wired Server is currently running and it's recommanded to stop it in order to perform the import operation. Stop and import ?"];
-                
-        if([alert runModal] == NSAlertDefaultReturn) {
+        [alert setMessageText:@"Wired Server is running"];
+        [alert setInformativeText:@"Your Wired Server is currently running and it's recommanded to stop it in order to perform the import operation. Stop and import ?"];
+        [alert addButtonWithTitle:@"Stop and Import"];
+        [alert addButtonWithTitle:@"Cancel"];
+        NSInteger returnCode = [alert runModal];
+        if (returnCode == NSAlertFirstButtonReturn) {
             [_wiredManager stopWithError:&error];
         } else {
             return;
@@ -788,9 +734,8 @@
         [openPanel setCanChooseDirectories:NO];
         [openPanel setAllowedFileTypes:[NSArray arrayWithObject:@"WiredSettings"]];
         [openPanel setPrompt:NSLS(@"Import", @"Import panel button title")];
-        
         [openPanel beginSheetModalForWindow:[_importSettingsButton window] completionHandler:^(NSInteger result) {
-            if(result == NSOKButton) {
+            if(result == NSModalResponseOK) {
                 [self.window beginSheetModalForWindow:_activityWindow];
                 
                 [_activityProgressIndicator startAnimation:self];
@@ -845,7 +790,7 @@
 #pragma mark -
 
 - (void)controlTextDidEndEditing:(NSNotification *)notification {
-    WPError		*error;
+    WIError		*error = nil;
 	NSString	*string;
     
     if([notification object] == _snapshotTextField) {
@@ -871,16 +816,31 @@
 			[_wiredManager makeServerReloadConfig];
 		}
 	}
+    
+
+    /*
+    else if([notification object] == _hostTextField) {
+        string = [_hostTextField stringValue];
+    
+        if([[_hostTextField stringValue] length] == 0) {
+            if(![_configManager setString:string forConfigWithName:@"host" andWriteWithError:&error])
+                [[error alert] beginSheetModalForWindow:[_hostTextField window]];
+         
+            [self _updateSettings];
+        }
+    }
+     */
     else if([notification object] == _portTextField) {
         string = [_portTextField stringValue];
                 
         if([_portTextField intValue] >= 1024 && [_portTextField intValue] <= 65535) {
-			if(![_configManager setString:string forConfigWithName:@"port" andWriteWithError:&error])
-				[[error alert] beginSheetModalForWindow:[_portTextField window]];
-			
-			[self _updateSettings];
-		}
+            if(![_configManager setString:string forConfigWithName:@"port" andWriteWithError:&error])
+                [[error alert] beginSheetModalForWindow:[_portTextField window]];
+            
+            [self _updateSettings];
+        }
     }
+    
 }
 
 
@@ -895,14 +855,12 @@
     
     if([WIStatusMenuManager willStartAtLogin:url]) {
         [WIStatusMenuManager stopHelper:url];
+        [WIStatusMenuManager removeFromLoginItems];
     }
     
     [[WPSettings settings] setBool:YES forKey:WPUpdated];
     [[WPSettings settings] synchronize];
 }
-
-
-
 
 @end
 
@@ -983,12 +941,11 @@
 		[_startButton setTitle:WPLS(@"Stop", @"Stop button")];
 		[_startButton setEnabled:YES];
 		[_startButton setAction:@selector(stop:)];
+        [_hostTextField setEnabled:NO];
 	}
 	
 	[_launchAutomaticallyButton setState:[_wiredManager launchesAutomatically]];
 }
-
-
 
 - (void)_updateSettings {
 	NSImage			*image;
@@ -1008,25 +965,11 @@
 			[_filesMenuItem setImage:image];
 			[_filesMenuItem setRepresentedObject:string];
 		}
-		
+        
 		string = [_configManager stringForConfigWithName:@"port"];
-		
 		if(string)
 			[_portTextField setStringValue:string];
-		
-		if([[NSApplication sharedApplication] systemVersion] >= 0x1050) {
-			string = [_configManager stringForConfigWithName:@"map port"];
-			
-			if(string)
-				[_mapPortAutomaticallyButton setState:[string isEqualToString:@"yes"] ? NSOnState : NSOffState];
-			else
-				[_mapPortAutomaticallyButton setState:NSOffState];
-            
-			[_mapPortAutomaticallyButton setEnabled:YES];
-		} else {
-			[_mapPortAutomaticallyButton setState:NSOffState];
-			[_mapPortAutomaticallyButton setEnabled:NO];
-		}
+        
 		
 		switch([_accountManager hasUserAccountWithName:@"admin" password:&password]) {
 			case WPAccountFailed:
@@ -1071,7 +1014,8 @@
 		
 		string = [_configManager stringForConfigWithName:@"events time"];
 		[_pruneEventsPopUpButton selectItemWithTag:[self _pruneEventsTypeForString:string]];
-		
+
+        
 		string = [_configManager stringForConfigWithName:@"snapshots"];
 		snapshotsEnabled = ([string isEqualToString:@"yes"]) ? YES : NO;
 		[_snapshotEnableButton setState:snapshotsEnabled];
@@ -1091,14 +1035,15 @@
 		else
 			[_filesIndexTimeTextField setStringValue:@"3600"];
 		
-		
 		[_startButton setEnabled:YES];
 		[_launchAutomaticallyButton setEnabled:YES];
-		[_filesPopUpButton selectItemWithRepresentedObject:0];
-		[_filesPopUpButton setEnabled:YES];
+		//[_filesPopUpButton selectItemWithRepresentedObject:0];
+		[_filesPopUpButton selectItemAtIndex:1];
+        [_filesPopUpButton setEnabled:YES];
 		[_filesIndexButton setEnabled:YES];
 		[_filesIndexTimeTextField setEnabled:YES];
 		[_portTextField setEnabled:YES];
+
 		[_checkPortAgainButton setEnabled:YES];
 		[_exportSettingsButton setEnabled:YES];
 		[_importSettingsButton setEnabled:YES];
@@ -1118,7 +1063,7 @@
 		[_filesIndexButton setEnabled:NO];
 		[_filesIndexTimeTextField setEnabled:NO];
 		[_portTextField setEnabled:NO];
-		[_mapPortAutomaticallyButton setEnabled:NO];
+
 		[_checkPortAgainButton setEnabled:NO];
 		[_setPasswordForAdminButton setEnabled:NO];
 		[_createNewAdminUserButton setEnabled:NO];
@@ -1131,12 +1076,22 @@
 	}
     
     url = [[NSBundle mainBundle] URLForResource:@"Wired Server Helper" withExtension:@"app"];
-    [_enableStatusMenuyButton setState:[WIStatusMenuManager willStartAtLogin:url]];
+    
+    if([WIStatusMenuManager willStartAtLogin:url]) {
+        [WIStatusMenuManager setStartAtLogin:url enabled:YES];
+        [WIStatusMenuManager startHelper:url];
+        [_enableStatusMenuyButton setState:YES];
+    }else {
+        [WIStatusMenuManager setStartAtLogin:url enabled:NO];
+        [WIStatusMenuManager stopHelper:url];
+        [WIStatusMenuManager removeFromLoginItems];
+        [_enableStatusMenuyButton setState:NO];
+    }
+    
 }
 
-
-
-- (void)_updatePortStatus {
+- (void)_updatePortStatus
+{    
 	if(![_wiredManager isInstalled]) {
 		[_portStatusImageView setImage:_grayDropImage];
 		[_portStatusTextField setStringValue:WPLS(@"Wired Server not found", @"Port status")];
@@ -1148,26 +1103,31 @@
 	else {
 		switch(_portCheckerStatus) {
 			case WPPortCheckerUnknown:
+                [_portCheckProgressIndicator startAnimation:self];
 				[_portStatusImageView setImage:_grayDropImage];
 				[_portStatusTextField setStringValue:WPLS(@"Checking port status\u2026", @"Port status")];
 				break;
                 
 			case WPPortCheckerOpen:
+                [_portCheckProgressIndicator stopAnimation:self];
 				[_portStatusImageView setImage:_greenDropImage];
 				[_portStatusTextField setStringValue:[NSSWF:WPLS(@"Port %u is open", @"Port status"), _portCheckerPort]];
 				break;
 				
 			case WPPortCheckerClosed:
+                [_portCheckProgressIndicator stopAnimation:self];
 				[_portStatusImageView setImage:_redDropImage];
 				[_portStatusTextField setStringValue:[NSSWF:WPLS(@"Port %u is closed", @"Port status"), _portCheckerPort]];
 				break;
 				
 			case WPPortCheckerFiltered:
+                [_portCheckProgressIndicator stopAnimation:self];
 				[_portStatusImageView setImage:_redDropImage];
 				[_portStatusTextField setStringValue:[NSSWF:WPLS(@"Port %u is filtered", @"Port status"), _portCheckerPort]];
 				break;
 				
 			case WPPortCheckerFailed:
+                [_portCheckProgressIndicator stopAnimation:self];
 				[_portStatusImageView setImage:_redDropImage];
 				[_portStatusTextField setStringValue:WPLS(@"Port check failed", @"Port status")];
 				break;
@@ -1310,7 +1270,8 @@
 #pragma mark -
 
 - (NSString *)_stringForPruneEventsType:(WPPruneEventsType)type {
-	NSString *string;
+	
+    NSString *string;
 	
 	switch (type) {
 		case WPPruneEventsNone:		string = @"none";		break;
@@ -1385,7 +1346,5 @@
     
     return frame;
 }
-
-
 
 @end

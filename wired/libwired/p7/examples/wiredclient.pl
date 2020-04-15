@@ -88,7 +88,7 @@ sub p7connect {
 	p7sendmessage($socket, "p7.handshake.client_handshake",
 		{ name => "p7.handshake.version", content => "1.0" },
 		{ name => "p7.handshake.protocol.name", content => "Wired" },
-		{ name => "p7.handshake.protocol.version", content => "2.0b55" },
+		{ name => "p7.handshake.protocol.version", content => "2.5" },
 	);
 	
 	my $message = p7readmessage($socket);

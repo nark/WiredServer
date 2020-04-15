@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
+			<integer>13</integer>
+		</dict>
+		<key>Pods-Wired Server.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
 			<integer>17</integer>
 		</dict>
 		<key>Pods-WiredNetworking.xcscheme</key>
@@ -16,12 +21,22 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
+			<integer>14</integer>
+		</dict>
+		<key>Pods-WiredNetworking.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
 			<integer>18</integer>
 		</dict>
 		<key>Pods-libwired-osx.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>11</integer>
+		</dict>
+		<key>Pods-libwired-osx.xcscheme_^#shared#^_</key>
+		<dict>
 			<key>orderHint</key>
 			<integer>16</integer>
 		</dict>

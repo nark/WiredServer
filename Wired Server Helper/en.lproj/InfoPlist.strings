@@ -1,5 +1,5 @@
 /* Localized versions of Info.plist keys */
 CFBundleName = "Wired Server Helper";
 CFBundleShortVersionString = "1.0";
-CFBundleGetInfoString = "Wired Server Helper 1.0, Copyright 2011-2012, Read-Write Software.";
-NSHumanReadableCopyright = "Copyright 2011-2012, Read-Write Software.";
+CFBundleGetInfoString = "Wired Server Helper 1.0, Copyright 2011-2019, Read-Write Software.";
+NSHumanReadableCopyright = "Copyright 2011-2019, Read-Write Software.";

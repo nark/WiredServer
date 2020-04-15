@@ -23,7 +23,7 @@ This repository hosts Wired Server source code. You will find an Xcode project n
 		
 2. Move into the sources directory:
 		
-		cd WiredServer/
+		cd WiredServer
 		
 3. Install requirements using CocoaPods:
 

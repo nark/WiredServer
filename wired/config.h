@@ -65,13 +65,13 @@
 #define PACKAGE_NAME "wired"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "wired 2.0"
+#define PACKAGE_STRING "wired 2.5"
 
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME "wired"
 
 /* Define to the version of this package. */
-#define PACKAGE_VERSION "2.0"
+#define PACKAGE_VERSION "2.5"
 
 /* Define to 1 if you have the ANSI C header files. */
 #define STDC_HEADERS 1
@@ -89,10 +89,10 @@
 #define WD_USER "nark"
 
 /* Application version */
-#define WD_VERSION "2.0"
+#define WD_VERSION "2.5"
 
 /* Subversion revision */
-#define WI_REVISION "2.4-95-1-g3030373"
+#define WI_REVISION "11"
 
 /* 64-bit ino_t on Darwin */
 #define _DARWIN_USE_64_BIT_INODE 1

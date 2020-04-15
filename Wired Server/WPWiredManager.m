@@ -252,7 +252,7 @@
 
 
 - (BOOL)launchesAutomatically {
-	NSDictionary		*dictionary;
+	NSDictionary *dictionary;
 	
 	dictionary = [NSDictionary dictionaryWithContentsOfFile:[WPWiredLaunchAgentPlistPath stringByExpandingTildeInPath]];
 	return ![dictionary boolForKey:@"Disabled"];

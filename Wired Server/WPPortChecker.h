@@ -46,8 +46,8 @@ typedef enum _WPPortCheckerStatus		WPPortCheckerStatus;
 
 - (void)setDelegate:(id)delegate;
 - (id)delegate;
-
 - (void)checkStatusForPort:(NSUInteger)port;
+//- (void)checkStatusForHost: (NSString*)ip andPort:(NSUInteger)port;
 
 @end
 
