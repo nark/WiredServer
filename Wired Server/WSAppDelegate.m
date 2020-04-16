@@ -53,6 +53,10 @@
 
 #pragma mark -
 
+- (IBAction)checkForUpdate:(id)sender {
+    [self.settingsController checkForUpdate:sender];
+}
+
 - (IBAction)exportSettings:(id)sender {
     [self.settingsController exportSettings:sender];
 }
@@ -66,7 +70,7 @@
 }
 
 - (IBAction)showHelp:(id)sender {
-	[[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://wired.read-write.fr/wiki/wiredserver/wiredserver_osx"]];
+	[[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"https://github.com/nark/WiredServer/wiki"]];
 }
 
 - (IBAction)support:(id)sender {

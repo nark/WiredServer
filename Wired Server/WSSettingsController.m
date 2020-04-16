@@ -246,7 +246,7 @@
     [_updater setAutomaticallyChecksForUpdates:[[WPSettings settings] boolForKey:@"SUEnableAutomaticChecks"]];
     [_updater setAutomaticallyDownloadsUpdates:[[WPSettings settings] boolForKey:@"SUAllowsAutomaticUpdates"]];
 	[_updater setSendsSystemProfile:YES];
-    [_updater setFeedURL:[NSURL URLWithString:@"http://wired.read-write.fr/xml/wiredservercast.xml"]];
+    [_updater setFeedURL:[NSURL URLWithString:@"https://wired.read-write.fr/sparkle/wiredserver_cast.xml"]];
     
 	_greenDropImage	= [[NSImage alloc] initWithContentsOfFile:[[self bundle] pathForResource:@"GreenDrop" ofType:@"tiff"]];
 	

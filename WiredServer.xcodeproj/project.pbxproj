@@ -72,7 +72,6 @@
 		4C8D336F151E2D8D001A6BF7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D336D151E2D8D001A6BF7 /* MainMenu.xib */; };
 		4C8D33DC151E96E4001A6BF7 /* WiredServer.icns in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D33DB151E96E4001A6BF7 /* WiredServer.icns */; };
 		4C8D341B151E9B0B001A6BF7 /* install.sh in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D3417151E9B0B001A6BF7 /* install.sh */; };
-		4C8D341C151E9B0B001A6BF7 /* SUPublicDSAKeyFile.pem in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D3418151E9B0B001A6BF7 /* SUPublicDSAKeyFile.pem */; };
 		4C8D341D151E9B0B001A6BF7 /* uninstall.sh in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D3419151E9B0B001A6BF7 /* uninstall.sh */; };
 		4C8D341E151E9B0B001A6BF7 /* update.sh in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D341A151E9B0B001A6BF7 /* update.sh */; };
 		4C8D3420151E9B1B001A6BF7 /* Wired in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D341F151E9B1B001A6BF7 /* Wired */; };
@@ -89,6 +88,7 @@
 		4C8D34E0151F84E3001A6BF7 /* Updates.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D34DF151F84E3001A6BF7 /* Updates.tiff */; };
 		4CB57B171779007D006ECB87 /* Settings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CB57B151779007D006ECB87 /* Settings.xib */; };
 		4CD34ED91571ACED0054E305 /* Files.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CD34ED81571ACED0054E305 /* Files.png */; };
+		4CE5D55224475A48000333FB /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 4CE5D55124475A48000333FB /* dsa_pub.pem */; };
 		B133499321B1BA55004AF77F /* libwired in Resources */ = {isa = PBXBuildFile; fileRef = B133499021B1BA55004AF77F /* libwired */; };
 		B133499B21B1BD8D004AF77F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B133499821B1BD8D004AF77F /* WebKit.framework */; };
 		B133499D21B1BD9F004AF77F /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B133499C21B1BD9E004AF77F /* Quartz.framework */; };
@@ -96,6 +96,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4C16298424479888007FA399 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C8D334B151E2D8C001A6BF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C8A853E21B05BB2001154BC;
+			remoteInfo = wired;
+		};
 		4C233CBA15211F9C00245506 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4C8D334B151E2D8C001A6BF7 /* Project object */;
@@ -187,7 +194,7 @@
 			remoteGlobalIDString = 4C8D3353151E2D8D001A6BF7;
 			remoteInfo = "Wired Server";
 		};
-		4CE5D54A24475841000333FB /* PBXContainerItemProxy */ = {
+		4CE5D5632447718E000333FB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4C8D334B151E2D8C001A6BF7 /* Project object */;
 			proxyType = 1;
@@ -265,7 +272,6 @@
 		4C8D336B151E2D8D001A6BF7 /* WSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSAppDelegate.m; sourceTree = "<group>"; };
 		4C8D33DB151E96E4001A6BF7 /* WiredServer.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = WiredServer.icns; sourceTree = "<group>"; };
 		4C8D3417151E9B0B001A6BF7 /* install.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = install.sh; sourceTree = "<group>"; };
-		4C8D3418151E9B0B001A6BF7 /* SUPublicDSAKeyFile.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SUPublicDSAKeyFile.pem; sourceTree = "<group>"; };
 		4C8D3419151E9B0B001A6BF7 /* uninstall.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = uninstall.sh; sourceTree = "<group>"; };
 		4C8D341A151E9B0B001A6BF7 /* update.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = update.sh; sourceTree = "<group>"; };
 		4C8D341F151E9B1B001A6BF7 /* Wired */ = {isa = PBXFileReference; lastKnownFileType = text; path = Wired; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -325,6 +331,10 @@
 		4CA5988015A2449F000C4DAD /* wired.conf.in */ = {isa = PBXFileReference; lastKnownFileType = text; name = wired.conf.in; path = ../../wired/wired/wired.conf.in; sourceTree = "<group>"; };
 		4CA5988115A2449F000C4DAD /* wiredctl.in */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = wiredctl.in; path = ../../wired/wired/wiredctl.in; sourceTree = "<group>"; };
 		4CD34ED81571ACED0054E305 /* Files.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Files.png; sourceTree = "<group>"; };
+		4CE5D55124475A48000333FB /* dsa_pub.pem */ = {isa = PBXFileReference; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = SOURCE_ROOT; };
+		4CE5D55524475B07000333FB /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = Pods/Sparkle/Sparkle.framework; sourceTree = "<group>"; };
+		4CE5D55F244762BC000333FB /* Wired Server.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Wired Server.entitlements"; sourceTree = "<group>"; };
+		4CE5D560244762E9000333FB /* Wired Server Helper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Wired Server Helper.entitlements"; sourceTree = "<group>"; };
 		67FE8C95AEF31B6CAE0816AF /* Pods-Wired Server.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wired Server.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wired Server/Pods-Wired Server.release.xcconfig"; sourceTree = "<group>"; };
 		B133499021B1BA55004AF77F /* libwired */ = {isa = PBXFileReference; lastKnownFileType = folder; name = libwired; path = wired/libwired; sourceTree = "<group>"; };
 		B133499421B1BA8F004AF77F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -367,6 +377,7 @@
 		4C233C8C1521022800245506 /* Wired Server Helper */ = {
 			isa = PBXGroup;
 			children = (
+				4CE5D560244762E9000333FB /* Wired Server Helper.entitlements */,
 				4C233C981521022800245506 /* WHAppDelegate.h */,
 				4C233C991521022800245506 /* WHAppDelegate.m */,
 				4C233CA31521063A00245506 /* WHStatusController.h */,
@@ -429,6 +440,7 @@
 		4C8D3357151E2D8D001A6BF7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4CE5D55524475B07000333FB /* Sparkle.framework */,
 				B133499E21B1BE6B004AF77F /* libsqlite3.dylib */,
 				B133499C21B1BD9E004AF77F /* Quartz.framework */,
 				B133499821B1BD8D004AF77F /* WebKit.framework */,
@@ -451,6 +463,7 @@
 		4C8D335E151E2D8D001A6BF7 /* Wired Server */ = {
 			isa = PBXGroup;
 			children = (
+				4CE5D55F244762BC000333FB /* Wired Server.entitlements */,
 				4C8D33F1151E99FB001A6BF7 /* Classes */,
 				4C8D33F2151E9A02001A6BF7 /* Nibs */,
 				4C8D3422151E9B47001A6BF7 /* Resources */,
@@ -466,12 +479,12 @@
 				4C8D33F0151E99E6001A6BF7 /* Pictures */,
 				4C8D3421151E9B32001A6BF7 /* Scripts */,
 				4C8D341F151E9B1B001A6BF7 /* Wired */,
-				4C8D3418151E9B0B001A6BF7 /* SUPublicDSAKeyFile.pem */,
 				4C8D3361151E2D8D001A6BF7 /* InfoPlist.strings */,
 				4C8D3360151E2D8D001A6BF7 /* WiredServer-Info.plist */,
 				4C8D3367151E2D8D001A6BF7 /* Credits.rtf */,
 				4C233CFC15228BB800245506 /* wiredserverrnote.html */,
 				4C016F9A1778F6E200D6D2B3 /* Localizable.strings */,
+				4CE5D55124475A48000333FB /* dsa_pub.pem */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -622,6 +635,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				4CE5D5642447718E000333FB /* PBXTargetDependency */,
 				4C78901D170B3E3F004CE617 /* PBXTargetDependency */,
 				4C789016170B3E35004CE617 /* PBXTargetDependency */,
 				4C789018170B3E35004CE617 /* PBXTargetDependency */,
@@ -641,11 +655,12 @@
 				4C8D3352151E2D8D001A6BF7 /* Resources */,
 				4C8D33E8151E98AC001A6BF7 /* Copy Frameworks */,
 				30BB0EA8173C06128ADA22A4 /* [CP] Embed Pods Frameworks */,
+				4CE5D55E24476295000333FB /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4CE5D54B24475841000333FB /* PBXTargetDependency */,
+				4C16298524479888007FA399 /* PBXTargetDependency */,
 				4C8865D821A1BE56002A7F8A /* PBXTargetDependency */,
 				4C789002170B35D6004CE617 /* PBXTargetDependency */,
 				4C789004170B35D6004CE617 /* PBXTargetDependency */,
@@ -665,7 +680,12 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = OPALE;
 				TargetAttributes = {
+					4C233C881521022800245506 = {
+						DevelopmentTeam = 7KTXA5Y36K;
+						ProvisioningStyle = Manual;
+					};
 					4C8D3353151E2D8D001A6BF7 = {
+						DevelopmentTeam = 7KTXA5Y36K;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -759,9 +779,9 @@
 				4C8D336F151E2D8D001A6BF7 /* MainMenu.xib in Resources */,
 				4C8D33DC151E96E4001A6BF7 /* WiredServer.icns in Resources */,
 				4C8D341B151E9B0B001A6BF7 /* install.sh in Resources */,
-				4C8D341C151E9B0B001A6BF7 /* SUPublicDSAKeyFile.pem in Resources */,
 				4C8D341D151E9B0B001A6BF7 /* uninstall.sh in Resources */,
 				4C8D341E151E9B0B001A6BF7 /* update.sh in Resources */,
+				4CE5D55224475A48000333FB /* dsa_pub.pem in Resources */,
 				4C8D3420151E9B1B001A6BF7 /* Wired in Resources */,
 				4C8D34E0151F84E3001A6BF7 /* Updates.tiff in Resources */,
 				4C4A2959151F880C0084E041 /* Console.icns in Resources */,
@@ -843,7 +863,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "sh \"$SRCROOT/../../wired_server_distribute.sh\" || exit 1\n";
+			shellScript = "sh \"$SRCROOT/../wired_server_distribute.sh\" || exit 1\n";
+		};
+		4CE5D55E24476295000333FB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# Type a script or drag a script file from your workspace to insert its path.\ncodesign --force --sign \"Developer ID Application: Rafael Warnault (7KTXA5Y36K)\" \"$BUILT_PRODUCTS_DIR/$PRODUCT_NAME.app\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -883,6 +920,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4C16298524479888007FA399 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C8A853E21B05BB2001154BC /* wired */;
+			targetProxy = 4C16298424479888007FA399 /* PBXContainerItemProxy */;
+		};
 		4C233CBB15211F9C00245506 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4C233C881521022800245506 /* Wired Server Helper */;
@@ -923,10 +965,10 @@
 			target = 4C8D3353151E2D8D001A6BF7 /* Wired Server */;
 			targetProxy = 4CDD88AE15F76CA500283005 /* PBXContainerItemProxy */;
 		};
-		4CE5D54B24475841000333FB /* PBXTargetDependency */ = {
+		4CE5D5642447718E000333FB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4C8A853E21B05BB2001154BC /* wired */;
-			targetProxy = 4CE5D54A24475841000333FB /* PBXContainerItemProxy */;
+			targetProxy = 4CE5D5632447718E000333FB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1007,7 +1049,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_ENTITLEMENTS = "Wired Server Helper/Wired Server Helper.entitlements";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 17;
+				DEVELOPMENT_TEAM = 7KTXA5Y36K;
+				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Wired Server Helper/Wired Server Helper-Prefix.pch";
 				GCC_VERSION = "";
@@ -1016,6 +1063,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "fr.read-write.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1025,7 +1073,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_ENTITLEMENTS = "Wired Server Helper/Wired Server Helper.entitlements";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 17;
+				DEVELOPMENT_TEAM = 7KTXA5Y36K;
+				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Wired Server Helper/Wired Server Helper-Prefix.pch";
 				GCC_VERSION = "";
@@ -1034,6 +1087,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "fr.read-write.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1196,13 +1250,16 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_WEAK = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_ENTITLEMENTS = "Wired Server/Wired Server.entitlements";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 12;
-				DEVELOPMENT_TEAM = "";
+				CURRENT_PROJECT_VERSION = 17;
+				DEVELOPMENT_TEAM = 7KTXA5Y36K;
+				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
+					"$(PROJECT_DIR)/Pods/Sparkle",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Wired Server/Wired Server-Prefix.pch";
@@ -1213,7 +1270,7 @@
 					"\"$(BUILT_PRODUCTS_DIR)\"",
 				);
 				INFOPLIST_FILE = "Wired Server/WiredServer-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @executable_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/lib,
@@ -1235,13 +1292,16 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_WEAK = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_ENTITLEMENTS = "Wired Server/Wired Server.entitlements";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 12;
-				DEVELOPMENT_TEAM = "";
+				CURRENT_PROJECT_VERSION = 17;
+				DEVELOPMENT_TEAM = 7KTXA5Y36K;
+				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
+					"$(PROJECT_DIR)/Pods/Sparkle",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Wired Server/Wired Server-Prefix.pch";
@@ -1252,7 +1312,7 @@
 					"\"$(BUILT_PRODUCTS_DIR)\"",
 				);
 				INFOPLIST_FILE = "Wired Server/WiredServer-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @executable_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/lib,

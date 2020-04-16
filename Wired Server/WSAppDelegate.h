@@ -16,6 +16,7 @@
 
 @property (readwrite, retain)   WSSettingsController            *settingsController;
 
+- (IBAction)checkForUpdate:(id)sender;
 - (IBAction)exportSettings:(id)sender;
 - (IBAction)importSettings:(id)sender;
 - (IBAction)releaseNotes:(id)sender;
