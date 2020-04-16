@@ -114,16 +114,6 @@ wi_rsa_t * wi_rsa_init_with_bits(wi_rsa_t *rsa, wi_uinteger_t size) {
     }
     
     return rsa;
-    
-//	rsa->rsa = RSA_generate_key((int)size, RSA_F4, NULL, NULL);
-//
-//	if(!rsa->rsa) {
-//		wi_release(rsa);
-//
-//		return NULL;
-//	}
-//
-//	return rsa;
 }
 
 

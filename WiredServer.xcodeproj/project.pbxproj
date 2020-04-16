@@ -296,6 +296,117 @@
 		4C8D34B5151F81C2001A6BF7 /* WSSettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSSettingsController.h; sourceTree = "<group>"; };
 		4C8D34B6151F81C3001A6BF7 /* WSSettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSSettingsController.m; sourceTree = "<group>"; };
 		4C8D34DF151F84E3001A6BF7 /* Updates.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Updates.tiff; sourceTree = "<group>"; };
+		4C9623312448A823001F1C86 /* wi-regexp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-regexp.h"; sourceTree = "<group>"; };
+		4C9623322448A823001F1C86 /* wi-random.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-random.h"; sourceTree = "<group>"; };
+		4C9623332448A823001F1C86 /* wi-test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-test.h"; sourceTree = "<group>"; };
+		4C9623342448A823001F1C86 /* wi-settings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-settings.h"; sourceTree = "<group>"; };
+		4C9623352448A823001F1C86 /* wi-config.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-config.c"; sourceTree = "<group>"; };
+		4C9623362448A823001F1C86 /* wi-pool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-pool.h"; sourceTree = "<group>"; };
+		4C9623372448A823001F1C86 /* wi-error.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-error.h"; sourceTree = "<group>"; };
+		4C9623382448A823001F1C86 /* wi-random.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-random.c"; sourceTree = "<group>"; };
+		4C9623392448A823001F1C86 /* wi-regexp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-regexp.c"; sourceTree = "<group>"; };
+		4C96233A2448A823001F1C86 /* wi-settings.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-settings.c"; sourceTree = "<group>"; };
+		4C96233B2448A823001F1C86 /* wi-test.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-test.c"; sourceTree = "<group>"; };
+		4C96233C2448A823001F1C86 /* wi-error.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-error.c"; sourceTree = "<group>"; };
+		4C96233D2448A823001F1C86 /* wi-pool.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-pool.c"; sourceTree = "<group>"; };
+		4C96233E2448A823001F1C86 /* wi-config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-config.h"; sourceTree = "<group>"; };
+		4C9623402448A823001F1C86 /* wi-cipher.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-cipher.c"; sourceTree = "<group>"; };
+		4C9623412448A823001F1C86 /* wi-digest.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-digest.c"; sourceTree = "<group>"; };
+		4C9623422448A823001F1C86 /* wi-x509.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-x509.h"; sourceTree = "<group>"; };
+		4C9623432448A823001F1C86 /* wi-rsa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-rsa.h"; sourceTree = "<group>"; };
+		4C9623442448A823001F1C86 /* wi-cipher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-cipher.h"; sourceTree = "<group>"; };
+		4C9623452448A823001F1C86 /* wi-digest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-digest.h"; sourceTree = "<group>"; };
+		4C9623462448A823001F1C86 /* wi-x509.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-x509.c"; sourceTree = "<group>"; };
+		4C9623472448A823001F1C86 /* wi-rsa.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-rsa.c"; sourceTree = "<group>"; };
+		4C9623492448A823001F1C86 /* wi-socket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-socket.h"; sourceTree = "<group>"; };
+		4C96234A2448A823001F1C86 /* wi-ip.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-ip.c"; sourceTree = "<group>"; };
+		4C96234B2448A823001F1C86 /* wi-speed-calculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-speed-calculator.h"; sourceTree = "<group>"; };
+		4C96234C2448A823001F1C86 /* wi-address.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-address.c"; sourceTree = "<group>"; };
+		4C96234D2448A823001F1C86 /* wi-host.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-host.h"; sourceTree = "<group>"; };
+		4C96234E2448A823001F1C86 /* wi-wired.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-wired.h"; sourceTree = "<group>"; };
+		4C96234F2448A823001F1C86 /* wi-socket.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-socket.c"; sourceTree = "<group>"; };
+		4C9623502448A823001F1C86 /* wi-address.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-address.h"; sourceTree = "<group>"; };
+		4C9623512448A823001F1C86 /* wi-host.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-host.c"; sourceTree = "<group>"; };
+		4C9623522448A823001F1C86 /* wi-ip.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-ip.h"; sourceTree = "<group>"; };
+		4C9623532448A823001F1C86 /* wi-speed-calculator.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-speed-calculator.c"; sourceTree = "<group>"; };
+		4C9623542448A823001F1C86 /* wi-wired.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-wired.c"; sourceTree = "<group>"; };
+		4C9623552448A823001F1C86 /* wired.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wired.h; sourceTree = "<group>"; };
+		4C9623572448A823001F1C86 /* wi-fts.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-fts.c"; sourceTree = "<group>"; };
+		4C9623582448A823001F1C86 /* wi-file.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-file.h"; sourceTree = "<group>"; };
+		4C9623592448A823001F1C86 /* wi-fsevents.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-fsevents.c"; sourceTree = "<group>"; };
+		4C96235A2448A823001F1C86 /* wi-fsenumerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-fsenumerator.h"; sourceTree = "<group>"; };
+		4C96235B2448A823001F1C86 /* wi-fs.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-fs.c"; sourceTree = "<group>"; };
+		4C96235C2448A823001F1C86 /* wi-file.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-file.c"; sourceTree = "<group>"; };
+		4C96235D2448A823001F1C86 /* wi-fts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-fts.h"; sourceTree = "<group>"; };
+		4C96235E2448A823001F1C86 /* wi-fsevents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-fsevents.h"; sourceTree = "<group>"; };
+		4C96235F2448A823001F1C86 /* wi-fsenumerator.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-fsenumerator.c"; sourceTree = "<group>"; };
+		4C9623602448A823001F1C86 /* wi-fs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-fs.h"; sourceTree = "<group>"; };
+		4C9623622448A823001F1C86 /* wi-p7-socket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-p7-socket.h"; sourceTree = "<group>"; };
+		4C9623632448A823001F1C86 /* wi-p7-private.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-p7-private.c"; sourceTree = "<group>"; };
+		4C9623642448A823001F1C86 /* wi-p7-message.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-p7-message.c"; sourceTree = "<group>"; };
+		4C9623652448A823001F1C86 /* wi-p7-spec.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-p7-spec.c"; sourceTree = "<group>"; };
+		4C9623662448A823001F1C86 /* wi-p7-socket.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-p7-socket.c"; sourceTree = "<group>"; };
+		4C9623672448A823001F1C86 /* wi-p7-message.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-p7-message.h"; sourceTree = "<group>"; };
+		4C9623682448A823001F1C86 /* wi-p7-private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-p7-private.h"; sourceTree = "<group>"; };
+		4C9623692448A823001F1C86 /* wi-p7-spec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-p7-spec.h"; sourceTree = "<group>"; };
+		4C96236B2448A823001F1C86 /* wi-system.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-system.h"; sourceTree = "<group>"; };
+		4C96236C2448A823001F1C86 /* wi-log.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-log.h"; sourceTree = "<group>"; };
+		4C96236D2448A823001F1C86 /* wi-process.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-process.h"; sourceTree = "<group>"; };
+		4C96236E2448A823001F1C86 /* wi-terminal.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-terminal.c"; sourceTree = "<group>"; };
+		4C96236F2448A823001F1C86 /* wi-compat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-compat.h"; sourceTree = "<group>"; };
+		4C9623702448A823001F1C86 /* wi-task.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-task.h"; sourceTree = "<group>"; };
+		4C9623712448A823001F1C86 /* wi-terminal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-terminal.h"; sourceTree = "<group>"; };
+		4C9623722448A823001F1C86 /* wi-log.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-log.c"; sourceTree = "<group>"; };
+		4C9623732448A823001F1C86 /* wi-process.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-process.c"; sourceTree = "<group>"; };
+		4C9623742448A823001F1C86 /* wi-system.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-system.c"; sourceTree = "<group>"; };
+		4C9623752448A823001F1C86 /* wi-compat.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-compat.c"; sourceTree = "<group>"; };
+		4C9623762448A823001F1C86 /* wi-task.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-task.c"; sourceTree = "<group>"; };
+		4C9623782448A823001F1C86 /* wi-dictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-dictionary.h"; sourceTree = "<group>"; };
+		4C9623792448A823001F1C86 /* wi-enumerator.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-enumerator.c"; sourceTree = "<group>"; };
+		4C96237A2448A823001F1C86 /* wi-set.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-set.h"; sourceTree = "<group>"; };
+		4C96237B2448A823001F1C86 /* wi-array.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-array.c"; sourceTree = "<group>"; };
+		4C96237C2448A823001F1C86 /* wi-enumerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-enumerator.h"; sourceTree = "<group>"; };
+		4C96237D2448A823001F1C86 /* wi-dictionary.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-dictionary.c"; sourceTree = "<group>"; };
+		4C96237E2448A823001F1C86 /* wi-set.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-set.c"; sourceTree = "<group>"; };
+		4C96237F2448A823001F1C86 /* wi-array.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-array.h"; sourceTree = "<group>"; };
+		4C9623812448A823001F1C86 /* wi-string.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-string.h"; sourceTree = "<group>"; };
+		4C9623822448A823001F1C86 /* wi-null.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-null.h"; sourceTree = "<group>"; };
+		4C9623832448A823001F1C86 /* wi-number.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-number.h"; sourceTree = "<group>"; };
+		4C9623842448A823001F1C86 /* wi-plist.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-plist.c"; sourceTree = "<group>"; };
+		4C9623852448A823001F1C86 /* wi-url.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-url.h"; sourceTree = "<group>"; };
+		4C9623862448A823001F1C86 /* wi-data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-data.h"; sourceTree = "<group>"; };
+		4C9623872448A823001F1C86 /* wi-date.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-date.h"; sourceTree = "<group>"; };
+		4C9623882448A823001F1C86 /* wi-uuid.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-uuid.h"; sourceTree = "<group>"; };
+		4C9623892448A823001F1C86 /* wi-string.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-string.c"; sourceTree = "<group>"; };
+		4C96238A2448A823001F1C86 /* wi-date.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-date.c"; sourceTree = "<group>"; };
+		4C96238B2448A823001F1C86 /* wi-url.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-url.c"; sourceTree = "<group>"; };
+		4C96238C2448A823001F1C86 /* wi-data.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-data.c"; sourceTree = "<group>"; };
+		4C96238D2448A823001F1C86 /* wi-number.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-number.c"; sourceTree = "<group>"; };
+		4C96238E2448A823001F1C86 /* wi-null.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-null.c"; sourceTree = "<group>"; };
+		4C96238F2448A823001F1C86 /* wi-plist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-plist.h"; sourceTree = "<group>"; };
+		4C9623902448A823001F1C86 /* wi-uuid.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-uuid.c"; sourceTree = "<group>"; };
+		4C9623922448A823001F1C86 /* wi-lock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-lock.h"; sourceTree = "<group>"; };
+		4C9623932448A823001F1C86 /* wi-timer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-timer.c"; sourceTree = "<group>"; };
+		4C9623942448A823001F1C86 /* wi-thread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-thread.h"; sourceTree = "<group>"; };
+		4C9623952448A823001F1C86 /* wi-lock.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-lock.c"; sourceTree = "<group>"; };
+		4C9623962448A823001F1C86 /* wi-timer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-timer.h"; sourceTree = "<group>"; };
+		4C9623972448A823001F1C86 /* wi-thread.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-thread.c"; sourceTree = "<group>"; };
+		4C9623992448A823001F1C86 /* wi-libxml2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-libxml2.c"; sourceTree = "<group>"; };
+		4C96239A2448A823001F1C86 /* wi-sqlite3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-sqlite3.h"; sourceTree = "<group>"; };
+		4C96239B2448A823001F1C86 /* wi-libxml2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-libxml2.h"; sourceTree = "<group>"; };
+		4C96239C2448A823001F1C86 /* wi-sqlite3.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-sqlite3.c"; sourceTree = "<group>"; };
+		4C96239E2448A823001F1C86 /* wi-assert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-assert.h"; sourceTree = "<group>"; };
+		4C96239F2448A823001F1C86 /* wi-base.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-base.c"; sourceTree = "<group>"; };
+		4C9623A02448A823001F1C86 /* wi-runtime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-runtime.h"; sourceTree = "<group>"; };
+		4C9623A12448A823001F1C86 /* wi-version.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-version.c"; sourceTree = "<group>"; };
+		4C9623A22448A823001F1C86 /* wi-macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-macros.h"; sourceTree = "<group>"; };
+		4C9623A32448A823001F1C86 /* wi-byteorder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-byteorder.h"; sourceTree = "<group>"; };
+		4C9623A42448A823001F1C86 /* wi-runtime.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-runtime.c"; sourceTree = "<group>"; };
+		4C9623A52448A823001F1C86 /* wi-base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-base.h"; sourceTree = "<group>"; };
+		4C9623A62448A823001F1C86 /* wi-assert.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-assert.c"; sourceTree = "<group>"; };
+		4C9623A72448A823001F1C86 /* wi-version.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-version.h"; sourceTree = "<group>"; };
+		4C9623A82448A823001F1C86 /* wi-byteorder.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wi-byteorder.c"; sourceTree = "<group>"; };
+		4C9623A92448A823001F1C86 /* wi-private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-private.h"; sourceTree = "<group>"; };
 		4CA5986015A2449F000C4DAD /* accounts.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = accounts.c; path = ../../wired/wired/accounts.c; sourceTree = "<group>"; };
 		4CA5986115A2449F000C4DAD /* accounts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = accounts.h; path = ../../wired/wired/accounts.h; sourceTree = "<group>"; };
 		4CA5986215A2449F000C4DAD /* banlist.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = banlist.c; path = ../../wired/wired/banlist.c; sourceTree = "<group>"; };
@@ -569,9 +680,217 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		4C96232F2448A823001F1C86 /* libwired */ = {
+			isa = PBXGroup;
+			children = (
+				4C9623302448A823001F1C86 /* misc */,
+				4C96233F2448A823001F1C86 /* crypto */,
+				4C9623482448A823001F1C86 /* net */,
+				4C9623552448A823001F1C86 /* wired.h */,
+				4C9623562448A823001F1C86 /* file */,
+				4C9623612448A823001F1C86 /* p7 */,
+				4C96236A2448A823001F1C86 /* system */,
+				4C9623772448A823001F1C86 /* collections */,
+				4C9623802448A823001F1C86 /* data */,
+				4C9623912448A823001F1C86 /* thread */,
+				4C9623982448A823001F1C86 /* thirdparty */,
+				4C96239D2448A823001F1C86 /* base */,
+			);
+			name = libwired;
+			path = wired/libwired/libwired;
+			sourceTree = SOURCE_ROOT;
+		};
+		4C9623302448A823001F1C86 /* misc */ = {
+			isa = PBXGroup;
+			children = (
+				4C9623312448A823001F1C86 /* wi-regexp.h */,
+				4C9623322448A823001F1C86 /* wi-random.h */,
+				4C9623332448A823001F1C86 /* wi-test.h */,
+				4C9623342448A823001F1C86 /* wi-settings.h */,
+				4C9623352448A823001F1C86 /* wi-config.c */,
+				4C9623362448A823001F1C86 /* wi-pool.h */,
+				4C9623372448A823001F1C86 /* wi-error.h */,
+				4C9623382448A823001F1C86 /* wi-random.c */,
+				4C9623392448A823001F1C86 /* wi-regexp.c */,
+				4C96233A2448A823001F1C86 /* wi-settings.c */,
+				4C96233B2448A823001F1C86 /* wi-test.c */,
+				4C96233C2448A823001F1C86 /* wi-error.c */,
+				4C96233D2448A823001F1C86 /* wi-pool.c */,
+				4C96233E2448A823001F1C86 /* wi-config.h */,
+			);
+			path = misc;
+			sourceTree = "<group>";
+		};
+		4C96233F2448A823001F1C86 /* crypto */ = {
+			isa = PBXGroup;
+			children = (
+				4C9623402448A823001F1C86 /* wi-cipher.c */,
+				4C9623412448A823001F1C86 /* wi-digest.c */,
+				4C9623422448A823001F1C86 /* wi-x509.h */,
+				4C9623432448A823001F1C86 /* wi-rsa.h */,
+				4C9623442448A823001F1C86 /* wi-cipher.h */,
+				4C9623452448A823001F1C86 /* wi-digest.h */,
+				4C9623462448A823001F1C86 /* wi-x509.c */,
+				4C9623472448A823001F1C86 /* wi-rsa.c */,
+			);
+			path = crypto;
+			sourceTree = "<group>";
+		};
+		4C9623482448A823001F1C86 /* net */ = {
+			isa = PBXGroup;
+			children = (
+				4C9623492448A823001F1C86 /* wi-socket.h */,
+				4C96234A2448A823001F1C86 /* wi-ip.c */,
+				4C96234B2448A823001F1C86 /* wi-speed-calculator.h */,
+				4C96234C2448A823001F1C86 /* wi-address.c */,
+				4C96234D2448A823001F1C86 /* wi-host.h */,
+				4C96234E2448A823001F1C86 /* wi-wired.h */,
+				4C96234F2448A823001F1C86 /* wi-socket.c */,
+				4C9623502448A823001F1C86 /* wi-address.h */,
+				4C9623512448A823001F1C86 /* wi-host.c */,
+				4C9623522448A823001F1C86 /* wi-ip.h */,
+				4C9623532448A823001F1C86 /* wi-speed-calculator.c */,
+				4C9623542448A823001F1C86 /* wi-wired.c */,
+			);
+			path = net;
+			sourceTree = "<group>";
+		};
+		4C9623562448A823001F1C86 /* file */ = {
+			isa = PBXGroup;
+			children = (
+				4C9623572448A823001F1C86 /* wi-fts.c */,
+				4C9623582448A823001F1C86 /* wi-file.h */,
+				4C9623592448A823001F1C86 /* wi-fsevents.c */,
+				4C96235A2448A823001F1C86 /* wi-fsenumerator.h */,
+				4C96235B2448A823001F1C86 /* wi-fs.c */,
+				4C96235C2448A823001F1C86 /* wi-file.c */,
+				4C96235D2448A823001F1C86 /* wi-fts.h */,
+				4C96235E2448A823001F1C86 /* wi-fsevents.h */,
+				4C96235F2448A823001F1C86 /* wi-fsenumerator.c */,
+				4C9623602448A823001F1C86 /* wi-fs.h */,
+			);
+			path = file;
+			sourceTree = "<group>";
+		};
+		4C9623612448A823001F1C86 /* p7 */ = {
+			isa = PBXGroup;
+			children = (
+				4C9623622448A823001F1C86 /* wi-p7-socket.h */,
+				4C9623632448A823001F1C86 /* wi-p7-private.c */,
+				4C9623642448A823001F1C86 /* wi-p7-message.c */,
+				4C9623652448A823001F1C86 /* wi-p7-spec.c */,
+				4C9623662448A823001F1C86 /* wi-p7-socket.c */,
+				4C9623672448A823001F1C86 /* wi-p7-message.h */,
+				4C9623682448A823001F1C86 /* wi-p7-private.h */,
+				4C9623692448A823001F1C86 /* wi-p7-spec.h */,
+			);
+			path = p7;
+			sourceTree = "<group>";
+		};
+		4C96236A2448A823001F1C86 /* system */ = {
+			isa = PBXGroup;
+			children = (
+				4C96236B2448A823001F1C86 /* wi-system.h */,
+				4C96236C2448A823001F1C86 /* wi-log.h */,
+				4C96236D2448A823001F1C86 /* wi-process.h */,
+				4C96236E2448A823001F1C86 /* wi-terminal.c */,
+				4C96236F2448A823001F1C86 /* wi-compat.h */,
+				4C9623702448A823001F1C86 /* wi-task.h */,
+				4C9623712448A823001F1C86 /* wi-terminal.h */,
+				4C9623722448A823001F1C86 /* wi-log.c */,
+				4C9623732448A823001F1C86 /* wi-process.c */,
+				4C9623742448A823001F1C86 /* wi-system.c */,
+				4C9623752448A823001F1C86 /* wi-compat.c */,
+				4C9623762448A823001F1C86 /* wi-task.c */,
+			);
+			path = system;
+			sourceTree = "<group>";
+		};
+		4C9623772448A823001F1C86 /* collections */ = {
+			isa = PBXGroup;
+			children = (
+				4C9623782448A823001F1C86 /* wi-dictionary.h */,
+				4C9623792448A823001F1C86 /* wi-enumerator.c */,
+				4C96237A2448A823001F1C86 /* wi-set.h */,
+				4C96237B2448A823001F1C86 /* wi-array.c */,
+				4C96237C2448A823001F1C86 /* wi-enumerator.h */,
+				4C96237D2448A823001F1C86 /* wi-dictionary.c */,
+				4C96237E2448A823001F1C86 /* wi-set.c */,
+				4C96237F2448A823001F1C86 /* wi-array.h */,
+			);
+			path = collections;
+			sourceTree = "<group>";
+		};
+		4C9623802448A823001F1C86 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				4C9623812448A823001F1C86 /* wi-string.h */,
+				4C9623822448A823001F1C86 /* wi-null.h */,
+				4C9623832448A823001F1C86 /* wi-number.h */,
+				4C9623842448A823001F1C86 /* wi-plist.c */,
+				4C9623852448A823001F1C86 /* wi-url.h */,
+				4C9623862448A823001F1C86 /* wi-data.h */,
+				4C9623872448A823001F1C86 /* wi-date.h */,
+				4C9623882448A823001F1C86 /* wi-uuid.h */,
+				4C9623892448A823001F1C86 /* wi-string.c */,
+				4C96238A2448A823001F1C86 /* wi-date.c */,
+				4C96238B2448A823001F1C86 /* wi-url.c */,
+				4C96238C2448A823001F1C86 /* wi-data.c */,
+				4C96238D2448A823001F1C86 /* wi-number.c */,
+				4C96238E2448A823001F1C86 /* wi-null.c */,
+				4C96238F2448A823001F1C86 /* wi-plist.h */,
+				4C9623902448A823001F1C86 /* wi-uuid.c */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		4C9623912448A823001F1C86 /* thread */ = {
+			isa = PBXGroup;
+			children = (
+				4C9623922448A823001F1C86 /* wi-lock.h */,
+				4C9623932448A823001F1C86 /* wi-timer.c */,
+				4C9623942448A823001F1C86 /* wi-thread.h */,
+				4C9623952448A823001F1C86 /* wi-lock.c */,
+				4C9623962448A823001F1C86 /* wi-timer.h */,
+				4C9623972448A823001F1C86 /* wi-thread.c */,
+			);
+			path = thread;
+			sourceTree = "<group>";
+		};
+		4C9623982448A823001F1C86 /* thirdparty */ = {
+			isa = PBXGroup;
+			children = (
+				4C9623992448A823001F1C86 /* wi-libxml2.c */,
+				4C96239A2448A823001F1C86 /* wi-sqlite3.h */,
+				4C96239B2448A823001F1C86 /* wi-libxml2.h */,
+				4C96239C2448A823001F1C86 /* wi-sqlite3.c */,
+			);
+			path = thirdparty;
+			sourceTree = "<group>";
+		};
+		4C96239D2448A823001F1C86 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				4C96239E2448A823001F1C86 /* wi-assert.h */,
+				4C96239F2448A823001F1C86 /* wi-base.c */,
+				4C9623A02448A823001F1C86 /* wi-runtime.h */,
+				4C9623A12448A823001F1C86 /* wi-version.c */,
+				4C9623A22448A823001F1C86 /* wi-macros.h */,
+				4C9623A32448A823001F1C86 /* wi-byteorder.h */,
+				4C9623A42448A823001F1C86 /* wi-runtime.c */,
+				4C9623A52448A823001F1C86 /* wi-base.h */,
+				4C9623A62448A823001F1C86 /* wi-assert.c */,
+				4C9623A72448A823001F1C86 /* wi-version.h */,
+				4C9623A82448A823001F1C86 /* wi-byteorder.c */,
+				4C9623A92448A823001F1C86 /* wi-private.h */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
 		4CA5985F15A24460000C4DAD /* wired */ = {
 			isa = PBXGroup;
 			children = (
+				4C96232F2448A823001F1C86 /* libwired */,
 				4CA5986015A2449F000C4DAD /* accounts.c */,
 				4CA5986115A2449F000C4DAD /* accounts.h */,
 				4CA5986215A2449F000C4DAD /* banlist.c */,
@@ -850,7 +1169,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# wired user & group\nWIRED_USER=$(id -un)\nWIRED_GROUP=$(id -gn)\n\ncd wired\nmake clean\n\nenv CPPFLAGS=\"-I/usr/local/opt/openssl/include\" LDFLAGS=\"-L/usr/local/opt/openssl/lib\" ./configure --enable-all --with-fake-prefix=\"/Library\" --with-wireddir=\"Wired\" --with-user=\"$WIRED_USER\" --with-group=\"$WIRED_GROUP\"\nmake\n\nmkdir -p \"$BUILT_PRODUCTS_DIR/Wired\"\ncp -r run/ \"$BUILT_PRODUCTS_DIR/Wired\"\n\n";
+			shellScript = "# wired user & group\nWIRED_USER=$(id -un)\nWIRED_GROUP=$(id -gn)\n\ncd wired\nmake clean\n\nenv CPPFLAGS=\"-I$SRCROOT/Pods/OpenSSL-Universal/include-macos\" LDFLAGS=\"-L$SRCROOT/Pods/OpenSSL-Universal/lib-macos\" \\\n./configure --enable-all --with-fake-prefix=\"/Library\" --with-wireddir=\"Wired\" --with-user=\"$WIRED_USER\" --with-group=\"$WIRED_GROUP\"\nmake\n\nmkdir -p \"$BUILT_PRODUCTS_DIR/Wired\"\ncp -r run/ \"$BUILT_PRODUCTS_DIR/Wired\"\n\n";
 		};
 		4CCEEFB8154C994D004AE045 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
