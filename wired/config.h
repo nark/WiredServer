@@ -92,7 +92,7 @@
 #define WD_VERSION "2.5"
 
 /* Subversion revision */
-#define WI_REVISION "2.5-16-1-gde4c29f"
+#define WI_REVISION "2.5-17"
 
 /* 64-bit ino_t on Darwin */
 #define _DARWIN_USE_64_BIT_INODE 1

@@ -68,7 +68,7 @@ struct _wi_cipher {
 #ifdef WI_CIPHER_OPENSSL
 	const EVP_CIPHER					*cipher;
 	EVP_CIPHER_CTX						encrypt_ctx;
-	EVP_CIPHER_CTX					    decrypt_ctx;
+	EVP_CIPHER_CTX						decrypt_ctx;
 #endif
 	
 #ifdef WI_CIPHER_COMMONCRYPTO

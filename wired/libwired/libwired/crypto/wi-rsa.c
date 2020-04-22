@@ -100,11 +100,11 @@ wi_rsa_t * wi_rsa_init_with_bits(wi_rsa_t *rsa, wi_uinteger_t size) {
     BIGNUM      *e;
 
     e = BN_new();
-    
+
     rsa->rsa = RSA_new();
 
     BN_set_word(e, 65537);
-    
+
     rc = RSA_generate_key_ex(rsa->rsa, (int)size, e, NULL);
 
     BN_free(e);
@@ -112,7 +112,7 @@ wi_rsa_t * wi_rsa_init_with_bits(wi_rsa_t *rsa, wi_uinteger_t size) {
     if (rc == -1 || !rsa->rsa) {
         return NULL;
     }
-    
+
     return rsa;
 }
 

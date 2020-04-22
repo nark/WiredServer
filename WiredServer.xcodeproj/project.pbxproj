@@ -724,14 +724,14 @@
 		4C96233F2448A823001F1C86 /* crypto */ = {
 			isa = PBXGroup;
 			children = (
-				4C9623402448A823001F1C86 /* wi-cipher.c */,
-				4C9623412448A823001F1C86 /* wi-digest.c */,
-				4C9623422448A823001F1C86 /* wi-x509.h */,
-				4C9623432448A823001F1C86 /* wi-rsa.h */,
-				4C9623442448A823001F1C86 /* wi-cipher.h */,
 				4C9623452448A823001F1C86 /* wi-digest.h */,
-				4C9623462448A823001F1C86 /* wi-x509.c */,
+				4C9623412448A823001F1C86 /* wi-digest.c */,
+				4C9623432448A823001F1C86 /* wi-rsa.h */,
 				4C9623472448A823001F1C86 /* wi-rsa.c */,
+				4C9623442448A823001F1C86 /* wi-cipher.h */,
+				4C9623402448A823001F1C86 /* wi-cipher.c */,
+				4C9623422448A823001F1C86 /* wi-x509.h */,
+				4C9623462448A823001F1C86 /* wi-x509.c */,
 			);
 			path = crypto;
 			sourceTree = "<group>";
@@ -776,10 +776,10 @@
 			isa = PBXGroup;
 			children = (
 				4C9623622448A823001F1C86 /* wi-p7-socket.h */,
+				4C9623662448A823001F1C86 /* wi-p7-socket.c */,
 				4C9623632448A823001F1C86 /* wi-p7-private.c */,
 				4C9623642448A823001F1C86 /* wi-p7-message.c */,
 				4C9623652448A823001F1C86 /* wi-p7-spec.c */,
-				4C9623662448A823001F1C86 /* wi-p7-socket.c */,
 				4C9623672448A823001F1C86 /* wi-p7-message.h */,
 				4C9623682448A823001F1C86 /* wi-p7-private.h */,
 				4C9623692448A823001F1C86 /* wi-p7-spec.h */,
@@ -1572,7 +1572,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Wired Server/Wired Server.entitlements";
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 17;
+				CURRENT_PROJECT_VERSION = 18;
 				DEVELOPMENT_TEAM = 7KTXA5Y36K;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1614,7 +1614,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Wired Server/Wired Server.entitlements";
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 17;
+				CURRENT_PROJECT_VERSION = 18;
 				DEVELOPMENT_TEAM = 7KTXA5Y36K;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
