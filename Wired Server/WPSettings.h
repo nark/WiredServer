@@ -30,6 +30,7 @@ extern NSString * const WPMigratedWired13;
 extern NSString * const WPUninstalled;
 extern NSString * const WPUpdated;
 extern NSString * const WPAutoUpdate;
+extern NSString * const WPEnableMenuItem;
 
 @interface WPSettings : WISettings
 

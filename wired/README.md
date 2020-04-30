@@ -1,4 +1,4 @@
-# Wired Server 2.0
+# Wired Server 2.5
 
 Wired Server is BBS-oriented server for UNIX-based operating systems. It uses [libwired](https://github.com/nark/libwired) and provide an implementation of the Wired 2.0 protocol. This project is a fork of the original Wired Server developed by Axel Andersson at [Zanka Software](http://zankasoftware.com/).
 
@@ -13,25 +13,56 @@ To install the Wired server, you need the following prerequisites:
 * **zlib**: [http://zlib.net/](http://zlib.net/)
 * **git**: [http://git-scm.com/](http://git-scm.com/)
 
-These are usually distributed with operating systems. If you need more information about installing these requirements on a specific operating system, you should visit this [page](http://www.read-write.fr/wired/wiki/howtos/install_howtos.html).
+These are usually distributed with operating systems.
+
+#### Howto install on:
+
+**Docker**
+
+Build the image:
+
+    cd wired/
+    docker build --tag wired:2.5 .
+    
+Run the container (first time):
+
+    docker run  -p 4871:4871 \ 
+                -v /path/to/your/files:/files \ 
+                -v /path/to/your/database.sqlite3:/usr/local/wired/database.sqlite3 \
+                --name wired wired:2.5
+
+* the `-p` option maps the container port (`4871`) to whatever the port you want to use on your host machine. If you want `wired` to be available on another you can use: `10000:4871` and Docker will translate it.
+* the `-v` option maps items of the container file system with your local file system. You can change the first value of the pair to adjust to your server files configuration.
+
+Start/stop the container:
+
+    docker start wired
+    docker stop wired
+    
+Remove the container:
+
+    docker rm wired
+
+**Debian/Ubuntu**
+
+	sudo apt-get install -y build-essential autoconf git libsqlite3-dev libxml2-dev libssl-dev zlib1g-dev
+
+**CentOS 7**
+
+    sudo yum -y install git libtool openssl-devel sqlite-devel.x86_64 libxml2-devel zlib-devel autoconf gcc make
+
+**CentOS 8 / Fedora 28/29/30/31 (and probably even older versions of Fedora)**
+
+    sudo yum -y install git libtool openssl-devel sqlite-devel libxml2-devel zlib-devel autoconf gcc make
+
 
 ### Getting started
 
 Installing Wired Server from sources will be done using the Autotools standard (configure, make, make install).
 
-##### 1. Get Wired Server sources:
+##### 1. Get Wired Server sources via Terminal (git must be installed!):
 
-* On Linux:
-
-		wget http://www.read-write.fr/wired/zip/wired.tar.gz
-
-* On Mac OSX:
-
-		curl -o http://www.read-write.fr/wired/zip/wired.tar.gz
-		
-Unarchive Wired Server sources:
-
-	tar -xvzf wired.tar.gz
+	git clone https://github.com/nark/wired wired
 
 Then move to the `wired` directory:
 
@@ -39,9 +70,11 @@ Then move to the `wired` directory:
 
 Initialize and update submodules repositories:
 
-	git submodule update --init --recursive
+	git submodule update --init --recursive --remote
 
-Then check that the "libwired" directory was not empty.
+	libwired/bootstrap
+
+Then check that the `libwired` directory was not empty and `configure` file exists.
 
 ##### 3. Run the configuration script:
 
@@ -58,6 +91,11 @@ Wired Server is designed to be installed into `/usr/local` by default. To change
 To change the default user the installation will write files as, run:
 
 	./configure --with-user=USER
+
+If you installed OpenSSL in a non-standard path, use the following command example as reference:
+
+	env CPPFLAGS=-I/usr/local/opt/openssl/include \
+	     LDFLAGS=-L/usr/local/opt/openssl/lib ./configure
 
 Use `./configure --help` in order to display more options.
 
@@ -94,7 +132,7 @@ By default a user with the login "admin" and no password is created. Use Wired C
 
 ### Get More
 
-If you are interested in the Wired project, check the Wired Wiki at [http://wired.read-write.fr/wiki/](http://wired.read-write.fr/wiki/)
+If you are interested in the Wired project, check the Website at [http://wired.read-write.fr/](http://wired.read-write.fr)
 
 ### Troubleshootings
 

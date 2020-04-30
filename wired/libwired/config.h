@@ -1,5 +1,5 @@
 /* config.h.  Generated from config.h.in by configure.  */
-/* config.h.in.  Generated from configure.in by autoheader.  */
+/* config.h.in.  Generated from configure.ac by autoheader.  */
 
 /* Define to 1 if you have the `backtrace' function. */
 #define HAVE_BACKTRACE 1
@@ -26,10 +26,10 @@
 /* Define to 1 if you have the `dirfd' function. */
 #define HAVE_DIRFD 1
 
-/* Define to 1 if `dd_fd' is member of `DIR'. */
+/* Define to 1 if `dd_fd' is a member of `DIR'. */
 /* #undef HAVE_DIR_DD_FD */
 
-/* Define to 1 if `d_fd' is member of `DIR'. */
+/* Define to 1 if `d_fd' is a member of `DIR'. */
 /* #undef HAVE_DIR_D_FD */
 
 /* Define to 1 if you have the <execinfo.h> header file. */
@@ -164,19 +164,19 @@
 /* Define to 1 if you have the `strsep' function. */
 #define HAVE_STRSEP 1
 
-/* Define to 1 if `sin6_len' is member of `struct sockaddr_in6'. */
+/* Define to 1 if `sin6_len' is a member of `struct sockaddr_in6'. */
 #define HAVE_STRUCT_SOCKADDR_IN6_SIN6_LEN 1
 
-/* Define to 1 if `sin_len' is member of `struct sockaddr_in'. */
+/* Define to 1 if `sin_len' is a member of `struct sockaddr_in'. */
 #define HAVE_STRUCT_SOCKADDR_IN_SIN_LEN 1
 
-/* Define to 1 if `sa_len' is member of `struct sockaddr'. */
+/* Define to 1 if `sa_len' is a member of `struct sockaddr'. */
 #define HAVE_STRUCT_SOCKADDR_SA_LEN 1
 
-/* Define to 1 if `st_birthtime' is member of `struct stat64'. */
+/* Define to 1 if `st_birthtime' is a member of `struct stat64'. */
 #define HAVE_STRUCT_STAT64_ST_BIRTHTIME 1
 
-/* Define to 1 if `st_birthtime' is member of `struct stat'. */
+/* Define to 1 if `st_birthtime' is a member of `struct stat'. */
 #define HAVE_STRUCT_STAT_ST_BIRTHTIME 1
 
 /* Define to 1 if you have the `sysinfo' function. */
@@ -252,11 +252,17 @@
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME "libwired"
 
+/* Define to the home page for this package. */
+#define PACKAGE_URL ""
+
 /* Define to the version of this package. */
 #define PACKAGE_VERSION "1.0"
 
 /* Define to 1 if you have the ANSI C header files. */
 #define STDC_HEADERS 1
+
+/* SQLite does not support backup */
+#define WI_SQLITE_SUPPORTS_BACKUP 1
 
 /* Application version */
 #define WI_VERSION "1.0"

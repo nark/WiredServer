@@ -45,7 +45,6 @@
 		4C233CB0152112C700245506 /* WPWiredManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D3482151F58D7001A6BF7 /* WPWiredManager.m */; };
 		4C233CB1152112D700245506 /* WPSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D3480151F58D7001A6BF7 /* WPSettings.m */; };
 		4C233CB2152112E500245506 /* WPError.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D3478151F58D7001A6BF7 /* WPError.m */; };
-		4C233CBC15211FA700245506 /* Wired Server Helper.app in Resources */ = {isa = PBXBuildFile; fileRef = 4C233C891521022800245506 /* Wired Server Helper.app */; };
 		4C233CBF1521251300245506 /* WiredServerMenuOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C233CBD152124B600245506 /* WiredServerMenuOff.png */; };
 		4C233CC21521329E00245506 /* WiredServer.icns in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D33DB151E96E4001A6BF7 /* WiredServer.icns */; };
 		4C233CFD15228BB800245506 /* wiredserverrnote.html in Resources */ = {isa = PBXBuildFile; fileRef = 4C233CFC15228BB800245506 /* wiredserverrnote.html */; };
@@ -53,6 +52,7 @@
 		4C4A2969151F894F0084E041 /* GrayDrop.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 4C4A2966151F894F0084E041 /* GrayDrop.tiff */; };
 		4C4A296A151F894F0084E041 /* GreenDrop.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 4C4A2967151F894F0084E041 /* GreenDrop.tiff */; };
 		4C4A296B151F894F0084E041 /* RedDrop.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 4C4A2968151F894F0084E041 /* RedDrop.tiff */; };
+		4C52C885245A20BE00BFB5AE /* Wired Server Helper.app in Copy Helper */ = {isa = PBXBuildFile; fileRef = 4C233C891521022800245506 /* Wired Server Helper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4C5EDCC7154366750031D44E /* man in Resources */ = {isa = PBXBuildFile; fileRef = 4C5EDCC6154366740031D44E /* man */; };
 		4C789007170B35DE004CE617 /* wired.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FF2170B35BF004CE617 /* wired.a */; };
 		4C789010170B3998004CE617 /* WiredFoundation.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFA170B35BF004CE617 /* WiredFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
@@ -96,19 +96,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4C16298424479888007FA399 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4C8D334B151E2D8C001A6BF7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4C8A853E21B05BB2001154BC;
-			remoteInfo = wired;
-		};
 		4C233CBA15211F9C00245506 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4C8D334B151E2D8C001A6BF7 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 4C233C881521022800245506;
 			remoteInfo = "Wired Server Helper";
+		};
+		4C52C886245A214300BFB5AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C8D334B151E2D8C001A6BF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C8A853E21B05BB2001154BC;
+			remoteInfo = wired;
 		};
 		4C788FF1170B35BF004CE617 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -194,13 +194,6 @@
 			remoteGlobalIDString = 4C8D3353151E2D8D001A6BF7;
 			remoteInfo = "Wired Server";
 		};
-		4CE5D5632447718E000333FB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4C8D334B151E2D8C001A6BF7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4C8A853E21B05BB2001154BC;
-			remoteInfo = wired;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -214,6 +207,17 @@
 				4C78901F170B3E47004CE617 /* WiredAppKit.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C52C884245A209900BFB5AE /* Copy Helper */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				4C52C885245A20BE00BFB5AE /* Wired Server Helper.app in Copy Helper */,
+			);
+			name = "Copy Helper";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		4C8D33E8151E98AC001A6BF7 /* Copy Frameworks */ = {
@@ -255,6 +259,7 @@
 		4C4A2967151F894F0084E041 /* GreenDrop.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = GreenDrop.tiff; sourceTree = "<group>"; };
 		4C4A2968151F894F0084E041 /* RedDrop.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = RedDrop.tiff; sourceTree = "<group>"; };
 		4C4FDE69177900CA00FADB95 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fr; path = fr.lproj/Settings.xib; sourceTree = "<group>"; };
+		4C52C85D245A009200BFB5AE /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
 		4C5EDCC6154366740031D44E /* man */ = {isa = PBXFileReference; lastKnownFileType = folder; name = man; path = ../wired/man; sourceTree = "<group>"; };
 		4C788FDF170B35BE004CE617 /* WiredFrameworks.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WiredFrameworks.xcodeproj; path = WiredFrameworks/WiredFrameworks.xcodeproj; sourceTree = "<group>"; };
 		4C8CB801159A6D37008C7EB9 /* wired.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = wired.sh; sourceTree = "<group>"; };
@@ -551,6 +556,7 @@
 		4C8D3357151E2D8D001A6BF7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4C52C85D245A009200BFB5AE /* ServiceManagement.framework */,
 				4CE5D55524475B07000333FB /* Sparkle.framework */,
 				B133499E21B1BE6B004AF77F /* libsqlite3.dylib */,
 				B133499C21B1BD9E004AF77F /* Quartz.framework */,
@@ -954,7 +960,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				4CE5D5642447718E000333FB /* PBXTargetDependency */,
 				4C78901D170B3E3F004CE617 /* PBXTargetDependency */,
 				4C789016170B3E35004CE617 /* PBXTargetDependency */,
 				4C789018170B3E35004CE617 /* PBXTargetDependency */,
@@ -971,6 +976,7 @@
 				07AE0AE287EC52D28CD192F6 /* [CP] Check Pods Manifest.lock */,
 				4C8D3350151E2D8D001A6BF7 /* Sources */,
 				4C8D3351151E2D8D001A6BF7 /* Frameworks */,
+				4C52C884245A209900BFB5AE /* Copy Helper */,
 				4C8D3352151E2D8D001A6BF7 /* Resources */,
 				4C8D33E8151E98AC001A6BF7 /* Copy Frameworks */,
 				30BB0EA8173C06128ADA22A4 /* [CP] Embed Pods Frameworks */,
@@ -979,7 +985,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				4C16298524479888007FA399 /* PBXTargetDependency */,
+				4C52C887245A214300BFB5AE /* PBXTargetDependency */,
 				4C8865D821A1BE56002A7F8A /* PBXTargetDependency */,
 				4C789002170B35D6004CE617 /* PBXTargetDependency */,
 				4C789004170B35D6004CE617 /* PBXTargetDependency */,
@@ -1107,7 +1113,6 @@
 				4C4A2969151F894F0084E041 /* GrayDrop.tiff in Resources */,
 				4C4A296A151F894F0084E041 /* GreenDrop.tiff in Resources */,
 				4C4A296B151F894F0084E041 /* RedDrop.tiff in Resources */,
-				4C233CBC15211FA700245506 /* Wired Server Helper.app in Resources */,
 				4C233CFD15228BB800245506 /* wiredserverrnote.html in Resources */,
 				4C5EDCC7154366750031D44E /* man in Resources */,
 				B133499321B1BA55004AF77F /* libwired in Resources */,
@@ -1239,15 +1244,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4C16298524479888007FA399 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4C8A853E21B05BB2001154BC /* wired */;
-			targetProxy = 4C16298424479888007FA399 /* PBXContainerItemProxy */;
-		};
 		4C233CBB15211F9C00245506 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4C233C881521022800245506 /* Wired Server Helper */;
 			targetProxy = 4C233CBA15211F9C00245506 /* PBXContainerItemProxy */;
+		};
+		4C52C887245A214300BFB5AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C8A853E21B05BB2001154BC /* wired */;
+			targetProxy = 4C52C886245A214300BFB5AE /* PBXContainerItemProxy */;
 		};
 		4C789002170B35D6004CE617 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1283,11 +1288,6 @@
 			isa = PBXTargetDependency;
 			target = 4C8D3353151E2D8D001A6BF7 /* Wired Server */;
 			targetProxy = 4CDD88AE15F76CA500283005 /* PBXContainerItemProxy */;
-		};
-		4CE5D5642447718E000333FB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4C8A853E21B05BB2001154BC /* wired */;
-			targetProxy = 4CE5D5632447718E000333FB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1384,6 +1384,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1408,6 +1409,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -6273,14 +6273,16 @@ fi
 $as_echo "$ac_cv_lib_sqlite3_sqlite3_backup_init" >&6; }
 if test "x$ac_cv_lib_sqlite3_sqlite3_backup_init" = xyes; then :
 
-			cat >>confdefs.h <<_ACEOF
+
+cat >>confdefs.h <<_ACEOF
 #define WI_SQLITE_SUPPORTS_BACKUP 1
 _ACEOF
 
 
 else
 
-			cat >>confdefs.h <<_ACEOF
+
+cat >>confdefs.h <<_ACEOF
 #define WI_SQLITE_SUPPORTS_BACKUP 0
 _ACEOF
 

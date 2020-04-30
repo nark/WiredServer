@@ -41,7 +41,7 @@
 @end
 
 
-
+NSString * const WPHelperBundleID = @"fr.read-write.Wired-Server-Helper";
 
 
 @implementation WSSettingsController
@@ -204,11 +204,10 @@
     
     url = [[NSBundle mainBundle] URLForResource:@"Wired Server Helper" withExtension:@"app"];
     
-    if([WIStatusMenuManager willStartAtLogin:url]) {
+    if([[WISettings settings] boolForKey:WPEnableMenuItem]) {
         if(![WIStatusMenuManager isHelperRunning]) {
             [WIStatusMenuManager startHelper:url];
         }
-        
     }
     
     // update components
@@ -483,19 +482,18 @@
 
 - (IBAction)enableStatusMenuItem:(id)sender {
     NSURL *url = [[NSBundle mainBundle] URLForResource:@"Wired Server Helper" withExtension:@"app"];
+    BOOL menuItemEnabled = [_enableStatusMenuyButton state] == YES;
     
-    if ([_enableStatusMenuyButton state] == NO) {
-        if([WIStatusMenuManager willStartAtLogin:url]) {
-            [WIStatusMenuManager setStartAtLogin:url enabled:NO];
-            [WIStatusMenuManager stopHelper:url];
-            [WIStatusMenuManager removeFromLoginItems];
-        }
+    if (!menuItemEnabled) {
+        [WIStatusMenuManager setStartAtLogin:WPHelperBundleID enabled:NO];
+        [WIStatusMenuManager stopHelper:url];
     }else {
-        [WIStatusMenuManager setStartAtLogin:url enabled:YES];
         [WIStatusMenuManager startHelper:url];
+        [WIStatusMenuManager setStartAtLogin:WPHelperBundleID enabled:YES];
         [_enableStatusMenuyButton setState:YES];
-        
     }
+    
+    [[WISettings settings] setBool:menuItemEnabled forKey:WPEnableMenuItem];
 }
 
 
@@ -853,9 +851,8 @@
 - (void)updaterWillRelaunchApplication:(SUUpdater *)updater {
     NSURL *url = [[NSBundle mainBundle] URLForResource:@"Wired Server Helper" withExtension:@"app"];
     
-    if([WIStatusMenuManager willStartAtLogin:url]) {
+    if([[WISettings settings] boolForKey:WPEnableMenuItem]) {
         [WIStatusMenuManager stopHelper:url];
-        [WIStatusMenuManager removeFromLoginItems];
     }
     
     [[WPSettings settings] setBool:YES forKey:WPUpdated];
@@ -1077,14 +1074,13 @@
     
     url = [[NSBundle mainBundle] URLForResource:@"Wired Server Helper" withExtension:@"app"];
     
-    if([WIStatusMenuManager willStartAtLogin:url]) {
-        [WIStatusMenuManager setStartAtLogin:url enabled:YES];
+    if([[WISettings settings] boolForKey:WPEnableMenuItem]) {
+        [WIStatusMenuManager setStartAtLogin:WPHelperBundleID enabled:YES];
         [WIStatusMenuManager startHelper:url];
         [_enableStatusMenuyButton setState:YES];
     }else {
-        [WIStatusMenuManager setStartAtLogin:url enabled:NO];
+        [WIStatusMenuManager setStartAtLogin:WPHelperBundleID enabled:NO];
         [WIStatusMenuManager stopHelper:url];
-        [WIStatusMenuManager removeFromLoginItems];
         [_enableStatusMenuyButton setState:NO];
     }
     

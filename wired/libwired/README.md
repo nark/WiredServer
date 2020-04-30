@@ -17,7 +17,13 @@ Wired library uses several external dependencies, which are usually distributed 
 * zlib (compression)
 * sqlite3 (server backend)
 
+* GNU Autotools, if compiling from the Git repository.
+
 ### Getting started
+
+If compiling from the Git repository, first generate the configure script using the following command:
+
+`./bootstrap`
 
 To compile libwired, please refer to the configure help using the following command:
 

@@ -32,6 +32,7 @@ NSString * const WPMigratedWired13		= @"WPMigratedWired13";
 NSString * const WPUninstalled			= @"WPUninstalled";
 NSString * const WPUpdated              = @"WPUpdated";
 NSString * const WPAutoUpdate           = @"WPAutoUpdate";
+NSString * const WPEnableMenuItem       = @"WPEnableMenuItem";
 
 @implementation WPSettings
 
@@ -49,7 +50,9 @@ NSString * const WPAutoUpdate           = @"WPAutoUpdate";
                     [NSNumber numberWithBool:NO], 
                     WPUpdated, 
                     [NSNumber numberWithBool:NO], 
-                    WPAutoUpdate, 
+                    WPAutoUpdate,
+                    [NSNumber numberWithBool:NO],
+                    WPEnableMenuItem,
                     nil]; 
     }
     

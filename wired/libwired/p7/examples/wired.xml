@@ -3,60 +3,15 @@
 			 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 			 xsi:schemaLocation="http://www.read-write.fr/wired/html/p7-specification.xsd"
 			 name="Wired"
-			 version="2.5">
+			 version="2.0b55">
 	<p7:documentation>
-		[h3:Introduction]
-		The Wired protocol is an application-level protocol for real time
-		chat, messaging and file transfers. It is based on the 
-		[strong:client-server model], with many clients connected to one 
-		and the same server, allowing both public and private messaging. 
-		The main design principles are standardization and the unification 
-		of messaging and file transfer systems.
+		TBD
 		
-		This specification defines the protocol referred to as "Wired 2.0"
-   		and is a redesign of the "Wired 1.1" protocol based on the Zanka 
-   		Software RFC 2.
+		...
 		
-		[h3:Differences from Wired 1.1]
-		This version of the specification is rather different from the 
-		"Wired 1.1" specification on many aspects, but it covers a very 
-		similar set of features. Wired 2.0 protocol is a [strong:XML-based] 
-		messages protocol instead of a textual command/message protocol.
-
-		In the 2.0 specification, [strong:messages] are composed of multiple 
-		[strong:fields] that define the data structure. Each field has a data 
-		type and a version number. Messages sequences are organized by 
-		[strong:transactions] that defines originators (client or server) and 
-		desired replies. Also, [strong:broadcasts] are like messages, but as 
-		designated, are designed to be sent to all users at the time.
-
-		This well origanized structure allows to control many aspect of the 
-		protocol like forward/backward compatibility, workflow, data integrity 
-		and security.
-
-		[h3:Overall Operation]
-		A client sends a message in a specific format to the server, and 
-		the server interprets this message, and if needed, sends back a message 
-		with requested information.
-
-		Some messages are sent asynchronously, meaning they are sent without 
-		having first received a request message. These messages can be sent 
-		at any given time, and a client should be prepared to handle these 
-		as they come.
-
-		A single connection ("control connection") is used to send these 
-		messages back and forth. A separate connection is used for transfers, 
-		in order to maintain the control connection while a transfer is running.
-
-		Wired communication takes place over a TCP/IP connection using TLS. The 
-		default port is TCP 4871, but other ports can be used. The transfer
-		port is the default port incremented by one, or 2001 by default.
-			
-		[h3:Protocol Compatibility]
-		Wired 2.0 and 1.1 protocols are not compatible because they use very
-		different technologies. However, Wired 2.0 was designed with compatibility 
-		management built-in. The specification itself takes care of messages 
-		compliance ...
+		[a note on differences from Wired 1.1]
+		
+		...
 		
 		[a note on account permissions]
 		
@@ -66,10 +21,6 @@
 		
 		...
 		
-		[a note on boards]
-
-		...
-
 		[a note on transfers]
 	</p7:documentation>
 	

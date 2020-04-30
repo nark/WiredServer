@@ -23,10 +23,10 @@ AC_DEFUN([WI_APPEND_FLAG], [
 
 
 AC_DEFUN([WI_CHECK_SVN_REVISION], [
-	WI_REVISION=$(git describe --always)
+	WI_REVISION=$(cat version)
 	
 	if test -z "$WI_REVISION"; then
-		WI_REVISION=2.5
+		WI_REVISION=0
 	fi
 
 	AC_DEFINE_UNQUOTED([WI_REVISION], "$WI_REVISION", [Subversion revision])
@@ -37,11 +37,11 @@ AC_DEFUN([WI_INCLUDE_WARNING_FLAG], [
 	OLD_CFLAGS="$CFLAGS"
 	WI_APPEND_FLAG([CFLAGS], $1)
 
-	AC_COMPILE_IFELSE([
+	AC_COMPILE_IFELSE([AC_LANG_SOURCE([
 		int main() {
 			return 0;
 		}
-	], [
+	])], [
 		WI_APPEND_FLAG([WARNFLAGS], $1)
 	], [
 		CFLAGS="$OLD_CFLAGS"
@@ -391,7 +391,7 @@ AC_DEFUN([WI_INCLUDE_ICONV_LIBRARY], [
 		])
 
 		AC_MSG_CHECKING([if iconv understands Unicode])
-		AC_RUN_IFELSE([
+		AC_RUN_IFELSE([AC_LANG_SOURCE([
 			#include <iconv.h>
 			int main(void) {
 				iconv_t conv = iconv_open("UTF-8", "UTF-16");
@@ -399,7 +399,7 @@ AC_DEFUN([WI_INCLUDE_ICONV_LIBRARY], [
 					return 1;
 				return 0;
 			}
-		], [
+		])], [
 			AC_MSG_RESULT([yes])
 		], [
 			AC_MSG_ERROR([no])
@@ -452,13 +452,13 @@ AC_DEFUN([WI_INCLUDE_READLINE_LIBRARY], [
 			WI_APPEND_FLAG([LIBS], [-lreadline])
 
 			AC_MSG_CHECKING([for GNU readline])
-			AC_RUN_IFELSE([
+			AC_RUN_IFELSE([AC_LANG_SOURCE([
 				#include <stdio.h>
 				#include <readline/readline.h>
 				int main(void) {
 					return rl_gnu_readline_p ? 0 : 1;
 				}
-			], [
+			])], [
 				AC_MSG_RESULT([yes])
 			], [
 				AC_MSG_RESULT([no])
@@ -466,7 +466,7 @@ AC_DEFUN([WI_INCLUDE_READLINE_LIBRARY], [
 			])
 
 			AC_MSG_CHECKING([for rl_completion_matches])
-			AC_RUN_IFELSE([
+			AC_RUN_IFELSE([AC_LANG_SOURCE([
 				#include <stdio.h>
 				#include <readline/readline.h>
 				char * generator(const char *, int);
@@ -478,7 +478,7 @@ AC_DEFUN([WI_INCLUDE_READLINE_LIBRARY], [
 
 					return 0;
 				}
-			], [
+			])], [
 				AC_DEFINE([HAVE_RL_COMPLETION_MATCHES], [1], [Define to 1 if you have the `rl_completion_matches' function, and to 0 otherwise.])
 				AC_MSG_RESULT([yes])
 
@@ -565,9 +565,9 @@ AC_DEFUN([WI_INCLUDE_SQLITE3_LIBRARY], [
 		])
 
 		AC_CHECK_LIB([sqlite3], [sqlite3_backup_init], [
-			AC_DEFINE_UNQUOTED([WI_SQLITE_SUPPORTS_BACKUP], [1])
+			AC_DEFINE_UNQUOTED([WI_SQLITE_SUPPORTS_BACKUP], [1], [SQLite supports backup])
 		], [
-			AC_DEFINE_UNQUOTED([WI_SQLITE_SUPPORTS_BACKUP], [0])
+			AC_DEFINE_UNQUOTED([WI_SQLITE_SUPPORTS_BACKUP], [0], [SQLite does not support backup])
 		])
 		
 		WI_APPEND_FLAG([CPPFLAGS], [-DWI_SQLITE3])

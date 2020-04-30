@@ -262,9 +262,6 @@ sub documentation {
 	$documentation =~ s/[ \t]$//mg;
 	$documentation =~ s/\n\n/<br \/>\n<br \/>\n/g;
 
-	$documentation =~ s/\[h3:(.+?)\]/<h3>\1<\/h3>/g;
-	$documentation =~ s/\[h4:(.+?)\]/<h4>\1<\/h4>/g;
-	$documentation =~ s/\[strong:(.+?)\]/<strong>\1<\/strong>/g;
 	$documentation =~ s/\[field:(.+?)\]/<a href="#field,\1">\1<\/a>/g;
 	$documentation =~ s/\[enum:(.+?)\]/<a href="#enum,\1">\1<\/a>/g;
 	$documentation =~ s/\[message:(.+?)\]/<a href="#message,\1">\1<\/a>/g;
@@ -306,22 +303,15 @@ sub printhtmlheader {
 	my($info) = @_;
 	
 	print <<EOF;
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	
+<!-- baka baka minna baka -->
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>$info->{"name"} $info->{"version"} Specification</title>
-
-	<link rel="stylesheet" type="text/css" href="http://wired.read-write.fr/html/css/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="http://wired.read-write.fr/html/css/bootstrap/css/bootstrap-responsive.min.css">
-	<link rel="stylesheet" type="text/css" href="http://wired.read-write.fr/html/css/index.css">
-	<link rel="stylesheet" type="text/css" href="http://wired.read-write.fr/html/css/prettify.css" />
-
-	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-	<script src="http://wired.read-write.fr/html/css/bootstrap/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="http://wired.read-write.fr/html/js/run_prettify.js?skin=sunburst"></script>
-	<script src="http://wired.read-write.fr/html/js/jquery.ba-hashchange.min.js"></script>
-	<script src="http://wired.read-write.fr/html/js/main.js"></script>
+	<title>$info->{"name"} $info->{"version"} Documentation</title>
+	<link rel="stylesheet" type="text/css" href="http://www.zankasoftware.com/css/index.css">
 </head>
 <body>
 EOF
@@ -332,28 +322,36 @@ sub printheader {
 	my($info, $fields, $messages, $transactions, $broadcasts) = @_;
 
 	print <<EOF;
-<header>
-<article>
-<h1>$info->{"name"} $info->{"version"} Specification</h1>
+<span class="protocoltitle">$info->{"name"} $info->{"version"}</span>
 
-<pre class="prettyprint protocol">&lt;p7:protocol xmlns:p7="$info->{"xmlns:p7"}"
+<br />
+<br />
+
+<code class="protocol">&lt;p7:protocol xmlns:p7="$info->{"xmlns:p7"}"
              xmlns:xsi="$info->{"xmlns:xsi"}"
              xsi:schemaLocation="$info->{"xsi:schemaLocation"}"
              name="$info->{"name"}"
-             version="$info->{"version"}" /&gt;</pre>
+             version="$info->{"version"}" /&gt;</code>
+
+<br />
 
 Automatically generated from <a href="$info->{"file"}">$info->{"file"}</a>.
 
+<br />
+<br />
+
+<span class="protocolsectiontitle">Overview</span><br />
 <hr class="protocol" />
-<h2>Overview</h2><br />
 
 $info->{"documentation"}
 
-</article>
+<br />
+<br />
+
 <span class="protocolsectiontitle">Fields</span><br />
 <hr class="protocol" />
 
-<blockquote class="fields">
+<blockquote>
 EOF
 
 	foreach my $field (@$fields) {
@@ -371,7 +369,7 @@ EOF
 <span class="protocolsectiontitle">Messages</span><br />
 <hr class="protocol" />
 
-<blockquote class="messages">
+<blockquote>
 EOF
 
 	foreach my $message (@$messages) {
@@ -389,7 +387,7 @@ EOF
 <span class="protocolsectiontitle">Transactions</span><br />
 <hr class="protocol" />
 
-<blockquote class="transactions">
+<blockquote>
 EOF
 
 	foreach my $transaction (@$transactions) {
@@ -407,7 +405,7 @@ EOF
 <span class="protocolsectiontitle">Broadcasts</span><br />
 <hr class="protocol" />
 
-<blockquote class="broadcasts">
+<blockquote>
 EOF
 
 	foreach my $broadcast (@$broadcasts) {
@@ -421,7 +419,6 @@ EOF
 <br />
 <br />
 <br />
-</header>
 EOF
 }
 
@@ -431,16 +428,15 @@ sub printfields {
 	my($fields) = @_;
 
 	print <<EOF;
-<section class="fields">
 <a class="protocolsectiontitle" name="fields">Fields</span>
 <hr class="protocol" />
 
 <br />
 EOF
+
 	foreach my $field (@$fields) {
 		print <<EOF;
-<div name="field,$field->{"name"}">
-<a><span class="protocolitemtitle">$field->{"name"}</span></a>
+<a name="field,$field->{"name"}"><span class="protocolitemtitle">$field->{"name"}</span></a>
 
 <br />
 <br />
@@ -449,7 +445,7 @@ EOF
 		
 		if(@{$field->{"enums"}} > 0) {
 			print <<EOF;
-<pre class="prettyprint protocol">&lt;p7:field name="$field->{"name"}" type="$field->{"type"}" id="$field->{"id"}"&gt;
+<code class="protocol">&lt;p7:field name="$field->{"name"}" type="$field->{"type"}" id="$field->{"id"}"&gt;
 EOF
 
 			foreach my $enum (@{$field->{"enums"}}) {
@@ -459,11 +455,11 @@ EOF
 			}
 			
 			print <<EOF;
-&lt;/p7:field&gt;</pre>
+&lt;/p7:field&gt;</code>
 EOF
 		} else {
 			print <<EOF;
-<pre class="prettyprint protocol">&lt;p7:field name="$field->{"name"}" type="$field->{"type"}" id="$field->{"id"}" /&gt;</pre>
+<code class="protocol">&lt;p7:field name="$field->{"name"}" type="$field->{"type"}" id="$field->{"id"}" /&gt;</code>
 EOF
 		}
 		
@@ -514,7 +510,6 @@ EOF
 
 			print <<EOF;
 <br />
-
 EOF
 		}
 		
@@ -537,13 +532,11 @@ Available in version $field->{"version"} and later.
 <br />
 <br />
 <br />
-</div>
 EOF
 	}
 
 	print <<EOF;
 <br />
-</section>
 EOF
 }
 
@@ -553,7 +546,6 @@ sub printmessages {
 	my($messages) = @_;
 
 	print <<EOF;
-<section class="messages">
 <a class="protocolsectiontitle" name="messages">Messages</span>
 <hr class="protocol" />
 
@@ -562,13 +554,12 @@ EOF
 
 	foreach my $message (@$messages) {
 		print <<EOF;
-<div name="message,$message->{"name"}">
-<a href="#message,$message->{"name"}" class="protocolanchor"><span class="protocolitemtitle">$message->{"name"}</span></a>
+<a name="message,$message->{"name"}" href="#message,$message->{"name"}" class="protocolanchor"><span class="protocolitemtitle">$message->{"name"}</span></a>
 
 <br />
 <br />
 
-<pre class="prettyprint protocol">&lt;p7:message name="$message->{"name"}" id="$message->{"id"}" version="$message->{"version"}"&gt;
+<code class="protocol">&lt;p7:message name="$message->{"name"}" id="$message->{"id"}" version="$message->{"version"}"&gt;
 EOF
 			
 		foreach my $parameter ((@{$message->{"required_parameters"}}, @{$message->{"optional_parameters"}})) {
@@ -578,7 +569,7 @@ EOF
 		}
 			
 		print <<EOF;
-&lt;/p7:message&gt;</pre>
+&lt;/p7:message&gt;</code>
 		
 <br />
 		
@@ -650,13 +641,11 @@ Available in version $message->{"version"} and later.
 <br />
 <br />
 <br />
-</div>
 EOF
 	}
 
 	print <<EOF;
 <br />
-</section>
 EOF
 }
 
@@ -679,7 +668,6 @@ sub printtransactions {
 	my($transactions) = @_;
 
 	print <<EOF;
-<section class="transactions">
 <a class="protocolsectiontitle" name="transactions">Transactions</span>
 <hr class="protocol" />
 
@@ -688,15 +676,14 @@ EOF
 
 	foreach my $transaction (@$transactions) {
 		print <<EOF;
-<div name="transaction,$transaction->{"message"}">
-<a href="#transaction,$transaction->{"message"}" class="protocolanchor"><span class="protocolitemtitle">$transaction->{"message"}</span></a>
+<a name="transaction,$transaction->{"message"}" href="#transaction,$transaction->{"message"}" class="protocolanchor"><span class="protocolitemtitle">$transaction->{"message"}</span></a>
 
 <br />
 <br />
 EOF
 		
 		print <<EOF;
-<pre class="prettyprint protocol">&lt;p7:transaction message="$transaction->{"message"}" originator="$transaction->{"originator"}" use="$transaction->{"use"}" version="$transaction->{"version"}"&gt;
+<code class="protocol">&lt;p7:transaction message="$transaction->{"message"}" originator="$transaction->{"originator"}" use="$transaction->{"use"}" version="$transaction->{"version"}"&gt;
 EOF
 
 		my $replies1 = $transaction->{"replies"};
@@ -740,7 +727,7 @@ EOF
 		}
 
 		print <<EOF;
-&lt;/p7:transaction&gt;</pre>
+&lt;/p7:transaction&gt;</code>
 
 <br />
 
@@ -809,13 +796,11 @@ Available in version $transaction->{"version"} and later.
 <br />
 <br />
 <br />
-</div>
 EOF
 	}
 
 	print <<EOF;
 <br />
-</section>
 EOF
 }
 
@@ -825,7 +810,6 @@ sub printbroadcasts {
 	my($broadcasts) = @_;
 
 	print <<EOF;
-<section class="broadcasts">
 <a class="protocolsectiontitle" name="broadcasts">Broadcasts</span>
 <hr class="protocol" />
 
@@ -834,13 +818,12 @@ EOF
 
 	foreach my $broadcast (@$broadcasts) {
 		print <<EOF;
-<div name="broadcast,$broadcast->{"message"}">
-<a href="#broadcast,$broadcast->{"message"}" class="protocolanchor"><span class="protocolitemtitle">$broadcast->{"message"}</span></a>
+<a name="broadcast,$broadcast->{"message"}" href="#broadcast,$broadcast->{"message"}" class="protocolanchor"><span class="protocolitemtitle">$broadcast->{"message"}</span></a>
 
 <br />
 <br />
 
-<pre class="prettyprint protocol">&lt;p7:broadcast message="$broadcast->{"message"}" version="$broadcast->{"version"}" /&gt;</pre>
+<code class="protocol">&lt;p7:broadcast message="$broadcast->{"message"}" version="$broadcast->{"version"}" /&gt;</code>
 
 <br />
 
@@ -854,7 +837,6 @@ $broadcast->{"documentation"}
 EOF
 
 		print <<EOF;
-
 <br />
 
 <span class="protocolitemsubtitle">Availability</span><br />
@@ -868,22 +850,13 @@ EOF
 <br />
 EOF
 		}
-
-	print <<EOF;
-</div>
-EOF
 	}
-
-	print <<EOF;
-</section>
-EOF
 }
 
 
 
 sub printhtmlfooter {
 	print <<EOF;
-<footer></footer>
 </body>
 </html>
 EOF

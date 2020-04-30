@@ -1,4 +1,4 @@
-/* config.h.in.  Generated from configure.in by autoheader.  */
+/* config.h.in.  Generated from configure.ac by autoheader.  */
 
 /* Define to 1 if you have the `backtrace' function. */
 #undef HAVE_BACKTRACE
@@ -25,10 +25,10 @@
 /* Define to 1 if you have the `dirfd' function. */
 #undef HAVE_DIRFD
 
-/* Define to 1 if `dd_fd' is member of `DIR'. */
+/* Define to 1 if `dd_fd' is a member of `DIR'. */
 #undef HAVE_DIR_DD_FD
 
-/* Define to 1 if `d_fd' is member of `DIR'. */
+/* Define to 1 if `d_fd' is a member of `DIR'. */
 #undef HAVE_DIR_D_FD
 
 /* Define to 1 if you have the <execinfo.h> header file. */
@@ -163,19 +163,19 @@
 /* Define to 1 if you have the `strsep' function. */
 #undef HAVE_STRSEP
 
-/* Define to 1 if `sin6_len' is member of `struct sockaddr_in6'. */
+/* Define to 1 if `sin6_len' is a member of `struct sockaddr_in6'. */
 #undef HAVE_STRUCT_SOCKADDR_IN6_SIN6_LEN
 
-/* Define to 1 if `sin_len' is member of `struct sockaddr_in'. */
+/* Define to 1 if `sin_len' is a member of `struct sockaddr_in'. */
 #undef HAVE_STRUCT_SOCKADDR_IN_SIN_LEN
 
-/* Define to 1 if `sa_len' is member of `struct sockaddr'. */
+/* Define to 1 if `sa_len' is a member of `struct sockaddr'. */
 #undef HAVE_STRUCT_SOCKADDR_SA_LEN
 
-/* Define to 1 if `st_birthtime' is member of `struct stat64'. */
+/* Define to 1 if `st_birthtime' is a member of `struct stat64'. */
 #undef HAVE_STRUCT_STAT64_ST_BIRTHTIME
 
-/* Define to 1 if `st_birthtime' is member of `struct stat'. */
+/* Define to 1 if `st_birthtime' is a member of `struct stat'. */
 #undef HAVE_STRUCT_STAT_ST_BIRTHTIME
 
 /* Define to 1 if you have the `sysinfo' function. */
@@ -251,11 +251,17 @@
 /* Define to the one symbol short name of this package. */
 #undef PACKAGE_TARNAME
 
+/* Define to the home page for this package. */
+#undef PACKAGE_URL
+
 /* Define to the version of this package. */
 #undef PACKAGE_VERSION
 
 /* Define to 1 if you have the ANSI C header files. */
 #undef STDC_HEADERS
+
+/* SQLite does not support backup */
+#undef WI_SQLITE_SUPPORTS_BACKUP
 
 /* Application version */
 #undef WI_VERSION
