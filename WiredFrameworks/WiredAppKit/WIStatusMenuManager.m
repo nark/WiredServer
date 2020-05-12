@@ -19,10 +19,9 @@
     system("killall 'Wired Server Helper'");
 }
 
-+ (BOOL)isHelperRunning
-{
++ (BOOL)isHelperRunning:(NSString *)bundleID {
     BOOL result = NO;
-    NSArray *running = [NSRunningApplication runningApplicationsWithBundleIdentifier:@"fr.read-write.Wired-Server-Helper"];
+    NSArray *running = [NSRunningApplication runningApplicationsWithBundleIdentifier:bundleID];
     if ([running count] > 0) {
         result = YES;;
     }
@@ -32,6 +31,6 @@
 + (void) setStartAtLogin:(NSString *)bundleID enabled:(BOOL)enabled
 {
     SMLoginItemSetEnabled((__bridge CFStringRef)bundleID, enabled);     
-} 
+}
 
 @end

@@ -17,32 +17,6 @@ These are usually distributed with operating systems.
 
 #### Howto install on:
 
-**Docker**
-
-Build the image:
-
-    cd wired/
-    docker build --tag wired:2.5 .
-    
-Run the container (first time):
-
-    docker run  -p 4871:4871 \ 
-                -v /path/to/your/files:/files \ 
-                -v /path/to/your/database.sqlite3:/usr/local/wired/database.sqlite3 \
-                --name wired wired:2.5
-
-* the `-p` option maps the container port (`4871`) to whatever the port you want to use on your host machine. If you want `wired` to be available on another you can use: `10000:4871` and Docker will translate it.
-* the `-v` option maps items of the container file system with your local file system. You can change the first value of the pair to adjust to your server files configuration.
-
-Start/stop the container:
-
-    docker start wired
-    docker stop wired
-    
-Remove the container:
-
-    docker rm wired
-
 **Debian/Ubuntu**
 
 	sudo apt-get install -y build-essential autoconf git libsqlite3-dev libxml2-dev libssl-dev zlib1g-dev
@@ -129,6 +103,51 @@ To start an installed Wired server, run:
 	/usr/local/wired/wiredctl start
 
 By default a user with the login "admin" and no password is created. Use Wired Client or Wire to connect to your newly installed Wired Server. 
+
+### Running on Docker
+
+Pull and run the container:
+
+    docker run --name wired -d -p 4871:4871 -v /path/to/yours/files:/files wired2/wired:2.5
+
+* the `-p` option maps the container port (`4871`) to whatever the port you want to use on your host machine. If you want `wired` to be available on another you can use: `10000:4871` and Docker will translate it.
+* the `-v` option maps items of the container file system with your local file system. You can change the first value of the pair to adjust to your server files configuration. Wired Server will look into the `/files` path of the container to index and server your files. 
+
+If you want Docker to start the container automatically for you, add the `--restart always` argument as follow:
+
+    docker run --name wired --restart always -d -p 4871:4871 -v /path/to/yours/files:/files wired2/wired:2.5
+
+Start/stop the container:
+
+    docker stop wired
+    docker start wired
+    
+Remove the container:
+
+    docker rm wired
+    
+It could be useful to backup and restore container files such as `database.sqlite3` or `wired.conf`. You can do that do using the `docker cp` command.
+    
+From container to host:
+    
+    docker cp wired:/user/local/wired/database.sqlite3 /path/to/your/database.sqlite3
+
+From host to container:
+
+    docker cp /path/to/your/database.sqlite3 wired:/user/local/wired/database.sqlite3
+    
+Build the image locally:
+
+    cd wired/
+    docker build --tag wired:2.5 .
+    
+Tag the image:
+    
+    docker tag <image_id> wired2/wired:2.5
+    
+Push to Docker Hub:
+    
+    docker push wired2/wired:2.5
 
 ### Get More
 

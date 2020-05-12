@@ -16,6 +16,6 @@
 
 + (void) startHelper:(NSURL *)itemURL;
 + (void) stopHelper: (NSURL *)itemURL;
-+ (BOOL) isHelperRunning;
++ (BOOL) isHelperRunning:(NSString *)bundleID;
 
 @end

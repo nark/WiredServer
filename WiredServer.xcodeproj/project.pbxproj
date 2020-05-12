@@ -103,7 +103,7 @@
 			remoteGlobalIDString = 4C233C881521022800245506;
 			remoteInfo = "Wired Server Helper";
 		};
-		4C52C886245A214300BFB5AE /* PBXContainerItemProxy */ = {
+		4C61710A246AB43400D24A9D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4C8D334B151E2D8C001A6BF7 /* Project object */;
 			proxyType = 1;
@@ -985,7 +985,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				4C52C887245A214300BFB5AE /* PBXTargetDependency */,
+				4C61710B246AB43400D24A9D /* PBXTargetDependency */,
 				4C8865D821A1BE56002A7F8A /* PBXTargetDependency */,
 				4C789002170B35D6004CE617 /* PBXTargetDependency */,
 				4C789004170B35D6004CE617 /* PBXTargetDependency */,
@@ -1249,10 +1249,10 @@
 			target = 4C233C881521022800245506 /* Wired Server Helper */;
 			targetProxy = 4C233CBA15211F9C00245506 /* PBXContainerItemProxy */;
 		};
-		4C52C887245A214300BFB5AE /* PBXTargetDependency */ = {
+		4C61710B246AB43400D24A9D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4C8A853E21B05BB2001154BC /* wired */;
-			targetProxy = 4C52C886245A214300BFB5AE /* PBXContainerItemProxy */;
+			targetProxy = 4C61710A246AB43400D24A9D /* PBXContainerItemProxy */;
 		};
 		4C789002170B35D6004CE617 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1371,7 +1371,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Wired Server Helper/Wired Server Helper.entitlements";
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 17;
+				CURRENT_PROJECT_VERSION = 19;
 				DEVELOPMENT_TEAM = 7KTXA5Y36K;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1396,7 +1396,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Wired Server Helper/Wired Server Helper.entitlements";
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 17;
+				CURRENT_PROJECT_VERSION = 19;
 				DEVELOPMENT_TEAM = 7KTXA5Y36K;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1574,7 +1574,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Wired Server/Wired Server.entitlements";
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 18;
+				CURRENT_PROJECT_VERSION = 19;
 				DEVELOPMENT_TEAM = 7KTXA5Y36K;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1616,7 +1616,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Wired Server/Wired Server.entitlements";
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 18;
+				CURRENT_PROJECT_VERSION = 19;
 				DEVELOPMENT_TEAM = 7KTXA5Y36K;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (

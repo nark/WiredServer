@@ -205,7 +205,7 @@ NSString * const WPHelperBundleID = @"fr.read-write.Wired-Server-Helper";
     url = [[NSBundle mainBundle] URLForResource:@"Wired Server Helper" withExtension:@"app"];
     
     if([[WISettings settings] boolForKey:WPEnableMenuItem]) {
-        if(![WIStatusMenuManager isHelperRunning]) {
+        if(![WIStatusMenuManager isHelperRunning:WPHelperBundleID]) {
             [WIStatusMenuManager startHelper:url];
         }
     }
@@ -283,9 +283,9 @@ NSString * const WPHelperBundleID = @"fr.read-write.Wired-Server-Helper";
 #pragma mark -
 
 - (void)wiredStatusDidChange:(NSNotification *)notification {
-    
 	[self _updateSettings];
 	[self _updateRunningStatus];
+    
 	if([_wiredManager isRunning]) {
         if ([[_hostTextField stringValue] length]==0){
             [self loadInfo];
@@ -302,18 +302,19 @@ NSString * const WPHelperBundleID = @"fr.read-write.Wired-Server-Helper";
 }
 
 - (void)saveInfo {
-    
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-    if ([[_hostTextField stringValue] length] ==0) {
+    
+    if ([[_hostTextField stringValue] length] == 0) {
         [_hostTextField setStringValue:@"127.0.0.1"];
     }
+    
     [prefs setObject:[_hostTextField stringValue]  forKey:@"Host"];
     [prefs synchronize];
 }
 
 - (void)loadInfo {
-    
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
     if ([[defaults objectForKey:@"Host"] length]!=0)
         [_hostTextField setStringValue:[defaults stringForKey:@"Host"]];
     else
@@ -695,14 +696,17 @@ NSString * const WPHelperBundleID = @"fr.read-write.Wired-Server-Helper";
             [_activityProgressIndicator startAnimation:self];
             [_activityTextField setStringValue:@"Export Settings..."];
             
-            NSBlockOperation *operation = [NSBlockOperation blockOperationWithBlock:^{
-                NSLog(@"exportSettings : %@", [[savePanel URL] path]);
-                
-                [self _exportToFile:[[savePanel URL] path]];
-                [NSThread sleepForTimeInterval:1.0];
-                [self.window performSelectorOnMainThread:@selector(endSheet:) withObject:_activityWindow];
-            }];
-            [_queue addOperation:operation];
+            NSString *path = [[savePanel URL] path];
+            
+            dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void){
+                [self _exportToFile:path];
+
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [NSThread sleepForTimeInterval:1.0];
+                    [_activityWindow orderOut:self];
+                    [self.window endSheet:_activityWindow];
+                });
+            });
         }
     }];
 }
@@ -739,14 +743,17 @@ NSString * const WPHelperBundleID = @"fr.read-write.Wired-Server-Helper";
                 [_activityProgressIndicator startAnimation:self];
                 [_activityTextField setStringValue:@"Import Settings..."];
                 
-                NSBlockOperation *operation = [NSBlockOperation blockOperationWithBlock:^{
-                    [self _importFromFile:[[openPanel URL] path]];
-                    [NSThread sleepForTimeInterval:1.0];
-                    [self.window performSelectorOnMainThread:@selector(endSheet:) withObject:_activityWindow];
-                    
-                }];
+                NSString *path = [[openPanel URL] path];
                 
-                [_queue addOperation:operation];
+                dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void){
+                    [self _importFromFile:path];
+
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        [NSThread sleepForTimeInterval:1.0];
+                        [_activityWindow orderOut:self];
+                        [self.window endSheet:_activityWindow];
+                    });
+                });
             }
         }];
     } else {
@@ -1257,9 +1264,13 @@ NSString * const WPHelperBundleID = @"fr.read-write.Wired-Server-Helper";
 	WPError		*error;
 	
 	if([_exportManager importFromFile:file error:&error])
-		[self _updateSettings];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self _updateSettings];
+        });
 	else
-		[[error alert] beginSheetModalForWindow:[_importSettingsButton window]];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [[error alert] beginSheetModalForWindow:[_importSettingsButton window]];
+        });
 }
 
 

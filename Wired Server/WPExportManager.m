@@ -161,7 +161,7 @@
 	}
 
 	files = [NSDictionary dictionaryWithObjectsAndKeys:
-             @"etc/wired.conf",      WPExportManagerConfig,
+             @"etc/wired.conf",     WPExportManagerConfig,
              @"banner.png",         WPExportManagerBanner,
              @"database.sqlite3",   WPExportManagerDatabase,
              NULL];
@@ -178,22 +178,24 @@
 				return NO;
 			}
 		}
-		
+        		
 		data = [dictionary objectForKey:key];
-		
+        		
 		if(!data)
 			continue;
 		
 		zipfile = [NSFileManager temporaryPathWithPrefix:@"WiredSettings"];
-		
+        		
 		if(![data writeToFile:zipfile options:0 error:error])
 			return NO;
 		
 		task = [NSTask launchedTaskWithLaunchPath:@"/usr/bin/unzip"
 										arguments:[NSArray arrayWithObjects:
-													@"-o",
-													zipfile,
-													NULL]];
+                                                   @"-o",
+                                                   zipfile,
+                                                   @"-d",
+                                                   [_wiredManager rootPath],
+                                                   NULL]];
 		
 		[task waitUntilExit];
 
